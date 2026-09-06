@@ -1,4 +1,4 @@
-import express, { Request, Response } from "express";
+import express from "express";
 import dotenv from "dotenv";
 
 // Loads .env variables into process.env.
@@ -13,10 +13,17 @@ app.use(express.json());
 
 // Health check - Open http://localhost:3000 to test
 // TODO: Eliminate once real routes are implemented.
-app.get("/", (_req: Request, res: Response) => {
+app.get("/", (_req, res) => {
     res.json({ message: "Hello World! 🌍 El backend está funcionando." });
 });
 
+// 404 handler - Must be after all other routes.
+app.use((_req, res) => { 
+    return res.status(404).json("Route not found");
+});
+
+// Start the server and listen on the specified port.
 app.listen(PORT, () => {
     console.log(`✅ Servidor corriendo en http://localhost:${PORT}`);
 });
+
