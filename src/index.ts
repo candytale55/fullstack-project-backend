@@ -1,5 +1,6 @@
-import express from "express";
 import dotenv from "dotenv";
+import express from "express";
+import { connectDB } from "./config/db";
 
 // Loads .env variables into process.env.
 dotenv.config();
@@ -10,6 +11,10 @@ const PORT = process.env.PORT || 3000;
 // Middleware that parses JSON request bodies (req.body).
 // Without this, POST/PUT requests with JSON arrive as undefined.
 app.use(express.json());
+
+// Connect to the database
+connectDB();
+
 
 // Health check - Open http://localhost:3000 to test
 // TODO: Eliminate once real routes are implemented.
