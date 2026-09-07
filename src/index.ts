@@ -1,6 +1,7 @@
 import dotenv from "dotenv";
 import express from "express";
 import { connectDB } from "./config/db";
+import User from "./api/models/User.model";
 
 // Loads .env variables into process.env.
 dotenv.config();
@@ -15,6 +16,9 @@ app.use(express.json());
 // Connect to the database
 connectDB();
 
+// TODO: Log the User model name and collection name for debugging purposes - Remove this after verifying the model.
+console.log("Testing model name:", User.modelName);
+console.log("Testing collection name:", User.collection.name);
 
 // Health check - Open http://localhost:3000 to test
 // TODO: Eliminate once real routes are implemented.
