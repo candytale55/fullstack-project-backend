@@ -4,7 +4,10 @@ interface AuthTokenPayload extends JwtPayload {
     id: string;
 }
 
-
+/**
+ * Retrieves the JWT secret from environment variables.
+ * Throws an error if the secret is not defined.
+ */ 
 const getJwtSecret = (): string => {
     const jwtSecret = process.env.JWT_SECRET;
 
@@ -16,13 +19,13 @@ const getJwtSecret = (): string => {
 };
 
 /**
- * Creates a signed JWT for the provided user id.
+ * Creates a signed JWT for the provided user id, with an expiration of 15 days.
  */
 const generateToken = (id: string): string => {
     return jwt.sign(
         { id },
         getJwtSecret(),
-        { expiresIn: "30d" }
+        { expiresIn: "15d" }
     );
 };
 

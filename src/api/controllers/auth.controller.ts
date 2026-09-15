@@ -128,10 +128,12 @@ const login = async (
             });
         }
 
+        // Generate a JWT for the authenticated user.   
         const token = generateToken(
             user._id.toString()
         );
 
+        // Return the token along with the user data (excluding the password).
         const {
             password: _password,
             ...userWithoutPassword
