@@ -41,3 +41,8 @@ Thumbs.db
 # Archivos temporales
 *.tmp
 *.temp
+
+# Archivos especiales
+conc.py 
+project_context.txt
+# TODO: Eliminar antes de entregar el proyecto
