@@ -7,6 +7,8 @@ export interface IUser {
     email: string;
     password: string;
     role?: "user" | "admin";
+    resetPasswordToken?: string | undefined;
+    resetPasswordExpires?: Date | undefined;
 }
 
 const userSchema = new mongoose.Schema<IUser>({
@@ -29,6 +31,12 @@ const userSchema = new mongoose.Schema<IUser>({
         type: String,
         enum: ["user", "admin"],
         default: "user"
+    },
+    resetPasswordToken: {
+        type: String
+    },
+    resetPasswordExpires: {
+        type: Date
     }
 }, {
     timestamps: true

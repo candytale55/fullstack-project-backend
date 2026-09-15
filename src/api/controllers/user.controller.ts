@@ -2,10 +2,10 @@ import type { Request, Response } from "express";
 import User from "../models/User.model";
 
 
-/* ---- Basic CRUD operations for User ---- */
+/* ------------------------------------------------ */
+/* -------- Basic CRUD operations for User -------- */
+/* ------------------------------------------------ */
 
-
-/* ---- get ALL Users ---- */
 
 const getAllUsers = async (_req: Request, res: Response) => {
     try {
@@ -79,7 +79,7 @@ const updateUser = async (
         
         const updatedUser = await User.findByIdAndUpdate(
             id,
-            req.body,
+            updateData,
             { new: true, runValidators: true }
         ).select("-password");
         
@@ -92,6 +92,8 @@ const updateUser = async (
         return res.status(400).json({ error: "Failed to update user" });
     }
 }
+
+/* ---- delete an existing User ---- */
 
 const deleteUser = async (req: Request<{ id: string }>, res: Response) => {
     try {
@@ -107,4 +109,10 @@ const deleteUser = async (req: Request<{ id: string }>, res: Response) => {
     }
 }
 
-export { getAllUsers, getUser, createUser, updateUser, deleteUser };
+export {
+    getAllUsers,
+    getUser,
+    createUser,
+    updateUser,
+    deleteUser
+};
