@@ -1,0 +1,1078 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Final-Project-Collection
+meta:
+  id: wrk_9004448cfb2040c9b378a396a5333346
+  created: 1788931389730
+  modified: 1788931389730
+  description: ""
+collection:
+  - name: 01 Authentication
+    meta:
+      id: fld_5a2c5e3859514b608ff5745ee6cf8048
+      created: 1789547271179
+      modified: 1789567624874
+      sortKey: -1789554921552
+      description: ""
+    children:
+      - url: "{{ _.PORT }}/api/v1/auth/login"
+        name: Login Admin (Seed)
+        meta:
+          id: req_0e0bf17b48e14c708f4c357ed46df1bb
+          created: 1789547647677
+          modified: 1789552501259
+          isPrivate: false
+          description: ""
+          sortKey: -1789547647677
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "email": "admin@example.com",
+                "password": "Admin@12345"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        scripts:
+          afterResponse: |-
+            const responseBody = insomnia.response.json();
+
+            if (responseBody.user?._id){
+            	insomnia.environment.set("ADMIN_TOKEN", responseBody.token);
+            	insomnia.environment.set("ADMIN_ID", responseBody.user._id);
+            } else {
+            	console.log("Token was not saved. Response: ", responseBody);
+            }
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.PORT }}/api/v1/auth/login"
+        name: Login User (Seed)
+        meta:
+          id: req_6914ee74a1ff44daac3ea5695197f983
+          created: 1789551117101
+          modified: 1789552557267
+          isPrivate: false
+          description: ""
+          sortKey: -1789547647577
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "email": "user@example.com",
+                "password": "User@12345"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        scripts:
+          afterResponse: |-
+            const responseBody = insomnia.response.json();
+
+            if (responseBody.user?._id){
+            	insomnia.environment.set("USER_TOKEN", responseBody.token);
+            	insomnia.environment.set("USER_ID", responseBody.user._id);
+            } else {
+            	console.log("Token was not saved. Response: ", responseBody);
+            }
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.PORT }}/api/v1/auth/login"
+        name: Login User - Wrong Password
+        meta:
+          id: req_c124514eb8594de5a8468bcbe5035c11
+          created: 1789552670965
+          modified: 1789552693221
+          isPrivate: false
+          description: ""
+          sortKey: -1787630772198.5
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "email": "user@example.com",
+                "password": "wrong-password"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.PORT }}/api/v1/auth/login"
+        name: Login Admin - Wrong Email
+        meta:
+          id: req_d5f122d07c8446e99062ed4e16d89361
+          created: 1789552715726
+          modified: 1789552732798
+          isPrivate: false
+          description: ""
+          sortKey: -1787630772098.5
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "email": "wrong-email",
+                "password": "Admin@12345"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: 02 Create Users
+    meta:
+      id: fld_b78384dadcf04e74b5766088e3b931dd
+      created: 1789552831880
+      modified: 1789567672428
+      sortKey: -1789554841296
+      description: ""
+    children:
+      - url: "{{ _.PORT }}/api/v1/auth/register"
+        name: Register Test User 1
+        meta:
+          id: req_6b9815ed83bc465aa01ed073eeab4977
+          created: 1789552794107
+          modified: 1789553262980
+          isPrivate: false
+          description: ""
+          sortKey: -1789552872536
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	  "name": "Test User 1 - Inicial",
+                "email": "user1@example.com",
+                "password": "User@12345"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        scripts:
+          afterResponse: |-
+            const responseBody = insomnia.response.json();
+
+            if (responseBody.user?._id){
+            	insomnia.environment.set("USER_1_ID", responseBody.user._id);
+            } else {
+            	console.log("Token was not saved. Response: ", responseBody);
+            }
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.PORT }}/api/v1/auth/register"
+        name: Register User 2 as Admin -> User
+        meta:
+          id: req_1e06c9cb1daa413898a86dadc17086bb
+          created: 1789553190228
+          modified: 1789553878078
+          isPrivate: false
+          description: ""
+          sortKey: -1789551388391.5
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	  "name": "Test User 2 - Fake Admin",
+                "email": "user2@example.com",
+                "password": "User@12345",
+            		"role": "admin"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        scripts:
+          afterResponse: |-
+            const responseBody = insomnia.response.json();
+
+            if (responseBody.user?._id){
+            	insomnia.environment.set("USER_2_ID", responseBody.user._id);
+            } else {
+            	console.log("User was not saved. Response: ", responseBody);
+            }
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.PORT }}/api/v1/auth/register"
+        name: Register User - Dupe Email
+        meta:
+          id: req_06703705f5114cfba48a32896c98b302
+          created: 1789553407450
+          modified: 1789553852063
+          isPrivate: false
+          description: ""
+          sortKey: -1789551388291.5
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	  "name": "Test User 1 - Dupe",
+                "email": "user1@example.com",
+                "password": "User@12345"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.PORT }}/api/v1/auth/register"
+        name: Register User - Missing Email
+        meta:
+          id: req_6ecb0d0346a348c6b8668f50dde1ea04
+          created: 1789553844697
+          modified: 1789553909062
+          isPrivate: false
+          description: ""
+          sortKey: -1789550646269.25
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	  "name": "Test User - Missing email",
+                "password": "User@12345"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.PORT }}/api/v1/auth/users"
+        name: Register Test User 3 - Wrong Route
+        meta:
+          id: req_7afe3142118b4f09a5970b78f2f153b3
+          created: 1789563525662
+          modified: 1789563754759
+          isPrivate: false
+          description: ""
+          sortKey: -1789550646169.25
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	  "name": "Test User 3",
+                "email": "user3@example.com",
+                "password": "User@12345"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: Authorization
+            value: Bearer {{ _.USER_TOKEN }}
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.PORT }}/api/v1/auth/register"
+        name: Register User 3
+        meta:
+          id: req_16708440957d49e3affa572d05f26aac
+          created: 1789564815498
+          modified: 1789564943705
+          isPrivate: false
+          description: ""
+          sortKey: -1789550646069.25
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	  "name": "Test User 3",
+                "email": "user3@example.com",
+                "password": "User@12345"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        scripts:
+          afterResponse: |-
+            const responseBody = insomnia.response.json();
+
+            if (responseBody.user?._id){
+            	insomnia.environment.set("USER_3_ID", responseBody.user._id);
+            } else {
+            	console.log("User was not saved. Response: ", responseBody);
+            }
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: 03 Get Users (Protected Route)
+    meta:
+      id: fld_6d749b84c1fd431eaa8fcdd2c16640e0
+      created: 1789553986255
+      modified: 1789555319960
+      sortKey: -1789554801168
+      description: ""
+    children:
+      - url: "{{ _.PORT }}/api/v1/users"
+        name: Get Users - Unauthorized (No Token)
+        meta:
+          id: req_b62d19a8fecc4fa58f89ecf9e883bc52
+          created: 1789554037240
+          modified: 1789554189051
+          isPrivate: false
+          description: ""
+          sortKey: -1789554037240
+        method: GET
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.PORT }}/api/v1/users"
+        name: Get Users - Admin
+        meta:
+          id: req_075fc54f63444d479856884286a8c1fd
+          created: 1789554202493
+          modified: 1789565767116
+          isPrivate: false
+          description: ""
+          sortKey: -1789552945230
+        method: GET
+        headers:
+          - name: Authorization
+            value: Bearer {{ _.ADMIN_TOKEN }}
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.PORT }}/api/v1/users"
+        name: Get Users - Invalid Token
+        meta:
+          id: req_d392c9e9fbea48d6aa08a87d744ed155
+          created: 1789554268253
+          modified: 1789554334911
+          isPrivate: false
+          description: ""
+          sortKey: -1789553018124
+        method: GET
+        headers:
+          - name: Authorization
+            value: Bearer {{ _['Invalid-Token'] }}
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.PORT }}/api/v1/users"
+        name: Get Users -Wrong Auth Scheme
+        meta:
+          id: req_65968508e0e44a4fbc36632ca614d674
+          created: 1789554431127
+          modified: 1789554463280
+          isPrivate: false
+          description: ""
+          sortKey: -1789552945330
+        method: GET
+        headers:
+          - name: Authorization
+            value: Not-Bearer {{ _.ADMIN_TOKEN }}
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: 04 Get User by Id (Protected Route)
+    meta:
+      id: fld_aa558ae96d4a4617a0eca5db5056e43d
+      created: 1789554569900
+      modified: 1789555322802
+      sortKey: -1789554781104
+      description: ""
+    children:
+      - url: "{{ _.PORT }}/api/v1/users/{{ _.USER_3_ID }}"
+        name: Get User 3 by Id - Admin
+        meta:
+          id: req_0136a4c8713f4131bb4fe8c596954b28
+          created: 1789554104281
+          modified: 1789567735206
+          isPrivate: false
+          description: ""
+          sortKey: -1789554392145.1562
+        method: GET
+        headers:
+          - name: Authorization
+            value: Bearer {{ _.ADMIN_TOKEN }}
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.PORT }}/api/v1/users/{{ _.USER_ID }}"
+        name: Get User (Seed) by Id - Admin
+        meta:
+          id: req_21758a70086a4e1a9750ba6a0ae6a553
+          created: 1789554631647
+          modified: 1789565821461
+          isPrivate: false
+          description: ""
+          sortKey: -1789554635075
+        method: GET
+        headers:
+          - name: Authorization
+            value: Bearer {{ _.ADMIN_TOKEN }}
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.PORT }}/api/v1/users/6aa9a9b3c433aefc1d9e0c23"
+        name: Get Non-Existent User
+        meta:
+          id: req_7054d32799d743d09e6b3fc89d7fb07b
+          created: 1789554907506
+          modified: 1789554971927
+          isPrivate: false
+          description: ""
+          sortKey: -1789554336107.5
+        method: GET
+        headers:
+          - name: Authorization
+            value: Bearer {{ _.ADMIN_TOKEN }}
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.PORT }}/api/v1/users/not-an-object-id"
+        name: Get User with invalid MongoDB Id
+        meta:
+          id: req_9a41227875d04fbab328c75c8c1a0d17
+          created: 1789555015441
+          modified: 1789555032862
+          isPrivate: false
+          description: ""
+          sortKey: -1789554336007.5
+        method: GET
+        headers:
+          - name: Authorization
+            value: Bearer {{ _.ADMIN_TOKEN }}
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.PORT }}/api/v1/users/{{ _.ADMIN_ID }}"
+        name: Get User by Id - Regular User
+        meta:
+          id: req_1a930ad1d9834610860f0ac4f12b05fb
+          created: 1789555089819
+          modified: 1789555115991
+          isPrivate: false
+          description: ""
+          sortKey: -1789554485541.25
+        method: GET
+        headers:
+          - name: Authorization
+            value: Bearer {{ _.USER_TOKEN }}
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.PORT }}/api/v1/users/{{ _.USER_ID }}"
+        name: Get Own User - Regular User
+        meta:
+          id: req_35510a04aa4943338f50928ef8908d85
+          created: 1789555157761
+          modified: 1789555165468
+          isPrivate: false
+          description: ""
+          sortKey: -1789554410824.375
+        method: GET
+        headers:
+          - name: Authorization
+            value: Bearer {{ _.USER_TOKEN }}
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.PORT }}/api/v1/users/{{ _.ADMIN_ID }}"
+        name: Get Own User - Admin
+        meta:
+          id: req_8da28a7890ef4ca994c8d1dbc501d0e8
+          created: 1789555195433
+          modified: 1789555210028
+          isPrivate: false
+          description: ""
+          sortKey: -1789554373465.9375
+        method: GET
+        headers:
+          - name: Authorization
+            value: Bearer {{ _.ADMIN_TOKEN }}
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: 06 Delete User (Protected Route)
+    meta:
+      id: fld_e415e12f746342738425667582427047
+      created: 1789554600528
+      modified: 1789567900786
+      sortKey: -1789554600528
+      description: ""
+    children:
+      - url: "{{ _.PORT }}/api/v1/users/{{ _.USER_1_ID }}"
+        name: Delete User 1 - Admin
+        meta:
+          id: req_d2dabb65f6ab4e72aa6c052e220eb514
+          created: 1789556983164
+          modified: 1789563113358
+          isPrivate: false
+          description: ""
+          sortKey: -1789556987349
+        method: DELETE
+        headers:
+          - name: Authorization
+            value: Bearer {{ _.ADMIN_TOKEN }}
+            description: ""
+            disabled: false
+        scripts:
+          afterResponse: >+
+            if (insomnia.response.code === 200 || insomnia.response.code ===
+            204){ 
+            	insomnia.environment.unset("USER_1_ID");
+            	insomnia.environment.unset("USER_1_TOKEN");
+            }
+
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.PORT }}/api/v1/users/{{ _.USER_1_ID }}"
+        name: Delete User 1 Twice - Admin
+        meta:
+          id: req_9994e92bf5a84bd28231fa3252eb97b1
+          created: 1789563386329
+          modified: 1789563392898
+          isPrivate: false
+          description: ""
+          sortKey: -1789556653546.25
+        method: DELETE
+        headers:
+          - name: Authorization
+            value: Bearer {{ _.ADMIN_TOKEN }}
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.PORT }}/api/v1/users/{{ _.USER_3_ID }}"
+        name: Delete Own User - User 3
+        meta:
+          id: req_8c48c4c251ff4fc4981b4c46cc9d3611
+          created: 1789563979527
+          modified: 1789566408253
+          isPrivate: false
+          description: ""
+          sortKey: -1789555985940.75
+        method: DELETE
+        headers:
+          - name: Authorization
+            value: Bearer {{ _.USER_3_TOKEN }}
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.PORT }}/api/v1/auth/login"
+        name: Login User 3
+        meta:
+          id: req_578a78293a2945328efd807301ca1fd7
+          created: 1789564121483
+          modified: 1789566371865
+          isPrivate: false
+          description: ""
+          sortKey: -1789556152842.125
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "email": "user3@example.com",
+                "password": "User@12345"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+        scripts:
+          afterResponse: |-
+            const responseBody = insomnia.response.json();
+
+            if (responseBody.user?._id){
+            	insomnia.environment.set("USER_3_TOKEN", responseBody.token);
+            } else {
+            	console.log("Token was not saved. Response: ", responseBody);
+            }
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.PORT }}/api/v1/users/{{ _.USER_2_ID }}"
+        name: Delete User 2 - Regular User
+        meta:
+          id: req_7a37f8a3559542ee8a401d0f927f2085
+          created: 1789565273579
+          modified: 1789566585735
+          isPrivate: false
+          description: ""
+          sortKey: -1789556236292.8125
+        method: DELETE
+        headers:
+          - name: Authorization
+            value: Bearer {{ _.USER_TOKEN }}
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: 05 Update User (Protected Route)
+    meta:
+      id: fld_476723630e2f48bab78e473c3587b072
+      created: 1789555242576
+      modified: 1789556876244
+      sortKey: -1789554761040
+      description: ""
+    children:
+      - url: "{{ _.PORT }}/api/v1/users/{{ _.USER_1_ID }}"
+        name: Update User - Admin
+        meta:
+          id: req_210ee5b178e843968cc25bdd4320383a
+          created: 1789555648192
+          modified: 1789566848541
+          isPrivate: false
+          description: ""
+          sortKey: -1789555652138
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: '{ "name": "Updated User 1" }'
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: Authorization
+            value: Bearer {{ _.ADMIN_TOKEN }}
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.PORT }}/api/v1/users/{{ _.USER_2_ID }}"
+        name: Update User - Only Permitted Fields
+        meta:
+          id: req_eee22835dc854b3a92327bc0e30c686b
+          created: 1789555752759
+          modified: 1789566897197
+          isPrivate: false
+          description: ""
+          sortKey: -1789555143556.5
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            { 
+            	"name": "Updated User 2", 
+            	"email": "updated_user2@example.com"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: Authorization
+            value: Bearer {{ _.ADMIN_TOKEN }}
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.PORT }}/api/v1/users/{{ _.USER_1_ID }}"
+        name: Attempt to change role
+        meta:
+          id: req_96ae13ad6faa4376a49cd928267804a9
+          created: 1789556437652
+          modified: 1789556453572
+          isPrivate: false
+          description: ""
+          sortKey: -1789554889265.75
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            { 
+            	"role": "admin"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: Authorization
+            value: Bearer {{ _.ADMIN_TOKEN }}
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.PORT }}/api/v1/users/{{ _.USER_2_ID }}"
+        name: Attempt to change password
+        meta:
+          id: req_3ecd241238ab4e1e898f08da51a26695
+          created: 1789556723395
+          modified: 1789556745540
+          isPrivate: false
+          description: ""
+          sortKey: -1789554762120.375
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: '{ "password": "ChangedThroughWrongRoute123" }'
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: Authorization
+            value: Bearer {{ _.ADMIN_TOKEN }}
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.PORT }}/api/v1/users/{{ _.USER_1_ID }}"
+        name: "Update Own User "
+        meta:
+          id: req_1450a12fd74c476ab17eeed8bfaaa739
+          created: 1789564756150
+          modified: 1789566968960
+          isPrivate: false
+          description: ""
+          sortKey: -1789554762020.375
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            { 
+            	"name": "Updated User 1", 
+            	"email": "updated_user1@example.com" 
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: Authorization
+            value: Bearer {{ _.USER_1_ID }}
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: 07 Cleanup
+    meta:
+      id: fld_97e0dee1964440f2b5c4ba3d03acb4e0
+      created: 1789556843897
+      modified: 1789567932309
+      sortKey: -1787626157881
+      description: ""
+    children:
+      - url: "{{ _.PORT }}/api/v1/users/{{ _.USER_3_ID }}"
+        name: Delete User 3
+        meta:
+          id: req_d9ce48bcdd1a45b586355a7c8575979a
+          created: 1789565017217
+          modified: 1789565294646
+          isPrivate: false
+          description: ""
+          sortKey: -1789565134826
+        method: DELETE
+        headers:
+          - name: Authorization
+            value: Bearer {{ _.ADMIN_TOKEN }}
+            description: ""
+            disabled: false
+        scripts:
+          afterResponse: >+
+            if (insomnia.response.code === 200 || insomnia.response.code ===
+            204){ 
+            	insomnia.environment.unset("USER_3_ID");
+            	insomnia.environment.unset("USER_3_TOKEN");
+            }
+
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.PORT }}/api/v1/users/{{ _.USER_ID }}"
+        name: Delete User (Seed)
+        meta:
+          id: req_ab7d8b3b4aca49dbb83c2e8aee048f07
+          created: 1789565130570
+          modified: 1789567037704
+          isPrivate: false
+          description: ""
+          sortKey: -1789565134726
+        method: DELETE
+        headers:
+          - name: Authorization
+            value: Bearer {{ _.ADMIN_TOKEN }}
+            description: ""
+            disabled: false
+        scripts:
+          afterResponse: >+
+            if (insomnia.response.code === 200 || insomnia.response.code ===
+            204){ 
+            	insomnia.environment.unset("USER_ID");
+            	insomnia.environment.unset("USER_TOKEN");
+            }
+
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.PORT }}/api/v1/users/{{ _.ADMIN_ID }}"
+        name: Delete Admin
+        meta:
+          id: req_9442ab6f3b9248fc9315d85412adb54d
+          created: 1789565181246
+          modified: 1789565204957
+          isPrivate: false
+          description: ""
+          sortKey: -1789561061037.5
+        method: DELETE
+        headers:
+          - name: Authorization
+            value: Bearer {{ _.ADMIN_TOKEN }}
+            description: ""
+            disabled: false
+        scripts:
+          afterResponse: >+
+            if (insomnia.response.code === 200 || insomnia.response.code ===
+            204){ 
+            	insomnia.environment.unset("ADMIN_ID");
+            	insomnia.environment.unset("ADMIN_TOKEN");
+            }
+
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{ _.PORT }}/api/v1/users/{{ _.USER_2_ID }}"
+        name: Delete User 2
+        meta:
+          id: req_c1d67aababed45e38e2c94bc1a9e5516
+          created: 1789566489390
+          modified: 1789566511683
+          isPrivate: false
+          description: ""
+          sortKey: -1789565134876
+        method: DELETE
+        headers:
+          - name: Authorization
+            value: Bearer {{ _.ADMIN_TOKEN }}
+            description: ""
+            disabled: false
+        scripts:
+          afterResponse: >+
+            if (insomnia.response.code === 200 || insomnia.response.code ===
+            204){ 
+            	insomnia.environment.unset("USER_2_ID");
+            	insomnia.environment.unset("USER_2_TOKEN");
+            }
+
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_7d88ce02d5582399af61bb709399d18965965be9
+    created: 1788931389735
+    modified: 1789567932293
+environments:
+  name: Base Environment
+  meta:
+    id: env_7d88ce02d5582399af61bb709399d18965965be9
+    created: 1788931389733
+    modified: 1789567932297
+    isPrivate: false
+  data:
+    PORT: http://localhost:3000
+    Invalid-Token: invalid-token
