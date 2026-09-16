@@ -77,6 +77,12 @@ const updateUser = async (
             updateData.email = req.body.email;
         }
         
+        if (Object.keys(updateData).length === 0) {
+            return res.status(400).json({
+                error: "Cannot update fields provided for update"
+            });
+        }
+
         const updatedUser = await User.findByIdAndUpdate(
             id,
             updateData,
