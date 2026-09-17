@@ -54,7 +54,7 @@ progressSchema.index(
 const Progress = mongoose.model<IProgress>(
     "Progress",
     progressSchema,
-    "progresses"
+    "progresses" // TODO: Check name
 );
 
 
