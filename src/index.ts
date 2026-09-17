@@ -1,5 +1,6 @@
 import dotenv from "dotenv";
 import express from "express";
+import cors from "cors";
 import { connectDB } from "./config/db";
 import User from "./api/models/User.model";
 
@@ -24,6 +25,12 @@ dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+// Enable CORS for all routes
+app.use(cors({
+    origin: "http://localhost:5173"
+}));
+
 
 // Middleware that parses JSON request bodies (req.body).
 // Without this, POST/PUT requests with JSON arrive as undefined.
