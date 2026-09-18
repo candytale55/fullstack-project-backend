@@ -153,6 +153,25 @@ const login = async (
 };
 
 
+/* ---------------- Get Current User -------------------- */
+// Para comprobar el JWT y restaurar la sesión autenticada en el frontend.
+
+const getCurrentUser = async (
+    req: Request,
+    res: Response
+) => {
+    if (!req.user) {
+        return res.status(401).json({
+            message: "Unauthorized"
+        });
+    }
+
+    return res.status(200).json({
+        user: req.user
+    });
+};
+
+
 
 
 
