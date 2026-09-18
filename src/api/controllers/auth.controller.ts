@@ -173,11 +173,10 @@ const getCurrentUser = async (
 
 
 
-
-
 // ---------------- Export Controllers --------------------
 
 export {
     register, 
-    login
+    login,
+    getCurrentUser
 };
