@@ -1,371 +1,371 @@
 courseCode,unitCode,infinitive,mood,tense,eu,tu,eleElaVoce,nos,elesElasVoces,ipaEu,ipaTu,ipaEleElaVoce,ipaNos,ipaElesElasVoces,negativeEu,negativeTu,negativeEleElaVoce,negativeNos,negativeElesElasVoces,negativeIpaEu,negativeIpaTu,negativeIpaEleElaVoce,negativeIpaNos,negativeIpaElesElasVoces,tags,curriculumTags
-pt-conjugation,presente,vestir,indicativo,presente,visto,vestes,veste,vestimos,vestem,ˈviʃtu,ˈveʃtɨʃ,ˈveʃtɨ,vɨʃˈtimuʃ,ˈveʃtɐ̃j,,,,,,,,,,,,irregular
-pt-conjugation,presente,despir,indicativo,presente,dispo,despes,despe,despimos,despem,ˈdiʃpu,ˈdeʃpɨʃ,ˈdeʃpɨ,dɨʃˈpimuʃ,ˈdeʃpɐ̃j,,,,,,,,,,,,irregular
-pt-conjugation,presente,sentir,indicativo,presente,sinto,sentes,sente,sentimos,sentem,ˈsĩtu,ˈsẽtɨʃ,ˈsẽtɨ,sẽˈtimuʃ,ˈsẽtɐ̃j,,,,,,,,,,,,irregular
-pt-conjugation,presente,preferir,indicativo,presente,prefiro,preferes,prefere,preferimos,preferem,pɾɨˈfiɾu,pɾɨˈfeɾɨʃ,pɾɨˈfeɾɨ,pɾɨfɨˈɾimuʃ,pɾɨˈfeɾɐ̃j,,,,,,,,,,,,irregular
-pt-conjugation,presente,conseguir,indicativo,presente,consigo,consegues,consegue,conseguimos,conseguem,kõˈsigu,kõˈsegɨʃ,kõˈsegɨ,kõsɨˈgimuʃ,kõˈsegɐ̃j,,,,,,,,,,,,irregular
-pt-conjugation,presente,seguir,indicativo,presente,sigo,segues,segue,seguimos,seguem,ˈsigu,ˈsegɨʃ,ˈsegɨ,sɨˈgimuʃ,ˈsegɐ̃j,,,,,,,,,,,,irregular
-pt-conjugation,presente,corrigir,indicativo,presente,corrijo,corriges,corrige,corrigimos,corrigem,kuˈʁiʒu,kuˈʁiʒɨʃ,kuˈʁiʒɨ,kuʁɨˈʒimuʃ,kuˈʁiʒɐ̃j,,,,,,,,,,,,irregular
-pt-conjugation,presente,partir,indicativo,presente,parto,partes,parte,partimos,partem,ˈpaɾtu,ˈpaɾtɨʃ,ˈpaɾtɨ,paɾˈtimuʃ,ˈpaɾtɐ̃j,,,,,,,,,,,,ir  
-pt-conjugation,presente,servir,indicativo,presente,sirvo,serves,serve,servimos,servem,ˈsiɾvu,ˈseɾvɨʃ,ˈseɾvɨ,sɨɾˈvimuʃ,ˈseɾvɐ̃j,,,,,,,,,,,,ir  
-pt-conjugation,presente,admitir,indicativo,presente,admito,admites,admite,admitimos,admitem,ɐdˈmitu,ɐdˈmitɨʃ,ɐdˈmitɨ,ɐdmɨˈtimuʃ,ɐdˈmitɐ̃j,,,,,,,,,,,,ir  
-pt-conjugation,presente,traduzir,indicativo,presente,traduzo,traduzes,traduz,traduzimos,traduzem,tɾɐˈduzu,tɾɐˈduzɨʃ,tɾɐˈduʃ,tɾɐduˈzimuʃ,tɾɐˈduzɐ̃j,,,,,,,,,,,,irregular
-pt-conjugation,presente,permitir,indicativo,presente,permito,permites,permite,permitimos,permitem,pɨɾˈmitu,pɨɾˈmitɨʃ,pɨɾˈmitɨ,pɨɾmɨˈtimuʃ,pɨɾˈmitɐ̃j,,,,,,,,,,,,ir  
-pt-conjugation,presente,repetir,indicativo,presente,repito,repetes,repete,repetimos,repetem,ʁɨˈpitu,ʁɨˈpetɨʃ,ʁɨˈpetɨ,ʁɨpɨˈtimuʃ,ʁɨˈpetɐ̃j,,,,,,,,,,,,irregular
-pt-conjugation,presente,abrir,indicativo,presente,abro,abres,abre,abrimos,abrem,ˈabɾu,ˈabɾɨʃ,ˈabɾɨ,ɐˈbɾimuʃ,ˈabɾɐ̃j,,,,,,,,,,,,ir  
-pt-conjugation,presente,decidir,indicativo,presente,decido,decides,decide,decidimos,decidem,dɨˈsidu,dɨˈsidɨʃ,dɨˈsidɨ,dɨsɨˈdimuʃ,dɨˈsidɐ̃j,,,,,,,,,,,,ir  
-pt-conjugation,presente,esquecer,indicativo,presente,esqueço,esqueces,esquece,esquecemos,esquecem,ʃˈkesu,ʃˈkesɨʃ,ʃˈkesɨ,ʃkɨˈsemuʃ,ʃˈkesɐ̃j,,,,,,,,,,,,irregular
-pt-conjugation,presente,proteger,indicativo,presente,protejo,proteges,protege,protegemos,protegem,pɾuˈtɐjʒu,pɾuˈteʒɨʃ,pɾuˈteʒɨ,pɾutɨˈʒemuʃ,pɾuˈteʒɐ̃j,,,,,,,,,,,,irregular
-pt-conjugation,presente,viver,indicativo,presente,vivo,vives,vive,vivemos,vivem,ˈvivu,ˈvivɨʃ,ˈvivɨ,viˈvemuʃ,ˈvivɐ̃j,,,,,,,,,,,,er
-pt-conjugation,presente,falar,indicativo,presente,falo,falas,fala,falamos,falam,ˈfaɫu,ˈfaɫɐʃ,ˈfaɫɐ,fɐˈɫɐmuʃ,ˈfaɫɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,morar,indicativo,presente,moro,moras,mora,moramos,moram,ˈmoɾu,ˈmoɾɐʃ,ˈmoɾɐ,muˈɾɐmuʃ,ˈmoɾɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,jogar,indicativo,presente,jogo,jogas,joga,jogamos,jogam,ˈʒogu,ˈʒogɐʃ,ˈʒogɐ,ʒuˈgɐmuʃ,ˈʒogɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,tomar,indicativo,presente,tomo,tomas,toma,tomamos,tomam,ˈtomu,ˈtomɐʃ,ˈtomɐ,tuˈmɐmuʃ,ˈtomɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,almoçar,indicativo,presente,almoço,almoças,almoça,almoçamos,almoçam,aɫˈmosu,aɫˈmosɐʃ,aɫˈmosɐ,aɫmuˈsɐmuʃ,aɫˈmosɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,jantar,indicativo,presente,janto,jantas,janta,jantamos,jantam,ˈʒɐ̃tu,ˈʒɐ̃tɐʃ,ˈʒɐ̃tɐ,ʒɐ̃ˈtɐmuʃ,ˈʒɐ̃tɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,gostar,indicativo,presente,gosto,gostas,gosta,gostamos,gostam,ˈgoʃtu,ˈgoʃtɐʃ,ˈgoʃtɐ,guʃˈtɐmuʃ,ˈgoʃtɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,fechar,indicativo,presente,fecho,fechas,fecha,fechamos,fecham,ˈfɐjʃu,ˈfɐjʃɐʃ,ˈfɐjʃɐ,fɨˈʃɐmuʃ,ˈfɐjʃɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,trabalhar,indicativo,presente,trabalho,trabalhas,trabalha,trabalhamos,trabalham,tɾɐˈbaʎu,tɾɐˈbaʎɐʃ,tɾɐˈbaʎɐ,tɾɐbɐˈʎɐmuʃ,tɾɐˈbaʎɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,practicar,indicativo,presente,pratico,praticas,pratica,praticamos,praticam,pɾɐˈtiku,pɾɐˈtikɐʃ,pɾɐˈtikɐ,pɾɐtiˈkɐmuʃ,pɾɐˈtikɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,acordar,indicativo,presente,acordo,acordas,acorda,acordamos,acordam,ɐˈkoɾdu,ɐˈkoɾdɐʃ,ɐˈkoɾdɐ,ɐkuɾˈdɐmuʃ,ɐˈkoɾdɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,apanhar,indicativo,presente,apanho,apanhas,apanha,apanhamos,apanham,ɐˈpɐɲu,ɐˈpɐɲɐʃ,ɐˈpɐɲɐ,ɐpɐˈɲɐmuʃ,ɐˈpɐɲɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,estudar,indicativo,presente,estudo,estudas,estuda,estudamos,estudam,ʃˈtudu,ʃˈtudɐʃ,ʃˈtudɐ,ʃtuˈdɐmuʃ,ʃˈtudɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,ficar,indicativo,presente,fico,ficas,fica,ficamos,ficam,ˈfiku,ˈfikɐʃ,ˈfikɐ,fiˈkɐmuʃ,ˈfikɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,começar,indicativo,presente,começo,começas,começa,começamos,começam,kuˈmesu,kuˈmesɐʃ,kuˈmesɐ,kumɨˈsɐmuʃ,kuˈmesɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,pagar,indicativo,presente,pago,pagas,paga,pagamos,pagam,ˈpagu,ˈpagɐʃ,ˈpagɐ,pɐˈgɐmuʃ,ˈpagɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,lavar,indicativo,presente,lavo,lavas,lava,lavamos,lavam,ˈɫavu,ˈɫavɐʃ,ˈɫavɐ,ɫɐˈvɐmuʃ,ˈɫavɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,usar,indicativo,presente,uso,usas,usa,usamos,usam,ˈuzu,ˈuzɐʃ,ˈuzɐ,uˈzɐmuʃ,ˈuzɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,pensar,indicativo,presente,penso,pensas,pensa,pensamos,pensam,ˈpẽsu,ˈpẽsɐʃ,ˈpẽsɐ,pẽˈsɐmuʃ,ˈpẽsɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,viajar,indicativo,presente,viajo,viajas,viaja,viajamos,viajam,viˈaʒu,viˈaʒɐʃ,viˈaʒɐ,viɐˈʒɐmuʃ,viˈaʒɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,beijar,indicativo,presente,beijo,beijas,beija,beijamos,beijam,ˈbɐjʒu,ˈbɐjʒɐʃ,ˈbɐjʒɐ,bɐjˈʒɐmuʃ,ˈbɐjʒɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,chamar,indicativo,presente,chamo,chamas,chama,chamamos,chamam,ˈʃɐmu,ˈʃɐmɐʃ,ˈʃɐmɐ,ʃɐˈmɐmuʃ,ˈʃɐmɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,achar,indicativo,presente,acho,achas,acha,achamos,acham,ˈaʃu,ˈaʃɐʃ,ˈaʃɐ,ɐˈʃɐmuʃ,ˈaʃɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,dançar,indicativo,presente,danço,danças,dança,dançamos,dançam,ˈdɐ̃su,ˈdɐ̃sɐʃ,ˈdɐ̃sɐ,dɐ̃ˈsɐmuʃ,ˈdɐ̃sɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,deixar,indicativo,presente,deixo,deixas,deixa,deixamos,deixam,ˈdɐjʃu,ˈdɐjʃɐʃ,ˈdɐjʃɐ,dɐjˈʃɐmuʃ,ˈdɐjʃɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,ligar,indicativo,presente,ligo,ligas,liga,ligamos,ligam,ˈɫigu,ˈɫigɐʃ,ˈɫigɐ,ɫiˈgɐmuʃ,ˈɫigɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,precisar,indicativo,presente,preciso,precisas,precisa,precisamos,precisam,pɾɨˈsizu,pɾɨˈsizɐʃ,pɾɨˈsizɐ,pɾɨsiˈzɐmuʃ,pɾɨˈsizɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,ver,indicativo,presente,vejo,vês,vê,vemos,veem,ˈvɐjʒu,ˈveʃ,ˈve,ˈvemuʃ,ˈveɐ̃j,,,,,,,,,,,,irregular
-pt-conjugation,presente,saber,indicativo,presente,sei,sabes,sabe,sabemos,sabem,ˈsɐj,ˈsabɨʃ,ˈsabɨ,sɐˈbemuʃ,ˈsabɐ̃j,,,,,,,,,,,,irregular
-pt-conjugation,presente,estar,indicativo,presente,estou,estás,está,estamos,estão,ʃˈto,ʃˈtaʃ,ʃˈta,ʃˈtɐmuʃ,ʃˈtɐ̃w,,,,,,,,,,,,irregular
-pt-conjugation,presente,ter,indicativo,presente,tenho,tens,tem,temos,têm,ˈtɐɲu,tɐ̃jʃ,tɐ̃j,ˈtemuʃ,ˈtɐ̃jɐ̃j,,,,,,,,,,,,irregular
-pt-conjugation,presente,dar,indicativo,presente,dou,dás,dá,damos,dão,ˈdo,ˈdaʃ,ˈda,ˈdɐmuʃ,ˈdɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,chamar-se,indicativo,presente,chamo-me,chamas-te,chama-se,chamamo-nos,chamam-se,ˈʃɐmu-mɨ,ˈʃɐmɐʃ-tɨ,ˈʃɐmɐ-sɨ,ʃɐˈmɐmu-nuʃ,ˈʃɐmɐ̃w-sɨ,,,,,,,,,,,,ar reflexos
-pt-conjugation,presente,levantar-se,indicativo,presente,levanto-me,levantas-te,levanta-se,levantamo-nos,levantam-se,ɫɨˈvɐ̃tu-mɨ,ɫɨˈvɐ̃tɐʃ-tɨ,ɫɨˈvɐ̃tɐ-sɨ,ɫɨvɐ̃ˈtɐmu-nuʃ,ɫɨˈvɐ̃tɐ̃w-sɨ,não me levanto,não te levantas,não se levanta,não nos levantamos,não se levantam,ˈnɐ̃w̃ ˈmɛ lɨˈvɐ̃tu,ˈnɐ̃w̃ ˈtɛ lɨˈvɐ̃tɐʃ,ˈnɐ̃w̃ sɨ lɨˈvɐ̃tɐ,ˈnɐ̃w̃ ˈnɔʒ lɨvɐ̃ˈtɐmuʃ,ˈnɐ̃w̃ sɨ lɨˈvɐ̃tɐ̃w̃,,ar reflexos
-pt-conjugation,presente,deitar-se,indicativo,presente,deito-me,deitas-te,deita-se,deitamo-nos,deitam-se,ˈdɐjtu-mɨ,ˈdɐjtɐʃ-tɨ,ˈdɐjtɐ-sɨ,dɐjˈtɐmu-nuʃ,ˈdɐjtɐ̃w-sɨ,,,,,,,,,,,,ar
-pt-conjugation,presente,lembrar-se,indicativo,presente,lembro-me,lembras-te,lembra-se,lembramo-nos,lembram-se,ˈɫẽbɾu-mɨ,ˈɫẽbɾɐʃ-tɨ,ˈɫẽbɾɐ-sɨ,ɫẽˈbɾɐmu-nuʃ,ˈɫẽbɾɐ̃w-sɨ,,,,,,,,,,,,ar reflexos
-pt-conjugation,presente,telefonar,indicativo,presente,telefono,telefonas,telefona,telefonamos,telefonam,tɨɫɨˈfonu,tɨɫɨˈfonɐʃ,tɨɫɨˈfonɐ,tɨɫɨfuˈnɐmuʃ,tɨɫɨˈfonɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,empurrar,indicativo,presente,empurro,empurras,empurra,empurramos,empurram,ẽˈpuʁu,ẽˈpuʁɐʃ,ẽˈpuʁɐ,ẽpuˈʁɐmuʃ,ẽˈpuʁɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,puxar,indicativo,presente,puxo,puxas,puxa,puxamos,puxam,ˈpuʃu,ˈpuʃɐʃ,ˈpuʃɐ,puˈʃɐmuʃ,ˈpuʃɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,mudar,indicativo,presente,mudo,mudas,muda,mudamos,mudam,ˈmudu,ˈmudɐʃ,ˈmudɐ,muˈdɐmuʃ,ˈmudɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,afagar,indicativo,presente,afago,afagas,afaga,afagamos,afagam,ɐˈfagu,ɐˈfagɐʃ,ɐˈfagɐ,ɐfɐˈgɐmuʃ,ɐˈfagɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,pegar,indicativo,presente,pego,pegas,pega,pegamos,pegam,ˈpegu,ˈpegɐʃ,ˈpegɐ,pɨˈgɐmuʃ,ˈpegɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,ler,indicativo,presente,leio,lês,lê,lemos,leem,ˈɫɐju,ˈɫeʃ,ˈɫe,ˈɫemuʃ,ˈɫeɐ̃j,,,,,,,,,,,,irregular
-pt-conjugation,presente,querer,indicativo,presente,quero,queres,quer,queremos,querem,ˈkeɾu,ˈkeɾɨʃ,ˈkeɾ,kɨˈɾemuʃ,ˈkeɾɐ̃j,,,,,,,,,,,,irregular
-pt-conjugation,presente,fazer,indicativo,presente,faço,fazes,faz,fazemos,fazem,ˈfasu,ˈfazɨʃ,ˈfaʃ,fɐˈzemuʃ,ˈfazɐ̃j,,,,,,,,,,,,irregular
-pt-conjugation,presente,dizer,indicativo,presente,digo,dizes,diz,dizemos,dizem,ˈdigu,ˈdizɨʃ,ˈdiʃ,diˈzemuʃ,ˈdizɐ̃j,,,,,,,,,,,,irregular
-pt-conjugation,presente,trazer,indicativo,presente,trago,traes,trae,traemos,traem,ˈtɾagu,ˈtɾaɨʃ,ˈtɾai,tɾɐˈemuʃ,ˈtɾaɐ̃j,,,,,,,,,,,,irregular
-pt-conjugation,presente,poder,indicativo,presente,posso,podes,pode,podemos,podem,ˈposu,ˈpodɨʃ,ˈpodɨ,puˈdemuʃ,ˈpodɐ̃j,,,,,,,,,,,,irregular
-pt-conjugation,presente,perder,indicativo,presente,perco,perdes,perde,perdemos,perdem,ˈpeɾku,ˈpeɾdɨʃ,ˈpeɾdɨ,pɨɾˈdemuʃ,ˈpeɾdɐ̃j,,,,,,,,,,,,irregular
-pt-conjugation,presente,ser,indicativo,presente,sou,és,é,somos,são,ˈso,ˈɛʃ,ˈɛ,ˈsomuʃ,ˈsɐ̃w,,,,,,,,,,,,irregular
-pt-conjugation,presente,acabar,indicativo,presente,acabo,acabas,acaba,acabamos,acabam,ɐˈkabu,ɐˈkabɐʃ,ɐˈkabɐ,ɐkɐˈbɐmuʃ,ɐˈkabɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,aceitar,indicativo,presente,aceito,aceitas,aceita,aceitamos,aceitam,ɐˈsɐjtu,ɐˈsɐjtɐʃ,ɐˈsɐjtɐ,ɐsɐjˈtɐmuʃ,ɐˈsɐjtɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,afastar-se,indicativo,presente,afasto-me,afastas-te,afasta-se,afastamo-nos,afastam-se,ɐˈfaʃtu-mɨ,ɐˈfaʃtɐʃ-tɨ,ɐˈfaʃtɐ-sɨ,ɐfɐʃˈtɐmu-nuʃ,ɐˈfaʃtɐ̃w-sɨ,,,,,,,,,,,,ar reflexos
-pt-conjugation,presente,andar,indicativo,presente,ando,andas,anda,andamos,andam,ˈɐ̃du,ˈɐ̃dɐʃ,ˈɐ̃dɐ,ɐ̃ˈdɐmuʃ,ˈɐ̃dɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,arranjar,indicativo,presente,arranjo,arranjas,arranja,arranjamos,arranjam,aˈʁɐ̃ʒu,aˈʁɐ̃ʒɐʃ,aˈʁɐ̃ʒɐ,aʁɐ̃ˈʒɐmuʃ,aˈʁɐ̃ʒɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,arranjar-se,indicativo,presente,arranjo-me,arranjas-te,arranja-se,arranjamo-nos,arranjam-se,aˈʁɐ̃ʒu-mɨ,aˈʁɐ̃ʒɐʃ-tɨ,aˈʁɐ̃ʒɐ-sɨ,aʁɐ̃ˈʒɐmu-nuʃ,aˈʁɐ̃ʒɐ̃w-sɨ,,,,,,,,,,,,ar
-pt-conjugation,presente,assistir,indicativo,presente,assisto,assistes,assiste,assistimos,assistem,ɐˈsiʃtu,ɐˈsiʃtɨʃ,ɐˈsiʃtɨ,ɐsɨʃˈtimuʃ,ɐˈsiʃtɐ̃j,,,,,,,,,,,,ir
-pt-conjugation,presente,assombrar,indicativo,presente,assombro,assombras,assombra,assombramos,assombram,ɐˈsõbɾu,ɐˈsõbɾɐʃ,ɐˈsõbɾɐ,ɐsõˈbɾɐmuʃ,ɐˈsõbɾɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,cair,indicativo,presente,caio,cais,cai,caímos,caem,ˈkaju,ˈkajʃ,ˈkaj,kɐˈimuʃ,ˈkaɐ̃j,,,,,,,,,,,,irregular
-pt-conjugation,presente,conhecer,indicativo,presente,conheço,conheces,conhece,conhecemos,conhecem,kuˈɲesu,kuˈɲesɨʃ,kuˈɲesɨ,kuɲɨˈsemuʃ,kuˈɲesɐ̃j,,,,,,,,,,,,irregular
-pt-conjugation,presente,cumprir,indicativo,presente,cumpro,cumpres,cumpre,cumprimos,cumprem,ˈkũpɾu,ˈkũpɾɨʃ,ˈkũpɾɨ,kũˈpɾimuʃ,ˈkũpɾɐ̃j,,,,,,,,,,,,ir  
-pt-conjugation,presente,discutir,indicativo,presente,discuto,discutes,discute,discutimos,discutem,dɨʃˈkutu,dɨʃˈkutɨʃ,dɨʃˈkutɨ,dɨʃkuˈtimuʃ,dɨʃˈkutɐ̃j,,,,,,,,,,,,ir  
-pt-conjugation,presente,dividir,indicativo,presente,divido,divides,divide,dividimos,dividem,dɨˈvidu,dɨˈvidɨʃ,dɨˈvidɨ,dɨvɨˈdimuʃ,dɨˈvidɐ̃j,,,,,,,,,,,,ir  
-pt-conjugation,presente,dormir,indicativo,presente,durmo,dormes,dorme,dormimos,dormem,ˈduɾmu,ˈdoɾmɨʃ,ˈdoɾmɨ,duɾˈmimuʃ,ˈdoɾmɐ̃j,,,,,,,,,,,,irregular
-pt-conjugation,presente,encontrar,indicativo,presente,encontro,encontras,encontra,encontramos,encontram,ẽˈkõtɾu,ẽˈkõtɾɐʃ,ẽˈkõtɾɐ,ẽkõˈtɾɐmuʃ,ẽˈkõtɾɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,encontrar-se,indicativo,presente,encontro-me,encontras-te,encontra-se,encontramo-nos,encontram-se,ẽˈkõtɾu-mɨ,ẽˈkõtɾɐʃ-tɨ,ẽˈkõtɾɐ-sɨ,ẽkõˈtɾɐmu-nuʃ,ẽˈkõtɾɐ̃w-sɨ,,,,,,,,,,,,ar reflexos
-pt-conjugation,presente,ensinar,indicativo,presente,ensino,ensinas,ensina,ensinamos,ensinam,ẽˈsinu,ẽˈsinɐʃ,ẽˈsinɐ,ẽsiˈnɐmuʃ,ẽˈsinɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,entrar,indicativo,presente,entro,entras,entra,entramos,entram,ˈẽtɾu,ˈẽtɾɐʃ,ˈẽtɾɐ,ẽˈtɾɐmuʃ,ˈẽtɾɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,esquentar,indicativo,presente,esquento,esquentas,esquenta,esquentamos,esquentam,ʃˈkẽtu,ʃˈkẽtɐʃ,ʃˈkẽtɐ,ʃkẽˈtɐmuʃ,ʃˈkẽtɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,fugir,indicativo,presente,fujo,fuges,foge,fugimos,fugem,ˈfuʒu,ˈfuʒɨʃ,ˈfoʒɨ,fuˈʒimuʃ,ˈfuʒɐ̃j,,,,,,,,,,,,ir  
-pt-conjugation,presente,ganhar,indicativo,presente,ganho,ganhas,ganha,ganhamos,ganham,ˈgɐɲu,ˈgɐɲɐʃ,ˈgɐɲɐ,gɐˈɲɐmuʃ,ˈgɐɲɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,girar,indicativo,presente,giro,giras,gira,giramos,giram,ˈʒiɾu,ˈʒiɾɐʃ,ˈʒiɾɐ,ʒiˈɾɐmuʃ,ˈʒiɾɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,imprimir,indicativo,presente,imprimo,imprimes,imprime,imprimimos,imprimem,ĩˈpɾimu,ĩˈpɾimɨʃ,ĩˈpɾimɨ,ĩpɾɨˈmimuʃ,ĩˈpɾimɐ̃j,,,,,,,,,,,,ir  
-pt-conjugation,presente,investigar,indicativo,presente,investigo,investigas,investiga,investigamos,investigam,ĩvɨʃˈtigu,ĩvɨʃˈtigɐʃ,ĩvɨʃˈtigɐ,ĩvɨʃtiˈgɐmuʃ,ĩvɨʃˈtigɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,ir,indicativo,presente,vou,vais,vai,vamos,vão,ˈvo,ˈvajʃ,ˈvaj,ˈvɐmuʃ,ˈvɐ̃w,,,,,,,,,,,,irregular
-pt-conjugation,presente,lanchar,indicativo,presente,lanço,lanças,lança,lançamos,lançam,ˈɫɐ̃su,ˈɫɐ̃sɐʃ,ˈɫɐ̃sɐ,ɫɐ̃ˈsɐmuʃ,ˈɫɐ̃sɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,lavar-se,indicativo,presente,lavo-me,lavas-te,lava-se,lavamo-nos,lavam-se,ˈɫavu-mɨ,ˈɫavɐʃ-tɨ,ˈɫavɐ-sɨ,ɫɐˈvɐmu-nuʃ,ˈɫavɐ̃w-sɨ,,,,,,,,,,,,ar reflexos
-pt-conjugation,presente,levantar,indicativo,presente,levanto,levantas,levanta,levantamos,levantam,ɫɨˈvɐ̃tu,ɫɨˈvɐ̃tɐʃ,ɫɨˈvɐ̃tɐ,ɫɨvɐ̃ˈtɐmuʃ,ɫɨˈvɐ̃tɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,machucar,indicativo,presente,machuco,machucas,machuca,machucamos,machucam,mɐˈʃuku,mɐˈʃukɐʃ,mɐˈʃukɐ,mɐʃuˈkɐmuʃ,mɐˈʃukɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,machucar-se,indicativo,presente,machuco-me,machucas-te,machuca-se,machucamo-nos,machucam-se,mɐˈʃuku-mɨ,mɐˈʃukɐʃ-tɨ,mɐˈʃukɐ-sɨ,mɐʃuˈkɐmu-nuʃ,mɐˈʃukɐ̃w-sɨ,,,,,,,,,,,,ar reflexos
-pt-conjugation,presente,ocupar,indicativo,presente,ocupo,ocupas,ocupa,ocupamos,ocupam,oˈkupu,oˈkupɐʃ,oˈkupɐ,okuˈpɐmuʃ,oˈkupɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,ouvir,indicativo,presente,ouço / oiço,ouves,ouve,ouvimos,ouvem,"ˈosu,ˈojsu",ˈovɨʃ,ˈovɨ,oˈvimuʃ,ˈovɐ̃j,,,,,,,,,,,,irregular
-pt-conjugation,presente,pedir,indicativo,presente,peço,pedes,pede,pedimos,pedem,ˈpesu,ˈpedɨʃ,ˈpedɨ,pɨˈdimuʃ,ˈpedɐ̃j,,,,,,,,,,,,irregular
-pt-conjugation,presente,pintar,indicativo,presente,pinto,pintas,pinta,pintamos,pintam,ˈpĩtu,ˈpĩtɐʃ,ˈpĩtɐ,pĩˈtɐmuʃ,ˈpĩtɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,pôr,indicativo,presente,ponho,pões,põe,pomos,põem,ˈpoɲu,ˈpõjʃ,ˈpõj,ˈpomuʃ,ˈpõɐ̃j,,,,,,,,,,,,irregular
-pt-conjugation,presente,poupar,indicativo,presente,poupo,poupas,poupa,poupamos,poupam,ˈpopu,ˈpopɐʃ,ˈpopɐ,poˈpɐmuʃ,ˈpopɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,poupar-se,indicativo,presente,poupo-me,poupas-te,poupa-se,poupamo-nos,poupam-se,ˈpopu-mɨ,ˈpopɐʃ-tɨ,ˈpopɐ-sɨ,poˈpɐmu-nuʃ,ˈpopɐ̃w-sɨ,,,,,,,,,,,,ar reflexos
-pt-conjugation,presente,resumir,indicativo,presente,resumo,resumes,resume,resumimos,resumem,ʁɨˈzumu,ʁɨˈzumɨʃ,ʁɨˈzumɨ,ʁɨzuˈmimuʃ,ʁɨˈzumɐ̃j,,,,,,,,,,,,ir  
-pt-conjugation,presente,rir,indicativo,presente,rio,ris,ri,rimos,riem,ˈʁiu,ˈʁiʃ,ˈʁi,ˈʁimuʃ,ˈʁiɐ̃j,,,,,,,,,,,,irregular
-pt-conjugation,presente,sair,indicativo,presente,saio,sais,sai,saímos,saem,ˈsaju,ˈsajʃ,ˈsaj,sɐˈimuʃ,ˈsaɐ̃j,,,,,,,,,,,,irregular
-pt-conjugation,presente,sentar-se,indicativo,presente,sento-me,sentas-te,senta-se,sentamo-nos,sentam-se,ˈsẽtu-mɨ,ˈsẽtɐʃ-tɨ,ˈsẽtɐ-sɨ,sẽˈtɐmu-nuʃ,ˈsẽtɐ̃w-sɨ,,,,,,,,,,,,ar reflexos
-pt-conjugation,presente,subir,indicativo,presente,subo,sobes,sobe,subimos,sobem,ˈsubu,ˈsobɨʃ,ˈsobɨ,suˈbimuʃ,ˈsobɐ̃j,,,,,,,,,,,,ir
-pt-conjugation,presente,sumir,indicativo,presente,sumo,sumes,some,sumimos,sumem,ˈsumu,ˈsumɨʃ,ˈsomɨ,suˈmimuʃ,ˈsumɐ̃j,,,,,,,,,,,,ir
-pt-conjugation,presente,tirar,indicativo,presente,tiro,tiras,tira,tiramos,tiram,ˈtiɾu,ˈtiɾɐʃ,ˈtiɾɐ,tiˈɾɐmuʃ,ˈtiɾɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,tocar,indicativo,presente,toco,tocas,toca,tocamos,tocam,ˈtoku,ˈtokɐʃ,ˈtokɐ,tuˈkɐmuʃ,ˈtokɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,tratar,indicativo,presente,trato,tratas,trata,tratamos,tratam,ˈtɾatu,ˈtɾatɐʃ,ˈtɾatɐ,tɾɐˈtɐmuʃ,ˈtɾatɐ̃w,,,,,,,,,,,,ar
-pt-conjugation,presente,vir,indicativo,presente,venho,vens,vem,vimos,vêm,ˈvɐɲu,vɐ̃jʃ,vɐ̃j,ˈvimuʃ,ˈvɐ̃jɐ̃j,,,,,,,,,,,,irregular
-pt-conjugation,presente,dispor,indicativo,presente,disponho,dispões,dispõe,dispomos,dispõem,diˈʃpɔɲu,diˈʃpõj̃ʃ,diˈʃpõj̃,diˈʃpɔmuʃ,diˈʃpõj̃m,,,,,,,,,,,,por derivados or
-pt-conjugation,presente,reter,indicativo,presente,retenho,reténs,retém,retenhamos,retêm,ʁɨˈtɐɲu,ʁɨˈtẽʃ,ʁɨˈtɐ̃j̃,ʁɨtɨˈɲɐmuʃ,ʁɨˈtẽ,,,,,,,,,,,,ter derivados er  
-pt-conjugation,presente,deter,indicativo,presente,detenho,deténs,detém,detemos,detêm,dɨˈtɐɲu,dɨˈtẽʃ,dɨˈtɐ̃j̃,dɨˈtemuʃ,dɨˈtẽ,,,,,,,,,,,,ter derivados er  
-pt-conjugation,presente,refazer,indicativo,presente,refaço,refazes,refaz,refazemos,refazem,ʁɨˈfasu,ʁɨˈfazɨʃ,ʁɨˈfaʃ,ʁɨfɐˈzemuʃ,ʁɨˈfazɐ̃j̃,,,,,,,,,,,,derivados 
-pt-conjugation,presente,desfazer,indicativo,presente,desfaço,desfazes,desfaz,desfazemos,desfazem,dɨˈʃfasu,dɨˈʃfazɨʃ,dɨˈʃfaʃ,dɨʃfɐˈzemuʃ,dɨˈʃfazɐ̃j̃,,,,,,,,,,,,derivados 
-pt-conjugation,presente,satisfazer,indicativo,presente,satisfaço,satisfazes,satisfaz,satisfazemos,satisfazem,sɐtiˈʃfasu,sɐtiˈʃfazɨʃ,sɐtiˈʃfaʃ,sɐtiʃfɐˈzemuʃ,sɐtiˈʃfazɐ̃j̃,,,,,,,,,,,,derivados 
-pt-conjugation,presente,impor,indicativo,presente,imponho,impões,impõe,impomos,impõem,ĩˈpɔɲu,ĩˈpõj̃ʃ,ĩˈpõj̃,ĩˈpɔmuʃ,ĩˈpõj̃m,,,,,,,,,,,,derivados 
-pt-conjugation,presente,compor,indicativo,presente,componho,compões,compõe,compomos,compõem,kõˈpɔɲu,kõˈpõj̃ʃ,kõˈpõj̃,kõˈpɔmuʃ,kõˈpõj̃m,,,,,,,,,,,,derivados 
-pt-conjugation,presente,supor,indicativo,presente,suponho,supões,supõe,supomos,supõem,suˈpɔɲu,suˈpõj̃ʃ,suˈpõj̃,suˈpɔmuʃ,suˈpõj̃m,,,,,,,,,,,,derivados 
-pt-conjugation,presente,propor,indicativo,presente,proponho,propões,propõe,propomos,propõem,pɾuˈpɔɲu,pɾuˈpõj̃ʃ,pɾuˈpõj̃,pɾuˈpɔmuʃ,pɾuˈpõj̃m,,,,,,,,,,,,derivados 
-pt-conjugation,presente,repor,indicativo,presente,reponho,repões,repõe,repomos,repõem,ʁɨˈpɔɲu,ʁɨˈpõj̃ʃ,ʁɨˈpõj̃,ʁɨˈpɔmuʃ,ʁɨˈpõj̃m,,,,,,,,,,,,derivados 
-pt-conjugation,presente,obter,indicativo,presente,obtenho,obténs,obtém,obtemos,obtêm,oˈbtɐɲu,oˈbtẽʃ,oˈbtɐ̃j̃,oˈbtemuʃ,oˈbtẽ,,,,,,,,,,,,ter derivados er  
-pt-conjugation,presente,conter,indicativo,presente,contenho,conténs,contém,contemos,contêm,kõˈtɐɲu,kõˈtẽʃ,kõˈtɐ̃j̃,kõˈtɛmuʃ,kõˈtẽ,,,,,,,,,,,,ter derivados er  
-pt-conjugation,presente,rever,indicativo,presente,revejo,revês,revê,revemos,reveem,ʁɨˈvɐʒu,ʁɨˈveʃ,ʁɨˈve,ʁɨˈvemuʃ,ʁɨˈvɛɐ̃j̃,,,,,,,,,,,,ver derivados er  
-pt-conjugation,presente,prever,indicativo,presente,prevejo,prevês,prevê,prevemos,preveem,pɾɨˈvɐʒu,pɾɨˈveʃ,pɾɨˈve,pɾɨˈvemuʃ,pɾɨˈvɛɐ̃j̃,,,,,,,,,,,,ver derivados er  
-pt-conjugation,presente,entrever,indicativo,presente,entrevejo,entrevês,entrevê,entrevemos,entreveem,ẽtɾɨˈvɐʒu,ẽtɾɨˈveʃ,ẽtɾɨˈve,ẽtɾɨˈvemuʃ,ẽtɾɨˈvɛɐ̃j̃,,,,,,,,,,,,ver derivados er  
-pt-conjugation,presente,transver,indicativo,presente,transvejo,transvês,transvê,transvemos,transveem,tɾɐ̃sˈvɐʒu,tɾɐ̃sˈveʃ,tɾɐ̃sˈve,tɾɐ̃sˈvemuʃ,tɾɐ̃sˈvɛɐ̃j̃,,,,,,,,,,,,ver derivados er  
-pt-conjugation,presente,intervir,indicativo,presente,intervenho,intervéns,intervém,intervimos,intervêm,ĩtɨɾˈvɐɲu,ĩtɨɾˈvẽʃ,ĩtɨɾˈvɐ̃j̃,ĩtɨɾˈvimuʃ,ĩtɨɾˈvẽ,,,,,,,,,,,,vir derivados ir
-pt-conjugation,presente,provir,indicativo,presente,provenho,provéns,provém,provimos,provêm,pɾuˈvɐɲu,pɾuˈvẽʃ,pɾuˈvɐ̃j̃,pɾuˈvimuʃ,pɾuˈvẽ,,,,,,,,,,,,arreglar vir derivados ir  
-pt-conjugation,presente,convir,indicativo,presente,convenho,convêns,convê,convimos,convêm,kõˈvɐɲu,kõˈvẽʃ,kõˈve,kõˈvimuʃ,kõˈvẽ,,,,,,,,,,,,vir derivados ir
-pt-conjugation,presente,ultrapassar,indicativo,presente,ultrapasso,ultrapassas,ultrapassa,ultrapassamos,ultrapassam,uɫtɾɐˈpasu,uɫtɾɐˈpasɐʃ,uɫtɾɐˈpasɐ,uɫtɾɐpɐˈsɐmuʃ,uɫtɾɐˈpasɐ̃w̃,,,,,,,,,,,,ar
-pt-conjugation,presente,revir,indicativo,presente,revejo,revês,revê,revemos,reveem,ʁɨˈvɐʒu,ʁɨˈveʃ,ʁɨˈve,ʁɨˈvemuʃ,ʁɨˈvɛɐ̃j̃,,,,,,,,,,,,vir derivados ir
-pt-conjugation,presente,sobrepor,indicativo,presente,sobreponho,sobrepões,sobrepõe,sobrepomos,sobrepõem,subɾɨˈpɔɲu,subɾɨˈpõj̃ʃ,subɾɨˈpõj̃,subɾɨˈpɔmuʃ,subɾɨˈpõj̃m,,,,,,,,,,,,por derivados or
-pt-conjugation,presente,converter,indicativo,presente,converto,convertes,converte,convertemos,convertem,kõˈvɛɾtu,kõˈvɛɾtɨʃ,kõˈvɛɾtɨ,kõvɨɾˈtemuʃ,kõˈvɛɾtɐ̃j̃,,,,,,,,,,,,derivados er  
-pt-conjugation,presente,sentir-se,indicativo,presente,sinto-me,sentes-te,sente-se,sentimo-nos,sentem-se,sĩˈtɔmɨ,sẽˈtɛstɨ,sẽˈtɛsɨ,sẽtiˈmɔnuʃ,sẽˈtẽsɨ,não me sinto,não te sentes,não se sente,não nos sentimos,não se sentem,ˈnɐ̃w̃ ˈmɛ ˈsĩtu,ˈnɐ̃w̃ ˈtɛ ˈsẽtɨʃ,ˈnɐ̃w̃ sɨ ˈsẽtɨ,ˈnɐ̃w̃ ˈnɔʃ sẽˈtimuʃ,ˈnɐ̃w̃ sɨ ˈsẽtɐ̃j̃,,ir reflexos
-pt-conjugation,presente,doer,indicativo,presente,,,dói,,doem,,,ˈdɔj,,ˈdɔɐ̃j̃,,,,,,,,,,,,impessoais er health
-pt-conjugation,presente,procurar,indicativo,presente,procuro,procuras,procura,procuramos,procuram,pɾuˈkuɾu,pɾuˈkuɾɐʃ,pɾuˈkuɾɐ,pɾukuˈɾɐmuʃ,pɾuˈkuɾɐ̃w̃,,,,,,,,,,,,ar
-pt-conjugation,presente,relaxar,indicativo,presente,relaxo,relaxas,relaxa,relaxamos,relaxam,ʁɨˈlaʃu,ʁɨˈlaʃɐʃ,ʁɨˈlaʃɐ,ʁɨlɐˈʃɐmuʃ,ʁɨˈlaʃɐ̃w̃,,,,,,,,,,,,ar
-pt-conjugation,presente,sonhar,indicativo,presente,sonho,sonhas,sonha,sonhamos,sonham,ˈsɔɲu,ˈsɔɲɐʃ,ˈsɔɲɐ,suˈɲɐmuʃ,ˈsɔɲɐ̃w̃,,,,,,,,,,,,ar
-pt-conjugation,presente,adormecer,indicativo,presente,adormeço,adormeces,adormece,adormecemos,adormecem,ɐduɾˈmɛsu,ɐduɾˈmɛsɨʃ,ɐduɾˈmɛsɨ,ɐduɾmɨˈsemuʃ,ɐduɾˈmɛsɐ̃j̃,,,,,,,,,,,,er  
-pt-conjugation,presente,utilizar,indicativo,presente,utilizo,utilizas,utiliza,utilizamos,utilizam,utiˈlizu,utiˈlizɐʃ,utiˈlizɐ,utiliˈzɐmuʃ,utiˈlizɐ̃w̃,,,,,,,,,,,,ar
-pt-conjugation,presente,concordar,indicativo,presente,concordo,concordas,concorda,concordamos,concordam,kõˈkɔɾdu,kõˈkɔɾdɐʃ,kõˈkɔɾdɐ,kõkuɾˈdɐmuʃ,kõˈkɔɾdɐ̃w̃,,,,,,,,,,,,ar
-pt-conjugation,presente,discordar,indicativo,presente,discordo,discordas,discorda,discordamos,discordam,diˈʃkɔɾdu,diˈʃkɔɾdɐʃ,diˈʃkɔɾdɐ,diʃkuɾˈdɐmuʃ,diˈʃkɔɾdɐ̃w̃,,,,,,,,,,,,ar
-pt-conjugation,presente,pesquisar,indicativo,presente,pesquiso,pesquisas,pesquisa,pesquisamos,pesquisam,pɨsˈkizu,pɨsˈkizɐʃ,pɨsˈkizɐ,pɨskiˈzɐmuʃ,pɨsˈkizɐ̃w̃,,,,,,,,,,,,ar
-pt-conjugation,presente,para se casar,indicativo,presente,para me casar,para te casar,para se casar,para nos casarmos,para se casarem,pɐɾɐ ˈmɛ kɐˈzaɾ,pɐɾɐ ˈtɛ kɐˈzaɾ,pɐɾɐ sɨ kɐˈzaɾ,pɐɾɐ ˈnɔʃ kɐˈzaɾmuʃ,pɐɾɐ sɨ kɐˈzaɾɐ̃j̃,,,,,,,,,,,,ar
-pt-conjugation,presente,baralhar-se,indicativo,presente,baralho-me,baralhas-te,baralha-se,baralhamo-nos,baralham-se,bɐɾɐˈʎɔmɨ,bɐɾɐˈʎastɨ,bɐɾɐˈʎasɨ,bɐɾɐʎɐˈmɔnuʃ,bɐɾɐˈʎɐ̃sɨ,não me baralho,não te baralhas,não se baralha,não nos baralhamos,não se baralham,ˈnɐ̃w̃ ˈmɛ bɐˈɾaʎu,ˈnɐ̃w̃ ˈtɛ bɐˈɾaʎɐʃ,ˈnɐ̃w̃ sɨ bɐˈɾaʎɐ,ˈnɐ̃w̃ ˈnɔʒ bɐɾɐˈʎɐmuʃ,ˈnɐ̃w̃ sɨ bɐˈɾaʎɐ̃w̃,,ar reflexos
-pt-conjugation,presente,tropeçar,indicativo,presente,tropeço,tropeças,tropeça,tropeçamos,tropeçam,tɾuˈpɛsu,tɾuˈpɛsɐʃ,tɾuˈpɛsɐ,tɾupɨˈsɐmuʃ,tɾuˈpɛsɐ̃w̃,,,,,,,,,,,,ar
-pt-conjugation,presente,sobreviver,indicativo,presente,sobrevivo,sobrevives,sobrevive,sobrevivemos,sobrevivem,subɾɨˈvivu,subɾɨˈvivɨʃ,subɾɨˈvivɨ,subɾɨviˈvemuʃ,subɾɨˈvivɐ̃j̃,,,,,,,,,,,,er
-pt-conjugation,presente,abandonar,indicativo,presente,abandono,abandonas,abandona,abandonamos,abandonam,ɐbɐ̃ˈdɔnu,ɐbɐ̃ˈdɔnɐʃ,ɐbɐ̃ˈdonɐ,ɐbɐ̃duˈnɐmuʃ,ɐbɐ̃ˈdɔnɐ̃w̃,,,,,,,,,,,,ar
-pt-conjugation,imperfeito,compor,indicativo,imperfeito,compunha,compunhas,compunha,compúnhamos,compunham,kõˈpuɲɐ,kõˈpuɲɐʃ,kõˈpuɲɐ,kõˈpuɲɐmuʃ,kõˈpuɲɐ̃w̃,,,,,,,,,,,,por derivados irregular
-pt-conjugation,imperfeito,conter,indicativo,imperfeito,continha,continhas,continha,contínhamos,continha,kõˈtiɲɐ,kõˈtiɲɐʃ,kõˈtiɲɐ,kõˈtiɲɐmuʃ,kõˈtiɲɐ,,,,,,,,,,,,ter derivados irregular
-pt-conjugation,imperfeito,converter,indicativo,imperfeito,convertia,convertias,convertia,convertíamos,convertiam,kõvɨɾˈtiɐ,kõvɨɾˈtiɐʃ,kõvɨɾˈtiɐ,kõvɨɾˈtiɐmuʃ,kõvɨɾˈtiɐ̃w̃,,,,,,,,,,,,ter derivados  
-pt-conjugation,imperfeito,convir,indicativo,imperfeito,convinha,convinhas,convinha,convínhamos,convinham,kõˈviɲɐ,kõˈviɲɐʃ,kõˈviɲɐ,kõˈviɲɐmuʃ,kõˈviɲɐ̃w̃,,,,,,,,,,,,vir derivados irregular
-pt-conjugation,imperfeito,desfazer,indicativo,imperfeito,desfazia,desfazias,desfazia,desfazíamos,desfaziam,dɨʃfɐˈziɐ,dɨʃfɐˈziɐʃ,dɨʃfɐˈziɐ,dɨʃfɐˈziɐmuʃ,dɨʃfɐˈziɐ̃w̃,,,,,,,,,,,,fazer derivados  
-pt-conjugation,imperfeito,deter,indicativo,imperfeito,detinha,detinhas,detinha,detínhamos,detinham,dɨˈtiɲɐ,dɨˈtiɲɐʃ,dɨˈtiɲɐ,dɨˈtiɲɐmuʃ,dɨˈtiɲɐ̃w̃,,,,,,,,,,,,ter derivados irregular
-pt-conjugation,imperfeito,dispor,indicativo,imperfeito,dispunha,dispunhas,dispunha,dispúnhamos,dispunham,diˈʃpuɲɐ,diˈʃpuɲɐʃ,diˈʃpuɲɐ,diˈʃpuɲɐmuʃ,diˈʃpuɲɐ̃w̃,,,,,,,,,,,,por derivados irregular
-pt-conjugation,imperfeito,entrever,indicativo,imperfeito,entrevia,entrevias,entrevia,entrevíamos,entreviam,ẽtɾɨˈviɐ,ẽtɾɨˈviɐʃ,ẽtɾɨˈviɐ,ẽtɾɨˈviɐmuʃ,ẽtɾɨˈviɐ̃w̃,,,,,,,,,,,,ver derivados  
-pt-conjugation,imperfeito,impor,indicativo,imperfeito,impunha,impunhas,impunha,impúnhamos,impunham,ĩˈpuɲɐ,ĩˈpuɲɐʃ,ĩˈpuɲɐ,ĩˈpuɲɐmuʃ,ĩˈpuɲɐ̃w̃,,,,,,,,,,,,por derivados irregular
-pt-conjugation,imperfeito,intervir,indicativo,imperfeito,intervinha,intervinhas,intervinha,intervínhamos,intervinham,ĩtɨɾˈviɲɐ,ĩtɨɾˈviɲɐʃ,ĩtɨɾˈviɲɐ,ĩtɨɾˈviɲɐmuʃ,ĩtɨɾˈviɲɐ̃w̃,,,,,,,,,,,,vir derivados irregular
-pt-conjugation,imperfeito,manter,indicativo,imperfeito,mantinha,mantinhas,mantinha,mantínhamos,mantinham,mɐ̃ˈtiɲɐ,mɐ̃ˈtiɲɐʃ,mɐ̃ˈtiɲɐ,mɐ̃ˈtiɲɐmuʃ,mɐ̃ˈtiɲɐ̃w̃,,,,,,,,,,,,ter derivados irregular
-pt-conjugation,imperfeito,obter,indicativo,imperfeito,obtinha,obtinhas,obtinha,obtínhamos,obtinham,oˈbtiɲɐ,oˈbtiɲɐʃ,oˈbtiɲɐ,oˈbtiɲɐmuʃ,oˈbtiɲɐ̃w̃,,,,,,,,,,,,ter derivados irregular
-pt-conjugation,imperfeito,prever,indicativo,imperfeito,previa,previas,previa,prevíamos,previam,pɾɨˈviɐ,pɾɨˈviɐʃ,pɾɨˈviɐ,pɾɨˈviɐmuʃ,pɾɨˈviɐ̃w̃,,,,,,,,,,,,ver derivados  
-pt-conjugation,imperfeito,propor,indicativo,imperfeito,propunha,propunhas,propunha,propúnhamos,propunham,pɾuˈpuɲɐ,pɾuˈpuɲɐʃ,pɾuˈpuɲɐ,pɾuˈpuɲɐmuʃ,pɾuˈpuɲɐ̃w̃,,,,,,,,,,,,por derivados irregular ir-or
-pt-conjugation,imperfeito,provir,indicativo,imperfeito,provinha,provinhas,provinha,provínhamos,provinham,pɾuˈviɲɐ,pɾuˈviɲɐʃ,pɾuˈviɲɐ,pɾuˈviɲɐmuʃ,pɾuˈviɲɐ̃w̃,,,,,,,,,,,,vir derivados irregular
-pt-conjugation,imperfeito,refazer,indicativo,imperfeito,refazia,refazias,refazia,refazíamos,refaziam,ʁɨfɐˈziɐ,ʁɨfɐˈziɐʃ,ʁɨfɐˈziɐ,ʁɨfɐˈziɐmuʃ,ʁɨfɐˈziɐ̃w̃,,,,,,,,,,,,fazer derivados er
-pt-conjugation,imperfeito,repor,indicativo,imperfeito,repunha,repunhas,repunha,repúnhamos,repunham,ʁɨˈpuɲɐ,ʁɨˈpuɲɐʃ,ʁɨˈpuɲɐ,ʁɨˈpuɲɐmuʃ,ʁɨˈpuɲɐ̃w̃,,,,,,,,,,,,por derivados irregular
-pt-conjugation,imperfeito,reter,indicativo,imperfeito,retinha,retinhas,retinha,retínhamos,retinham,ʁɨˈtiɲɐ,ʁɨˈtiɲɐʃ,ʁɨˈtiɲɐ,ʁɨˈtiɲɐmuʃ,ʁɨˈtiɲɐ̃w̃,,,,,,,,,,,,ter derivados irregular
-pt-conjugation,imperfeito,rever,indicativo,imperfeito,revia,revias,revia,revíamos,reviam,ʁɨˈviɐ,ʁɨˈviɐʃ,ʁɨˈviɐ,ʁɨˈviɐmuʃ,ʁɨˈviɐ̃w̃,,,,,,,,,,,,ver derivados er
-pt-conjugation,imperfeito,revir,indicativo,imperfeito,revinha,revínhas,revinha,revínhamos,revnham,ʁɨˈviɲɐ,ʁɨˈviɲɐʃ,ʁɨˈviɲɐ,ʁɨˈviɲɐmuʃ,ˈʁɛvɲɐ̃w̃,,,,,,,,,,,,vir derivados irregular
-pt-conjugation,imperfeito,satisfazer,indicativo,imperfeito,satisfazia,satisfazias,satisfazia,satisfazíamos,satisfaziam,sɐtiʃfɐˈziɐ,sɐtiʃfɐˈziɐʃ,sɐtiʃfɐˈziɐ,sɐtiʃfɐˈziɐmuʃ,sɐtiʃfɐˈziɐ̃w̃,,,,,,,,,,,,fazer derivados er
-pt-conjugation,imperfeito,sobrepor,indicativo,imperfeito,sobrepunha,sobrepunhas,sobrepunha,sobrepúnhamos,sobrepunham,subɾɨˈpuɲɐ,subɾɨˈpuɲɐʃ,subɾɨˈpuɲɐ,subɾɨˈpuɲɐmuʃ,subɾɨˈpuɲɐ̃w̃,,,,,,,,,,,,por derivados irregular
-pt-conjugation,imperfeito,supor,indicativo,imperfeito,supunha,supunhas,supunha,supúnhamos,supunham,suˈpuɲɐ,suˈpuɲɐʃ,suˈpuɲɐ,suˈpuɲɐmuʃ,suˈpuɲɐ̃w̃,,,,,,,,,,,,por derivados irregular
-pt-conjugation,imperfeito,transver,indicativo,imperfeito,transvia,transvias,transvia,transvíamos,transviam,tɾɐ̃sˈviɐ,tɾɐ̃sˈviɐʃ,tɾɐ̃sˈviɐ,tɾɐ̃sˈviɐmuʃ,tɾɐ̃sˈviɐ̃w̃,,,,,,,,,,,,ver derivados  
-pt-conjugation,imperfeito,ultrapassar,indicativo,imperfeito,ultrapassava,ultrapassavas,ultrapassava,ultrapassávamos,ultrapassavam,uɫtɾɐpɐˈsavɐ,uɫtɾɐpɐˈsavɐʃ,uɫtɾɐpɐˈsavɐ,uɫtɾɐpɐˈsavɐmuʃ,uɫtɾɐpɐˈsavɐ̃w̃,,,,,,,,,,,,passar derivados
-pt-conjugation,imperfeito,ser,indicativo,imperfeito,era,eras,era,éramos,eram,ˈɛɾɐ,ˈɛɾɐʃ,ˈɛɾɐ,ˈɛɾɐmuʃ,ˈɛɾɐ̃w̃,,,,,,,,,,,,irregular er
-pt-conjugation,imperfeito,ter,indicativo,imperfeito,tinha,tinhas,tinha,tínhamos,tinham,ˈtiɲɐ,ˈtiɲɐʃ,ˈtiɲɐ,ˈtiɲɐmuʃ,ˈtiɲɐ̃w̃,,,,,,,,,,,,irregular er
-pt-conjugation,imperfeito,vir,indicativo,imperfeito,vinha,vinhas,vinha,vínhamos,vinham,ˈviɲɐ,ˈviɲɐʃ,ˈviɲɐ,ˈviɲɐmuʃ,ˈviɲɐ̃w̃,,,,,,,,,,,,irregular  
-pt-conjugation,imperfeito,pôr,indicativo,imperfeito,punha,punhas,punha,púnhamos,punham,ˈpuɲɐ,ˈpuɲɐʃ,ˈpuɲɐ,ˈpuɲɐmuʃ,ˈpuɲɐ̃w̃,,,,,,,,,,,,irregular  
-pt-conjugation,imperfeito,ajudar,indicativo,imperfeito,ajudava,ajudavas,ajudava,ajudávamos,ajudavam,ɐʒuˈdavɐ,ɐʒuˈdavɐʃ,ɐʒuˈdavɐ,ɐʒuˈdavɐmuʃ,ɐʒuˈdavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,almoçar,indicativo,imperfeito,almocava,almocavas,almocava,almocávamos,almocavam,aɫmuˈkavɐ,aɫmuˈkavɐʃ,aɫmuˈkavɐ,aɫmuˈkavɐmuʃ,aɫmuˈkavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,andar,indicativo,imperfeito,andava,andavas,andava,andávamos,andavam,ɐ̃ˈdavɐ,ɐ̃ˈdavɐʃ,ɐ̃ˈdavɐ,ɐ̃ˈdavɐmuʃ,ɐ̃ˈdavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,apanhar,indicativo,imperfeito,apanhava,apanhavas,apanhava,apanhávamos,apanhavam,ɐpɐˈɲavɐ,ɐpɐˈɲavɐʃ,ɐpɐˈɲavɐ,ɐpɐˈɲavɐmuʃ,ɐpɐˈɲavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,beijar,indicativo,imperfeito,beijava,beijavas,beijava,beijávamos,beijavam,bɐjˈʒavɐ,bɐjˈʒavɐʃ,bɐjˈʒavɐ,bɐjˈʒavɐmuʃ,bɐjˈʒavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,calar-se,indicativo,imperfeito,calava-me,calavas-te,calava-se,calávamos-nos,calavam-se,kɐlɐˈvamɨ,kɐlɐˈvastɨ,kɐlɐˈvasɨ,kɐˈlavɐmusnuʃ,kɐlɐˈvɐ̃sɨ,,,,,,,,,,,,ar reflexos
-pt-conjugation,imperfeito,cantar,indicativo,imperfeito,cantava,cantavas,cantava,cantávamos,cantavam,kɐ̃ˈtavɐ,kɐ̃ˈtavɐʃ,kɐ̃ˈtavɐ,kɐ̃ˈtavɐmuʃ,kɐ̃ˈtavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,chamar,indicativo,imperfeito,chamava,chamavas,chamava,chamávamos,chamavam,ʃɐˈmavɐ,ʃɐˈmavɐʃ,ʃɐˈmavɐ,ʃɐˈmavɐmuʃ,ʃɐˈmavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,colocar,indicativo,imperfeito,colocava,colocavas,colocava,colocávamos,colocavam,kuluˈkavɐ,kuluˈkavɐʃ,kuluˈkavɐ,kuluˈkavɐmuʃ,kuluˈkavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,combinar,indicativo,imperfeito,combinava,combinavas,combinava,combinávamos,combinavam,kõbiˈnavɐ,kõbiˈnavɐʃ,kõbiˈnavɐ,kõbiˈnavɐmuʃ,kõbiˈnavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,começar,indicativo,imperfeito,começava,começavas,começava,começávamos,começavam,kumɨˈsavɐ,kumɨˈsavɐʃ,kumɨˈsavɐ,kumɨˈsavɐmuʃ,kumɨˈsavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,cortar,indicativo,imperfeito,cortava,cortavas,cortava,cortávamos,cortavam,kuɾˈtavɐ,kuɾˈtavɐʃ,kuɾˈtavɐ,kuɾˈtavɐmuʃ,kuɾˈtavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,costumar,indicativo,imperfeito,costumava,costumavas,costumava,costumávamos,costumavam,kuʃtuˈmavɐ,kuʃtuˈmavɐʃ,kuʃtuˈmavɐ,kuʃtuˈmavɐmuʃ,kuʃtuˈmavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,cruzar,indicativo,imperfeito,cruzava,cruzavas,cruzava,cruzávamos,cruzavam,kɾuˈzavɐ,kɾuˈzavɐʃ,kɾuˈzavɐ,kɾuˈzavɐmuʃ,kɾuˈzavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,dançar,indicativo,imperfeito,dançava,dançavas,dançava,dançávamos,dançavam,dɐ̃ˈsavɐ,dɐ̃ˈsavɐʃ,dɐ̃ˈsavɐ,dɐ̃ˈsavɐmuʃ,dɐ̃ˈsavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,dar,indicativo,imperfeito,dava,davas,dava,dávamos,davam,ˈdavɐ,ˈdavɐʃ,ˈdavɐ,ˈdavɐmuʃ,ˈdavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,deitar-se,indicativo,imperfeito,deitava-me,deitavas-te,deitava-se,deitávamos-nos,deitavam-se,dɐjtɐˈvamɨ,dɐjtɐˈvastɨ,dɐjtɐˈvasɨ,dɐjˈtavɐmusnuʃ,dɐjtɐˈvɐ̃sɨ,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,deixar,indicativo,imperfeito,deixava,deixavas,deixava,deixávamos,deixavam,dɐjˈʃavɐ,dɐjˈʃavɐʃ,dɐjˈʃavɐ,dɐjˈʃavɐmuʃ,dɐjˈʃavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,encontrar,indicativo,imperfeito,encontrava,encontravas,encontrava,encontrávamos,encontravam,ẽkõˈtɾavɐ,ẽkõˈtɾavɐʃ,ẽkõˈtɾavɐ,ẽkõˈtɾavɐmuʃ,ẽkõˈtɾavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,ensinar,indicativo,imperfeito,ensinava,ensinavas,ensinava,ensinávamos,ensinavam,ẽsiˈnavɐ,ẽsiˈnavɐʃ,ẽsiˈnavɐ,ẽsiˈnavɐmuʃ,ẽsiˈnavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,entrar,indicativo,imperfeito,entrava,entravas,entrava,entrávamos,entravam,ẽˈtɾavɐ,ẽˈtɾavɐʃ,ẽˈtɾavɐ,ẽˈtɾavɐmuʃ,ẽˈtɾavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,esperar,indicativo,imperfeito,esperava,esperavas,esperava,esperávamos,esperavam,ʃpɨˈɾavɐ,ʃpɨˈɾavɐʃ,ʃpɨˈɾavɐ,ʃpɨˈɾavɐmuʃ,ʃpɨˈɾavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,estar,indicativo,imperfeito,estava,estavas,estava,estávamos,estavam,ˈʃtavɐ,ˈʃtavɐʃ,ˈʃtavɐ,ˈʃtavɐmuʃ,ˈʃtavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,experimentar,indicativo,imperfeito,experimentava,experimentavas,experimentava,experimentávamos,experimentavam,iʃpɨɾimẽˈtavɐ,iʃpɨɾimẽˈtavɐʃ,iʃpɨɾimẽˈtavɐ,iʃpɨɾimẽˈtavɐmuʃ,iʃpɨɾimẽˈtavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,falar,indicativo,imperfeito,falava,falavas,falava,falávamos,falavam,fɐˈlavɐ,fɐˈlavɐʃ,fɐˈlavɐ,fɐˈlavɐmuʃ,fɐˈlavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,fechar,indicativo,imperfeito,fechava,fechavas,fechava,fechávamos,fechavam,fɨˈʃavɐ,fɨˈʃavɐʃ,fɨˈʃavɐ,fɨˈʃavɐmuʃ,fɨˈʃavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,ficar,indicativo,imperfeito,ficava,ficavas,ficava,ficávamos,ficavam,fiˈkavɐ,fiˈkavɐʃ,fiˈkavɐ,fiˈkavɐmuʃ,fiˈkavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,ganhar,indicativo,imperfeito,ganhava,ganhavas,ganhava,ganhávamos,ganhavam,ɡɐˈɲavɐ,ɡɐˈɲavɐʃ,ɡɐˈɲavɐ,ɡɐˈɲavɐmuʃ,ɡɐˈɲavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,girar,indicativo,imperfeito,girava,giravas,girava,girámos,giravam,ʒiˈɾavɐ,ʒiˈɾavɐʃ,ʒiˈɾavɐ,ʒiˈɾamuʃ,ʒiˈɾavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,inserir,indicativo,imperfeito,inseria,inserias,inseria,inseríamos,inseriam,ĩsɨˈɾiɐ,ĩsɨˈɾiɐʃ,ĩsɨˈɾiɐ,ĩsɨˈɾiɐmuʃ,ĩsɨˈɾiɐ̃w̃,,,,,,,,,,,,ir
-pt-conjugation,imperfeito,jantar,indicativo,imperfeito,jantava,jantavas,jantava,jantávamos,jantavam,ʒɐ̃ˈtavɐ,ʒɐ̃ˈtavɐʃ,ʒɐ̃ˈtavɐ,ʒɐ̃ˈtavɐmuʃ,ʒɐ̃ˈtavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,jogar,indicativo,imperfeito,jogava,jogavas,jogava,jogávamos,jogavam,ʒuˈɡavɐ,ʒuˈɡavɐʃ,ʒuˈɡavɐ,ʒuˈɡavɐmuʃ,ʒuˈɡavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,lavar,indicativo,imperfeito,lavava,lavavas,lavava,lavávamos,lavavam,lɐˈvavɐ,lɐˈvavɐʃ,lɐˈvavɐ,lɐˈvavɐmuʃ,lɐˈvavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,lembrar-se,indicativo,imperfeito,lembrava-me,lembravas-te,lembrava-se,lembrávamos-nos,lembravam-se,lẽbɾɐˈvamɨ,lẽbɾɐˈvastɨ,lẽbɾɐˈvasɨ,lẽˈbɾavɐmusnuʃ,lẽbɾɐˈvɐ̃sɨ,,,,,,,,,,,,ar reflexos
-pt-conjugation,imperfeito,levantar,indicativo,imperfeito,levantava,levantavas,levantava,levantávamos,levantavam,lɨvɐ̃ˈtavɐ,lɨvɐ̃ˈtavɐʃ,lɨvɐ̃ˈtavɐ,lɨvɐ̃ˈtavɐmuʃ,lɨvɐ̃ˈtavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,ligar,indicativo,imperfeito,ligava,ligavas,ligava,ligávamos,ligavam,liˈɡavɐ,liˈɡavɐʃ,liˈɡavɐ,liˈɡavɐmuʃ,liˈɡavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,morar,indicativo,imperfeito,morava,moravas,morava,morávamos,moravam,muˈɾavɐ,muˈɾavɐʃ,muˈɾavɐ,muˈɾavɐmuʃ,muˈɾavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,olhar,indicativo,imperfeito,olhava,olhavas,olhava,olhávamos,olhavam,oˈʎavɐ,oˈʎavɐʃ,oˈʎavɐ,oˈʎavɐmuʃ,oˈʎavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,pagar,indicativo,imperfeito,pagava,pagavas,pagava,pagávamos,pagavam,pɐˈɡavɐ,pɐˈɡavɐʃ,pɐˈɡavɐ,pɐˈɡavɐmuʃ,pɐˈɡavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,passar,indicativo,imperfeito,passava,passavas,passava,passávamos,passavam,pɐˈsavɐ,pɐˈsavɐʃ,pɐˈsavɐ,pɐˈsavɐmuʃ,pɐˈsavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,pegar,indicativo,imperfeito,pegava,pegavas,pegava,pegávamos,pegavam,pɨˈɡavɐ,pɨˈɡavɐʃ,pɨˈɡavɐ,pɨˈɡavɐmuʃ,pɨˈɡavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,perguntar,indicativo,imperfeito,perguntava,perguntavas,perguntava,perguntávamos,perguntavam,pɨɾɡũˈtavɐ,pɨɾɡũˈtavɐʃ,pɨɾɡũˈtavɐ,pɨɾɡũˈtavɐmuʃ,pɨɾɡũˈtavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,pesquisar,indicativo,imperfeito,pesquisava,pesquisavas,pesquisava,pesquisávamos,pesquisavam,pɨskiˈzavɐ,pɨskiˈzavɐʃ,pɨskiˈzavɐ,pɨskiˈzavɐmuʃ,pɨskiˈzavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,praticar,indicativo,imperfeito,praticava,praticavas,praticava,praticávamos,praticavam,pɾɐtiˈkavɐ,pɾɐtiˈkavɐʃ,pɾɐtiˈkavɐ,pɾɐtiˈkavɐmuʃ,pɾɐtiˈkavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,precisar,indicativo,imperfeito,precisava,precisavas,precisava,precisávamos,precisavam,pɾɨsiˈzavɐ,pɾɨsiˈzavɐʃ,pɾɨsiˈzavɐ,pɾɨsiˈzavɐmuʃ,pɾɨsiˈzavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,telefonar,indicativo,imperfeito,telefonava,telefonavas,telefonava,telefonávamos,telefonavam,tɨlɨfuˈnavɐ,tɨlɨfuˈnavɐʃ,tɨlɨfuˈnavɐ,tɨlɨfuˈnavɐmuʃ,tɨlɨfuˈnavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,tentar,indicativo,imperfeito,tentava,tentavas,tentava,tentávamos,tentavam,tẽˈtavɐ,tẽˈtavɐʃ,tẽˈtavɐ,tẽˈtavɐmuʃ,tẽˈtavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,tirar,indicativo,imperfeito,tirava,tiravas,tirava,tirávamos,tiravam,tiˈɾavɐ,tiˈɾavɐʃ,tiˈɾavɐ,tiˈɾavɐmuʃ,tiˈɾavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,tocar,indicativo,imperfeito,tocava,tocavas,tocava,tocávamos,tocavam,tuˈkavɐ,tuˈkavɐʃ,tuˈkavɐ,tuˈkavɐmuʃ,tuˈkavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,tomar,indicativo,imperfeito,tomava,tomavas,tomava,tomávamos,tomavam,tuˈmavɐ,tuˈmavɐʃ,tuˈmavɐ,tuˈmavɐmuʃ,tuˈmavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,trabalhar,indicativo,imperfeito,trabalhava,trabalhavas,trabalhava,trabalhávamos,trabalhavam,tɾɐbɐˈʎavɐ,tɾɐbɐˈʎavɐʃ,tɾɐbɐˈʎavɐ,tɾɐbɐˈʎavɐmuʃ,tɾɐbɐˈʎavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,tratar,indicativo,imperfeito,tratava,tratavas,tratava,tratávamos,tratavam,tɾɐˈtavɐ,tɾɐˈtavɐʃ,tɾɐˈtavɐ,tɾɐˈtavɐmuʃ,tɾɐˈtavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,usar,indicativo,imperfeito,usava,usavas,usava,usávamos,usavam,uˈzavɐ,uˈzavɐʃ,uˈzavɐ,uˈzavɐmuʃ,uˈzavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,viajar,indicativo,imperfeito,viajava,viajavas,viajava,viajávamos,viajavam,viɐˈʒavɐ,viɐˈʒavɐʃ,viɐˈʒavɐ,viɐˈʒavɐmuʃ,viɐˈʒavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,visitar,indicativo,imperfeito,visitava,visitavas,visitava,visitávamos,visitavam,viziˈtavɐ,viziˈtavɐʃ,viziˈtavɐ,viziˈtavɐmuʃ,viziˈtavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,achar,indicativo,imperfeito,achava,achavas,achava,achávamos,achavam,ɐˈʃavɐ,ɐˈʃavɐʃ,ɐˈʃavɐ,ɐˈʃavɐmuʃ,ɐˈʃavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,afagar,indicativo,imperfeito,afagava,afagavas,afagava,afagávamos,afagavam,ɐfɐˈɡavɐ,ɐfɐˈɡavɐʃ,ɐfɐˈɡavɐ,ɐfɐˈɡavɐmuʃ,ɐfɐˈɡavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,afastar-se,indicativo,imperfeito,afastava-me,afastavas-te,afastava-se,afastávamos-nos,afastavam-se,ɐfɐʃtɐˈvamɨ,ɐfɐʃtɐˈvastɨ,ɐfɐʃtɐˈvasɨ,ɐfɐˈʃtavɐmusnuʃ,ɐfɐʃtɐˈvɐ̃sɨ,,,,,,,,,,,,ar reflexos
-pt-conjugation,imperfeito,arranjar,indicativo,imperfeito,arranjava,arranjavas,arranjava,arranjávamos,arranjavam,ɐʁɐ̃ˈʒavɐ,ɐʁɐ̃ˈʒavɐʃ,ɐʁɐ̃ˈʒavɐ,ɐʁɐ̃ˈʒavɐmuʃ,ɐʁɐ̃ˈʒavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,comprar,indicativo,imperfeito,comprava,compravas,comprava,comprávamos,compravam,kõˈpɾavɐ,kõˈpɾavɐʃ,kõˈpɾavɐ,kõˈpɾavɐmuʃ,kõˈpɾavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,empurrar,indicativo,imperfeito,empurrava,empurravas,empurrava,empurrávamos,empurravam,ẽpuˈʁavɐ,ẽpuˈʁavɐʃ,ẽpuˈʁavɐ,ẽpuˈʁavɐmuʃ,ẽpuˈʁavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,estudar,indicativo,imperfeito,estudava,estudavas,estudava,estudávamos,estudavam,ʃtuˈdavɐ,ʃtuˈdavɐʃ,ʃtuˈdavɐ,ʃtuˈdavɐmuʃ,ʃtuˈdavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,gostar,indicativo,imperfeito,gostava,gostavas,gostava,gostávamos,gostavam,ɡuˈʃtavɐ,ɡuˈʃtavɐʃ,ɡuˈʃtavɐ,ɡuˈʃtavɐmuʃ,ɡuˈʃtavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,levantar-se,indicativo,imperfeito,levantava-me,levantavas-te,levantava-se,levantávamos-nos,levantavam-se,lɨvɐ̃tɐˈvamɨ,lɨvɐ̃tɐˈvastɨ,lɨvɐ̃tɐˈvasɨ,lɨvɐ̃ˈtavɐmusnuʃ,lɨvɐ̃tɐˈvɐ̃sɨ,,,,,,,,,,,,ar reflexos
-pt-conjugation,imperfeito,mudar,indicativo,imperfeito,mudava,mudavas,mudava,mudávamos,mudavam,muˈdavɐ,muˈdavɐʃ,muˈdavɐ,muˈdavɐmuʃ,muˈdavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,pensar,indicativo,imperfeito,pensava,pensavas,pensava,pensávamos,pensavam,pẽˈsavɐ,pẽˈsavɐʃ,pẽˈsavɐ,pẽˈsavɐmuʃ,pẽˈsavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,pintar,indicativo,imperfeito,pintava,pintavas,pintava,pintávamos,pintavam,pĩˈtavɐ,pĩˈtavɐʃ,pĩˈtavɐ,pĩˈtavɐmuʃ,pĩˈtavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,puxar,indicativo,imperfeito,puxava,puxavas,puxava,puxávamos,puxavam,puˈʃavɐ,puˈʃavɐʃ,puˈʃavɐ,puˈʃavɐmuʃ,puˈʃavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,sentar,indicativo,imperfeito,sentava,sentavas,sentava,sentávamos,sentavam,sẽˈtavɐ,sẽˈtavɐʃ,sẽˈtavɐ,sẽˈtavɐmuʃ,sẽˈtavɐ̃w̃,,,,,,,,,,,,ar  
-pt-conjugation,imperfeito,abrir,indicativo,imperfeito,abria,abrias,abria,abríamos,abriam,ɐˈbɾiɐ,ɐˈbɾiɐʃ,ɐˈbɾiɐ,ɐˈbɾiɐmuʃ,ɐˈbɾiɐ̃w̃,,,,,,,,,,,,ir
-pt-conjugation,imperfeito,admitir,indicativo,imperfeito,admitia,admitias,admitia,admitíamos,admitiam,ɐdmiˈtiɐ,ɐdmiˈtiɐʃ,ɐdmiˈtiɐ,ɐdmiˈtiɐmuʃ,ɐdmiˈtiɐ̃w̃,,,,,,,,,,,,ir
-pt-conjugation,imperfeito,cair,indicativo,imperfeito,caía,caías,caía,caíamos,caíam,kɐˈiɐ,kɐˈiɐʃ,kɐˈiɐ,kɐˈiɐmuʃ,kɐˈiɐ̃w̃,,,,,,,,,,,,ir
-pt-conjugation,imperfeito,conseguir,indicativo,imperfeito,conseguia,conseguias,conseguia,conseguíamos,conseguiam,kõsɨˈɡiɐ,kõsɨˈɡiɐʃ,kõsɨˈɡiɐ,kõsɨˈɡwiɐmuʃ,kõsɨˈɡiɐ̃w̃,,,,,,,,,,,,ir
-pt-conjugation,imperfeito,corrigir,indicativo,imperfeito,corrigia,corrigias,corrigia,corrigíamos,corrigiam,kuʁiˈʒiɐ,kuʁiˈʒiɐʃ,kuʁiˈʒiɐ,kuʁiˈʒiɐmuʃ,kuʁiˈʒiɐ̃w̃,,,,,,,,,,,,ir
-pt-conjugation,imperfeito,cumprir,indicativo,imperfeito,cumpria,cumprias,cumpria,cumpríamos,cumpriam,kũˈpɾiɐ,kũˈpɾiɐʃ,kũˈpɾiɐ,kũˈpɾiɐmuʃ,kũˈpɾiɐ̃w̃,,,,,,,,,,,,ir
-pt-conjugation,imperfeito,decidir,indicativo,imperfeito,decidia,decidias,decidia,decidíamos,decidiam,dɨsiˈdiɐ,dɨsiˈdiɐʃ,dɨsiˈdiɐ,dɨsiˈdiɐmuʃ,dɨsiˈdiɐ̃w̃,,,,,,,,,,,,ir
-pt-conjugation,imperfeito,despir-se,indicativo,imperfeito,despia-me,despias-te,despia-se,despíamos-nos,despiam-se,dɨʃpiˈamɨ,dɨʃpiˈastɨ,dɨʃpiˈasɨ,dɨˈʃpiɐmusnuʃ,dɨʃpiˈɐ̃sɨ,,,,,,,,,,,,ir reflexos  
-pt-conjugation,imperfeito,dirigir,indicativo,imperfeito,dirigia,dirigias,dirigia,dirigíamos,dirigiam,diɾiˈʒiɐ,diɾiˈʒiɐʃ,diɾiˈʒiɐ,diɾiˈʒiɐmuʃ,diɾiˈʒiɐ̃w̃,,,,,,,,,,,,ir
-pt-conjugation,imperfeito,discutir,indicativo,imperfeito,discutia,discutias,discutia,discutíamos,discutiam,diʃkuˈtiɐ,diʃkuˈtiɐʃ,diʃkuˈtiɐ,diʃkuˈtiɐmuʃ,diʃkuˈtiɐ̃w̃,,,,,,,,,,,,ir
-pt-conjugation,imperfeito,distribuir,indicativo,imperfeito,distribuía,distribuías,distribuía,distribuíamos,distribuíam,diʃtɾibuˈiɐ,diʃtɾibuˈiɐʃ,diʃtɾibuˈiɐ,diʃtɾibuˈiɐmuʃ,diʃtɾibuˈiɐ̃w̃,,,,,,,,,,,,ir
-pt-conjugation,imperfeito,dormir,indicativo,imperfeito,dormia,dormias,dormia,dormíamos,dormiam,duɾˈmiɐ,duɾˈmiɐʃ,duɾˈmiɐ,duɾˈmiɐmuʃ,duɾˈmiɐ̃w̃,,,,,,,,,,,,ir
-pt-conjugation,imperfeito,fugir,indicativo,imperfeito,fugia,fugias,fugia,fugíamos,fugiam,fuˈʒiɐ,fuˈʒiɐʃ,fuˈʒiɐ,fuˈʒiɐmuʃ,fuˈʒiɐ̃w̃,,,,,,,,,,,,ir
-pt-conjugation,imperfeito,imprimir,indicativo,imperfeito,imprimia,imprimias,imprimia,imprimíamos,imprimiam,ĩpɾiˈmiɐ,ĩpɾiˈmiɐʃ,ĩpɾiˈmiɐ,ĩpɾiˈmiɐmuʃ,ĩpɾiˈmiɐ̃w̃,,,,,,,,,,,,ir
-pt-conjugation,imperfeito,insistir,indicativo,imperfeito,insistia,insistias,insistia,insistíamos,insistiam,ĩsiˈʃtiɐ,ĩsiˈʃtiɐʃ,ĩsiˈʃtiɐ,ĩsiˈʃtiɐmuʃ,ĩsiˈʃtiɐ̃w̃,,,,,,,,,,,,ir
-pt-conjugation,imperfeito,introduzir,indicativo,imperfeito,introduzia,introduzias,introduzia,introduzíamos,introduziam,ĩtɾuduˈziɐ,ĩtɾuduˈziɐʃ,ĩtɾuduˈziɐ,ĩtɾuduˈziɐmuʃ,ĩtɾuduˈziɐ̃w̃,,,,,,,,,,,,ir
-pt-conjugation,imperfeito,ir,indicativo,imperfeito,ia,ias,ia,íamos,iam,ˈiɐ,ˈiɐʃ,ˈiɐ,ˈiɐmuʃ,ˈiɐ̃w̃,,,,,,,,,,,,ir
-pt-conjugation,imperfeito,medir,indicativo,imperfeito,media,medias,media,medíamos,mediam,mɨˈdiɐ,mɨˈdiɐʃ,mɨˈdiɐ,mɨˈdiɐmuʃ,mɨˈdiɐ̃w̃,,,,,,,,,,,,ir
-pt-conjugation,imperfeito,ouvir,indicativo,imperfeito,ouvia,ouvias,ouvia,ouvíamos,ouviam,oˈviɐ,oˈviɐʃ,oˈviɐ,oˈviɐmuʃ,oˈviɐ̃w̃,,,,,,,,,,,,ir
-pt-conjugation,imperfeito,partir,indicativo,imperfeito,partia,partias,partia,partíamos,partiam,pɐɾˈtiɐ,pɐɾˈtiɐʃ,pɐɾˈtiɐ,pɐɾˈtiɐmuʃ,pɐɾˈtiɐ̃w̃,,,,,,,,,,,,ir
-pt-conjugation,imperfeito,pedir,indicativo,imperfeito,pedia,pedias,pedia,pedíamos,pediam,pɨˈdiɐ,pɨˈdiɐʃ,pɨˈdiɐ,pɨˈdiɐmuʃ,pɨˈdiɐ̃w̃,,,,,,,,,,,,ir
-pt-conjugation,imperfeito,permitir,indicativo,imperfeito,permitia,permitias,permitia,permitíamos,permitiam,pɨɾmiˈtiɐ,pɨɾmiˈtiɐʃ,pɨɾmiˈtiɐ,pɨɾmiˈtiɐmuʃ,pɨɾmiˈtiɐ̃w̃,,,,,,,,,,,,ir
-pt-conjugation,imperfeito,preferir,indicativo,imperfeito,preferia,preferias,preferia,preferíamos,preferiam,pɾɨfɨˈɾiɐ,pɾɨfɨˈɾiɐʃ,pɾɨfɨˈɾiɐ,pɾɨfɨˈɾiɐmuʃ,pɾɨfɨˈɾiɐ̃w̃,,,,,,,,,,,,ir
-pt-conjugation,imperfeito,repetir,indicativo,imperfeito,repetia,repetias,repetia,repetíamos,repetiam,ʁɨpɨˈtiɐ,ʁɨpɨˈtiɐʃ,ʁɨpɨˈtiɐ,ʁɨpɨˈtiɐmuʃ,ʁɨpɨˈtiɐ̃w̃,,,,,,,,,,,,ir
-pt-conjugation,imperfeito,reunir,indicativo,imperfeito,reunia,reunias,reunia,reuníamos,reuniam,ʁewˈniɐ,ʁewˈniɐʃ,ʁewˈniɐ,ʁewˈniɐmuʃ,ʁewˈniɐ̃w̃,,,,,,,,,,,,ir
-pt-conjugation,imperfeito,rir,indicativo,imperfeito,ria,rias,ria,ríamos,riam,ˈʁiɐ,ˈʁiɐʃ,ˈʁiɐ,ˈʁiɐmuʃ,ˈʁiɐ̃w̃,,,,,,,,,,,,ir
-pt-conjugation,imperfeito,sair,indicativo,imperfeito,saía,saías,saía,saíamos,saíam,sɐˈiɐ,sɐˈiɐʃ,sɐˈiɐ,sɐˈiɐmuʃ,sɐˈiɐ̃w̃,,,,,,,,,,,,ir
-pt-conjugation,imperfeito,seguir,indicativo,imperfeito,seguia,seguias,seguia,seguíamos,seguiam,sɨˈɡiɐ,sɨˈɡiɐʃ,sɨˈɡiɐ,sɨˈɡwiɐmuʃ,sɨˈɡiɐ̃w̃,,,,,,,,,,,,ir
-pt-conjugation,imperfeito,sentir,indicativo,imperfeito,sentia,sentias,sentia,sentíamos,sentiam,sẽˈtiɐ,sẽˈtiɐʃ,sẽˈtiɐ,sẽˈtiɐmuʃ,sẽˈtiɐ̃w̃,,,,,,,,,,,,ir
-pt-conjugation,imperfeito,servir,indicativo,imperfeito,servia,servias,servia,servíamos,serviam,sɨɾˈviɐ,sɨɾˈviɐʃ,sɨɾˈviɐ,sɨɾˈviɐmuʃ,sɨɾˈviɐ̃w̃,,,,,,,,,,,,ir
-pt-conjugation,imperfeito,subir,indicativo,imperfeito,subia,subias,subia,subíamos,subiam,suˈbiɐ,suˈbiɐʃ,suˈbiɐ,suˈbiɐmuʃ,suˈbiɐ̃w̃,,,,,,,,,,,,ir
-pt-conjugation,imperfeito,traduzir,indicativo,imperfeito,traduzia,traduzias,traduzia,traduzíamos,traduziam,tɾɐduˈziɐ,tɾɐduˈziɐʃ,tɾɐduˈziɐ,tɾɐduˈziɐmuʃ,tɾɐduˈziɐ̃w̃,,,,,,,,,,,,ir
-pt-conjugation,imperfeito,vestir-se,indicativo,imperfeito,vestia-me,vestias-te,vestia-se,vestíamos-nos,vestiam-se,vɨʃtiˈamɨ,vɨʃtiˈastɨ,vɨʃtiˈasɨ,vɨˈʃtiɐmusnuʃ,vɨʃtiˈɐ̃sɨ,,,,,,,,,,,,ir reflexos  
-pt-conjugation,imperfeito,dividir,indicativo,imperfeito,dividia,dividias,dividia,dividíamos,dividiam,diviˈdiɐ,diviˈdiɐʃ,diviˈdiɐ,diviˈdiɐmuʃ,diviˈdiɐ̃w̃,,,,,,,,,,,,ir
-pt-conjugation,imperfeito,agradecer,indicativo,imperfeito,agradecia,agradecias,agradecia,agradecíamos,agradeciam,ɐɡɾɐdɨˈsiɐ,ɐɡɾɐdɨˈsiɐʃ,ɐɡɾɐdɨˈsiɐ,ɐɡɾɐdɨˈsiɐmuʃ,ɐɡɾɐdɨˈsiɐ̃w̃,,,,,,,,,,,,er
-pt-conjugation,imperfeito,aprender,indicativo,imperfeito,aprendia,aprendias,aprendia,aprendíamos,aprendiam,ɐpɾẽˈdiɐ,ɐpɾẽˈdiɐʃ,ɐpɾẽˈdiɐ,ɐpɾẽˈdiɐmuʃ,ɐpɾẽˈdiɐ̃w̃,,,,,,,,,,,,er
-pt-conjugation,imperfeito,bater,indicativo,imperfeito,batia,batias,batia,batíamos,batiam,bɐˈtiɐ,bɐˈtiɐʃ,bɐˈtiɐ,bɐˈtiɐmuʃ,bɐˈtiɐ̃w̃,,,,,,,,,,,,er
-pt-conjugation,imperfeito,beber,indicativo,imperfeito,bebia,bebias,bebia,bebíamos,bebiam,bɨˈbiɐ,bɨˈbiɐʃ,bɨˈbiɐ,bɨˈbiɐmuʃ,bɨˈbiɐ̃w̃,,,,,,,,,,,,er
-pt-conjugation,imperfeito,comer,indicativo,imperfeito,comia,comias,comia,comíamos,comiam,kuˈmiɐ,kuˈmiɐʃ,kuˈmiɐ,kuˈmiɐmuʃ,kuˈmiɐ̃w̃,,,,,,,,,,,,er
-pt-conjugation,imperfeito,compreender,indicativo,imperfeito,compreendia,compreendias,compreendia,compreendíamos,compreendiam,kõpɾɨẽˈdiɐ,kõpɾɨẽˈdiɐʃ,kõpɾɨẽˈdiɐ,kõpɾɨẽˈdiɐmuʃ,kõpɾɨẽˈdiɐ̃w̃,,,,,,,,,,,,er
-pt-conjugation,imperfeito,conhecer,indicativo,imperfeito,conhecia,conhecias,conhecia,conhecíamos,conheciam,kuɲɨˈsiɐ,kuɲɨˈsiɐʃ,kuɲɨˈsiɐ,kuɲɨˈsiɐmuʃ,kuɲɨˈsiɐ̃w̃,,,,,,,,,,,,er
-pt-conjugation,imperfeito,correr,indicativo,imperfeito,corria,corrias,corria,corríamos,corriam,kuˈʁiɐ,kuˈʁiɐʃ,kuˈʁiɐ,kuˈʁiɐmuʃ,kuˈʁiɐ̃w̃,,,,,,,,,,,,er
-pt-conjugation,imperfeito,crer,indicativo,imperfeito,creia,creias,creia,críamos,creiam,ˈkɾɐjɐ,ˈkɾɐjɐʃ,ˈkɾɐjɐ,ˈkɾiɐmuʃ,ˈkɾɐjɐ̃w̃,,,,,,,,,,,,er
-pt-conjugation,imperfeito,crescer,indicativo,imperfeito,crescia,crescias,crescia,crescíamos,cresciam,kɾɨˈʃsiɐ,kɾɨˈʃsiɐʃ,kɾɨˈʃsiɐ,kɾɨˈʃsiɐmuʃ,kɾɨˈʃsiɐ̃w̃,,,,,,,,,,,,er
-pt-conjugation,imperfeito,dever,indicativo,imperfeito,devia,devias,devia,devíamos,deviam,dɨˈviɐ,dɨˈviɐʃ,dɨˈviɐ,dɨˈviɐmuʃ,dɨˈviɐ̃w̃,,,,,,,,,,,,er
-pt-conjugation,imperfeito,doer,indicativo,imperfeito,doía,doías,doía,doíamos,doíam,duˈiɐ,duˈiɐʃ,duˈiɐ,duˈiɐmuʃ,duˈiɐ̃w̃,,,,,,,,,,,,er
-pt-conjugation,imperfeito,entender,indicativo,imperfeito,entendia,entendias,entendia,entendíamos,entendiam,ẽtẽˈdiɐ,ẽtẽˈdiɐʃ,ẽtẽˈdiɐ,ẽtẽˈdiɐmuʃ,ẽtẽˈdiɐ̃w̃,,,,,,,,,,,,er
-pt-conjugation,imperfeito,escolher,indicativo,imperfeito,escolhia,escolhias,escolhia,escolhíamos,escolhiam,ʃkuˈʎiɐ,ʃkuˈʎiɐʃ,ʃkuˈʎiɐ,ʃkuˈʎiɐmuʃ,ʃkuˈʎiɐ̃w̃,,,,,,,,,,,,er
-pt-conjugation,imperfeito,escrever,indicativo,imperfeito,escrevia,escrevias,escrevia,escrevíamos,escreviam,ʃkɾɨˈviɐ,ʃkɾɨˈviɐʃ,ʃkɾɨˈviɐ,ʃkɾɨˈviɐmuʃ,ʃkɾɨˈviɐ̃w̃,,,,,,,,,,,,er
-pt-conjugation,imperfeito,esquecer,indicativo,imperfeito,esquecia,esquecias,esquecia,esquecíamos,esqueciam,skɨˈsiɐ,skɨˈsiɐʃ,skɨˈsiɐ,skɨˈsiɐmuʃ,skɨˈsiɐ̃w̃,,,,,,,,,,,,er
-pt-conjugation,imperfeito,fazer,indicativo,imperfeito,fazia,fazias,fazia,fazíamos,faziam,fɐˈziɐ,fɐˈziɐʃ,fɐˈziɐ,fɐˈziɐmuʃ,fɐˈziɐ̃w̃,,,,,,,,,,,,er
-pt-conjugation,imperfeito,ler,indicativo,imperfeito,lia,lias,lia,líamos,liam,ˈliɐ,ˈliɐʃ,ˈliɐ,ˈliɐmuʃ,ˈliɐ̃w̃,,,,,,,,,,,,er
-pt-conjugation,imperfeito,oferecer,indicativo,imperfeito,oferecia,oferecias,oferecia,oferecíamos,ofereciam,ofɨɾɨˈsiɐ,ofɨɾɨˈsiɐʃ,ofɨɾɨˈsiɐ,ofɨɾɨˈsiɐmuʃ,ofɨɾɨˈsiɐ̃w̃,,,,,,,,,,,,er
-pt-conjugation,imperfeito,parecer,indicativo,imperfeito,parecia,parecias,parecia,parecíamos,pareciam,pɐɾɨˈsiɐ,pɐɾɨˈsiɐʃ,pɐɾɨˈsiɐ,pɐɾɨˈsiɐmuʃ,pɐɾɨˈsiɐ̃w̃,,,,,,,,,,,,er
-pt-conjugation,imperfeito,perceber,indicativo,imperfeito,percebia,percebias,percebia,percebíamos,percebiam,pɨɾsɨˈbiɐ,pɨɾsɨˈbiɐʃ,pɨɾsɨˈbiɐ,pɨɾsɨˈbiɐmuʃ,pɨɾsɨˈbiɐ̃w̃,,,,,,,,,,,,er
-pt-conjugation,imperfeito,perder,indicativo,imperfeito,perdia,perdias,perdia,perdíamos,perdiam,pɨɾˈdiɐ,pɨɾˈdiɐʃ,pɨɾˈdiɐ,pɨɾˈdiɐmuʃ,pɨɾˈdiɐ̃w̃,,,,,,,,,,,,er
-pt-conjugation,imperfeito,permanecer,indicativo,imperfeito,permanecia,permanecias,permanecia,permanecíamos,permaneciam,pɨɾmɐnɨˈsiɐ,pɨɾmɐnɨˈsiɐʃ,pɨɾmɐnɨˈsiɐ,pɨɾmɐnɨˈsiɐmuʃ,pɨɾmɐnɨˈsiɐ̃w̃,,,,,,,,,,,,er
-pt-conjugation,imperfeito,poder,indicativo,imperfeito,podia,podias,podia,podíamos,podiam,puˈdiɐ,puˈdiɐʃ,puˈdiɐ,puˈdiɐmuʃ,puˈdiɐ̃w̃,,,,,,,,,,,,er
-pt-conjugation,imperfeito,prometer,indicativo,imperfeito,prometia,prometias,prometia,prometíamos,prometiam,pɾumɨˈtiɐ,pɾumɨˈtiɐʃ,pɾumɨˈtiɐ,pɾumɨˈtiɐmuʃ,pɾumɨˈtiɐ̃w̃,,,,,,,,,,,,er
-pt-conjugation,imperfeito,proteger,indicativo,imperfeito,protegia,protegias,protegia,protegíamos,protegiam,pɾutɨˈʒiɐ,pɾutɨˈʒiɐʃ,pɾutɨˈʒiɐ,pɾutɨˈʒiɐmuʃ,pɾutɨˈʒiɐ̃w̃,,,,,,,,,,,,er
-pt-conjugation,imperfeito,querer,indicativo,imperfeito,queria,querias,queria,queríamos,queriam,kɨˈɾiɐ,kɨˈɾiɐʃ,kɨˈɾiɐ,kɨˈɾiɐmuʃ,kɨˈɾiɐ̃w̃,,,,,,,,,,,,er
-pt-conjugation,imperfeito,receber,indicativo,imperfeito,recebia,recebias,recebia,recebíamos,recebiam,ʁɨsɨˈbiɐ,ʁɨsɨˈbiɐʃ,ʁɨsɨˈbiɐ,ʁɨsɨˈbiɐmuʃ,ʁɨsɨˈbiɐ̃w̃,,,,,,,,,,,,er
-pt-conjugation,imperfeito,resolver,indicativo,imperfeito,resolvia,resolvias,resolvia,resolvíamos,resolviam,ʁɨzɔɫˈviɐ,ʁɨzɔɫˈviɐʃ,ʁɨzɔɫˈviɐ,ʁɨzɔɫˈviɐmuʃ,ʁɨzɔɫˈviɐ̃w̃,,,,,,,,,,,,er
-pt-conjugation,imperfeito,saber,indicativo,imperfeito,sabia,sabias,sabia,sabíamos,sabiam,sɐˈbiɐ,sɐˈbiɐʃ,sɐˈbiɐ,sɐˈbiɐmuʃ,sɐˈbiɐ̃w̃,,,,,,,,,,,,er
-pt-conjugation,imperfeito,trazer,indicativo,imperfeito,trazia,trazias,trazia,trazíamos,traziam,tɾɐˈziɐ,tɾɐˈziɐʃ,tɾɐˈziɐ,tɾɐˈziɐmuʃ,tɾɐˈziɐ̃w̃,,,,,,,,,,,,er
-pt-conjugation,imperfeito,ver,indicativo,imperfeito,via,vias,via,víamos,viam,ˈviɐ,ˈviɐʃ,ˈviɐ,ˈviɐmuʃ,ˈviɐ̃w̃,,,,,,,,,,,,er
-pt-conjugation,imperfeito,viver,indicativo,imperfeito,vivia,vivias,vivia,vivíamos,viviam,viˈviɐ,viˈviɐʃ,viˈviɐ,viˈviɐmuʃ,viˈviɐ̃w̃,,,,,,,,,,,,er
-pt-conjugation,imperfeito,responder,indicativo,imperfeito,respondia,respondias,respondia,respondíamos,respondiam,ʁɨʃpõˈdiɐ,ʁɨʃpõˈdiɐʃ,ʁɨʃpõˈdiɐ,ʁɨʃpõˈdiɐmuʃ,ʁɨʃpõˈdiɐ̃w̃,,,,,,,,,,,,er
-pt-conjugation,imperfeito,caber,indicativo,imperfeito,cabia,cabias,cabia,cabíamos,cabiam,kɐˈbiɐ,kɐˈbiɐʃ,kɐˈbiɐ,kɐˈbiɐmuʃ,kɐˈbiɐ̃w̃,,,,,,,,,,,,er
-pt-conjugation,imperfeito,percorrer,indicativo,imperfeito,percorria,percorrías,percorria,percorríamos,percorriam,pɨɾkuˈʁiɐ,pɨɾkuˈʁiɐʃ,pɨɾkuˈʁiɐ,pɨɾkuˈʁiɐmuʃ,pɨɾkuˈʁiɐ̃w̃,,,,,,,,,,,,er
-pt-conjugation,imperativo,dar,imperativo,imperativo (presente),,dá,dê,demos,dêem,,ˈda,ˈde,ˈdɛmuʃ,ˈdeɐ̃j,,não dês,não dê,não demos,não dêem,,ˈnɐ̃w ˈdeʃ,ˈnɐ̃w ˈde,ˈnɐ̃w̃ ˈdɛmuʃ,ˈnɐ̃w ˈdeɐ̃j,,ar irregular
-pt-conjugation,imperativo,estar,imperativo,imperativo (presente),,está,esteja,estejamos,estejam,,ʃˈta,ʃˈtɐjʒɐ,ʃtɨˈʒɐmuʃ,ʃˈtɐjʒɐ̃w,,não estejas,não esteja,não estejamos,não estejam,,ˈnɐ̃w ʃˈtɐjʒɐʃ,ˈnɐ̃w ʃˈtɐjʒɐ,ˈnɐ̃w̃ ʃtɨˈʒɐmuʃ,ˈnɐ̃w ʃˈtɐjʒɐ̃w,,ar irregular
-pt-conjugation,imperativo,ir,imperativo,imperativo (presente),,vai,vá,vamos,vão,,ˈvaj,ˈva,ˈvɐmuʃ,ˈvɐ̃w,,não vás,não vá,não vamos,não vão,,ˈnɐ̃w ˈvaʃ,ˈnɐ̃w ˈva,ˈnɐ̃w̃ ˈvɐmuʃ,ˈnɐ̃w ˈvɐ̃w,,ir irregular
-pt-conjugation,imperativo,gostar de,imperativo,imperativo (presente),,gosta de ...,goste de ...,gostemos de ...,gostem de ...,,ˈɡɔʃtɐ dɨ...,ˈɡɔʃtɨ dɨ...,ɡuˈʃtemuʒ dɨ...,ˈɡɔʃtɐ̃j̃ dɨ...,,não gostes de ...,não goste de ...,não gostemos de ...,não gostem de ...,,ˈnɐ̃w̃ ˈɡɔʃtɨʒ dɨ...,ˈnɐ̃w̃ ˈɡɔʃtɨ dɨ...,ˈnɐ̃w̃ ɡuˈʃtemuʒ dɨ...,ˈnɐ̃w̃ ˈɡɔʃtɐ̃j̃ dɨ...,,ar
-pt-conjugation,imperativo,começar a,imperativo,imperativo (presente),,começa a ...,comece a ...,comecemos a ...,comecem a ...,,kuˈmɛsɐ ɐ...,kuˈmɛsɨ ɐ...,kumɨˈsemuz ɐ...,kuˈmɛsɐ̃j̃ ɐ...,,não comeces a ...,não comece a ...,não comecemos a ...,não comecem a ...,,ˈnɐ̃w̃ kuˈmɛsɨz ɐ...,ˈnɐ̃w̃ kuˈmɛsɨ ɐ...,ˈnɐ̃w̃ kumɨˈsemuz ɐ...,ˈnɐ̃w̃ kuˈmɛsɐ̃j̃ ɐ...,,ar
-pt-conjugation,imperativo,acabar de,imperativo,imperativo (presente),,acaba de ...,acabe de ...,acabemos de ...,acabem de ...,,ɐˈkabɐ dɨ...,ɐˈkabɨ dɨ...,ɐkɐˈbemuʒ dɨ...,ɐˈkabɐ̃j̃ dɨ...,,não acabes de ...,não acabe de ...,não acabemos de ...,não acabem de ...,,ˈnɐ̃w̃ ɐˈkabɨʒ dɨ...,ˈnɐ̃w̃ ɐˈkabɨ dɨ...,ˈnɐ̃w̃ ɐkɐˈbemuʒ dɨ...,ˈnɐ̃w̃ ɐˈkabɐ̃j̃ dɨ...,,ar
-pt-conjugation,imperativo,continuar a,imperativo,imperativo (presente),,continua a ...,continue a ...,continuemos a ...,continuem a ...,,kõtiˈnuɐ ɐ...,kõtiˈnuɨ ɐ...,kõtinuˈemuz ɐ...,kõtiˈnuɐ̃j̃ ɐ...,,não continues a ...,não continue a ...,não continuemos a ...,não continuem a ...,,ˈnɐ̃w̃ kõtiˈnuɨz ɐ...,ˈnɐ̃w̃ kõtiˈnuɨ ɐ...,ˈnɐ̃w̃ kõtinuˈemuz ɐ...,ˈnɐ̃w̃ kõtiˈnuɐ̃j̃ ɐ...,,ar
-pt-conjugation,imperativo,lembrar-se de,imperativo,imperativo (presente),,lembra-te de ...,lembre-se de ...,lembremo-nos de ...,lembrem-se de ...,,lẽˈbɾatɨ dɨ...,lẽˈbɾɛsɨ dɨ...,lẽbɾɨˈmɔnuʒ dɨ...,lẽˈbɾẽsɨ dɨ...,,não te lembres de ...,não se lembre de ...,não nos lembremos de ...,não se lembrem de ...,,ˈnɐ̃w̃ ˈtɛ ˈlẽbɾɨʒ dɨ...,ˈnɐ̃w̃ sɨ ˈlẽbɾɨ dɨ...,ˈnɐ̃w̃ ˈnɔʒ lẽˈbɾɛmuʒ dɨ...,ˈnɐ̃w̃ sɨ ˈlẽbɾɐ̃j̃ dɨ...,,ar reflexos
-pt-conjugation,imperativo,deixar de,imperativo,imperativo (presente),,deixa de ...,deixe de ...,deixemos de ...,deixem de ...,,ˈdɐjʃɐ dɨ...,ˈdɐjʃɨ dɨ...,dɐjˈʃemuʒ dɨ...,ˈdɐjʃɐ̃j̃ dɨ...,,não deixes de ...,não deixe de ...,não deixemos de ...,não deixem de ...,,ˈnɐ̃w̃ ˈdɐjʃɨʒ dɨ...,ˈnɐ̃w̃ ˈdɐjʃɨ dɨ...,ˈnɐ̃w̃ dɐjˈʃemuʒ dɨ...,ˈnɐ̃w̃ ˈdɐjʃɐ̃j̃ dɨ...,,ar
-pt-conjugation,imperativo,precisar de,imperativo,imperativo (presente),,precisa de ...,precise de ...,precisemos de ...,precisem de ...,,pɾɨˈsizɐ dɨ...,pɾɨˈsizɨ dɨ...,pɾɨsiˈzemuʒ dɨ...,pɾɨˈsizɐ̃j̃ dɨ...,,não precises de ...,não precise de ...,não precisemos de ...,não precisem de ...,,ˈnɐ̃w̃ pɾɨˈsizɨʒ dɨ...,ˈnɐ̃w̃ pɾɨˈsizɨ dɨ...,ˈnɐ̃w̃ pɾɨsiˈzemuʒ dɨ...,ˈnɐ̃w̃ pɾɨˈsizɐ̃j̃ dɨ...,,ar
-pt-conjugation,imperativo,ter de,imperativo,imperativo (presente),,tem de ...,tenha de ...,tenhamos de ...,tenham de ...,,ˈtɐ̃j̃ dɨ...,ˈtɐɲɐ dɨ...,tɨˈɲɐmuʒ dɨ...,ˈtɐɲɐ̃w̃ dɨ...,,não tenhas de ...,não tenha de ...,não tenhamos de ...,não tenham de ...,,ˈnɐ̃w̃ ˈtɐɲɐʒ dɨ...,ˈnɐ̃w̃ ˈtɐɲɐ dɨ...,ˈnɐ̃w̃ tɨˈɲɐmuʒ dɨ...,ˈnɐ̃w̃ ˈtɐɲɐ̃w̃ dɨ...,,er
-pt-conjugation,imperativo,esquecer-se de,imperativo,imperativo (presente),,esquece-te de ...,esqueça-se de ...,esqueçamo-nos de ...,esqueçam-se de ...,,skɨˈsɛtɨ dɨ...,skɨˈsasɨ dɨ...,skɨsɐˈmɔnuʒ dɨ...,skɨˈsɐ̃sɨ dɨ...,,não te esqueças de ...,não se esqueça de ...,não nos esqueçamos de ...,não se esqueçam de ...,,ˈnɐ̃w̃ ˈtɛ sˈkɛsɐʒ dɨ...,ˈnɐ̃w̃ sɨ sˈkɛsɐ dɨ...,ˈnɐ̃w̃ ˈnɔʃ skɨˈsɐmuʒ dɨ...,ˈnɐ̃w̃ sɨ sˈkɛsɐ̃w̃ dɨ...,,er reflexos
-pt-conjugation,imperativo,entrar em,imperativo,imperativo (presente),,entra em ...,entre em ...,entremos em ...,entrem em ...,,ˈẽtɾɐ ˈɐ̃j̃...,ˈẽtɾɨ ˈɐ̃j̃...,ẽˈtɾɛmuz ˈɐ̃j̃...,ˈẽtɾɐ̃j̃ ˈɐ̃j̃...,,não entres em ...,não entre em ...,não entremos em ...,não entrem em ...,,ˈnɐ̃w̃ ˈẽtɾɨz ˈɐ̃j̃...,ˈnɐ̃w̃ ˈẽtɾɨ ˈɐ̃j̃...,ˈnɐ̃w̃ ẽˈtɾɛmuz ˈɐ̃j̃...,ˈnɐ̃w̃ ˈẽtɾɐ̃j̃ ˈɐ̃j̃...,,ar
-pt-conjugation,imperativo,passar por,imperativo,imperativo (presente),,passa por ...,passe por ...,passemos por ...,passem por ...,,ˈpasɐ puɾ...,ˈpasɨ puɾ...,pɐˈsemuʃ puɾ...,ˈpasɐ̃j̃ puɾ...,,não passes por ...,não passe por ...,não passemos por ...,não passem por ...,,ˈnɐ̃w̃ ˈpasɨʃ puɾ...,ˈnɐ̃w̃ ˈpasɨ puɾ...,ˈnɐ̃w̃ pɐˈsemuʃ puɾ...,ˈnɐ̃w̃ ˈpasɐ̃j̃ puɾ...,,ar
-pt-conjugation,imperativo,telefonar para,imperativo,imperativo (presente),,telefona para ...,telefone para ...,telefonemos para ...,telefonem para ...,,tɨlɨˈfonɐ pɐɾɐ...,tɨlɨˈfɔnɨ pɐɾɐ...,tɨlɨfuˈnemuʃ pɐɾɐ...,tɨlɨˈfɔnɐ̃j̃ pɐɾɐ...,,não telefones para ...,não telefone para ...,não telefonemos para ...,não telefonem para ...,,ˈnɐ̃w̃ tɨlɨˈfɔnɨʃ pɐɾɐ...,ˈnɐ̃w̃ tɨlɨˈfɔnɨ pɐɾɐ...,ˈnɐ̃w̃ tɨlɨfuˈnemuʃ pɐɾɐ...,ˈnɐ̃w̃ tɨlɨˈfɔnɐ̃j̃ pɐɾɐ...,,ar
-pt-conjugation,imperativo,chegar a,imperativo,imperativo (presente),,chega a ...,chegue a ...,cheguemos a ...,cheguem a ...,,ˈʃɛɡɐ ɐ...,ˈʃɛɡɨ ɐ...,ʃɨˈɡemuz ɐ...,ˈʃɛɡɐ̃j̃ ɐ...,,não chegues a ...,não chegue a ...,não cheguemos a ...,não cheguem a ...,,ˈnɐ̃w̃ ˈʃɛɡɨz ɐ...,ˈnɐ̃w̃ ˈʃɛɡɨ ɐ...,ˈnɐ̃w̃ ʃɨˈɡemuz ɐ...,ˈnɐ̃w̃ ˈʃɛɡɐ̃j̃ ɐ...,,ar
-pt-conjugation,imperativo,acreditar em,imperativo,imperativo (presente),,acredita em ...,acredite em ...,acreditemos em ...,acreditem em ...,,ɐkɾɨˈditɐ ˈɐ̃j̃...,ɐkɾɨˈditɨ ˈɐ̃j̃...,ɐkɾɨdiˈtemuz ˈɐ̃j̃...,ɐkɾɨˈditɐ̃j̃ ˈɐ̃j̃...,,não acredites em ...,não acredite em ...,não acreditemos em ...,não acreditem em ...,,ˈnɐ̃w̃ ɐkɾɨˈditɨz ˈɐ̃j̃...,ˈnɐ̃w̃ ɐkɾɨˈditɨ ˈɐ̃j̃...,ˈnɐ̃w̃ ɐkɾɨdiˈtemuz ˈɐ̃j̃...,ˈnɐ̃w̃ ɐkɾɨˈditɐ̃j̃ ˈɐ̃j̃...,,ar
-pt-conjugation,imperativo,morar em,imperativo,imperativo (presente),,mora em ...,more em ...,moremos em ...,morem em ...,,ˈmɔɾɐ ˈɐ̃j̃...,ˈmɔɾɨ ˈɐ̃j̃...,muˈɾemuz ˈɐ̃j̃...,ˈmɔɾɐ̃j̃ ˈɐ̃j̃...,,não mores em ...,não more em ...,não moremos em ...,não morem em ...,,ˈnɐ̃w̃ ˈmɔɾɨz ˈɐ̃j̃...,ˈnɐ̃w̃ ˈmɔɾɨ ˈɐ̃j̃...,ˈnɐ̃w̃ muˈɾemuz ˈɐ̃j̃...,ˈnɐ̃w̃ ˈmɔɾɐ̃j̃ ˈɐ̃j̃...,,ar
-pt-conjugation,imperativo,tratar de,imperativo,imperativo (presente),,trata de ...,trate de ...,tratemos de ...,tratem de ...,,ˈtɾatɐ dɨ...,ˈtɾatɨ dɨ...,tɾɐˈtemuʒ dɨ...,ˈtɾatɐ̃j̃ dɨ...,,não trates de ...,não trate de ...,não tratemos de ...,não tratem de ...,,ˈnɐ̃w̃ ˈtɾatɨʒ dɨ...,ˈnɐ̃w̃ ˈtɾatɨ dɨ...,ˈnɐ̃w̃ tɾɐˈtemuʒ dɨ...,ˈnɐ̃w̃ ˈtɾatɐ̃j̃ dɨ...,,ar
-pt-conjugation,imperativo,pensar em,imperativo,imperativo (presente),,pensa em ...,pense em ...,pensemos em ...,pensem em ...,,ˈpẽsɐ ˈɐ̃j̃...,ˈpẽsɨ ˈɐ̃j̃...,pẽˈsɛmuz ˈɐ̃j̃...,ˈpẽsɐ̃j̃ ˈɐ̃j̃...,,não penses em ...,não pense em ...,não pensemos em ...,não pensem em ...,,ˈnɐ̃w̃ ˈpẽsɨz ˈɐ̃j̃...,ˈnɐ̃w̃ ˈpẽsɨ ˈɐ̃j̃...,ˈnɐ̃w̃ pẽˈsɛmuz ˈɐ̃j̃...,ˈnɐ̃w̃ ˈpẽsɐ̃j̃ ˈɐ̃j̃...,,ar
-pt-conjugation,imperativo,ficar em,imperativo,imperativo (presente),,fica em ...,fique em ...,fiquemos em ...,fiquem em ...,,ˈfikɐ ˈɐ̃j̃...,ˈfikɨ ˈɐ̃j̃...,fiˈkemuz ˈɐ̃j̃...,ˈfikɐ̃j̃ ˈɐ̃j̃...,,não fiques em ...,não fique em ...,não fiquemos em ...,não fiquem em ...,,ˈnɐ̃w̃ ˈfikɨz ˈɐ̃j̃...,ˈnɐ̃w̃ ˈfikɨ ˈɐ̃j̃...,ˈnɐ̃w̃ fiˈkemuz ˈɐ̃j̃...,ˈnɐ̃w̃ ˈfikɐ̃j̃ ˈɐ̃j̃...,,ar
-pt-conjugation,imperativo,voltar para,imperativo,imperativo (presente),,volta para ...,volte para ...,voltemos para ...,voltem para ...,,ˈvɔɫtɐ pɐɾɐ...,ˈvɔɫtɨ pɐɾɐ...,vɔɫˈtemuʃ pɐɾɐ...,ˈvɔɫtɐ̃j̃ pɐɾɐ...,,não voltes para ...,não volte para ...,não voltemos para ...,não voltem para ...,,ˈnɐ̃w̃ ˈvɔɫtɨʃ pɐɾɐ...,ˈnɐ̃w̃ ˈvɔɫtɨ pɐɾɐ...,ˈnɐ̃w̃ vɔɫˈtemuʃ pɐɾɐ...,ˈnɐ̃w̃ ˈvɔɫtɐ̃j̃ pɐɾɐ...,,ar
-pt-conjugation,imperativo,voltar a,imperativo,imperativo (presente),,volta a ...,volte a ...,voltemos a ...,voltem a ...,,ˈvɔɫtɐ ɐ...,ˈvɔɫtɨ ɐ...,vɔɫˈtemuz ɐ...,ˈvɔɫtɐ̃j̃ ɐ...,,não voltes a ...,não volte a ...,não voltemos a ...,não voltem a ...,,ˈnɐ̃w̃ ˈvɔɫtɨz ɐ...,ˈnɐ̃w̃ ˈvɔɫtɨ ɐ...,ˈnɐ̃w̃ vɔɫˈtemuz ɐ...,ˈnɐ̃w̃ ˈvɔɫtɐ̃j̃ ɐ...,,ar
-pt-conjugation,imperativo,concordar com,imperativo,imperativo (presente),,concorda com ...,concorde com ...,concordemos com ...,concordem com ...,,kõˈkɔɾdɐ ˈkõ...,kõˈkɔɾdɨ ˈkõ...,kõkuɾˈdemuʃ ˈkõ...,kõˈkɔɾdɐ̃j̃ ˈkõ...,,não concordes com ...,não concorde com ...,não concordemos com ...,não concordem com ...,,ˈnɐ̃w̃ kõˈkɔɾdɨʃ ˈkõ...,ˈnɐ̃w̃ kõˈkɔɾdɨ ˈkõ...,ˈnɐ̃w̃ kõkuɾˈdemuʃ ˈkõ...,ˈnɐ̃w̃ kõˈkɔɾdɐ̃j̃ ˈkõ...,,ar
-pt-conjugation,imperativo,discordar de,imperativo,imperativo (presente),,discorda de ...,discorde de ...,discordemos de ...,discordem de ...,,diˈʃkɔɾdɐ dɨ...,diˈʃkɔɾdɨ dɨ...,diʃkuɾˈdemuʒ dɨ...,diˈʃkɔɾdɐ̃j̃ dɨ...,,não discordes de ...,não discorde de ...,não discordemos de ...,não discordem de ...,,ˈnɐ̃w̃ diˈʃkɔɾdɨʒ dɨ...,ˈnɐ̃w̃ diˈʃkɔɾdɨ dɨ...,ˈnɐ̃w̃ diʃkuɾˈdemuʒ dɨ...,ˈnɐ̃w̃ diˈʃkɔɾdɐ̃j̃ dɨ...,,ar
-pt-conjugation,imperativo,participar em,imperativo,imperativo (presente),,participa em ...,participe em ...,participemos em ...,participem em ...,,pɐɾtiˈsipɐ ˈɐ̃j̃...,pɐɾtiˈsipɨ ˈɐ̃j̃...,pɐɾtisiˈpemuz ˈɐ̃j̃...,pɐɾtiˈsipɐ̃j̃ ˈɐ̃j̃...,,não participes em ...,não participe em ...,não participemos em ...,não participem em ...,,ˈnɐ̃w̃ pɐɾtiˈsipɨz ˈɐ̃j̃...,ˈnɐ̃w̃ pɐɾtiˈsipɨ ˈɐ̃j̃...,ˈnɐ̃w̃ pɐɾtisiˈpemuz ˈɐ̃j̃...,ˈnɐ̃w̃ pɐɾtiˈsipɐ̃j̃ ˈɐ̃j̃...,,ar
-pt-conjugation,imperativo,nascer em,imperativo,imperativo (presente),,nasce em ...,nasça em ...,nascemos em ...,nasçam em ...,,ˈnaʃsɨ ˈɐ̃j̃...,ˈnassɐ ˈɐ̃j̃...,nɐˈʃsemuz ˈɐ̃j̃...,ˈnassɐ̃w̃ ˈɐ̃j̃...,,não nasças em ...,não nasça em ...,não nasçamos em ...,não nasçam em ...,,ˈnɐ̃w̃ ˈnassɐz ˈɐ̃j̃...,ˈnɐ̃w̃ ˈnassɐ ˈɐ̃j̃...,ˈnɐ̃w̃ nɐsˈsɐmuz ˈɐ̃j̃...,ˈnɐ̃w̃ ˈnassɐ̃w̃ ˈɐ̃j̃...,,er
-pt-conjugation,imperativo,viver em,imperativo,imperativo (presente),,vive em ...,viva em ...,vivamos em ...,vivam em ...,,ˈvivɨ ˈɐ̃j̃...,ˈvivɐ ˈɐ̃j̃...,viˈvɐmuz ˈɐ̃j̃...,ˈvivɐ̃w̃ ˈɐ̃j̃...,,não vivas em ...,não viva em ...,não vivamos em ...,não vivam em ...,,ˈnɐ̃w̃ ˈvivɐz ˈɐ̃j̃...,ˈnɐ̃w̃ ˈvivɐ ˈɐ̃j̃...,ˈnɐ̃w̃ viˈvɐmuz ˈɐ̃j̃...,ˈnɐ̃w̃ ˈvivɐ̃w̃ ˈɐ̃j̃...,,er
-pt-conjugation,imperativo,manter,imperativo,imperativo (presente),,mantém,mantenha,mantenhamos,mantenham,,mɐ̃ˈtɐ̃j̃,mɐ̃ˈtɐɲɐ,mɐ̃tɨˈɲɐmuʃ,mɐ̃ˈtɐɲɐ̃w̃,,não mantenhas,não mantenha,não mantenhamos,não mantenham,,ˈnɐ̃w̃ mɐ̃ˈtɐɲɐʃ,ˈnɐ̃w̃ mɐ̃ˈtɐɲɐ,ˈnɐ̃w̃ mɐ̃tɨˈɲɐmuʃ,ˈnɐ̃w̃ mɐ̃ˈtɐɲɐ̃w̃,,er
-pt-conjugation,imperativo,sair de,imperativo,imperativo (presente),,sai de ...,saia de ...,saiamos de ...,saiam de ...,,ˈsaj dɨ...,ˈsajɐ dɨ...,sɐjˈɐmuʒ dɨ...,ˈsajɐ̃w̃ dɨ...,,não saias de ...,não saia de ...,não saiamos de ...,não saiam de ...,,ˈnɐ̃w̃ ˈsajɐʒ dɨ...,ˈnɐ̃w̃ ˈsajɐ dɨ...,ˈnɐ̃w̃ sɐjˈɐmuʒ dɨ...,ˈnɐ̃w̃ ˈsajɐ̃w̃ dɨ...,,ir
-pt-conjugation,imperativo,gostar,imperativo,imperativo (presente),,gosta,goste,gostemos,gostem,,ˈɡɔʃtɐ,ˈɡɔʃtɨ,ɡuˈʃtemuʃ,ˈɡɔʃtɐ̃j̃,,não gostes,não goste,não gostemos,não gostem,,ˈnɐ̃w̃ ˈɡɔʃtɨʃ,ˈnɐ̃w̃ ˈɡɔʃtɨ,ˈnɐ̃w̃ ɡuˈʃtemuʃ,ˈnɐ̃w̃ ˈɡɔʃtɐ̃j̃,,ar
-pt-conjugation,imperativo,começar,imperativo,imperativo (presente),,começa,comece,comecemos,comecem,,kuˈmɛsɐ,kuˈmɛsɨ,kumɨˈsemuʃ,kuˈmɛsɐ̃j̃,,não comeces,não comece,não comecemos,não comecem,,ˈnɐ̃w̃ kuˈmɛsɨʃ,ˈnɐ̃w̃ kuˈmɛsɨ,ˈnɐ̃w̃ kumɨˈsemuʃ,ˈnɐ̃w̃ kuˈmɛsɐ̃j̃,,ar
-pt-conjugation,imperativo,continuar,imperativo,imperativo (presente),,continua,continue,continuemos,continuem,,kõtiˈnuɐ,kõtiˈnuɨ,kõtinuˈemuʃ,kõtiˈnuɐ̃j̃,,não continues,não continue,não continuemos,não continuem,,ˈnɐ̃w̃ kõtiˈnuɨʃ,ˈnɐ̃w̃ kõtiˈnuɨ,ˈnɐ̃w̃ kõtinuˈemuʃ,ˈnɐ̃w̃ kõtiˈnuɐ̃j̃,,ar
-pt-conjugation,imperativo,lembrar-se,imperativo,imperativo (presente),,lembra-te,lembre-se,lembremo-nos,lembrem-se,,lẽˈbɾatɨ,lẽˈbɾɛsɨ,lẽbɾɨˈmɔnuʃ,lẽˈbɾẽsɨ,,não te lembres,não se lembre,não nos lembremos,não se lembrem,,ˈnɐ̃w̃ ˈtɛ ˈlẽbɾɨʃ,ˈnɐ̃w̃ sɨ ˈlẽbɾɨ,ˈnɐ̃w̃ ˈnɔʒ lẽˈbɾɛmuʃ,ˈnɐ̃w̃ sɨ ˈlẽbɾɐ̃j̃,,ar
-pt-conjugation,imperativo,precisar,imperativo,imperativo (presente),,precisa,precise,precisemos,precisem,,pɾɨˈsizɐ,pɾɨˈsizɨ,pɾɨsiˈzemuʃ,pɾɨˈsizɐ̃j̃,,não precises,não precise,não precisemos,não precisem,,ˈnɐ̃w̃ pɾɨˈsizɨʃ,ˈnɐ̃w̃ pɾɨˈsizɨ,ˈnɐ̃w̃ pɾɨsiˈzemuʃ,ˈnɐ̃w̃ pɾɨˈsizɐ̃j̃,,ar
-pt-conjugation,imperativo,entrar,imperativo,imperativo (presente),,entra,entre,entremos,entrem,,ˈẽtɾɐ,ˈẽtɾɨ,ẽˈtɾɛmuʃ,ˈẽtɾɐ̃j̃,,não entres,não entre,não entremos,não entrem,,ˈnɐ̃w̃ ˈẽtɾɨʃ,ˈnɐ̃w̃ ˈẽtɾɨ,ˈnɐ̃w̃ ẽˈtɾɛmuʃ,ˈnɐ̃w̃ ˈẽtɾɐ̃j̃,,ar
-pt-conjugation,imperativo,passar,imperativo,imperativo (presente),,passa,passe,passemos,passem,,ˈpasɐ,ˈpasɨ,pɐˈsemuʃ,ˈpasɐ̃j̃,,não passes,não passe,não passemos,não passem,,ˈnɐ̃w̃ ˈpasɨʃ,ˈnɐ̃w̃ ˈpasɨ,ˈnɐ̃w̃ pɐˈsemuʃ,ˈnɐ̃w̃ ˈpasɐ̃j̃,,ar
-pt-conjugation,imperativo,chegar,imperativo,imperativo (presente),,chega,chegue,cheguemos,cheguem,,ˈʃɛɡɐ,ˈʃɛɡɨ,ʃɨˈɡemuʃ,ˈʃɛɡɐ̃j̃,,não chegues,não chegue,não cheguemos,não cheguem,,ˈnɐ̃w̃ ˈʃɛɡɨʃ,ˈnɐ̃w̃ ˈʃɛɡɨ,ˈnɐ̃w̃ ʃɨˈɡemuʃ,ˈnɐ̃w̃ ˈʃɛɡɐ̃j̃,,ar
-pt-conjugation,imperativo,acreditar,imperativo,imperativo (presente),,acredita,acredite,acreditemos,acreditem,,ɐkɾɨˈditɐ,ɐkɾɨˈditɨ,ɐkɾɨdiˈtemuʃ,ɐkɾɨˈditɐ̃j̃,,não acredites,não acredite,não acreditemos,não acreditem,,ˈnɐ̃w̃ ɐkɾɨˈditɨʃ,ˈnɐ̃w̃ ɐkɾɨˈditɨ,ˈnɐ̃w̃ ɐkɾɨdiˈtemuʃ,ˈnɐ̃w̃ ɐkɾɨˈditɐ̃j̃,,ar
-pt-conjugation,imperativo,tratar,imperativo,imperativo (presente),,trata,trate,tratemos,tratem,,ˈtɾatɐ,ˈtɾatɨ,tɾɐˈtemuʃ,ˈtɾatɐ̃j̃,,não trates,não trate,não tratemos,não tratem,,ˈnɐ̃w̃ ˈtɾatɨʃ,ˈnɐ̃w̃ ˈtɾatɨ,ˈnɐ̃w̃ tɾɐˈtemuʃ,ˈnɐ̃w̃ ˈtɾatɐ̃j̃,,ar
-pt-conjugation,imperativo,voltar,imperativo,imperativo (presente),,volta,volte,voltemos,voltem,,ˈvɔɫtɐ,ˈvɔɫtɨ,vɔɫˈtemuʃ,ˈvɔɫtɐ̃j̃,,não voltes,não volte,não voltemos,não voltem,,ˈnɐ̃w̃ ˈvɔɫtɨʃ,ˈnɐ̃w̃ ˈvɔɫtɨ,ˈnɐ̃w̃ vɔɫˈtemuʃ,ˈnɐ̃w̃ ˈvɔɫtɐ̃j̃,,ar
-pt-conjugation,imperativo,concordar,imperativo,imperativo (presente),,concorda,concorde,concordemos,concordem,,kõˈkɔɾdɐ,kõˈkɔɾdɨ,kõkuɾˈdemuʃ,kõˈkɔɾdɐ̃j̃,,não concordes,não concorde,não concordemos,não concordem,,ˈnɐ̃w̃ kõˈkɔɾdɨʃ,ˈnɐ̃w̃ kõˈkɔɾdɨ,ˈnɐ̃w̃ kõkuɾˈdemuʃ,ˈnɐ̃w̃ kõˈkɔɾdɐ̃j̃,,ar
-pt-conjugation,imperativo,discordar,imperativo,imperativo (presente),,discorda,discorde,discordemos,discordem,,diˈʃkɔɾdɐ,diˈʃkɔɾdɨ,diʃkuɾˈdemuʃ,diˈʃkɔɾdɐ̃j̃,,não discordes,não discorde,não discordemos,não discordem,,ˈnɐ̃w̃ diˈʃkɔɾdɨʃ,ˈnɐ̃w̃ diˈʃkɔɾdɨ,ˈnɐ̃w̃ diʃkuɾˈdemuʃ,ˈnɐ̃w̃ diˈʃkɔɾdɐ̃j̃,,ar
-pt-conjugation,imperativo,participar,imperativo,imperativo (presente),,participa,participe,participemos,participem,,pɐɾtiˈsipɐ,pɐɾtiˈsipɨ,pɐɾtisiˈpemuʃ,pɐɾtiˈsipɐ̃j̃,,não participes,não participe,não participemos,não participem,,ˈnɐ̃w̃ pɐɾtiˈsipɨʃ,ˈnɐ̃w̃ pɐɾtiˈsipɨ,ˈnɐ̃w̃ pɐɾtisiˈpemuʃ,ˈnɐ̃w̃ pɐɾtiˈsipɐ̃j̃,,ar
-pt-conjugation,imperativo,nascer,imperativo,imperativo (presente),,nasce,nasça,nascemos,nasçam,,ˈnaʃsɨ,ˈnassɐ,nɐˈʃsemuʃ,ˈnassɐ̃w̃,,não nasças,não nasça,não nasçamos,não nasçam,,ˈnɐ̃w̃ ˈnassɐʃ,ˈnɐ̃w̃ ˈnassɐ,ˈnɐ̃w̃ nɐsˈsɐmuʃ,ˈnɐ̃w̃ ˈnassɐ̃w̃,,er
-pt-conjugation,imperativo,viver,imperativo,imperativo (presente),,vive,viva,vivamos,vivam,,ˈvivɨ,ˈvivɐ,viˈvɐmuʃ,ˈvivɐ̃w̃,,não vivas,não viva,não vivamos,não vivam,,ˈnɐ̃w̃ ˈvivɐʃ,ˈnɐ̃w̃ ˈvivɐ,ˈnɐ̃w̃ viˈvɐmuʃ,ˈnɐ̃w̃ ˈvivɐ̃w̃,,er
-pt-conjugation,imperativo,ter,imperativo,imperativo (presente),,tem,tenha,tenhamos,tenham,,ˈtɐ̃j̃,ˈtɐɲɐ,tɨˈɲɐmuʃ,ˈtɐɲɐ̃w̃,,não tenhas,não tenha,não tenhamos,não tenham,,ˈnɐ̃w̃ ˈtɐɲɐʃ,ˈnɐ̃w̃ ˈtɐɲɐ,ˈnɐ̃w̃ tɨˈɲɐmuʃ,ˈnɐ̃w̃ ˈtɐɲɐ̃w̃,,er
-pt-conjugation,imperativo,ser,imperativo,imperativo (presente),,sê,seja,sejamos,sejam,,ˈse,ˈsɐjʒɐ,sɨˈʒɐmuʃ,ˈsɐjʒɐ̃w,,não sejas,não seja,não sejamos,não sejam,,ˈnɐ̃w ˈsɐjʒɐʃ,ˈnɐ̃w ˈsɐjʒɐ,ˈnɐ̃w̃ sɨˈʒɐmuʃ,ˈnɐ̃w ˈsɐjʒɐ̃w,,er irregular
+pt-conjugation,present,vestir,indicativo,presente,visto,vestes,veste,vestimos,vestem,ˈviʃtu,ˈveʃtɨʃ,ˈveʃtɨ,vɨʃˈtimuʃ,ˈveʃtɐ̃j,,,,,,,,,,,,irregular
+pt-conjugation,present,despir,indicativo,presente,dispo,despes,despe,despimos,despem,ˈdiʃpu,ˈdeʃpɨʃ,ˈdeʃpɨ,dɨʃˈpimuʃ,ˈdeʃpɐ̃j,,,,,,,,,,,,irregular
+pt-conjugation,present,sentir,indicativo,presente,sinto,sentes,sente,sentimos,sentem,ˈsĩtu,ˈsẽtɨʃ,ˈsẽtɨ,sẽˈtimuʃ,ˈsẽtɐ̃j,,,,,,,,,,,,irregular
+pt-conjugation,present,preferir,indicativo,presente,prefiro,preferes,prefere,preferimos,preferem,pɾɨˈfiɾu,pɾɨˈfeɾɨʃ,pɾɨˈfeɾɨ,pɾɨfɨˈɾimuʃ,pɾɨˈfeɾɐ̃j,,,,,,,,,,,,irregular
+pt-conjugation,present,conseguir,indicativo,presente,consigo,consegues,consegue,conseguimos,conseguem,kõˈsigu,kõˈsegɨʃ,kõˈsegɨ,kõsɨˈgimuʃ,kõˈsegɐ̃j,,,,,,,,,,,,irregular
+pt-conjugation,present,seguir,indicativo,presente,sigo,segues,segue,seguimos,seguem,ˈsigu,ˈsegɨʃ,ˈsegɨ,sɨˈgimuʃ,ˈsegɐ̃j,,,,,,,,,,,,irregular
+pt-conjugation,present,corrigir,indicativo,presente,corrijo,corriges,corrige,corrigimos,corrigem,kuˈʁiʒu,kuˈʁiʒɨʃ,kuˈʁiʒɨ,kuʁɨˈʒimuʃ,kuˈʁiʒɐ̃j,,,,,,,,,,,,irregular
+pt-conjugation,present,partir,indicativo,presente,parto,partes,parte,partimos,partem,ˈpaɾtu,ˈpaɾtɨʃ,ˈpaɾtɨ,paɾˈtimuʃ,ˈpaɾtɐ̃j,,,,,,,,,,,,ir  
+pt-conjugation,present,servir,indicativo,presente,sirvo,serves,serve,servimos,servem,ˈsiɾvu,ˈseɾvɨʃ,ˈseɾvɨ,sɨɾˈvimuʃ,ˈseɾvɐ̃j,,,,,,,,,,,,ir  
+pt-conjugation,present,admitir,indicativo,presente,admito,admites,admite,admitimos,admitem,ɐdˈmitu,ɐdˈmitɨʃ,ɐdˈmitɨ,ɐdmɨˈtimuʃ,ɐdˈmitɐ̃j,,,,,,,,,,,,ir  
+pt-conjugation,present,traduzir,indicativo,presente,traduzo,traduzes,traduz,traduzimos,traduzem,tɾɐˈduzu,tɾɐˈduzɨʃ,tɾɐˈduʃ,tɾɐduˈzimuʃ,tɾɐˈduzɐ̃j,,,,,,,,,,,,irregular
+pt-conjugation,present,permitir,indicativo,presente,permito,permites,permite,permitimos,permitem,pɨɾˈmitu,pɨɾˈmitɨʃ,pɨɾˈmitɨ,pɨɾmɨˈtimuʃ,pɨɾˈmitɐ̃j,,,,,,,,,,,,ir  
+pt-conjugation,present,repetir,indicativo,presente,repito,repetes,repete,repetimos,repetem,ʁɨˈpitu,ʁɨˈpetɨʃ,ʁɨˈpetɨ,ʁɨpɨˈtimuʃ,ʁɨˈpetɐ̃j,,,,,,,,,,,,irregular
+pt-conjugation,present,abrir,indicativo,presente,abro,abres,abre,abrimos,abrem,ˈabɾu,ˈabɾɨʃ,ˈabɾɨ,ɐˈbɾimuʃ,ˈabɾɐ̃j,,,,,,,,,,,,ir  
+pt-conjugation,present,decidir,indicativo,presente,decido,decides,decide,decidimos,decidem,dɨˈsidu,dɨˈsidɨʃ,dɨˈsidɨ,dɨsɨˈdimuʃ,dɨˈsidɐ̃j,,,,,,,,,,,,ir  
+pt-conjugation,present,esquecer,indicativo,presente,esqueço,esqueces,esquece,esquecemos,esquecem,ʃˈkesu,ʃˈkesɨʃ,ʃˈkesɨ,ʃkɨˈsemuʃ,ʃˈkesɐ̃j,,,,,,,,,,,,irregular
+pt-conjugation,present,proteger,indicativo,presente,protejo,proteges,protege,protegemos,protegem,pɾuˈtɐjʒu,pɾuˈteʒɨʃ,pɾuˈteʒɨ,pɾutɨˈʒemuʃ,pɾuˈteʒɐ̃j,,,,,,,,,,,,irregular
+pt-conjugation,present,viver,indicativo,presente,vivo,vives,vive,vivemos,vivem,ˈvivu,ˈvivɨʃ,ˈvivɨ,viˈvemuʃ,ˈvivɐ̃j,,,,,,,,,,,,er
+pt-conjugation,present,falar,indicativo,presente,falo,falas,fala,falamos,falam,ˈfaɫu,ˈfaɫɐʃ,ˈfaɫɐ,fɐˈɫɐmuʃ,ˈfaɫɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,morar,indicativo,presente,moro,moras,mora,moramos,moram,ˈmoɾu,ˈmoɾɐʃ,ˈmoɾɐ,muˈɾɐmuʃ,ˈmoɾɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,jogar,indicativo,presente,jogo,jogas,joga,jogamos,jogam,ˈʒogu,ˈʒogɐʃ,ˈʒogɐ,ʒuˈgɐmuʃ,ˈʒogɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,tomar,indicativo,presente,tomo,tomas,toma,tomamos,tomam,ˈtomu,ˈtomɐʃ,ˈtomɐ,tuˈmɐmuʃ,ˈtomɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,almoçar,indicativo,presente,almoço,almoças,almoça,almoçamos,almoçam,aɫˈmosu,aɫˈmosɐʃ,aɫˈmosɐ,aɫmuˈsɐmuʃ,aɫˈmosɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,jantar,indicativo,presente,janto,jantas,janta,jantamos,jantam,ˈʒɐ̃tu,ˈʒɐ̃tɐʃ,ˈʒɐ̃tɐ,ʒɐ̃ˈtɐmuʃ,ˈʒɐ̃tɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,gostar,indicativo,presente,gosto,gostas,gosta,gostamos,gostam,ˈgoʃtu,ˈgoʃtɐʃ,ˈgoʃtɐ,guʃˈtɐmuʃ,ˈgoʃtɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,fechar,indicativo,presente,fecho,fechas,fecha,fechamos,fecham,ˈfɐjʃu,ˈfɐjʃɐʃ,ˈfɐjʃɐ,fɨˈʃɐmuʃ,ˈfɐjʃɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,trabalhar,indicativo,presente,trabalho,trabalhas,trabalha,trabalhamos,trabalham,tɾɐˈbaʎu,tɾɐˈbaʎɐʃ,tɾɐˈbaʎɐ,tɾɐbɐˈʎɐmuʃ,tɾɐˈbaʎɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,practicar,indicativo,presente,pratico,praticas,pratica,praticamos,praticam,pɾɐˈtiku,pɾɐˈtikɐʃ,pɾɐˈtikɐ,pɾɐtiˈkɐmuʃ,pɾɐˈtikɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,acordar,indicativo,presente,acordo,acordas,acorda,acordamos,acordam,ɐˈkoɾdu,ɐˈkoɾdɐʃ,ɐˈkoɾdɐ,ɐkuɾˈdɐmuʃ,ɐˈkoɾdɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,apanhar,indicativo,presente,apanho,apanhas,apanha,apanhamos,apanham,ɐˈpɐɲu,ɐˈpɐɲɐʃ,ɐˈpɐɲɐ,ɐpɐˈɲɐmuʃ,ɐˈpɐɲɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,estudar,indicativo,presente,estudo,estudas,estuda,estudamos,estudam,ʃˈtudu,ʃˈtudɐʃ,ʃˈtudɐ,ʃtuˈdɐmuʃ,ʃˈtudɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,ficar,indicativo,presente,fico,ficas,fica,ficamos,ficam,ˈfiku,ˈfikɐʃ,ˈfikɐ,fiˈkɐmuʃ,ˈfikɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,começar,indicativo,presente,começo,começas,começa,começamos,começam,kuˈmesu,kuˈmesɐʃ,kuˈmesɐ,kumɨˈsɐmuʃ,kuˈmesɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,pagar,indicativo,presente,pago,pagas,paga,pagamos,pagam,ˈpagu,ˈpagɐʃ,ˈpagɐ,pɐˈgɐmuʃ,ˈpagɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,lavar,indicativo,presente,lavo,lavas,lava,lavamos,lavam,ˈɫavu,ˈɫavɐʃ,ˈɫavɐ,ɫɐˈvɐmuʃ,ˈɫavɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,usar,indicativo,presente,uso,usas,usa,usamos,usam,ˈuzu,ˈuzɐʃ,ˈuzɐ,uˈzɐmuʃ,ˈuzɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,pensar,indicativo,presente,penso,pensas,pensa,pensamos,pensam,ˈpẽsu,ˈpẽsɐʃ,ˈpẽsɐ,pẽˈsɐmuʃ,ˈpẽsɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,viajar,indicativo,presente,viajo,viajas,viaja,viajamos,viajam,viˈaʒu,viˈaʒɐʃ,viˈaʒɐ,viɐˈʒɐmuʃ,viˈaʒɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,beijar,indicativo,presente,beijo,beijas,beija,beijamos,beijam,ˈbɐjʒu,ˈbɐjʒɐʃ,ˈbɐjʒɐ,bɐjˈʒɐmuʃ,ˈbɐjʒɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,chamar,indicativo,presente,chamo,chamas,chama,chamamos,chamam,ˈʃɐmu,ˈʃɐmɐʃ,ˈʃɐmɐ,ʃɐˈmɐmuʃ,ˈʃɐmɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,achar,indicativo,presente,acho,achas,acha,achamos,acham,ˈaʃu,ˈaʃɐʃ,ˈaʃɐ,ɐˈʃɐmuʃ,ˈaʃɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,dançar,indicativo,presente,danço,danças,dança,dançamos,dançam,ˈdɐ̃su,ˈdɐ̃sɐʃ,ˈdɐ̃sɐ,dɐ̃ˈsɐmuʃ,ˈdɐ̃sɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,deixar,indicativo,presente,deixo,deixas,deixa,deixamos,deixam,ˈdɐjʃu,ˈdɐjʃɐʃ,ˈdɐjʃɐ,dɐjˈʃɐmuʃ,ˈdɐjʃɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,ligar,indicativo,presente,ligo,ligas,liga,ligamos,ligam,ˈɫigu,ˈɫigɐʃ,ˈɫigɐ,ɫiˈgɐmuʃ,ˈɫigɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,precisar,indicativo,presente,preciso,precisas,precisa,precisamos,precisam,pɾɨˈsizu,pɾɨˈsizɐʃ,pɾɨˈsizɐ,pɾɨsiˈzɐmuʃ,pɾɨˈsizɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,ver,indicativo,presente,vejo,vês,vê,vemos,veem,ˈvɐjʒu,ˈveʃ,ˈve,ˈvemuʃ,ˈveɐ̃j,,,,,,,,,,,,irregular
+pt-conjugation,present,saber,indicativo,presente,sei,sabes,sabe,sabemos,sabem,ˈsɐj,ˈsabɨʃ,ˈsabɨ,sɐˈbemuʃ,ˈsabɐ̃j,,,,,,,,,,,,irregular
+pt-conjugation,present,estar,indicativo,presente,estou,estás,está,estamos,estão,ʃˈto,ʃˈtaʃ,ʃˈta,ʃˈtɐmuʃ,ʃˈtɐ̃w,,,,,,,,,,,,irregular
+pt-conjugation,present,ter,indicativo,presente,tenho,tens,tem,temos,têm,ˈtɐɲu,tɐ̃jʃ,tɐ̃j,ˈtemuʃ,ˈtɐ̃jɐ̃j,,,,,,,,,,,,irregular
+pt-conjugation,present,dar,indicativo,presente,dou,dás,dá,damos,dão,ˈdo,ˈdaʃ,ˈda,ˈdɐmuʃ,ˈdɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,chamar-se,indicativo,presente,chamo-me,chamas-te,chama-se,chamamo-nos,chamam-se,ˈʃɐmu-mɨ,ˈʃɐmɐʃ-tɨ,ˈʃɐmɐ-sɨ,ʃɐˈmɐmu-nuʃ,ˈʃɐmɐ̃w-sɨ,,,,,,,,,,,,ar reflexos
+pt-conjugation,present,levantar-se,indicativo,presente,levanto-me,levantas-te,levanta-se,levantamo-nos,levantam-se,ɫɨˈvɐ̃tu-mɨ,ɫɨˈvɐ̃tɐʃ-tɨ,ɫɨˈvɐ̃tɐ-sɨ,ɫɨvɐ̃ˈtɐmu-nuʃ,ɫɨˈvɐ̃tɐ̃w-sɨ,não me levanto,não te levantas,não se levanta,não nos levantamos,não se levantam,ˈnɐ̃w̃ ˈmɛ lɨˈvɐ̃tu,ˈnɐ̃w̃ ˈtɛ lɨˈvɐ̃tɐʃ,ˈnɐ̃w̃ sɨ lɨˈvɐ̃tɐ,ˈnɐ̃w̃ ˈnɔʒ lɨvɐ̃ˈtɐmuʃ,ˈnɐ̃w̃ sɨ lɨˈvɐ̃tɐ̃w̃,,ar reflexos
+pt-conjugation,present,deitar-se,indicativo,presente,deito-me,deitas-te,deita-se,deitamo-nos,deitam-se,ˈdɐjtu-mɨ,ˈdɐjtɐʃ-tɨ,ˈdɐjtɐ-sɨ,dɐjˈtɐmu-nuʃ,ˈdɐjtɐ̃w-sɨ,,,,,,,,,,,,ar
+pt-conjugation,present,lembrar-se,indicativo,presente,lembro-me,lembras-te,lembra-se,lembramo-nos,lembram-se,ˈɫẽbɾu-mɨ,ˈɫẽbɾɐʃ-tɨ,ˈɫẽbɾɐ-sɨ,ɫẽˈbɾɐmu-nuʃ,ˈɫẽbɾɐ̃w-sɨ,,,,,,,,,,,,ar reflexos
+pt-conjugation,present,telefonar,indicativo,presente,telefono,telefonas,telefona,telefonamos,telefonam,tɨɫɨˈfonu,tɨɫɨˈfonɐʃ,tɨɫɨˈfonɐ,tɨɫɨfuˈnɐmuʃ,tɨɫɨˈfonɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,empurrar,indicativo,presente,empurro,empurras,empurra,empurramos,empurram,ẽˈpuʁu,ẽˈpuʁɐʃ,ẽˈpuʁɐ,ẽpuˈʁɐmuʃ,ẽˈpuʁɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,puxar,indicativo,presente,puxo,puxas,puxa,puxamos,puxam,ˈpuʃu,ˈpuʃɐʃ,ˈpuʃɐ,puˈʃɐmuʃ,ˈpuʃɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,mudar,indicativo,presente,mudo,mudas,muda,mudamos,mudam,ˈmudu,ˈmudɐʃ,ˈmudɐ,muˈdɐmuʃ,ˈmudɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,afagar,indicativo,presente,afago,afagas,afaga,afagamos,afagam,ɐˈfagu,ɐˈfagɐʃ,ɐˈfagɐ,ɐfɐˈgɐmuʃ,ɐˈfagɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,pegar,indicativo,presente,pego,pegas,pega,pegamos,pegam,ˈpegu,ˈpegɐʃ,ˈpegɐ,pɨˈgɐmuʃ,ˈpegɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,ler,indicativo,presente,leio,lês,lê,lemos,leem,ˈɫɐju,ˈɫeʃ,ˈɫe,ˈɫemuʃ,ˈɫeɐ̃j,,,,,,,,,,,,irregular
+pt-conjugation,present,querer,indicativo,presente,quero,queres,quer,queremos,querem,ˈkeɾu,ˈkeɾɨʃ,ˈkeɾ,kɨˈɾemuʃ,ˈkeɾɐ̃j,,,,,,,,,,,,irregular
+pt-conjugation,present,fazer,indicativo,presente,faço,fazes,faz,fazemos,fazem,ˈfasu,ˈfazɨʃ,ˈfaʃ,fɐˈzemuʃ,ˈfazɐ̃j,,,,,,,,,,,,irregular
+pt-conjugation,present,dizer,indicativo,presente,digo,dizes,diz,dizemos,dizem,ˈdigu,ˈdizɨʃ,ˈdiʃ,diˈzemuʃ,ˈdizɐ̃j,,,,,,,,,,,,irregular
+pt-conjugation,present,trazer,indicativo,presente,trago,traes,trae,traemos,traem,ˈtɾagu,ˈtɾaɨʃ,ˈtɾai,tɾɐˈemuʃ,ˈtɾaɐ̃j,,,,,,,,,,,,irregular
+pt-conjugation,present,poder,indicativo,presente,posso,podes,pode,podemos,podem,ˈposu,ˈpodɨʃ,ˈpodɨ,puˈdemuʃ,ˈpodɐ̃j,,,,,,,,,,,,irregular
+pt-conjugation,present,perder,indicativo,presente,perco,perdes,perde,perdemos,perdem,ˈpeɾku,ˈpeɾdɨʃ,ˈpeɾdɨ,pɨɾˈdemuʃ,ˈpeɾdɐ̃j,,,,,,,,,,,,irregular
+pt-conjugation,present,ser,indicativo,presente,sou,és,é,somos,são,ˈso,ˈɛʃ,ˈɛ,ˈsomuʃ,ˈsɐ̃w,,,,,,,,,,,,irregular
+pt-conjugation,present,acabar,indicativo,presente,acabo,acabas,acaba,acabamos,acabam,ɐˈkabu,ɐˈkabɐʃ,ɐˈkabɐ,ɐkɐˈbɐmuʃ,ɐˈkabɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,aceitar,indicativo,presente,aceito,aceitas,aceita,aceitamos,aceitam,ɐˈsɐjtu,ɐˈsɐjtɐʃ,ɐˈsɐjtɐ,ɐsɐjˈtɐmuʃ,ɐˈsɐjtɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,afastar-se,indicativo,presente,afasto-me,afastas-te,afasta-se,afastamo-nos,afastam-se,ɐˈfaʃtu-mɨ,ɐˈfaʃtɐʃ-tɨ,ɐˈfaʃtɐ-sɨ,ɐfɐʃˈtɐmu-nuʃ,ɐˈfaʃtɐ̃w-sɨ,,,,,,,,,,,,ar reflexos
+pt-conjugation,present,andar,indicativo,presente,ando,andas,anda,andamos,andam,ˈɐ̃du,ˈɐ̃dɐʃ,ˈɐ̃dɐ,ɐ̃ˈdɐmuʃ,ˈɐ̃dɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,arranjar,indicativo,presente,arranjo,arranjas,arranja,arranjamos,arranjam,aˈʁɐ̃ʒu,aˈʁɐ̃ʒɐʃ,aˈʁɐ̃ʒɐ,aʁɐ̃ˈʒɐmuʃ,aˈʁɐ̃ʒɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,arranjar-se,indicativo,presente,arranjo-me,arranjas-te,arranja-se,arranjamo-nos,arranjam-se,aˈʁɐ̃ʒu-mɨ,aˈʁɐ̃ʒɐʃ-tɨ,aˈʁɐ̃ʒɐ-sɨ,aʁɐ̃ˈʒɐmu-nuʃ,aˈʁɐ̃ʒɐ̃w-sɨ,,,,,,,,,,,,ar
+pt-conjugation,present,assistir,indicativo,presente,assisto,assistes,assiste,assistimos,assistem,ɐˈsiʃtu,ɐˈsiʃtɨʃ,ɐˈsiʃtɨ,ɐsɨʃˈtimuʃ,ɐˈsiʃtɐ̃j,,,,,,,,,,,,ir
+pt-conjugation,present,assombrar,indicativo,presente,assombro,assombras,assombra,assombramos,assombram,ɐˈsõbɾu,ɐˈsõbɾɐʃ,ɐˈsõbɾɐ,ɐsõˈbɾɐmuʃ,ɐˈsõbɾɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,cair,indicativo,presente,caio,cais,cai,caímos,caem,ˈkaju,ˈkajʃ,ˈkaj,kɐˈimuʃ,ˈkaɐ̃j,,,,,,,,,,,,irregular
+pt-conjugation,present,conhecer,indicativo,presente,conheço,conheces,conhece,conhecemos,conhecem,kuˈɲesu,kuˈɲesɨʃ,kuˈɲesɨ,kuɲɨˈsemuʃ,kuˈɲesɐ̃j,,,,,,,,,,,,irregular
+pt-conjugation,present,cumprir,indicativo,presente,cumpro,cumpres,cumpre,cumprimos,cumprem,ˈkũpɾu,ˈkũpɾɨʃ,ˈkũpɾɨ,kũˈpɾimuʃ,ˈkũpɾɐ̃j,,,,,,,,,,,,ir  
+pt-conjugation,present,discutir,indicativo,presente,discuto,discutes,discute,discutimos,discutem,dɨʃˈkutu,dɨʃˈkutɨʃ,dɨʃˈkutɨ,dɨʃkuˈtimuʃ,dɨʃˈkutɐ̃j,,,,,,,,,,,,ir  
+pt-conjugation,present,dividir,indicativo,presente,divido,divides,divide,dividimos,dividem,dɨˈvidu,dɨˈvidɨʃ,dɨˈvidɨ,dɨvɨˈdimuʃ,dɨˈvidɐ̃j,,,,,,,,,,,,ir  
+pt-conjugation,present,dormir,indicativo,presente,durmo,dormes,dorme,dormimos,dormem,ˈduɾmu,ˈdoɾmɨʃ,ˈdoɾmɨ,duɾˈmimuʃ,ˈdoɾmɐ̃j,,,,,,,,,,,,irregular
+pt-conjugation,present,encontrar,indicativo,presente,encontro,encontras,encontra,encontramos,encontram,ẽˈkõtɾu,ẽˈkõtɾɐʃ,ẽˈkõtɾɐ,ẽkõˈtɾɐmuʃ,ẽˈkõtɾɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,encontrar-se,indicativo,presente,encontro-me,encontras-te,encontra-se,encontramo-nos,encontram-se,ẽˈkõtɾu-mɨ,ẽˈkõtɾɐʃ-tɨ,ẽˈkõtɾɐ-sɨ,ẽkõˈtɾɐmu-nuʃ,ẽˈkõtɾɐ̃w-sɨ,,,,,,,,,,,,ar reflexos
+pt-conjugation,present,ensinar,indicativo,presente,ensino,ensinas,ensina,ensinamos,ensinam,ẽˈsinu,ẽˈsinɐʃ,ẽˈsinɐ,ẽsiˈnɐmuʃ,ẽˈsinɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,entrar,indicativo,presente,entro,entras,entra,entramos,entram,ˈẽtɾu,ˈẽtɾɐʃ,ˈẽtɾɐ,ẽˈtɾɐmuʃ,ˈẽtɾɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,esquentar,indicativo,presente,esquento,esquentas,esquenta,esquentamos,esquentam,ʃˈkẽtu,ʃˈkẽtɐʃ,ʃˈkẽtɐ,ʃkẽˈtɐmuʃ,ʃˈkẽtɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,fugir,indicativo,presente,fujo,fuges,foge,fugimos,fugem,ˈfuʒu,ˈfuʒɨʃ,ˈfoʒɨ,fuˈʒimuʃ,ˈfuʒɐ̃j,,,,,,,,,,,,ir  
+pt-conjugation,present,ganhar,indicativo,presente,ganho,ganhas,ganha,ganhamos,ganham,ˈgɐɲu,ˈgɐɲɐʃ,ˈgɐɲɐ,gɐˈɲɐmuʃ,ˈgɐɲɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,girar,indicativo,presente,giro,giras,gira,giramos,giram,ˈʒiɾu,ˈʒiɾɐʃ,ˈʒiɾɐ,ʒiˈɾɐmuʃ,ˈʒiɾɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,imprimir,indicativo,presente,imprimo,imprimes,imprime,imprimimos,imprimem,ĩˈpɾimu,ĩˈpɾimɨʃ,ĩˈpɾimɨ,ĩpɾɨˈmimuʃ,ĩˈpɾimɐ̃j,,,,,,,,,,,,ir  
+pt-conjugation,present,investigar,indicativo,presente,investigo,investigas,investiga,investigamos,investigam,ĩvɨʃˈtigu,ĩvɨʃˈtigɐʃ,ĩvɨʃˈtigɐ,ĩvɨʃtiˈgɐmuʃ,ĩvɨʃˈtigɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,ir,indicativo,presente,vou,vais,vai,vamos,vão,ˈvo,ˈvajʃ,ˈvaj,ˈvɐmuʃ,ˈvɐ̃w,,,,,,,,,,,,irregular
+pt-conjugation,present,lanchar,indicativo,presente,lanço,lanças,lança,lançamos,lançam,ˈɫɐ̃su,ˈɫɐ̃sɐʃ,ˈɫɐ̃sɐ,ɫɐ̃ˈsɐmuʃ,ˈɫɐ̃sɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,lavar-se,indicativo,presente,lavo-me,lavas-te,lava-se,lavamo-nos,lavam-se,ˈɫavu-mɨ,ˈɫavɐʃ-tɨ,ˈɫavɐ-sɨ,ɫɐˈvɐmu-nuʃ,ˈɫavɐ̃w-sɨ,,,,,,,,,,,,ar reflexos
+pt-conjugation,present,levantar,indicativo,presente,levanto,levantas,levanta,levantamos,levantam,ɫɨˈvɐ̃tu,ɫɨˈvɐ̃tɐʃ,ɫɨˈvɐ̃tɐ,ɫɨvɐ̃ˈtɐmuʃ,ɫɨˈvɐ̃tɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,machucar,indicativo,presente,machuco,machucas,machuca,machucamos,machucam,mɐˈʃuku,mɐˈʃukɐʃ,mɐˈʃukɐ,mɐʃuˈkɐmuʃ,mɐˈʃukɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,machucar-se,indicativo,presente,machuco-me,machucas-te,machuca-se,machucamo-nos,machucam-se,mɐˈʃuku-mɨ,mɐˈʃukɐʃ-tɨ,mɐˈʃukɐ-sɨ,mɐʃuˈkɐmu-nuʃ,mɐˈʃukɐ̃w-sɨ,,,,,,,,,,,,ar reflexos
+pt-conjugation,present,ocupar,indicativo,presente,ocupo,ocupas,ocupa,ocupamos,ocupam,oˈkupu,oˈkupɐʃ,oˈkupɐ,okuˈpɐmuʃ,oˈkupɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,ouvir,indicativo,presente,ouço / oiço,ouves,ouve,ouvimos,ouvem,"ˈosu,ˈojsu",ˈovɨʃ,ˈovɨ,oˈvimuʃ,ˈovɐ̃j,,,,,,,,,,,,irregular
+pt-conjugation,present,pedir,indicativo,presente,peço,pedes,pede,pedimos,pedem,ˈpesu,ˈpedɨʃ,ˈpedɨ,pɨˈdimuʃ,ˈpedɐ̃j,,,,,,,,,,,,irregular
+pt-conjugation,present,pintar,indicativo,presente,pinto,pintas,pinta,pintamos,pintam,ˈpĩtu,ˈpĩtɐʃ,ˈpĩtɐ,pĩˈtɐmuʃ,ˈpĩtɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,pôr,indicativo,presente,ponho,pões,põe,pomos,põem,ˈpoɲu,ˈpõjʃ,ˈpõj,ˈpomuʃ,ˈpõɐ̃j,,,,,,,,,,,,irregular
+pt-conjugation,present,poupar,indicativo,presente,poupo,poupas,poupa,poupamos,poupam,ˈpopu,ˈpopɐʃ,ˈpopɐ,poˈpɐmuʃ,ˈpopɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,poupar-se,indicativo,presente,poupo-me,poupas-te,poupa-se,poupamo-nos,poupam-se,ˈpopu-mɨ,ˈpopɐʃ-tɨ,ˈpopɐ-sɨ,poˈpɐmu-nuʃ,ˈpopɐ̃w-sɨ,,,,,,,,,,,,ar reflexos
+pt-conjugation,present,resumir,indicativo,presente,resumo,resumes,resume,resumimos,resumem,ʁɨˈzumu,ʁɨˈzumɨʃ,ʁɨˈzumɨ,ʁɨzuˈmimuʃ,ʁɨˈzumɐ̃j,,,,,,,,,,,,ir  
+pt-conjugation,present,rir,indicativo,presente,rio,ris,ri,rimos,riem,ˈʁiu,ˈʁiʃ,ˈʁi,ˈʁimuʃ,ˈʁiɐ̃j,,,,,,,,,,,,irregular
+pt-conjugation,present,sair,indicativo,presente,saio,sais,sai,saímos,saem,ˈsaju,ˈsajʃ,ˈsaj,sɐˈimuʃ,ˈsaɐ̃j,,,,,,,,,,,,irregular
+pt-conjugation,present,sentar-se,indicativo,presente,sento-me,sentas-te,senta-se,sentamo-nos,sentam-se,ˈsẽtu-mɨ,ˈsẽtɐʃ-tɨ,ˈsẽtɐ-sɨ,sẽˈtɐmu-nuʃ,ˈsẽtɐ̃w-sɨ,,,,,,,,,,,,ar reflexos
+pt-conjugation,present,subir,indicativo,presente,subo,sobes,sobe,subimos,sobem,ˈsubu,ˈsobɨʃ,ˈsobɨ,suˈbimuʃ,ˈsobɐ̃j,,,,,,,,,,,,ir
+pt-conjugation,present,sumir,indicativo,presente,sumo,sumes,some,sumimos,sumem,ˈsumu,ˈsumɨʃ,ˈsomɨ,suˈmimuʃ,ˈsumɐ̃j,,,,,,,,,,,,ir
+pt-conjugation,present,tirar,indicativo,presente,tiro,tiras,tira,tiramos,tiram,ˈtiɾu,ˈtiɾɐʃ,ˈtiɾɐ,tiˈɾɐmuʃ,ˈtiɾɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,tocar,indicativo,presente,toco,tocas,toca,tocamos,tocam,ˈtoku,ˈtokɐʃ,ˈtokɐ,tuˈkɐmuʃ,ˈtokɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,tratar,indicativo,presente,trato,tratas,trata,tratamos,tratam,ˈtɾatu,ˈtɾatɐʃ,ˈtɾatɐ,tɾɐˈtɐmuʃ,ˈtɾatɐ̃w,,,,,,,,,,,,ar
+pt-conjugation,present,vir,indicativo,presente,venho,vens,vem,vimos,vêm,ˈvɐɲu,vɐ̃jʃ,vɐ̃j,ˈvimuʃ,ˈvɐ̃jɐ̃j,,,,,,,,,,,,irregular
+pt-conjugation,present,dispor,indicativo,presente,disponho,dispões,dispõe,dispomos,dispõem,diˈʃpɔɲu,diˈʃpõj̃ʃ,diˈʃpõj̃,diˈʃpɔmuʃ,diˈʃpõj̃m,,,,,,,,,,,,por derivados or
+pt-conjugation,present,reter,indicativo,presente,retenho,reténs,retém,retenhamos,retêm,ʁɨˈtɐɲu,ʁɨˈtẽʃ,ʁɨˈtɐ̃j̃,ʁɨtɨˈɲɐmuʃ,ʁɨˈtẽ,,,,,,,,,,,,ter derivados er  
+pt-conjugation,present,deter,indicativo,presente,detenho,deténs,detém,detemos,detêm,dɨˈtɐɲu,dɨˈtẽʃ,dɨˈtɐ̃j̃,dɨˈtemuʃ,dɨˈtẽ,,,,,,,,,,,,ter derivados er  
+pt-conjugation,present,refazer,indicativo,presente,refaço,refazes,refaz,refazemos,refazem,ʁɨˈfasu,ʁɨˈfazɨʃ,ʁɨˈfaʃ,ʁɨfɐˈzemuʃ,ʁɨˈfazɐ̃j̃,,,,,,,,,,,,derivados 
+pt-conjugation,present,desfazer,indicativo,presente,desfaço,desfazes,desfaz,desfazemos,desfazem,dɨˈʃfasu,dɨˈʃfazɨʃ,dɨˈʃfaʃ,dɨʃfɐˈzemuʃ,dɨˈʃfazɐ̃j̃,,,,,,,,,,,,derivados 
+pt-conjugation,present,satisfazer,indicativo,presente,satisfaço,satisfazes,satisfaz,satisfazemos,satisfazem,sɐtiˈʃfasu,sɐtiˈʃfazɨʃ,sɐtiˈʃfaʃ,sɐtiʃfɐˈzemuʃ,sɐtiˈʃfazɐ̃j̃,,,,,,,,,,,,derivados 
+pt-conjugation,present,impor,indicativo,presente,imponho,impões,impõe,impomos,impõem,ĩˈpɔɲu,ĩˈpõj̃ʃ,ĩˈpõj̃,ĩˈpɔmuʃ,ĩˈpõj̃m,,,,,,,,,,,,derivados 
+pt-conjugation,present,compor,indicativo,presente,componho,compões,compõe,compomos,compõem,kõˈpɔɲu,kõˈpõj̃ʃ,kõˈpõj̃,kõˈpɔmuʃ,kõˈpõj̃m,,,,,,,,,,,,derivados 
+pt-conjugation,present,supor,indicativo,presente,suponho,supões,supõe,supomos,supõem,suˈpɔɲu,suˈpõj̃ʃ,suˈpõj̃,suˈpɔmuʃ,suˈpõj̃m,,,,,,,,,,,,derivados 
+pt-conjugation,present,propor,indicativo,presente,proponho,propões,propõe,propomos,propõem,pɾuˈpɔɲu,pɾuˈpõj̃ʃ,pɾuˈpõj̃,pɾuˈpɔmuʃ,pɾuˈpõj̃m,,,,,,,,,,,,derivados 
+pt-conjugation,present,repor,indicativo,presente,reponho,repões,repõe,repomos,repõem,ʁɨˈpɔɲu,ʁɨˈpõj̃ʃ,ʁɨˈpõj̃,ʁɨˈpɔmuʃ,ʁɨˈpõj̃m,,,,,,,,,,,,derivados 
+pt-conjugation,present,obter,indicativo,presente,obtenho,obténs,obtém,obtemos,obtêm,oˈbtɐɲu,oˈbtẽʃ,oˈbtɐ̃j̃,oˈbtemuʃ,oˈbtẽ,,,,,,,,,,,,ter derivados er  
+pt-conjugation,present,conter,indicativo,presente,contenho,conténs,contém,contemos,contêm,kõˈtɐɲu,kõˈtẽʃ,kõˈtɐ̃j̃,kõˈtɛmuʃ,kõˈtẽ,,,,,,,,,,,,ter derivados er  
+pt-conjugation,present,rever,indicativo,presente,revejo,revês,revê,revemos,reveem,ʁɨˈvɐʒu,ʁɨˈveʃ,ʁɨˈve,ʁɨˈvemuʃ,ʁɨˈvɛɐ̃j̃,,,,,,,,,,,,ver derivados er  
+pt-conjugation,present,prever,indicativo,presente,prevejo,prevês,prevê,prevemos,preveem,pɾɨˈvɐʒu,pɾɨˈveʃ,pɾɨˈve,pɾɨˈvemuʃ,pɾɨˈvɛɐ̃j̃,,,,,,,,,,,,ver derivados er  
+pt-conjugation,present,entrever,indicativo,presente,entrevejo,entrevês,entrevê,entrevemos,entreveem,ẽtɾɨˈvɐʒu,ẽtɾɨˈveʃ,ẽtɾɨˈve,ẽtɾɨˈvemuʃ,ẽtɾɨˈvɛɐ̃j̃,,,,,,,,,,,,ver derivados er  
+pt-conjugation,present,transver,indicativo,presente,transvejo,transvês,transvê,transvemos,transveem,tɾɐ̃sˈvɐʒu,tɾɐ̃sˈveʃ,tɾɐ̃sˈve,tɾɐ̃sˈvemuʃ,tɾɐ̃sˈvɛɐ̃j̃,,,,,,,,,,,,ver derivados er  
+pt-conjugation,present,intervir,indicativo,presente,intervenho,intervéns,intervém,intervimos,intervêm,ĩtɨɾˈvɐɲu,ĩtɨɾˈvẽʃ,ĩtɨɾˈvɐ̃j̃,ĩtɨɾˈvimuʃ,ĩtɨɾˈvẽ,,,,,,,,,,,,vir derivados ir
+pt-conjugation,present,provir,indicativo,presente,provenho,provéns,provém,provimos,provêm,pɾuˈvɐɲu,pɾuˈvẽʃ,pɾuˈvɐ̃j̃,pɾuˈvimuʃ,pɾuˈvẽ,,,,,,,,,,,,arreglar vir derivados ir  
+pt-conjugation,present,convir,indicativo,presente,convenho,convêns,convê,convimos,convêm,kõˈvɐɲu,kõˈvẽʃ,kõˈve,kõˈvimuʃ,kõˈvẽ,,,,,,,,,,,,vir derivados ir
+pt-conjugation,present,ultrapassar,indicativo,presente,ultrapasso,ultrapassas,ultrapassa,ultrapassamos,ultrapassam,uɫtɾɐˈpasu,uɫtɾɐˈpasɐʃ,uɫtɾɐˈpasɐ,uɫtɾɐpɐˈsɐmuʃ,uɫtɾɐˈpasɐ̃w̃,,,,,,,,,,,,ar
+pt-conjugation,present,revir,indicativo,presente,revejo,revês,revê,revemos,reveem,ʁɨˈvɐʒu,ʁɨˈveʃ,ʁɨˈve,ʁɨˈvemuʃ,ʁɨˈvɛɐ̃j̃,,,,,,,,,,,,vir derivados ir
+pt-conjugation,present,sobrepor,indicativo,presente,sobreponho,sobrepões,sobrepõe,sobrepomos,sobrepõem,subɾɨˈpɔɲu,subɾɨˈpõj̃ʃ,subɾɨˈpõj̃,subɾɨˈpɔmuʃ,subɾɨˈpõj̃m,,,,,,,,,,,,por derivados or
+pt-conjugation,present,converter,indicativo,presente,converto,convertes,converte,convertemos,convertem,kõˈvɛɾtu,kõˈvɛɾtɨʃ,kõˈvɛɾtɨ,kõvɨɾˈtemuʃ,kõˈvɛɾtɐ̃j̃,,,,,,,,,,,,derivados er  
+pt-conjugation,present,sentir-se,indicativo,presente,sinto-me,sentes-te,sente-se,sentimo-nos,sentem-se,sĩˈtɔmɨ,sẽˈtɛstɨ,sẽˈtɛsɨ,sẽtiˈmɔnuʃ,sẽˈtẽsɨ,não me sinto,não te sentes,não se sente,não nos sentimos,não se sentem,ˈnɐ̃w̃ ˈmɛ ˈsĩtu,ˈnɐ̃w̃ ˈtɛ ˈsẽtɨʃ,ˈnɐ̃w̃ sɨ ˈsẽtɨ,ˈnɐ̃w̃ ˈnɔʃ sẽˈtimuʃ,ˈnɐ̃w̃ sɨ ˈsẽtɐ̃j̃,,ir reflexos
+pt-conjugation,present,doer,indicativo,presente,,,dói,,doem,,,ˈdɔj,,ˈdɔɐ̃j̃,,,,,,,,,,,,impessoais er health
+pt-conjugation,present,procurar,indicativo,presente,procuro,procuras,procura,procuramos,procuram,pɾuˈkuɾu,pɾuˈkuɾɐʃ,pɾuˈkuɾɐ,pɾukuˈɾɐmuʃ,pɾuˈkuɾɐ̃w̃,,,,,,,,,,,,ar
+pt-conjugation,present,relaxar,indicativo,presente,relaxo,relaxas,relaxa,relaxamos,relaxam,ʁɨˈlaʃu,ʁɨˈlaʃɐʃ,ʁɨˈlaʃɐ,ʁɨlɐˈʃɐmuʃ,ʁɨˈlaʃɐ̃w̃,,,,,,,,,,,,ar
+pt-conjugation,present,sonhar,indicativo,presente,sonho,sonhas,sonha,sonhamos,sonham,ˈsɔɲu,ˈsɔɲɐʃ,ˈsɔɲɐ,suˈɲɐmuʃ,ˈsɔɲɐ̃w̃,,,,,,,,,,,,ar
+pt-conjugation,present,adormecer,indicativo,presente,adormeço,adormeces,adormece,adormecemos,adormecem,ɐduɾˈmɛsu,ɐduɾˈmɛsɨʃ,ɐduɾˈmɛsɨ,ɐduɾmɨˈsemuʃ,ɐduɾˈmɛsɐ̃j̃,,,,,,,,,,,,er  
+pt-conjugation,present,utilizar,indicativo,presente,utilizo,utilizas,utiliza,utilizamos,utilizam,utiˈlizu,utiˈlizɐʃ,utiˈlizɐ,utiliˈzɐmuʃ,utiˈlizɐ̃w̃,,,,,,,,,,,,ar
+pt-conjugation,present,concordar,indicativo,presente,concordo,concordas,concorda,concordamos,concordam,kõˈkɔɾdu,kõˈkɔɾdɐʃ,kõˈkɔɾdɐ,kõkuɾˈdɐmuʃ,kõˈkɔɾdɐ̃w̃,,,,,,,,,,,,ar
+pt-conjugation,present,discordar,indicativo,presente,discordo,discordas,discorda,discordamos,discordam,diˈʃkɔɾdu,diˈʃkɔɾdɐʃ,diˈʃkɔɾdɐ,diʃkuɾˈdɐmuʃ,diˈʃkɔɾdɐ̃w̃,,,,,,,,,,,,ar
+pt-conjugation,present,pesquisar,indicativo,presente,pesquiso,pesquisas,pesquisa,pesquisamos,pesquisam,pɨsˈkizu,pɨsˈkizɐʃ,pɨsˈkizɐ,pɨskiˈzɐmuʃ,pɨsˈkizɐ̃w̃,,,,,,,,,,,,ar
+pt-conjugation,present,para se casar,indicativo,presente,para me casar,para te casar,para se casar,para nos casarmos,para se casarem,pɐɾɐ ˈmɛ kɐˈzaɾ,pɐɾɐ ˈtɛ kɐˈzaɾ,pɐɾɐ sɨ kɐˈzaɾ,pɐɾɐ ˈnɔʃ kɐˈzaɾmuʃ,pɐɾɐ sɨ kɐˈzaɾɐ̃j̃,,,,,,,,,,,,ar
+pt-conjugation,present,baralhar-se,indicativo,presente,baralho-me,baralhas-te,baralha-se,baralhamo-nos,baralham-se,bɐɾɐˈʎɔmɨ,bɐɾɐˈʎastɨ,bɐɾɐˈʎasɨ,bɐɾɐʎɐˈmɔnuʃ,bɐɾɐˈʎɐ̃sɨ,não me baralho,não te baralhas,não se baralha,não nos baralhamos,não se baralham,ˈnɐ̃w̃ ˈmɛ bɐˈɾaʎu,ˈnɐ̃w̃ ˈtɛ bɐˈɾaʎɐʃ,ˈnɐ̃w̃ sɨ bɐˈɾaʎɐ,ˈnɐ̃w̃ ˈnɔʒ bɐɾɐˈʎɐmuʃ,ˈnɐ̃w̃ sɨ bɐˈɾaʎɐ̃w̃,,ar reflexos
+pt-conjugation,present,tropeçar,indicativo,presente,tropeço,tropeças,tropeça,tropeçamos,tropeçam,tɾuˈpɛsu,tɾuˈpɛsɐʃ,tɾuˈpɛsɐ,tɾupɨˈsɐmuʃ,tɾuˈpɛsɐ̃w̃,,,,,,,,,,,,ar
+pt-conjugation,present,sobreviver,indicativo,presente,sobrevivo,sobrevives,sobrevive,sobrevivemos,sobrevivem,subɾɨˈvivu,subɾɨˈvivɨʃ,subɾɨˈvivɨ,subɾɨviˈvemuʃ,subɾɨˈvivɐ̃j̃,,,,,,,,,,,,er
+pt-conjugation,present,abandonar,indicativo,presente,abandono,abandonas,abandona,abandonamos,abandonam,ɐbɐ̃ˈdɔnu,ɐbɐ̃ˈdɔnɐʃ,ɐbɐ̃ˈdonɐ,ɐbɐ̃duˈnɐmuʃ,ɐbɐ̃ˈdɔnɐ̃w̃,,,,,,,,,,,,ar
+pt-conjugation,imperfect,compor,indicativo,imperfeito,compunha,compunhas,compunha,compúnhamos,compunham,kõˈpuɲɐ,kõˈpuɲɐʃ,kõˈpuɲɐ,kõˈpuɲɐmuʃ,kõˈpuɲɐ̃w̃,,,,,,,,,,,,por derivados irregular
+pt-conjugation,imperfect,conter,indicativo,imperfeito,continha,continhas,continha,contínhamos,continha,kõˈtiɲɐ,kõˈtiɲɐʃ,kõˈtiɲɐ,kõˈtiɲɐmuʃ,kõˈtiɲɐ,,,,,,,,,,,,ter derivados irregular
+pt-conjugation,imperfect,converter,indicativo,imperfeito,convertia,convertias,convertia,convertíamos,convertiam,kõvɨɾˈtiɐ,kõvɨɾˈtiɐʃ,kõvɨɾˈtiɐ,kõvɨɾˈtiɐmuʃ,kõvɨɾˈtiɐ̃w̃,,,,,,,,,,,,ter derivados  
+pt-conjugation,imperfect,convir,indicativo,imperfeito,convinha,convinhas,convinha,convínhamos,convinham,kõˈviɲɐ,kõˈviɲɐʃ,kõˈviɲɐ,kõˈviɲɐmuʃ,kõˈviɲɐ̃w̃,,,,,,,,,,,,vir derivados irregular
+pt-conjugation,imperfect,desfazer,indicativo,imperfeito,desfazia,desfazias,desfazia,desfazíamos,desfaziam,dɨʃfɐˈziɐ,dɨʃfɐˈziɐʃ,dɨʃfɐˈziɐ,dɨʃfɐˈziɐmuʃ,dɨʃfɐˈziɐ̃w̃,,,,,,,,,,,,fazer derivados  
+pt-conjugation,imperfect,deter,indicativo,imperfeito,detinha,detinhas,detinha,detínhamos,detinham,dɨˈtiɲɐ,dɨˈtiɲɐʃ,dɨˈtiɲɐ,dɨˈtiɲɐmuʃ,dɨˈtiɲɐ̃w̃,,,,,,,,,,,,ter derivados irregular
+pt-conjugation,imperfect,dispor,indicativo,imperfeito,dispunha,dispunhas,dispunha,dispúnhamos,dispunham,diˈʃpuɲɐ,diˈʃpuɲɐʃ,diˈʃpuɲɐ,diˈʃpuɲɐmuʃ,diˈʃpuɲɐ̃w̃,,,,,,,,,,,,por derivados irregular
+pt-conjugation,imperfect,entrever,indicativo,imperfeito,entrevia,entrevias,entrevia,entrevíamos,entreviam,ẽtɾɨˈviɐ,ẽtɾɨˈviɐʃ,ẽtɾɨˈviɐ,ẽtɾɨˈviɐmuʃ,ẽtɾɨˈviɐ̃w̃,,,,,,,,,,,,ver derivados  
+pt-conjugation,imperfect,impor,indicativo,imperfeito,impunha,impunhas,impunha,impúnhamos,impunham,ĩˈpuɲɐ,ĩˈpuɲɐʃ,ĩˈpuɲɐ,ĩˈpuɲɐmuʃ,ĩˈpuɲɐ̃w̃,,,,,,,,,,,,por derivados irregular
+pt-conjugation,imperfect,intervir,indicativo,imperfeito,intervinha,intervinhas,intervinha,intervínhamos,intervinham,ĩtɨɾˈviɲɐ,ĩtɨɾˈviɲɐʃ,ĩtɨɾˈviɲɐ,ĩtɨɾˈviɲɐmuʃ,ĩtɨɾˈviɲɐ̃w̃,,,,,,,,,,,,vir derivados irregular
+pt-conjugation,imperfect,manter,indicativo,imperfeito,mantinha,mantinhas,mantinha,mantínhamos,mantinham,mɐ̃ˈtiɲɐ,mɐ̃ˈtiɲɐʃ,mɐ̃ˈtiɲɐ,mɐ̃ˈtiɲɐmuʃ,mɐ̃ˈtiɲɐ̃w̃,,,,,,,,,,,,ter derivados irregular
+pt-conjugation,imperfect,obter,indicativo,imperfeito,obtinha,obtinhas,obtinha,obtínhamos,obtinham,oˈbtiɲɐ,oˈbtiɲɐʃ,oˈbtiɲɐ,oˈbtiɲɐmuʃ,oˈbtiɲɐ̃w̃,,,,,,,,,,,,ter derivados irregular
+pt-conjugation,imperfect,prever,indicativo,imperfeito,previa,previas,previa,prevíamos,previam,pɾɨˈviɐ,pɾɨˈviɐʃ,pɾɨˈviɐ,pɾɨˈviɐmuʃ,pɾɨˈviɐ̃w̃,,,,,,,,,,,,ver derivados  
+pt-conjugation,imperfect,propor,indicativo,imperfeito,propunha,propunhas,propunha,propúnhamos,propunham,pɾuˈpuɲɐ,pɾuˈpuɲɐʃ,pɾuˈpuɲɐ,pɾuˈpuɲɐmuʃ,pɾuˈpuɲɐ̃w̃,,,,,,,,,,,,por derivados irregular ir-or
+pt-conjugation,imperfect,provir,indicativo,imperfeito,provinha,provinhas,provinha,provínhamos,provinham,pɾuˈviɲɐ,pɾuˈviɲɐʃ,pɾuˈviɲɐ,pɾuˈviɲɐmuʃ,pɾuˈviɲɐ̃w̃,,,,,,,,,,,,vir derivados irregular
+pt-conjugation,imperfect,refazer,indicativo,imperfeito,refazia,refazias,refazia,refazíamos,refaziam,ʁɨfɐˈziɐ,ʁɨfɐˈziɐʃ,ʁɨfɐˈziɐ,ʁɨfɐˈziɐmuʃ,ʁɨfɐˈziɐ̃w̃,,,,,,,,,,,,fazer derivados er
+pt-conjugation,imperfect,repor,indicativo,imperfeito,repunha,repunhas,repunha,repúnhamos,repunham,ʁɨˈpuɲɐ,ʁɨˈpuɲɐʃ,ʁɨˈpuɲɐ,ʁɨˈpuɲɐmuʃ,ʁɨˈpuɲɐ̃w̃,,,,,,,,,,,,por derivados irregular
+pt-conjugation,imperfect,reter,indicativo,imperfeito,retinha,retinhas,retinha,retínhamos,retinham,ʁɨˈtiɲɐ,ʁɨˈtiɲɐʃ,ʁɨˈtiɲɐ,ʁɨˈtiɲɐmuʃ,ʁɨˈtiɲɐ̃w̃,,,,,,,,,,,,ter derivados irregular
+pt-conjugation,imperfect,rever,indicativo,imperfeito,revia,revias,revia,revíamos,reviam,ʁɨˈviɐ,ʁɨˈviɐʃ,ʁɨˈviɐ,ʁɨˈviɐmuʃ,ʁɨˈviɐ̃w̃,,,,,,,,,,,,ver derivados er
+pt-conjugation,imperfect,revir,indicativo,imperfeito,revinha,revínhas,revinha,revínhamos,revnham,ʁɨˈviɲɐ,ʁɨˈviɲɐʃ,ʁɨˈviɲɐ,ʁɨˈviɲɐmuʃ,ˈʁɛvɲɐ̃w̃,,,,,,,,,,,,vir derivados irregular
+pt-conjugation,imperfect,satisfazer,indicativo,imperfeito,satisfazia,satisfazias,satisfazia,satisfazíamos,satisfaziam,sɐtiʃfɐˈziɐ,sɐtiʃfɐˈziɐʃ,sɐtiʃfɐˈziɐ,sɐtiʃfɐˈziɐmuʃ,sɐtiʃfɐˈziɐ̃w̃,,,,,,,,,,,,fazer derivados er
+pt-conjugation,imperfect,sobrepor,indicativo,imperfeito,sobrepunha,sobrepunhas,sobrepunha,sobrepúnhamos,sobrepunham,subɾɨˈpuɲɐ,subɾɨˈpuɲɐʃ,subɾɨˈpuɲɐ,subɾɨˈpuɲɐmuʃ,subɾɨˈpuɲɐ̃w̃,,,,,,,,,,,,por derivados irregular
+pt-conjugation,imperfect,supor,indicativo,imperfeito,supunha,supunhas,supunha,supúnhamos,supunham,suˈpuɲɐ,suˈpuɲɐʃ,suˈpuɲɐ,suˈpuɲɐmuʃ,suˈpuɲɐ̃w̃,,,,,,,,,,,,por derivados irregular
+pt-conjugation,imperfect,transver,indicativo,imperfeito,transvia,transvias,transvia,transvíamos,transviam,tɾɐ̃sˈviɐ,tɾɐ̃sˈviɐʃ,tɾɐ̃sˈviɐ,tɾɐ̃sˈviɐmuʃ,tɾɐ̃sˈviɐ̃w̃,,,,,,,,,,,,ver derivados  
+pt-conjugation,imperfect,ultrapassar,indicativo,imperfeito,ultrapassava,ultrapassavas,ultrapassava,ultrapassávamos,ultrapassavam,uɫtɾɐpɐˈsavɐ,uɫtɾɐpɐˈsavɐʃ,uɫtɾɐpɐˈsavɐ,uɫtɾɐpɐˈsavɐmuʃ,uɫtɾɐpɐˈsavɐ̃w̃,,,,,,,,,,,,passar derivados
+pt-conjugation,imperfect,ser,indicativo,imperfeito,era,eras,era,éramos,eram,ˈɛɾɐ,ˈɛɾɐʃ,ˈɛɾɐ,ˈɛɾɐmuʃ,ˈɛɾɐ̃w̃,,,,,,,,,,,,irregular er
+pt-conjugation,imperfect,ter,indicativo,imperfeito,tinha,tinhas,tinha,tínhamos,tinham,ˈtiɲɐ,ˈtiɲɐʃ,ˈtiɲɐ,ˈtiɲɐmuʃ,ˈtiɲɐ̃w̃,,,,,,,,,,,,irregular er
+pt-conjugation,imperfect,vir,indicativo,imperfeito,vinha,vinhas,vinha,vínhamos,vinham,ˈviɲɐ,ˈviɲɐʃ,ˈviɲɐ,ˈviɲɐmuʃ,ˈviɲɐ̃w̃,,,,,,,,,,,,irregular  
+pt-conjugation,imperfect,pôr,indicativo,imperfeito,punha,punhas,punha,púnhamos,punham,ˈpuɲɐ,ˈpuɲɐʃ,ˈpuɲɐ,ˈpuɲɐmuʃ,ˈpuɲɐ̃w̃,,,,,,,,,,,,irregular  
+pt-conjugation,imperfect,ajudar,indicativo,imperfeito,ajudava,ajudavas,ajudava,ajudávamos,ajudavam,ɐʒuˈdavɐ,ɐʒuˈdavɐʃ,ɐʒuˈdavɐ,ɐʒuˈdavɐmuʃ,ɐʒuˈdavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,almoçar,indicativo,imperfeito,almocava,almocavas,almocava,almocávamos,almocavam,aɫmuˈkavɐ,aɫmuˈkavɐʃ,aɫmuˈkavɐ,aɫmuˈkavɐmuʃ,aɫmuˈkavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,andar,indicativo,imperfeito,andava,andavas,andava,andávamos,andavam,ɐ̃ˈdavɐ,ɐ̃ˈdavɐʃ,ɐ̃ˈdavɐ,ɐ̃ˈdavɐmuʃ,ɐ̃ˈdavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,apanhar,indicativo,imperfeito,apanhava,apanhavas,apanhava,apanhávamos,apanhavam,ɐpɐˈɲavɐ,ɐpɐˈɲavɐʃ,ɐpɐˈɲavɐ,ɐpɐˈɲavɐmuʃ,ɐpɐˈɲavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,beijar,indicativo,imperfeito,beijava,beijavas,beijava,beijávamos,beijavam,bɐjˈʒavɐ,bɐjˈʒavɐʃ,bɐjˈʒavɐ,bɐjˈʒavɐmuʃ,bɐjˈʒavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,calar-se,indicativo,imperfeito,calava-me,calavas-te,calava-se,calávamos-nos,calavam-se,kɐlɐˈvamɨ,kɐlɐˈvastɨ,kɐlɐˈvasɨ,kɐˈlavɐmusnuʃ,kɐlɐˈvɐ̃sɨ,,,,,,,,,,,,ar reflexos
+pt-conjugation,imperfect,cantar,indicativo,imperfeito,cantava,cantavas,cantava,cantávamos,cantavam,kɐ̃ˈtavɐ,kɐ̃ˈtavɐʃ,kɐ̃ˈtavɐ,kɐ̃ˈtavɐmuʃ,kɐ̃ˈtavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,chamar,indicativo,imperfeito,chamava,chamavas,chamava,chamávamos,chamavam,ʃɐˈmavɐ,ʃɐˈmavɐʃ,ʃɐˈmavɐ,ʃɐˈmavɐmuʃ,ʃɐˈmavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,colocar,indicativo,imperfeito,colocava,colocavas,colocava,colocávamos,colocavam,kuluˈkavɐ,kuluˈkavɐʃ,kuluˈkavɐ,kuluˈkavɐmuʃ,kuluˈkavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,combinar,indicativo,imperfeito,combinava,combinavas,combinava,combinávamos,combinavam,kõbiˈnavɐ,kõbiˈnavɐʃ,kõbiˈnavɐ,kõbiˈnavɐmuʃ,kõbiˈnavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,começar,indicativo,imperfeito,começava,começavas,começava,começávamos,começavam,kumɨˈsavɐ,kumɨˈsavɐʃ,kumɨˈsavɐ,kumɨˈsavɐmuʃ,kumɨˈsavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,cortar,indicativo,imperfeito,cortava,cortavas,cortava,cortávamos,cortavam,kuɾˈtavɐ,kuɾˈtavɐʃ,kuɾˈtavɐ,kuɾˈtavɐmuʃ,kuɾˈtavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,costumar,indicativo,imperfeito,costumava,costumavas,costumava,costumávamos,costumavam,kuʃtuˈmavɐ,kuʃtuˈmavɐʃ,kuʃtuˈmavɐ,kuʃtuˈmavɐmuʃ,kuʃtuˈmavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,cruzar,indicativo,imperfeito,cruzava,cruzavas,cruzava,cruzávamos,cruzavam,kɾuˈzavɐ,kɾuˈzavɐʃ,kɾuˈzavɐ,kɾuˈzavɐmuʃ,kɾuˈzavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,dançar,indicativo,imperfeito,dançava,dançavas,dançava,dançávamos,dançavam,dɐ̃ˈsavɐ,dɐ̃ˈsavɐʃ,dɐ̃ˈsavɐ,dɐ̃ˈsavɐmuʃ,dɐ̃ˈsavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,dar,indicativo,imperfeito,dava,davas,dava,dávamos,davam,ˈdavɐ,ˈdavɐʃ,ˈdavɐ,ˈdavɐmuʃ,ˈdavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,deitar-se,indicativo,imperfeito,deitava-me,deitavas-te,deitava-se,deitávamos-nos,deitavam-se,dɐjtɐˈvamɨ,dɐjtɐˈvastɨ,dɐjtɐˈvasɨ,dɐjˈtavɐmusnuʃ,dɐjtɐˈvɐ̃sɨ,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,deixar,indicativo,imperfeito,deixava,deixavas,deixava,deixávamos,deixavam,dɐjˈʃavɐ,dɐjˈʃavɐʃ,dɐjˈʃavɐ,dɐjˈʃavɐmuʃ,dɐjˈʃavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,encontrar,indicativo,imperfeito,encontrava,encontravas,encontrava,encontrávamos,encontravam,ẽkõˈtɾavɐ,ẽkõˈtɾavɐʃ,ẽkõˈtɾavɐ,ẽkõˈtɾavɐmuʃ,ẽkõˈtɾavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,ensinar,indicativo,imperfeito,ensinava,ensinavas,ensinava,ensinávamos,ensinavam,ẽsiˈnavɐ,ẽsiˈnavɐʃ,ẽsiˈnavɐ,ẽsiˈnavɐmuʃ,ẽsiˈnavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,entrar,indicativo,imperfeito,entrava,entravas,entrava,entrávamos,entravam,ẽˈtɾavɐ,ẽˈtɾavɐʃ,ẽˈtɾavɐ,ẽˈtɾavɐmuʃ,ẽˈtɾavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,esperar,indicativo,imperfeito,esperava,esperavas,esperava,esperávamos,esperavam,ʃpɨˈɾavɐ,ʃpɨˈɾavɐʃ,ʃpɨˈɾavɐ,ʃpɨˈɾavɐmuʃ,ʃpɨˈɾavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,estar,indicativo,imperfeito,estava,estavas,estava,estávamos,estavam,ˈʃtavɐ,ˈʃtavɐʃ,ˈʃtavɐ,ˈʃtavɐmuʃ,ˈʃtavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,experimentar,indicativo,imperfeito,experimentava,experimentavas,experimentava,experimentávamos,experimentavam,iʃpɨɾimẽˈtavɐ,iʃpɨɾimẽˈtavɐʃ,iʃpɨɾimẽˈtavɐ,iʃpɨɾimẽˈtavɐmuʃ,iʃpɨɾimẽˈtavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,falar,indicativo,imperfeito,falava,falavas,falava,falávamos,falavam,fɐˈlavɐ,fɐˈlavɐʃ,fɐˈlavɐ,fɐˈlavɐmuʃ,fɐˈlavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,fechar,indicativo,imperfeito,fechava,fechavas,fechava,fechávamos,fechavam,fɨˈʃavɐ,fɨˈʃavɐʃ,fɨˈʃavɐ,fɨˈʃavɐmuʃ,fɨˈʃavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,ficar,indicativo,imperfeito,ficava,ficavas,ficava,ficávamos,ficavam,fiˈkavɐ,fiˈkavɐʃ,fiˈkavɐ,fiˈkavɐmuʃ,fiˈkavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,ganhar,indicativo,imperfeito,ganhava,ganhavas,ganhava,ganhávamos,ganhavam,ɡɐˈɲavɐ,ɡɐˈɲavɐʃ,ɡɐˈɲavɐ,ɡɐˈɲavɐmuʃ,ɡɐˈɲavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,girar,indicativo,imperfeito,girava,giravas,girava,girámos,giravam,ʒiˈɾavɐ,ʒiˈɾavɐʃ,ʒiˈɾavɐ,ʒiˈɾamuʃ,ʒiˈɾavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,inserir,indicativo,imperfeito,inseria,inserias,inseria,inseríamos,inseriam,ĩsɨˈɾiɐ,ĩsɨˈɾiɐʃ,ĩsɨˈɾiɐ,ĩsɨˈɾiɐmuʃ,ĩsɨˈɾiɐ̃w̃,,,,,,,,,,,,ir
+pt-conjugation,imperfect,jantar,indicativo,imperfeito,jantava,jantavas,jantava,jantávamos,jantavam,ʒɐ̃ˈtavɐ,ʒɐ̃ˈtavɐʃ,ʒɐ̃ˈtavɐ,ʒɐ̃ˈtavɐmuʃ,ʒɐ̃ˈtavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,jogar,indicativo,imperfeito,jogava,jogavas,jogava,jogávamos,jogavam,ʒuˈɡavɐ,ʒuˈɡavɐʃ,ʒuˈɡavɐ,ʒuˈɡavɐmuʃ,ʒuˈɡavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,lavar,indicativo,imperfeito,lavava,lavavas,lavava,lavávamos,lavavam,lɐˈvavɐ,lɐˈvavɐʃ,lɐˈvavɐ,lɐˈvavɐmuʃ,lɐˈvavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,lembrar-se,indicativo,imperfeito,lembrava-me,lembravas-te,lembrava-se,lembrávamos-nos,lembravam-se,lẽbɾɐˈvamɨ,lẽbɾɐˈvastɨ,lẽbɾɐˈvasɨ,lẽˈbɾavɐmusnuʃ,lẽbɾɐˈvɐ̃sɨ,,,,,,,,,,,,ar reflexos
+pt-conjugation,imperfect,levantar,indicativo,imperfeito,levantava,levantavas,levantava,levantávamos,levantavam,lɨvɐ̃ˈtavɐ,lɨvɐ̃ˈtavɐʃ,lɨvɐ̃ˈtavɐ,lɨvɐ̃ˈtavɐmuʃ,lɨvɐ̃ˈtavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,ligar,indicativo,imperfeito,ligava,ligavas,ligava,ligávamos,ligavam,liˈɡavɐ,liˈɡavɐʃ,liˈɡavɐ,liˈɡavɐmuʃ,liˈɡavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,morar,indicativo,imperfeito,morava,moravas,morava,morávamos,moravam,muˈɾavɐ,muˈɾavɐʃ,muˈɾavɐ,muˈɾavɐmuʃ,muˈɾavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,olhar,indicativo,imperfeito,olhava,olhavas,olhava,olhávamos,olhavam,oˈʎavɐ,oˈʎavɐʃ,oˈʎavɐ,oˈʎavɐmuʃ,oˈʎavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,pagar,indicativo,imperfeito,pagava,pagavas,pagava,pagávamos,pagavam,pɐˈɡavɐ,pɐˈɡavɐʃ,pɐˈɡavɐ,pɐˈɡavɐmuʃ,pɐˈɡavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,passar,indicativo,imperfeito,passava,passavas,passava,passávamos,passavam,pɐˈsavɐ,pɐˈsavɐʃ,pɐˈsavɐ,pɐˈsavɐmuʃ,pɐˈsavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,pegar,indicativo,imperfeito,pegava,pegavas,pegava,pegávamos,pegavam,pɨˈɡavɐ,pɨˈɡavɐʃ,pɨˈɡavɐ,pɨˈɡavɐmuʃ,pɨˈɡavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,perguntar,indicativo,imperfeito,perguntava,perguntavas,perguntava,perguntávamos,perguntavam,pɨɾɡũˈtavɐ,pɨɾɡũˈtavɐʃ,pɨɾɡũˈtavɐ,pɨɾɡũˈtavɐmuʃ,pɨɾɡũˈtavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,pesquisar,indicativo,imperfeito,pesquisava,pesquisavas,pesquisava,pesquisávamos,pesquisavam,pɨskiˈzavɐ,pɨskiˈzavɐʃ,pɨskiˈzavɐ,pɨskiˈzavɐmuʃ,pɨskiˈzavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,praticar,indicativo,imperfeito,praticava,praticavas,praticava,praticávamos,praticavam,pɾɐtiˈkavɐ,pɾɐtiˈkavɐʃ,pɾɐtiˈkavɐ,pɾɐtiˈkavɐmuʃ,pɾɐtiˈkavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,precisar,indicativo,imperfeito,precisava,precisavas,precisava,precisávamos,precisavam,pɾɨsiˈzavɐ,pɾɨsiˈzavɐʃ,pɾɨsiˈzavɐ,pɾɨsiˈzavɐmuʃ,pɾɨsiˈzavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,telefonar,indicativo,imperfeito,telefonava,telefonavas,telefonava,telefonávamos,telefonavam,tɨlɨfuˈnavɐ,tɨlɨfuˈnavɐʃ,tɨlɨfuˈnavɐ,tɨlɨfuˈnavɐmuʃ,tɨlɨfuˈnavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,tentar,indicativo,imperfeito,tentava,tentavas,tentava,tentávamos,tentavam,tẽˈtavɐ,tẽˈtavɐʃ,tẽˈtavɐ,tẽˈtavɐmuʃ,tẽˈtavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,tirar,indicativo,imperfeito,tirava,tiravas,tirava,tirávamos,tiravam,tiˈɾavɐ,tiˈɾavɐʃ,tiˈɾavɐ,tiˈɾavɐmuʃ,tiˈɾavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,tocar,indicativo,imperfeito,tocava,tocavas,tocava,tocávamos,tocavam,tuˈkavɐ,tuˈkavɐʃ,tuˈkavɐ,tuˈkavɐmuʃ,tuˈkavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,tomar,indicativo,imperfeito,tomava,tomavas,tomava,tomávamos,tomavam,tuˈmavɐ,tuˈmavɐʃ,tuˈmavɐ,tuˈmavɐmuʃ,tuˈmavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,trabalhar,indicativo,imperfeito,trabalhava,trabalhavas,trabalhava,trabalhávamos,trabalhavam,tɾɐbɐˈʎavɐ,tɾɐbɐˈʎavɐʃ,tɾɐbɐˈʎavɐ,tɾɐbɐˈʎavɐmuʃ,tɾɐbɐˈʎavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,tratar,indicativo,imperfeito,tratava,tratavas,tratava,tratávamos,tratavam,tɾɐˈtavɐ,tɾɐˈtavɐʃ,tɾɐˈtavɐ,tɾɐˈtavɐmuʃ,tɾɐˈtavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,usar,indicativo,imperfeito,usava,usavas,usava,usávamos,usavam,uˈzavɐ,uˈzavɐʃ,uˈzavɐ,uˈzavɐmuʃ,uˈzavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,viajar,indicativo,imperfeito,viajava,viajavas,viajava,viajávamos,viajavam,viɐˈʒavɐ,viɐˈʒavɐʃ,viɐˈʒavɐ,viɐˈʒavɐmuʃ,viɐˈʒavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,visitar,indicativo,imperfeito,visitava,visitavas,visitava,visitávamos,visitavam,viziˈtavɐ,viziˈtavɐʃ,viziˈtavɐ,viziˈtavɐmuʃ,viziˈtavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,achar,indicativo,imperfeito,achava,achavas,achava,achávamos,achavam,ɐˈʃavɐ,ɐˈʃavɐʃ,ɐˈʃavɐ,ɐˈʃavɐmuʃ,ɐˈʃavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,afagar,indicativo,imperfeito,afagava,afagavas,afagava,afagávamos,afagavam,ɐfɐˈɡavɐ,ɐfɐˈɡavɐʃ,ɐfɐˈɡavɐ,ɐfɐˈɡavɐmuʃ,ɐfɐˈɡavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,afastar-se,indicativo,imperfeito,afastava-me,afastavas-te,afastava-se,afastávamos-nos,afastavam-se,ɐfɐʃtɐˈvamɨ,ɐfɐʃtɐˈvastɨ,ɐfɐʃtɐˈvasɨ,ɐfɐˈʃtavɐmusnuʃ,ɐfɐʃtɐˈvɐ̃sɨ,,,,,,,,,,,,ar reflexos
+pt-conjugation,imperfect,arranjar,indicativo,imperfeito,arranjava,arranjavas,arranjava,arranjávamos,arranjavam,ɐʁɐ̃ˈʒavɐ,ɐʁɐ̃ˈʒavɐʃ,ɐʁɐ̃ˈʒavɐ,ɐʁɐ̃ˈʒavɐmuʃ,ɐʁɐ̃ˈʒavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,comprar,indicativo,imperfeito,comprava,compravas,comprava,comprávamos,compravam,kõˈpɾavɐ,kõˈpɾavɐʃ,kõˈpɾavɐ,kõˈpɾavɐmuʃ,kõˈpɾavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,empurrar,indicativo,imperfeito,empurrava,empurravas,empurrava,empurrávamos,empurravam,ẽpuˈʁavɐ,ẽpuˈʁavɐʃ,ẽpuˈʁavɐ,ẽpuˈʁavɐmuʃ,ẽpuˈʁavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,estudar,indicativo,imperfeito,estudava,estudavas,estudava,estudávamos,estudavam,ʃtuˈdavɐ,ʃtuˈdavɐʃ,ʃtuˈdavɐ,ʃtuˈdavɐmuʃ,ʃtuˈdavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,gostar,indicativo,imperfeito,gostava,gostavas,gostava,gostávamos,gostavam,ɡuˈʃtavɐ,ɡuˈʃtavɐʃ,ɡuˈʃtavɐ,ɡuˈʃtavɐmuʃ,ɡuˈʃtavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,levantar-se,indicativo,imperfeito,levantava-me,levantavas-te,levantava-se,levantávamos-nos,levantavam-se,lɨvɐ̃tɐˈvamɨ,lɨvɐ̃tɐˈvastɨ,lɨvɐ̃tɐˈvasɨ,lɨvɐ̃ˈtavɐmusnuʃ,lɨvɐ̃tɐˈvɐ̃sɨ,,,,,,,,,,,,ar reflexos
+pt-conjugation,imperfect,mudar,indicativo,imperfeito,mudava,mudavas,mudava,mudávamos,mudavam,muˈdavɐ,muˈdavɐʃ,muˈdavɐ,muˈdavɐmuʃ,muˈdavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,pensar,indicativo,imperfeito,pensava,pensavas,pensava,pensávamos,pensavam,pẽˈsavɐ,pẽˈsavɐʃ,pẽˈsavɐ,pẽˈsavɐmuʃ,pẽˈsavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,pintar,indicativo,imperfeito,pintava,pintavas,pintava,pintávamos,pintavam,pĩˈtavɐ,pĩˈtavɐʃ,pĩˈtavɐ,pĩˈtavɐmuʃ,pĩˈtavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,puxar,indicativo,imperfeito,puxava,puxavas,puxava,puxávamos,puxavam,puˈʃavɐ,puˈʃavɐʃ,puˈʃavɐ,puˈʃavɐmuʃ,puˈʃavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,sentar,indicativo,imperfeito,sentava,sentavas,sentava,sentávamos,sentavam,sẽˈtavɐ,sẽˈtavɐʃ,sẽˈtavɐ,sẽˈtavɐmuʃ,sẽˈtavɐ̃w̃,,,,,,,,,,,,ar  
+pt-conjugation,imperfect,abrir,indicativo,imperfeito,abria,abrias,abria,abríamos,abriam,ɐˈbɾiɐ,ɐˈbɾiɐʃ,ɐˈbɾiɐ,ɐˈbɾiɐmuʃ,ɐˈbɾiɐ̃w̃,,,,,,,,,,,,ir
+pt-conjugation,imperfect,admitir,indicativo,imperfeito,admitia,admitias,admitia,admitíamos,admitiam,ɐdmiˈtiɐ,ɐdmiˈtiɐʃ,ɐdmiˈtiɐ,ɐdmiˈtiɐmuʃ,ɐdmiˈtiɐ̃w̃,,,,,,,,,,,,ir
+pt-conjugation,imperfect,cair,indicativo,imperfeito,caía,caías,caía,caíamos,caíam,kɐˈiɐ,kɐˈiɐʃ,kɐˈiɐ,kɐˈiɐmuʃ,kɐˈiɐ̃w̃,,,,,,,,,,,,ir
+pt-conjugation,imperfect,conseguir,indicativo,imperfeito,conseguia,conseguias,conseguia,conseguíamos,conseguiam,kõsɨˈɡiɐ,kõsɨˈɡiɐʃ,kõsɨˈɡiɐ,kõsɨˈɡwiɐmuʃ,kõsɨˈɡiɐ̃w̃,,,,,,,,,,,,ir
+pt-conjugation,imperfect,corrigir,indicativo,imperfeito,corrigia,corrigias,corrigia,corrigíamos,corrigiam,kuʁiˈʒiɐ,kuʁiˈʒiɐʃ,kuʁiˈʒiɐ,kuʁiˈʒiɐmuʃ,kuʁiˈʒiɐ̃w̃,,,,,,,,,,,,ir
+pt-conjugation,imperfect,cumprir,indicativo,imperfeito,cumpria,cumprias,cumpria,cumpríamos,cumpriam,kũˈpɾiɐ,kũˈpɾiɐʃ,kũˈpɾiɐ,kũˈpɾiɐmuʃ,kũˈpɾiɐ̃w̃,,,,,,,,,,,,ir
+pt-conjugation,imperfect,decidir,indicativo,imperfeito,decidia,decidias,decidia,decidíamos,decidiam,dɨsiˈdiɐ,dɨsiˈdiɐʃ,dɨsiˈdiɐ,dɨsiˈdiɐmuʃ,dɨsiˈdiɐ̃w̃,,,,,,,,,,,,ir
+pt-conjugation,imperfect,despir-se,indicativo,imperfeito,despia-me,despias-te,despia-se,despíamos-nos,despiam-se,dɨʃpiˈamɨ,dɨʃpiˈastɨ,dɨʃpiˈasɨ,dɨˈʃpiɐmusnuʃ,dɨʃpiˈɐ̃sɨ,,,,,,,,,,,,ir reflexos  
+pt-conjugation,imperfect,dirigir,indicativo,imperfeito,dirigia,dirigias,dirigia,dirigíamos,dirigiam,diɾiˈʒiɐ,diɾiˈʒiɐʃ,diɾiˈʒiɐ,diɾiˈʒiɐmuʃ,diɾiˈʒiɐ̃w̃,,,,,,,,,,,,ir
+pt-conjugation,imperfect,discutir,indicativo,imperfeito,discutia,discutias,discutia,discutíamos,discutiam,diʃkuˈtiɐ,diʃkuˈtiɐʃ,diʃkuˈtiɐ,diʃkuˈtiɐmuʃ,diʃkuˈtiɐ̃w̃,,,,,,,,,,,,ir
+pt-conjugation,imperfect,distribuir,indicativo,imperfeito,distribuía,distribuías,distribuía,distribuíamos,distribuíam,diʃtɾibuˈiɐ,diʃtɾibuˈiɐʃ,diʃtɾibuˈiɐ,diʃtɾibuˈiɐmuʃ,diʃtɾibuˈiɐ̃w̃,,,,,,,,,,,,ir
+pt-conjugation,imperfect,dormir,indicativo,imperfeito,dormia,dormias,dormia,dormíamos,dormiam,duɾˈmiɐ,duɾˈmiɐʃ,duɾˈmiɐ,duɾˈmiɐmuʃ,duɾˈmiɐ̃w̃,,,,,,,,,,,,ir
+pt-conjugation,imperfect,fugir,indicativo,imperfeito,fugia,fugias,fugia,fugíamos,fugiam,fuˈʒiɐ,fuˈʒiɐʃ,fuˈʒiɐ,fuˈʒiɐmuʃ,fuˈʒiɐ̃w̃,,,,,,,,,,,,ir
+pt-conjugation,imperfect,imprimir,indicativo,imperfeito,imprimia,imprimias,imprimia,imprimíamos,imprimiam,ĩpɾiˈmiɐ,ĩpɾiˈmiɐʃ,ĩpɾiˈmiɐ,ĩpɾiˈmiɐmuʃ,ĩpɾiˈmiɐ̃w̃,,,,,,,,,,,,ir
+pt-conjugation,imperfect,insistir,indicativo,imperfeito,insistia,insistias,insistia,insistíamos,insistiam,ĩsiˈʃtiɐ,ĩsiˈʃtiɐʃ,ĩsiˈʃtiɐ,ĩsiˈʃtiɐmuʃ,ĩsiˈʃtiɐ̃w̃,,,,,,,,,,,,ir
+pt-conjugation,imperfect,introduzir,indicativo,imperfeito,introduzia,introduzias,introduzia,introduzíamos,introduziam,ĩtɾuduˈziɐ,ĩtɾuduˈziɐʃ,ĩtɾuduˈziɐ,ĩtɾuduˈziɐmuʃ,ĩtɾuduˈziɐ̃w̃,,,,,,,,,,,,ir
+pt-conjugation,imperfect,ir,indicativo,imperfeito,ia,ias,ia,íamos,iam,ˈiɐ,ˈiɐʃ,ˈiɐ,ˈiɐmuʃ,ˈiɐ̃w̃,,,,,,,,,,,,ir
+pt-conjugation,imperfect,medir,indicativo,imperfeito,media,medias,media,medíamos,mediam,mɨˈdiɐ,mɨˈdiɐʃ,mɨˈdiɐ,mɨˈdiɐmuʃ,mɨˈdiɐ̃w̃,,,,,,,,,,,,ir
+pt-conjugation,imperfect,ouvir,indicativo,imperfeito,ouvia,ouvias,ouvia,ouvíamos,ouviam,oˈviɐ,oˈviɐʃ,oˈviɐ,oˈviɐmuʃ,oˈviɐ̃w̃,,,,,,,,,,,,ir
+pt-conjugation,imperfect,partir,indicativo,imperfeito,partia,partias,partia,partíamos,partiam,pɐɾˈtiɐ,pɐɾˈtiɐʃ,pɐɾˈtiɐ,pɐɾˈtiɐmuʃ,pɐɾˈtiɐ̃w̃,,,,,,,,,,,,ir
+pt-conjugation,imperfect,pedir,indicativo,imperfeito,pedia,pedias,pedia,pedíamos,pediam,pɨˈdiɐ,pɨˈdiɐʃ,pɨˈdiɐ,pɨˈdiɐmuʃ,pɨˈdiɐ̃w̃,,,,,,,,,,,,ir
+pt-conjugation,imperfect,permitir,indicativo,imperfeito,permitia,permitias,permitia,permitíamos,permitiam,pɨɾmiˈtiɐ,pɨɾmiˈtiɐʃ,pɨɾmiˈtiɐ,pɨɾmiˈtiɐmuʃ,pɨɾmiˈtiɐ̃w̃,,,,,,,,,,,,ir
+pt-conjugation,imperfect,preferir,indicativo,imperfeito,preferia,preferias,preferia,preferíamos,preferiam,pɾɨfɨˈɾiɐ,pɾɨfɨˈɾiɐʃ,pɾɨfɨˈɾiɐ,pɾɨfɨˈɾiɐmuʃ,pɾɨfɨˈɾiɐ̃w̃,,,,,,,,,,,,ir
+pt-conjugation,imperfect,repetir,indicativo,imperfeito,repetia,repetias,repetia,repetíamos,repetiam,ʁɨpɨˈtiɐ,ʁɨpɨˈtiɐʃ,ʁɨpɨˈtiɐ,ʁɨpɨˈtiɐmuʃ,ʁɨpɨˈtiɐ̃w̃,,,,,,,,,,,,ir
+pt-conjugation,imperfect,reunir,indicativo,imperfeito,reunia,reunias,reunia,reuníamos,reuniam,ʁewˈniɐ,ʁewˈniɐʃ,ʁewˈniɐ,ʁewˈniɐmuʃ,ʁewˈniɐ̃w̃,,,,,,,,,,,,ir
+pt-conjugation,imperfect,rir,indicativo,imperfeito,ria,rias,ria,ríamos,riam,ˈʁiɐ,ˈʁiɐʃ,ˈʁiɐ,ˈʁiɐmuʃ,ˈʁiɐ̃w̃,,,,,,,,,,,,ir
+pt-conjugation,imperfect,sair,indicativo,imperfeito,saía,saías,saía,saíamos,saíam,sɐˈiɐ,sɐˈiɐʃ,sɐˈiɐ,sɐˈiɐmuʃ,sɐˈiɐ̃w̃,,,,,,,,,,,,ir
+pt-conjugation,imperfect,seguir,indicativo,imperfeito,seguia,seguias,seguia,seguíamos,seguiam,sɨˈɡiɐ,sɨˈɡiɐʃ,sɨˈɡiɐ,sɨˈɡwiɐmuʃ,sɨˈɡiɐ̃w̃,,,,,,,,,,,,ir
+pt-conjugation,imperfect,sentir,indicativo,imperfeito,sentia,sentias,sentia,sentíamos,sentiam,sẽˈtiɐ,sẽˈtiɐʃ,sẽˈtiɐ,sẽˈtiɐmuʃ,sẽˈtiɐ̃w̃,,,,,,,,,,,,ir
+pt-conjugation,imperfect,servir,indicativo,imperfeito,servia,servias,servia,servíamos,serviam,sɨɾˈviɐ,sɨɾˈviɐʃ,sɨɾˈviɐ,sɨɾˈviɐmuʃ,sɨɾˈviɐ̃w̃,,,,,,,,,,,,ir
+pt-conjugation,imperfect,subir,indicativo,imperfeito,subia,subias,subia,subíamos,subiam,suˈbiɐ,suˈbiɐʃ,suˈbiɐ,suˈbiɐmuʃ,suˈbiɐ̃w̃,,,,,,,,,,,,ir
+pt-conjugation,imperfect,traduzir,indicativo,imperfeito,traduzia,traduzias,traduzia,traduzíamos,traduziam,tɾɐduˈziɐ,tɾɐduˈziɐʃ,tɾɐduˈziɐ,tɾɐduˈziɐmuʃ,tɾɐduˈziɐ̃w̃,,,,,,,,,,,,ir
+pt-conjugation,imperfect,vestir-se,indicativo,imperfeito,vestia-me,vestias-te,vestia-se,vestíamos-nos,vestiam-se,vɨʃtiˈamɨ,vɨʃtiˈastɨ,vɨʃtiˈasɨ,vɨˈʃtiɐmusnuʃ,vɨʃtiˈɐ̃sɨ,,,,,,,,,,,,ir reflexos  
+pt-conjugation,imperfect,dividir,indicativo,imperfeito,dividia,dividias,dividia,dividíamos,dividiam,diviˈdiɐ,diviˈdiɐʃ,diviˈdiɐ,diviˈdiɐmuʃ,diviˈdiɐ̃w̃,,,,,,,,,,,,ir
+pt-conjugation,imperfect,agradecer,indicativo,imperfeito,agradecia,agradecias,agradecia,agradecíamos,agradeciam,ɐɡɾɐdɨˈsiɐ,ɐɡɾɐdɨˈsiɐʃ,ɐɡɾɐdɨˈsiɐ,ɐɡɾɐdɨˈsiɐmuʃ,ɐɡɾɐdɨˈsiɐ̃w̃,,,,,,,,,,,,er
+pt-conjugation,imperfect,aprender,indicativo,imperfeito,aprendia,aprendias,aprendia,aprendíamos,aprendiam,ɐpɾẽˈdiɐ,ɐpɾẽˈdiɐʃ,ɐpɾẽˈdiɐ,ɐpɾẽˈdiɐmuʃ,ɐpɾẽˈdiɐ̃w̃,,,,,,,,,,,,er
+pt-conjugation,imperfect,bater,indicativo,imperfeito,batia,batias,batia,batíamos,batiam,bɐˈtiɐ,bɐˈtiɐʃ,bɐˈtiɐ,bɐˈtiɐmuʃ,bɐˈtiɐ̃w̃,,,,,,,,,,,,er
+pt-conjugation,imperfect,beber,indicativo,imperfeito,bebia,bebias,bebia,bebíamos,bebiam,bɨˈbiɐ,bɨˈbiɐʃ,bɨˈbiɐ,bɨˈbiɐmuʃ,bɨˈbiɐ̃w̃,,,,,,,,,,,,er
+pt-conjugation,imperfect,comer,indicativo,imperfeito,comia,comias,comia,comíamos,comiam,kuˈmiɐ,kuˈmiɐʃ,kuˈmiɐ,kuˈmiɐmuʃ,kuˈmiɐ̃w̃,,,,,,,,,,,,er
+pt-conjugation,imperfect,compreender,indicativo,imperfeito,compreendia,compreendias,compreendia,compreendíamos,compreendiam,kõpɾɨẽˈdiɐ,kõpɾɨẽˈdiɐʃ,kõpɾɨẽˈdiɐ,kõpɾɨẽˈdiɐmuʃ,kõpɾɨẽˈdiɐ̃w̃,,,,,,,,,,,,er
+pt-conjugation,imperfect,conhecer,indicativo,imperfeito,conhecia,conhecias,conhecia,conhecíamos,conheciam,kuɲɨˈsiɐ,kuɲɨˈsiɐʃ,kuɲɨˈsiɐ,kuɲɨˈsiɐmuʃ,kuɲɨˈsiɐ̃w̃,,,,,,,,,,,,er
+pt-conjugation,imperfect,correr,indicativo,imperfeito,corria,corrias,corria,corríamos,corriam,kuˈʁiɐ,kuˈʁiɐʃ,kuˈʁiɐ,kuˈʁiɐmuʃ,kuˈʁiɐ̃w̃,,,,,,,,,,,,er
+pt-conjugation,imperfect,crer,indicativo,imperfeito,creia,creias,creia,críamos,creiam,ˈkɾɐjɐ,ˈkɾɐjɐʃ,ˈkɾɐjɐ,ˈkɾiɐmuʃ,ˈkɾɐjɐ̃w̃,,,,,,,,,,,,er
+pt-conjugation,imperfect,crescer,indicativo,imperfeito,crescia,crescias,crescia,crescíamos,cresciam,kɾɨˈʃsiɐ,kɾɨˈʃsiɐʃ,kɾɨˈʃsiɐ,kɾɨˈʃsiɐmuʃ,kɾɨˈʃsiɐ̃w̃,,,,,,,,,,,,er
+pt-conjugation,imperfect,dever,indicativo,imperfeito,devia,devias,devia,devíamos,deviam,dɨˈviɐ,dɨˈviɐʃ,dɨˈviɐ,dɨˈviɐmuʃ,dɨˈviɐ̃w̃,,,,,,,,,,,,er
+pt-conjugation,imperfect,doer,indicativo,imperfeito,doía,doías,doía,doíamos,doíam,duˈiɐ,duˈiɐʃ,duˈiɐ,duˈiɐmuʃ,duˈiɐ̃w̃,,,,,,,,,,,,er
+pt-conjugation,imperfect,entender,indicativo,imperfeito,entendia,entendias,entendia,entendíamos,entendiam,ẽtẽˈdiɐ,ẽtẽˈdiɐʃ,ẽtẽˈdiɐ,ẽtẽˈdiɐmuʃ,ẽtẽˈdiɐ̃w̃,,,,,,,,,,,,er
+pt-conjugation,imperfect,escolher,indicativo,imperfeito,escolhia,escolhias,escolhia,escolhíamos,escolhiam,ʃkuˈʎiɐ,ʃkuˈʎiɐʃ,ʃkuˈʎiɐ,ʃkuˈʎiɐmuʃ,ʃkuˈʎiɐ̃w̃,,,,,,,,,,,,er
+pt-conjugation,imperfect,escrever,indicativo,imperfeito,escrevia,escrevias,escrevia,escrevíamos,escreviam,ʃkɾɨˈviɐ,ʃkɾɨˈviɐʃ,ʃkɾɨˈviɐ,ʃkɾɨˈviɐmuʃ,ʃkɾɨˈviɐ̃w̃,,,,,,,,,,,,er
+pt-conjugation,imperfect,esquecer,indicativo,imperfeito,esquecia,esquecias,esquecia,esquecíamos,esqueciam,skɨˈsiɐ,skɨˈsiɐʃ,skɨˈsiɐ,skɨˈsiɐmuʃ,skɨˈsiɐ̃w̃,,,,,,,,,,,,er
+pt-conjugation,imperfect,fazer,indicativo,imperfeito,fazia,fazias,fazia,fazíamos,faziam,fɐˈziɐ,fɐˈziɐʃ,fɐˈziɐ,fɐˈziɐmuʃ,fɐˈziɐ̃w̃,,,,,,,,,,,,er
+pt-conjugation,imperfect,ler,indicativo,imperfeito,lia,lias,lia,líamos,liam,ˈliɐ,ˈliɐʃ,ˈliɐ,ˈliɐmuʃ,ˈliɐ̃w̃,,,,,,,,,,,,er
+pt-conjugation,imperfect,oferecer,indicativo,imperfeito,oferecia,oferecias,oferecia,oferecíamos,ofereciam,ofɨɾɨˈsiɐ,ofɨɾɨˈsiɐʃ,ofɨɾɨˈsiɐ,ofɨɾɨˈsiɐmuʃ,ofɨɾɨˈsiɐ̃w̃,,,,,,,,,,,,er
+pt-conjugation,imperfect,parecer,indicativo,imperfeito,parecia,parecias,parecia,parecíamos,pareciam,pɐɾɨˈsiɐ,pɐɾɨˈsiɐʃ,pɐɾɨˈsiɐ,pɐɾɨˈsiɐmuʃ,pɐɾɨˈsiɐ̃w̃,,,,,,,,,,,,er
+pt-conjugation,imperfect,perceber,indicativo,imperfeito,percebia,percebias,percebia,percebíamos,percebiam,pɨɾsɨˈbiɐ,pɨɾsɨˈbiɐʃ,pɨɾsɨˈbiɐ,pɨɾsɨˈbiɐmuʃ,pɨɾsɨˈbiɐ̃w̃,,,,,,,,,,,,er
+pt-conjugation,imperfect,perder,indicativo,imperfeito,perdia,perdias,perdia,perdíamos,perdiam,pɨɾˈdiɐ,pɨɾˈdiɐʃ,pɨɾˈdiɐ,pɨɾˈdiɐmuʃ,pɨɾˈdiɐ̃w̃,,,,,,,,,,,,er
+pt-conjugation,imperfect,permanecer,indicativo,imperfeito,permanecia,permanecias,permanecia,permanecíamos,permaneciam,pɨɾmɐnɨˈsiɐ,pɨɾmɐnɨˈsiɐʃ,pɨɾmɐnɨˈsiɐ,pɨɾmɐnɨˈsiɐmuʃ,pɨɾmɐnɨˈsiɐ̃w̃,,,,,,,,,,,,er
+pt-conjugation,imperfect,poder,indicativo,imperfeito,podia,podias,podia,podíamos,podiam,puˈdiɐ,puˈdiɐʃ,puˈdiɐ,puˈdiɐmuʃ,puˈdiɐ̃w̃,,,,,,,,,,,,er
+pt-conjugation,imperfect,prometer,indicativo,imperfeito,prometia,prometias,prometia,prometíamos,prometiam,pɾumɨˈtiɐ,pɾumɨˈtiɐʃ,pɾumɨˈtiɐ,pɾumɨˈtiɐmuʃ,pɾumɨˈtiɐ̃w̃,,,,,,,,,,,,er
+pt-conjugation,imperfect,proteger,indicativo,imperfeito,protegia,protegias,protegia,protegíamos,protegiam,pɾutɨˈʒiɐ,pɾutɨˈʒiɐʃ,pɾutɨˈʒiɐ,pɾutɨˈʒiɐmuʃ,pɾutɨˈʒiɐ̃w̃,,,,,,,,,,,,er
+pt-conjugation,imperfect,querer,indicativo,imperfeito,queria,querias,queria,queríamos,queriam,kɨˈɾiɐ,kɨˈɾiɐʃ,kɨˈɾiɐ,kɨˈɾiɐmuʃ,kɨˈɾiɐ̃w̃,,,,,,,,,,,,er
+pt-conjugation,imperfect,receber,indicativo,imperfeito,recebia,recebias,recebia,recebíamos,recebiam,ʁɨsɨˈbiɐ,ʁɨsɨˈbiɐʃ,ʁɨsɨˈbiɐ,ʁɨsɨˈbiɐmuʃ,ʁɨsɨˈbiɐ̃w̃,,,,,,,,,,,,er
+pt-conjugation,imperfect,resolver,indicativo,imperfeito,resolvia,resolvias,resolvia,resolvíamos,resolviam,ʁɨzɔɫˈviɐ,ʁɨzɔɫˈviɐʃ,ʁɨzɔɫˈviɐ,ʁɨzɔɫˈviɐmuʃ,ʁɨzɔɫˈviɐ̃w̃,,,,,,,,,,,,er
+pt-conjugation,imperfect,saber,indicativo,imperfeito,sabia,sabias,sabia,sabíamos,sabiam,sɐˈbiɐ,sɐˈbiɐʃ,sɐˈbiɐ,sɐˈbiɐmuʃ,sɐˈbiɐ̃w̃,,,,,,,,,,,,er
+pt-conjugation,imperfect,trazer,indicativo,imperfeito,trazia,trazias,trazia,trazíamos,traziam,tɾɐˈziɐ,tɾɐˈziɐʃ,tɾɐˈziɐ,tɾɐˈziɐmuʃ,tɾɐˈziɐ̃w̃,,,,,,,,,,,,er
+pt-conjugation,imperfect,ver,indicativo,imperfeito,via,vias,via,víamos,viam,ˈviɐ,ˈviɐʃ,ˈviɐ,ˈviɐmuʃ,ˈviɐ̃w̃,,,,,,,,,,,,er
+pt-conjugation,imperfect,viver,indicativo,imperfeito,vivia,vivias,vivia,vivíamos,viviam,viˈviɐ,viˈviɐʃ,viˈviɐ,viˈviɐmuʃ,viˈviɐ̃w̃,,,,,,,,,,,,er
+pt-conjugation,imperfect,responder,indicativo,imperfeito,respondia,respondias,respondia,respondíamos,respondiam,ʁɨʃpõˈdiɐ,ʁɨʃpõˈdiɐʃ,ʁɨʃpõˈdiɐ,ʁɨʃpõˈdiɐmuʃ,ʁɨʃpõˈdiɐ̃w̃,,,,,,,,,,,,er
+pt-conjugation,imperfect,caber,indicativo,imperfeito,cabia,cabias,cabia,cabíamos,cabiam,kɐˈbiɐ,kɐˈbiɐʃ,kɐˈbiɐ,kɐˈbiɐmuʃ,kɐˈbiɐ̃w̃,,,,,,,,,,,,er
+pt-conjugation,imperfect,percorrer,indicativo,imperfeito,percorria,percorrías,percorria,percorríamos,percorriam,pɨɾkuˈʁiɐ,pɨɾkuˈʁiɐʃ,pɨɾkuˈʁiɐ,pɨɾkuˈʁiɐmuʃ,pɨɾkuˈʁiɐ̃w̃,,,,,,,,,,,,er
+pt-conjugation,imperative,dar,imperativo,imperativo (presente),,dá,dê,demos,dêem,,ˈda,ˈde,ˈdɛmuʃ,ˈdeɐ̃j,,não dês,não dê,não demos,não dêem,,ˈnɐ̃w ˈdeʃ,ˈnɐ̃w ˈde,ˈnɐ̃w̃ ˈdɛmuʃ,ˈnɐ̃w ˈdeɐ̃j,,ar irregular
+pt-conjugation,imperative,estar,imperativo,imperativo (presente),,está,esteja,estejamos,estejam,,ʃˈta,ʃˈtɐjʒɐ,ʃtɨˈʒɐmuʃ,ʃˈtɐjʒɐ̃w,,não estejas,não esteja,não estejamos,não estejam,,ˈnɐ̃w ʃˈtɐjʒɐʃ,ˈnɐ̃w ʃˈtɐjʒɐ,ˈnɐ̃w̃ ʃtɨˈʒɐmuʃ,ˈnɐ̃w ʃˈtɐjʒɐ̃w,,ar irregular
+pt-conjugation,imperative,ir,imperativo,imperativo (presente),,vai,vá,vamos,vão,,ˈvaj,ˈva,ˈvɐmuʃ,ˈvɐ̃w,,não vás,não vá,não vamos,não vão,,ˈnɐ̃w ˈvaʃ,ˈnɐ̃w ˈva,ˈnɐ̃w̃ ˈvɐmuʃ,ˈnɐ̃w ˈvɐ̃w,,ir irregular
+pt-conjugation,imperative,gostar de,imperativo,imperativo (presente),,gosta de ...,goste de ...,gostemos de ...,gostem de ...,,ˈɡɔʃtɐ dɨ...,ˈɡɔʃtɨ dɨ...,ɡuˈʃtemuʒ dɨ...,ˈɡɔʃtɐ̃j̃ dɨ...,,não gostes de ...,não goste de ...,não gostemos de ...,não gostem de ...,,ˈnɐ̃w̃ ˈɡɔʃtɨʒ dɨ...,ˈnɐ̃w̃ ˈɡɔʃtɨ dɨ...,ˈnɐ̃w̃ ɡuˈʃtemuʒ dɨ...,ˈnɐ̃w̃ ˈɡɔʃtɐ̃j̃ dɨ...,,ar
+pt-conjugation,imperative,começar a,imperativo,imperativo (presente),,começa a ...,comece a ...,comecemos a ...,comecem a ...,,kuˈmɛsɐ ɐ...,kuˈmɛsɨ ɐ...,kumɨˈsemuz ɐ...,kuˈmɛsɐ̃j̃ ɐ...,,não comeces a ...,não comece a ...,não comecemos a ...,não comecem a ...,,ˈnɐ̃w̃ kuˈmɛsɨz ɐ...,ˈnɐ̃w̃ kuˈmɛsɨ ɐ...,ˈnɐ̃w̃ kumɨˈsemuz ɐ...,ˈnɐ̃w̃ kuˈmɛsɐ̃j̃ ɐ...,,ar
+pt-conjugation,imperative,acabar de,imperativo,imperativo (presente),,acaba de ...,acabe de ...,acabemos de ...,acabem de ...,,ɐˈkabɐ dɨ...,ɐˈkabɨ dɨ...,ɐkɐˈbemuʒ dɨ...,ɐˈkabɐ̃j̃ dɨ...,,não acabes de ...,não acabe de ...,não acabemos de ...,não acabem de ...,,ˈnɐ̃w̃ ɐˈkabɨʒ dɨ...,ˈnɐ̃w̃ ɐˈkabɨ dɨ...,ˈnɐ̃w̃ ɐkɐˈbemuʒ dɨ...,ˈnɐ̃w̃ ɐˈkabɐ̃j̃ dɨ...,,ar
+pt-conjugation,imperative,continuar a,imperativo,imperativo (presente),,continua a ...,continue a ...,continuemos a ...,continuem a ...,,kõtiˈnuɐ ɐ...,kõtiˈnuɨ ɐ...,kõtinuˈemuz ɐ...,kõtiˈnuɐ̃j̃ ɐ...,,não continues a ...,não continue a ...,não continuemos a ...,não continuem a ...,,ˈnɐ̃w̃ kõtiˈnuɨz ɐ...,ˈnɐ̃w̃ kõtiˈnuɨ ɐ...,ˈnɐ̃w̃ kõtinuˈemuz ɐ...,ˈnɐ̃w̃ kõtiˈnuɐ̃j̃ ɐ...,,ar
+pt-conjugation,imperative,lembrar-se de,imperativo,imperativo (presente),,lembra-te de ...,lembre-se de ...,lembremo-nos de ...,lembrem-se de ...,,lẽˈbɾatɨ dɨ...,lẽˈbɾɛsɨ dɨ...,lẽbɾɨˈmɔnuʒ dɨ...,lẽˈbɾẽsɨ dɨ...,,não te lembres de ...,não se lembre de ...,não nos lembremos de ...,não se lembrem de ...,,ˈnɐ̃w̃ ˈtɛ ˈlẽbɾɨʒ dɨ...,ˈnɐ̃w̃ sɨ ˈlẽbɾɨ dɨ...,ˈnɐ̃w̃ ˈnɔʒ lẽˈbɾɛmuʒ dɨ...,ˈnɐ̃w̃ sɨ ˈlẽbɾɐ̃j̃ dɨ...,,ar reflexos
+pt-conjugation,imperative,deixar de,imperativo,imperativo (presente),,deixa de ...,deixe de ...,deixemos de ...,deixem de ...,,ˈdɐjʃɐ dɨ...,ˈdɐjʃɨ dɨ...,dɐjˈʃemuʒ dɨ...,ˈdɐjʃɐ̃j̃ dɨ...,,não deixes de ...,não deixe de ...,não deixemos de ...,não deixem de ...,,ˈnɐ̃w̃ ˈdɐjʃɨʒ dɨ...,ˈnɐ̃w̃ ˈdɐjʃɨ dɨ...,ˈnɐ̃w̃ dɐjˈʃemuʒ dɨ...,ˈnɐ̃w̃ ˈdɐjʃɐ̃j̃ dɨ...,,ar
+pt-conjugation,imperative,precisar de,imperativo,imperativo (presente),,precisa de ...,precise de ...,precisemos de ...,precisem de ...,,pɾɨˈsizɐ dɨ...,pɾɨˈsizɨ dɨ...,pɾɨsiˈzemuʒ dɨ...,pɾɨˈsizɐ̃j̃ dɨ...,,não precises de ...,não precise de ...,não precisemos de ...,não precisem de ...,,ˈnɐ̃w̃ pɾɨˈsizɨʒ dɨ...,ˈnɐ̃w̃ pɾɨˈsizɨ dɨ...,ˈnɐ̃w̃ pɾɨsiˈzemuʒ dɨ...,ˈnɐ̃w̃ pɾɨˈsizɐ̃j̃ dɨ...,,ar
+pt-conjugation,imperative,ter de,imperativo,imperativo (presente),,tem de ...,tenha de ...,tenhamos de ...,tenham de ...,,ˈtɐ̃j̃ dɨ...,ˈtɐɲɐ dɨ...,tɨˈɲɐmuʒ dɨ...,ˈtɐɲɐ̃w̃ dɨ...,,não tenhas de ...,não tenha de ...,não tenhamos de ...,não tenham de ...,,ˈnɐ̃w̃ ˈtɐɲɐʒ dɨ...,ˈnɐ̃w̃ ˈtɐɲɐ dɨ...,ˈnɐ̃w̃ tɨˈɲɐmuʒ dɨ...,ˈnɐ̃w̃ ˈtɐɲɐ̃w̃ dɨ...,,er
+pt-conjugation,imperative,esquecer-se de,imperativo,imperativo (presente),,esquece-te de ...,esqueça-se de ...,esqueçamo-nos de ...,esqueçam-se de ...,,skɨˈsɛtɨ dɨ...,skɨˈsasɨ dɨ...,skɨsɐˈmɔnuʒ dɨ...,skɨˈsɐ̃sɨ dɨ...,,não te esqueças de ...,não se esqueça de ...,não nos esqueçamos de ...,não se esqueçam de ...,,ˈnɐ̃w̃ ˈtɛ sˈkɛsɐʒ dɨ...,ˈnɐ̃w̃ sɨ sˈkɛsɐ dɨ...,ˈnɐ̃w̃ ˈnɔʃ skɨˈsɐmuʒ dɨ...,ˈnɐ̃w̃ sɨ sˈkɛsɐ̃w̃ dɨ...,,er reflexos
+pt-conjugation,imperative,entrar em,imperativo,imperativo (presente),,entra em ...,entre em ...,entremos em ...,entrem em ...,,ˈẽtɾɐ ˈɐ̃j̃...,ˈẽtɾɨ ˈɐ̃j̃...,ẽˈtɾɛmuz ˈɐ̃j̃...,ˈẽtɾɐ̃j̃ ˈɐ̃j̃...,,não entres em ...,não entre em ...,não entremos em ...,não entrem em ...,,ˈnɐ̃w̃ ˈẽtɾɨz ˈɐ̃j̃...,ˈnɐ̃w̃ ˈẽtɾɨ ˈɐ̃j̃...,ˈnɐ̃w̃ ẽˈtɾɛmuz ˈɐ̃j̃...,ˈnɐ̃w̃ ˈẽtɾɐ̃j̃ ˈɐ̃j̃...,,ar
+pt-conjugation,imperative,passar por,imperativo,imperativo (presente),,passa por ...,passe por ...,passemos por ...,passem por ...,,ˈpasɐ puɾ...,ˈpasɨ puɾ...,pɐˈsemuʃ puɾ...,ˈpasɐ̃j̃ puɾ...,,não passes por ...,não passe por ...,não passemos por ...,não passem por ...,,ˈnɐ̃w̃ ˈpasɨʃ puɾ...,ˈnɐ̃w̃ ˈpasɨ puɾ...,ˈnɐ̃w̃ pɐˈsemuʃ puɾ...,ˈnɐ̃w̃ ˈpasɐ̃j̃ puɾ...,,ar
+pt-conjugation,imperative,telefonar para,imperativo,imperativo (presente),,telefona para ...,telefone para ...,telefonemos para ...,telefonem para ...,,tɨlɨˈfonɐ pɐɾɐ...,tɨlɨˈfɔnɨ pɐɾɐ...,tɨlɨfuˈnemuʃ pɐɾɐ...,tɨlɨˈfɔnɐ̃j̃ pɐɾɐ...,,não telefones para ...,não telefone para ...,não telefonemos para ...,não telefonem para ...,,ˈnɐ̃w̃ tɨlɨˈfɔnɨʃ pɐɾɐ...,ˈnɐ̃w̃ tɨlɨˈfɔnɨ pɐɾɐ...,ˈnɐ̃w̃ tɨlɨfuˈnemuʃ pɐɾɐ...,ˈnɐ̃w̃ tɨlɨˈfɔnɐ̃j̃ pɐɾɐ...,,ar
+pt-conjugation,imperative,chegar a,imperativo,imperativo (presente),,chega a ...,chegue a ...,cheguemos a ...,cheguem a ...,,ˈʃɛɡɐ ɐ...,ˈʃɛɡɨ ɐ...,ʃɨˈɡemuz ɐ...,ˈʃɛɡɐ̃j̃ ɐ...,,não chegues a ...,não chegue a ...,não cheguemos a ...,não cheguem a ...,,ˈnɐ̃w̃ ˈʃɛɡɨz ɐ...,ˈnɐ̃w̃ ˈʃɛɡɨ ɐ...,ˈnɐ̃w̃ ʃɨˈɡemuz ɐ...,ˈnɐ̃w̃ ˈʃɛɡɐ̃j̃ ɐ...,,ar
+pt-conjugation,imperative,acreditar em,imperativo,imperativo (presente),,acredita em ...,acredite em ...,acreditemos em ...,acreditem em ...,,ɐkɾɨˈditɐ ˈɐ̃j̃...,ɐkɾɨˈditɨ ˈɐ̃j̃...,ɐkɾɨdiˈtemuz ˈɐ̃j̃...,ɐkɾɨˈditɐ̃j̃ ˈɐ̃j̃...,,não acredites em ...,não acredite em ...,não acreditemos em ...,não acreditem em ...,,ˈnɐ̃w̃ ɐkɾɨˈditɨz ˈɐ̃j̃...,ˈnɐ̃w̃ ɐkɾɨˈditɨ ˈɐ̃j̃...,ˈnɐ̃w̃ ɐkɾɨdiˈtemuz ˈɐ̃j̃...,ˈnɐ̃w̃ ɐkɾɨˈditɐ̃j̃ ˈɐ̃j̃...,,ar
+pt-conjugation,imperative,morar em,imperativo,imperativo (presente),,mora em ...,more em ...,moremos em ...,morem em ...,,ˈmɔɾɐ ˈɐ̃j̃...,ˈmɔɾɨ ˈɐ̃j̃...,muˈɾemuz ˈɐ̃j̃...,ˈmɔɾɐ̃j̃ ˈɐ̃j̃...,,não mores em ...,não more em ...,não moremos em ...,não morem em ...,,ˈnɐ̃w̃ ˈmɔɾɨz ˈɐ̃j̃...,ˈnɐ̃w̃ ˈmɔɾɨ ˈɐ̃j̃...,ˈnɐ̃w̃ muˈɾemuz ˈɐ̃j̃...,ˈnɐ̃w̃ ˈmɔɾɐ̃j̃ ˈɐ̃j̃...,,ar
+pt-conjugation,imperative,tratar de,imperativo,imperativo (presente),,trata de ...,trate de ...,tratemos de ...,tratem de ...,,ˈtɾatɐ dɨ...,ˈtɾatɨ dɨ...,tɾɐˈtemuʒ dɨ...,ˈtɾatɐ̃j̃ dɨ...,,não trates de ...,não trate de ...,não tratemos de ...,não tratem de ...,,ˈnɐ̃w̃ ˈtɾatɨʒ dɨ...,ˈnɐ̃w̃ ˈtɾatɨ dɨ...,ˈnɐ̃w̃ tɾɐˈtemuʒ dɨ...,ˈnɐ̃w̃ ˈtɾatɐ̃j̃ dɨ...,,ar
+pt-conjugation,imperative,pensar em,imperativo,imperativo (presente),,pensa em ...,pense em ...,pensemos em ...,pensem em ...,,ˈpẽsɐ ˈɐ̃j̃...,ˈpẽsɨ ˈɐ̃j̃...,pẽˈsɛmuz ˈɐ̃j̃...,ˈpẽsɐ̃j̃ ˈɐ̃j̃...,,não penses em ...,não pense em ...,não pensemos em ...,não pensem em ...,,ˈnɐ̃w̃ ˈpẽsɨz ˈɐ̃j̃...,ˈnɐ̃w̃ ˈpẽsɨ ˈɐ̃j̃...,ˈnɐ̃w̃ pẽˈsɛmuz ˈɐ̃j̃...,ˈnɐ̃w̃ ˈpẽsɐ̃j̃ ˈɐ̃j̃...,,ar
+pt-conjugation,imperative,ficar em,imperativo,imperativo (presente),,fica em ...,fique em ...,fiquemos em ...,fiquem em ...,,ˈfikɐ ˈɐ̃j̃...,ˈfikɨ ˈɐ̃j̃...,fiˈkemuz ˈɐ̃j̃...,ˈfikɐ̃j̃ ˈɐ̃j̃...,,não fiques em ...,não fique em ...,não fiquemos em ...,não fiquem em ...,,ˈnɐ̃w̃ ˈfikɨz ˈɐ̃j̃...,ˈnɐ̃w̃ ˈfikɨ ˈɐ̃j̃...,ˈnɐ̃w̃ fiˈkemuz ˈɐ̃j̃...,ˈnɐ̃w̃ ˈfikɐ̃j̃ ˈɐ̃j̃...,,ar
+pt-conjugation,imperative,voltar para,imperativo,imperativo (presente),,volta para ...,volte para ...,voltemos para ...,voltem para ...,,ˈvɔɫtɐ pɐɾɐ...,ˈvɔɫtɨ pɐɾɐ...,vɔɫˈtemuʃ pɐɾɐ...,ˈvɔɫtɐ̃j̃ pɐɾɐ...,,não voltes para ...,não volte para ...,não voltemos para ...,não voltem para ...,,ˈnɐ̃w̃ ˈvɔɫtɨʃ pɐɾɐ...,ˈnɐ̃w̃ ˈvɔɫtɨ pɐɾɐ...,ˈnɐ̃w̃ vɔɫˈtemuʃ pɐɾɐ...,ˈnɐ̃w̃ ˈvɔɫtɐ̃j̃ pɐɾɐ...,,ar
+pt-conjugation,imperative,voltar a,imperativo,imperativo (presente),,volta a ...,volte a ...,voltemos a ...,voltem a ...,,ˈvɔɫtɐ ɐ...,ˈvɔɫtɨ ɐ...,vɔɫˈtemuz ɐ...,ˈvɔɫtɐ̃j̃ ɐ...,,não voltes a ...,não volte a ...,não voltemos a ...,não voltem a ...,,ˈnɐ̃w̃ ˈvɔɫtɨz ɐ...,ˈnɐ̃w̃ ˈvɔɫtɨ ɐ...,ˈnɐ̃w̃ vɔɫˈtemuz ɐ...,ˈnɐ̃w̃ ˈvɔɫtɐ̃j̃ ɐ...,,ar
+pt-conjugation,imperative,concordar com,imperativo,imperativo (presente),,concorda com ...,concorde com ...,concordemos com ...,concordem com ...,,kõˈkɔɾdɐ ˈkõ...,kõˈkɔɾdɨ ˈkõ...,kõkuɾˈdemuʃ ˈkõ...,kõˈkɔɾdɐ̃j̃ ˈkõ...,,não concordes com ...,não concorde com ...,não concordemos com ...,não concordem com ...,,ˈnɐ̃w̃ kõˈkɔɾdɨʃ ˈkõ...,ˈnɐ̃w̃ kõˈkɔɾdɨ ˈkõ...,ˈnɐ̃w̃ kõkuɾˈdemuʃ ˈkõ...,ˈnɐ̃w̃ kõˈkɔɾdɐ̃j̃ ˈkõ...,,ar
+pt-conjugation,imperative,discordar de,imperativo,imperativo (presente),,discorda de ...,discorde de ...,discordemos de ...,discordem de ...,,diˈʃkɔɾdɐ dɨ...,diˈʃkɔɾdɨ dɨ...,diʃkuɾˈdemuʒ dɨ...,diˈʃkɔɾdɐ̃j̃ dɨ...,,não discordes de ...,não discorde de ...,não discordemos de ...,não discordem de ...,,ˈnɐ̃w̃ diˈʃkɔɾdɨʒ dɨ...,ˈnɐ̃w̃ diˈʃkɔɾdɨ dɨ...,ˈnɐ̃w̃ diʃkuɾˈdemuʒ dɨ...,ˈnɐ̃w̃ diˈʃkɔɾdɐ̃j̃ dɨ...,,ar
+pt-conjugation,imperative,participar em,imperativo,imperativo (presente),,participa em ...,participe em ...,participemos em ...,participem em ...,,pɐɾtiˈsipɐ ˈɐ̃j̃...,pɐɾtiˈsipɨ ˈɐ̃j̃...,pɐɾtisiˈpemuz ˈɐ̃j̃...,pɐɾtiˈsipɐ̃j̃ ˈɐ̃j̃...,,não participes em ...,não participe em ...,não participemos em ...,não participem em ...,,ˈnɐ̃w̃ pɐɾtiˈsipɨz ˈɐ̃j̃...,ˈnɐ̃w̃ pɐɾtiˈsipɨ ˈɐ̃j̃...,ˈnɐ̃w̃ pɐɾtisiˈpemuz ˈɐ̃j̃...,ˈnɐ̃w̃ pɐɾtiˈsipɐ̃j̃ ˈɐ̃j̃...,,ar
+pt-conjugation,imperative,nascer em,imperativo,imperativo (presente),,nasce em ...,nasça em ...,nascemos em ...,nasçam em ...,,ˈnaʃsɨ ˈɐ̃j̃...,ˈnassɐ ˈɐ̃j̃...,nɐˈʃsemuz ˈɐ̃j̃...,ˈnassɐ̃w̃ ˈɐ̃j̃...,,não nasças em ...,não nasça em ...,não nasçamos em ...,não nasçam em ...,,ˈnɐ̃w̃ ˈnassɐz ˈɐ̃j̃...,ˈnɐ̃w̃ ˈnassɐ ˈɐ̃j̃...,ˈnɐ̃w̃ nɐsˈsɐmuz ˈɐ̃j̃...,ˈnɐ̃w̃ ˈnassɐ̃w̃ ˈɐ̃j̃...,,er
+pt-conjugation,imperative,viver em,imperativo,imperativo (presente),,vive em ...,viva em ...,vivamos em ...,vivam em ...,,ˈvivɨ ˈɐ̃j̃...,ˈvivɐ ˈɐ̃j̃...,viˈvɐmuz ˈɐ̃j̃...,ˈvivɐ̃w̃ ˈɐ̃j̃...,,não vivas em ...,não viva em ...,não vivamos em ...,não vivam em ...,,ˈnɐ̃w̃ ˈvivɐz ˈɐ̃j̃...,ˈnɐ̃w̃ ˈvivɐ ˈɐ̃j̃...,ˈnɐ̃w̃ viˈvɐmuz ˈɐ̃j̃...,ˈnɐ̃w̃ ˈvivɐ̃w̃ ˈɐ̃j̃...,,er
+pt-conjugation,imperative,manter,imperativo,imperativo (presente),,mantém,mantenha,mantenhamos,mantenham,,mɐ̃ˈtɐ̃j̃,mɐ̃ˈtɐɲɐ,mɐ̃tɨˈɲɐmuʃ,mɐ̃ˈtɐɲɐ̃w̃,,não mantenhas,não mantenha,não mantenhamos,não mantenham,,ˈnɐ̃w̃ mɐ̃ˈtɐɲɐʃ,ˈnɐ̃w̃ mɐ̃ˈtɐɲɐ,ˈnɐ̃w̃ mɐ̃tɨˈɲɐmuʃ,ˈnɐ̃w̃ mɐ̃ˈtɐɲɐ̃w̃,,er
+pt-conjugation,imperative,sair de,imperativo,imperativo (presente),,sai de ...,saia de ...,saiamos de ...,saiam de ...,,ˈsaj dɨ...,ˈsajɐ dɨ...,sɐjˈɐmuʒ dɨ...,ˈsajɐ̃w̃ dɨ...,,não saias de ...,não saia de ...,não saiamos de ...,não saiam de ...,,ˈnɐ̃w̃ ˈsajɐʒ dɨ...,ˈnɐ̃w̃ ˈsajɐ dɨ...,ˈnɐ̃w̃ sɐjˈɐmuʒ dɨ...,ˈnɐ̃w̃ ˈsajɐ̃w̃ dɨ...,,ir
+pt-conjugation,imperative,gostar,imperativo,imperativo (presente),,gosta,goste,gostemos,gostem,,ˈɡɔʃtɐ,ˈɡɔʃtɨ,ɡuˈʃtemuʃ,ˈɡɔʃtɐ̃j̃,,não gostes,não goste,não gostemos,não gostem,,ˈnɐ̃w̃ ˈɡɔʃtɨʃ,ˈnɐ̃w̃ ˈɡɔʃtɨ,ˈnɐ̃w̃ ɡuˈʃtemuʃ,ˈnɐ̃w̃ ˈɡɔʃtɐ̃j̃,,ar
+pt-conjugation,imperative,começar,imperativo,imperativo (presente),,começa,comece,comecemos,comecem,,kuˈmɛsɐ,kuˈmɛsɨ,kumɨˈsemuʃ,kuˈmɛsɐ̃j̃,,não comeces,não comece,não comecemos,não comecem,,ˈnɐ̃w̃ kuˈmɛsɨʃ,ˈnɐ̃w̃ kuˈmɛsɨ,ˈnɐ̃w̃ kumɨˈsemuʃ,ˈnɐ̃w̃ kuˈmɛsɐ̃j̃,,ar
+pt-conjugation,imperative,continuar,imperativo,imperativo (presente),,continua,continue,continuemos,continuem,,kõtiˈnuɐ,kõtiˈnuɨ,kõtinuˈemuʃ,kõtiˈnuɐ̃j̃,,não continues,não continue,não continuemos,não continuem,,ˈnɐ̃w̃ kõtiˈnuɨʃ,ˈnɐ̃w̃ kõtiˈnuɨ,ˈnɐ̃w̃ kõtinuˈemuʃ,ˈnɐ̃w̃ kõtiˈnuɐ̃j̃,,ar
+pt-conjugation,imperative,lembrar-se,imperativo,imperativo (presente),,lembra-te,lembre-se,lembremo-nos,lembrem-se,,lẽˈbɾatɨ,lẽˈbɾɛsɨ,lẽbɾɨˈmɔnuʃ,lẽˈbɾẽsɨ,,não te lembres,não se lembre,não nos lembremos,não se lembrem,,ˈnɐ̃w̃ ˈtɛ ˈlẽbɾɨʃ,ˈnɐ̃w̃ sɨ ˈlẽbɾɨ,ˈnɐ̃w̃ ˈnɔʒ lẽˈbɾɛmuʃ,ˈnɐ̃w̃ sɨ ˈlẽbɾɐ̃j̃,,ar
+pt-conjugation,imperative,precisar,imperativo,imperativo (presente),,precisa,precise,precisemos,precisem,,pɾɨˈsizɐ,pɾɨˈsizɨ,pɾɨsiˈzemuʃ,pɾɨˈsizɐ̃j̃,,não precises,não precise,não precisemos,não precisem,,ˈnɐ̃w̃ pɾɨˈsizɨʃ,ˈnɐ̃w̃ pɾɨˈsizɨ,ˈnɐ̃w̃ pɾɨsiˈzemuʃ,ˈnɐ̃w̃ pɾɨˈsizɐ̃j̃,,ar
+pt-conjugation,imperative,entrar,imperativo,imperativo (presente),,entra,entre,entremos,entrem,,ˈẽtɾɐ,ˈẽtɾɨ,ẽˈtɾɛmuʃ,ˈẽtɾɐ̃j̃,,não entres,não entre,não entremos,não entrem,,ˈnɐ̃w̃ ˈẽtɾɨʃ,ˈnɐ̃w̃ ˈẽtɾɨ,ˈnɐ̃w̃ ẽˈtɾɛmuʃ,ˈnɐ̃w̃ ˈẽtɾɐ̃j̃,,ar
+pt-conjugation,imperative,passar,imperativo,imperativo (presente),,passa,passe,passemos,passem,,ˈpasɐ,ˈpasɨ,pɐˈsemuʃ,ˈpasɐ̃j̃,,não passes,não passe,não passemos,não passem,,ˈnɐ̃w̃ ˈpasɨʃ,ˈnɐ̃w̃ ˈpasɨ,ˈnɐ̃w̃ pɐˈsemuʃ,ˈnɐ̃w̃ ˈpasɐ̃j̃,,ar
+pt-conjugation,imperative,chegar,imperativo,imperativo (presente),,chega,chegue,cheguemos,cheguem,,ˈʃɛɡɐ,ˈʃɛɡɨ,ʃɨˈɡemuʃ,ˈʃɛɡɐ̃j̃,,não chegues,não chegue,não cheguemos,não cheguem,,ˈnɐ̃w̃ ˈʃɛɡɨʃ,ˈnɐ̃w̃ ˈʃɛɡɨ,ˈnɐ̃w̃ ʃɨˈɡemuʃ,ˈnɐ̃w̃ ˈʃɛɡɐ̃j̃,,ar
+pt-conjugation,imperative,acreditar,imperativo,imperativo (presente),,acredita,acredite,acreditemos,acreditem,,ɐkɾɨˈditɐ,ɐkɾɨˈditɨ,ɐkɾɨdiˈtemuʃ,ɐkɾɨˈditɐ̃j̃,,não acredites,não acredite,não acreditemos,não acreditem,,ˈnɐ̃w̃ ɐkɾɨˈditɨʃ,ˈnɐ̃w̃ ɐkɾɨˈditɨ,ˈnɐ̃w̃ ɐkɾɨdiˈtemuʃ,ˈnɐ̃w̃ ɐkɾɨˈditɐ̃j̃,,ar
+pt-conjugation,imperative,tratar,imperativo,imperativo (presente),,trata,trate,tratemos,tratem,,ˈtɾatɐ,ˈtɾatɨ,tɾɐˈtemuʃ,ˈtɾatɐ̃j̃,,não trates,não trate,não tratemos,não tratem,,ˈnɐ̃w̃ ˈtɾatɨʃ,ˈnɐ̃w̃ ˈtɾatɨ,ˈnɐ̃w̃ tɾɐˈtemuʃ,ˈnɐ̃w̃ ˈtɾatɐ̃j̃,,ar
+pt-conjugation,imperative,voltar,imperativo,imperativo (presente),,volta,volte,voltemos,voltem,,ˈvɔɫtɐ,ˈvɔɫtɨ,vɔɫˈtemuʃ,ˈvɔɫtɐ̃j̃,,não voltes,não volte,não voltemos,não voltem,,ˈnɐ̃w̃ ˈvɔɫtɨʃ,ˈnɐ̃w̃ ˈvɔɫtɨ,ˈnɐ̃w̃ vɔɫˈtemuʃ,ˈnɐ̃w̃ ˈvɔɫtɐ̃j̃,,ar
+pt-conjugation,imperative,concordar,imperativo,imperativo (presente),,concorda,concorde,concordemos,concordem,,kõˈkɔɾdɐ,kõˈkɔɾdɨ,kõkuɾˈdemuʃ,kõˈkɔɾdɐ̃j̃,,não concordes,não concorde,não concordemos,não concordem,,ˈnɐ̃w̃ kõˈkɔɾdɨʃ,ˈnɐ̃w̃ kõˈkɔɾdɨ,ˈnɐ̃w̃ kõkuɾˈdemuʃ,ˈnɐ̃w̃ kõˈkɔɾdɐ̃j̃,,ar
+pt-conjugation,imperative,discordar,imperativo,imperativo (presente),,discorda,discorde,discordemos,discordem,,diˈʃkɔɾdɐ,diˈʃkɔɾdɨ,diʃkuɾˈdemuʃ,diˈʃkɔɾdɐ̃j̃,,não discordes,não discorde,não discordemos,não discordem,,ˈnɐ̃w̃ diˈʃkɔɾdɨʃ,ˈnɐ̃w̃ diˈʃkɔɾdɨ,ˈnɐ̃w̃ diʃkuɾˈdemuʃ,ˈnɐ̃w̃ diˈʃkɔɾdɐ̃j̃,,ar
+pt-conjugation,imperative,participar,imperativo,imperativo (presente),,participa,participe,participemos,participem,,pɐɾtiˈsipɐ,pɐɾtiˈsipɨ,pɐɾtisiˈpemuʃ,pɐɾtiˈsipɐ̃j̃,,não participes,não participe,não participemos,não participem,,ˈnɐ̃w̃ pɐɾtiˈsipɨʃ,ˈnɐ̃w̃ pɐɾtiˈsipɨ,ˈnɐ̃w̃ pɐɾtisiˈpemuʃ,ˈnɐ̃w̃ pɐɾtiˈsipɐ̃j̃,,ar
+pt-conjugation,imperative,nascer,imperativo,imperativo (presente),,nasce,nasça,nascemos,nasçam,,ˈnaʃsɨ,ˈnassɐ,nɐˈʃsemuʃ,ˈnassɐ̃w̃,,não nasças,não nasça,não nasçamos,não nasçam,,ˈnɐ̃w̃ ˈnassɐʃ,ˈnɐ̃w̃ ˈnassɐ,ˈnɐ̃w̃ nɐsˈsɐmuʃ,ˈnɐ̃w̃ ˈnassɐ̃w̃,,er
+pt-conjugation,imperative,viver,imperativo,imperativo (presente),,vive,viva,vivamos,vivam,,ˈvivɨ,ˈvivɐ,viˈvɐmuʃ,ˈvivɐ̃w̃,,não vivas,não viva,não vivamos,não vivam,,ˈnɐ̃w̃ ˈvivɐʃ,ˈnɐ̃w̃ ˈvivɐ,ˈnɐ̃w̃ viˈvɐmuʃ,ˈnɐ̃w̃ ˈvivɐ̃w̃,,er
+pt-conjugation,imperative,ter,imperativo,imperativo (presente),,tem,tenha,tenhamos,tenham,,ˈtɐ̃j̃,ˈtɐɲɐ,tɨˈɲɐmuʃ,ˈtɐɲɐ̃w̃,,não tenhas,não tenha,não tenhamos,não tenham,,ˈnɐ̃w̃ ˈtɐɲɐʃ,ˈnɐ̃w̃ ˈtɐɲɐ,ˈnɐ̃w̃ tɨˈɲɐmuʃ,ˈnɐ̃w̃ ˈtɐɲɐ̃w̃,,er
+pt-conjugation,imperative,ser,imperativo,imperativo (presente),,sê,seja,sejamos,sejam,,ˈse,ˈsɐjʒɐ,sɨˈʒɐmuʃ,ˈsɐjʒɐ̃w,,não sejas,não seja,não sejamos,não sejam,,ˈnɐ̃w ˈsɐjʒɐʃ,ˈnɐ̃w ˈsɐjʒɐ,ˈnɐ̃w̃ sɨˈʒɐmuʃ,ˈnɐ̃w ˈsɐjʒɐ̃w,,er irregular
