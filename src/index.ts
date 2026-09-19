@@ -26,11 +26,15 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+const allowedOrigins = [
+    process.env.FRONTEND_URL,
+    "http://localhost:5173",
+].filter((origin): origin is string => Boolean(origin))
+
 // Enable CORS for all routes
 app.use(cors({
-    origin: process.env.FRONTEND_URL,
+    origin: allowedOrigins,
 }));
-
 
 // Middleware that parses JSON request bodies (req.body).
 // Without this, POST/PUT requests with JSON arrive as undefined.
