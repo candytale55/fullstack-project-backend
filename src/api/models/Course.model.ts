@@ -1,15 +1,26 @@
+/*
+ * src/api/models/Course.model.ts
+ *
+ * Defines courses and their embedded units.
+ * Courses reference a Language and provide stable codes used by seeds,
+ * vocabulary imports, and frontend navigation.
+ */
+
 import mongoose, { Types, Schema } from 'mongoose'
 
 
-// Defines the structure
+// Embedded unit structure used inside a course.
 export interface IUnit {
+    code: string;
     title: string;
     description?: string;
     order: number;
 }
 
-// Defines the structure
+
+// Course structure stored in the courses collection.
 export interface ICourse {
+    code: string;
     language: Types.ObjectId;
 
     title: string;
@@ -24,6 +35,13 @@ export interface ICourse {
 
 const unitSchema = new Schema<IUnit>(
     {
+        code: {
+            type: String,
+            required: true,
+            trim: true,
+            lowercase: true
+        },
+
         title: {
             type: String,
             required: true,
@@ -49,6 +67,14 @@ const unitSchema = new Schema<IUnit>(
 
 const courseSchema = new Schema<ICourse>(
     {
+        code: {
+            type: String,
+            required: true,
+            unique: true,
+            trim: true,
+            lowercase: true
+        },
+
         language: {
             type: Schema.Types.ObjectId,
             ref: "Language",

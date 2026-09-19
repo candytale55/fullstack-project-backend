@@ -1,0 +1,213 @@
+[
+
+    {
+        "code": "en-c1-1",
+        "languageCode": "en",
+        "title": "English C1.1",
+        "level": "C1",
+        "description": "Advanced English vocabulary and course material.",
+        "structure": "units",
+        "units": [
+            {
+                "code": "01a",
+                "title": "Unit 01A",
+                "order": 1
+            },
+            {
+                "code": "01b",
+                "title": "Unit 01B",
+                "order": 2
+            },
+            {
+                "code": "01ce",
+                "title": "Unit 01CE",
+                "order": 3
+            },
+            {
+                "code": "02b",
+                "title": "Unit 02B",
+                "order": 4
+            },
+            {
+                "code": "04ce",
+                "title": "Unit 04CE",
+                "order": 5
+            },
+            {
+                "code": "06b",
+                "title": "Unit 06B",
+                "order": 6
+            },
+            {
+                "code": "07f",
+                "title": "Unit 07F",
+                "order": 7
+            },
+            {
+                "code": "08a",
+                "title": "Unit 08A",
+                "order": 8
+            },
+            {
+                "code": "09s",
+                "title": "Unit 09S",
+                "order": 9
+            },
+            {
+                "code": "10a",
+                "title": "Unit 10A",
+                "order": 10
+            },
+            {
+                "code": "10b",
+                "title": "Unit 10B",
+                "order": 11
+            }
+        ]
+    },
+    {
+        "code": "pt-daily",
+        "languageCode": "pt",
+        "title": "Português do dia a dia",
+        "level": "Mixed",
+        "description": "Practical Portuguese for common everyday situations.",
+        "structure": "units",
+        "units": [
+            {
+                "code": "articles-places",
+                "title": "Frases + Artigos + Cidades + Países",
+                "order": 1
+            },
+            {
+                "code": "time",
+                "title": "Dar a hora",
+                "order": 2
+            },
+            {
+                "code": "directions",
+                "title": "Dar indicações",
+                "order": 3
+            },
+            {
+                "code": "shopping",
+                "title": "Compras e serviços",
+                "order": 4
+            },
+            {
+                "code": "conversations",
+                "title": "Conversas do dia a dia",
+                "order": 5
+            },
+            {
+                "code": "personal-care",
+                "title": "Cuidados pessoais",
+                "order": 6
+            }
+        ]
+    },
+    {
+        "code": "pt-a2-2",
+        "languageCode": "pt",
+        "title": "Português A2.2",
+        "level": "A2",
+        "description": "Portuguese A2.2 course with vocabulary organized by numbered units.",
+        "structure": "units",
+        "units": [
+            {
+                "code": "u1",
+                "title": "Porque estudas português?",
+                "order": 1
+            },
+            {
+                "code": "u2",
+                "title": "Olha esta notícia",
+                "order": 2
+            },
+            {
+                "code": "u3",
+                "title": "Como era a tua escola?",
+                "order": 3
+            },
+            {
+                "code": "u4",
+                "title": "Não tínhamos redes...",
+                "order": 4
+            },
+            {
+                "code": "u5",
+                "title": "Eu já tinha visto",
+                "order": 5
+            },
+            {
+                "code": "u6",
+                "title": "Achas que estou em forma?",
+                "order": 6
+            }
+        ]
+    },
+    {
+        "code": "fr-conjugation",
+        "languageCode": "fr",
+        "title": "Conjugaison française",
+        "level": "Mixed",
+        "description": "French verb conjugation practice organized by common tenses and moods.",
+        "structure": "units",
+        "units": [
+            {
+                "code": "present",
+                "title": "Le présent",
+                "order": 1
+            },
+            {
+                "code": "passe-compose",
+                "title": "Le passé composé",
+                "order": 2
+            },
+            {
+                "code": "imparfait",
+                "title": "L'imparfait",
+                "order": 3
+            },
+            {
+                "code": "future",
+                "title": "Le futur simple",
+                "order": 4
+            },
+            {
+                "code": "conditional",
+                "title": "Le conditionnel présent",
+                "order": 5
+            },
+            {
+                "code": "subjunctive",
+                "title": "Le subjonctif présent",
+                "order": 6
+            }
+        ]
+    }, 
+    {
+        "code": "pt-conjugation",
+        "languageCode": "pt",
+        "title": "Conjugação portuguesa",
+        "level": "Mixed",
+        "description": "Portuguese verb conjugation practice organized by common tenses and moods.",
+        "structure": "units",
+        "units": [
+            {
+                "code": "present",
+                "title": "Presente",
+                "order": 1
+            },
+            {
+                "code": "imperfect",
+                "title": "Imperfeito",
+                "order": 2
+            },
+            {
+                "code": "imperative",
+                "title": "Imperativo",
+                "order": 3
+            }
+        ]
+    }
+]
