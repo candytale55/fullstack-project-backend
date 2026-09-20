@@ -1,5 +1,4 @@
 [
-
     {
         "code": "en-c1-1",
         "languageCode": "en",
@@ -11,56 +10,67 @@
             {
                 "code": "01a",
                 "title": "Unit 01A",
+                "description": "Próximamente: ejercicios en desarrollo.",
                 "order": 1
             },
             {
                 "code": "01b",
                 "title": "Unit 01B",
+                "description": "Próximamente: ejercicios en desarrollo.",
                 "order": 2
             },
             {
                 "code": "01ce",
                 "title": "Unit 01CE",
+                "description": "Próximamente: ejercicios en desarrollo.",
                 "order": 3
             },
             {
                 "code": "02b",
                 "title": "Unit 02B",
+                "description": "Próximamente: ejercicios en desarrollo.",
                 "order": 4
             },
             {
                 "code": "04ce",
                 "title": "Unit 04CE",
+                "description": "Próximamente: ejercicios en desarrollo.",
                 "order": 5
             },
             {
                 "code": "06b",
                 "title": "Unit 06B",
+                "description": "Próximamente: ejercicios en desarrollo.",
                 "order": 6
             },
             {
                 "code": "07f",
                 "title": "Unit 07F",
+                "description": "Próximamente: ejercicios en desarrollo.",
                 "order": 7
             },
             {
                 "code": "08a",
                 "title": "Unit 08A",
+                "description": "Próximamente: ejercicios en desarrollo.",
                 "order": 8
             },
             {
                 "code": "09s",
                 "title": "Unit 09S",
+                "description": "Próximamente: ejercicios en desarrollo.",
                 "order": 9
             },
             {
                 "code": "10a",
                 "title": "Unit 10A",
+                "description": "Próximamente: ejercicios en desarrollo.",
                 "order": 10
             },
             {
                 "code": "10b",
                 "title": "Unit 10B",
+                "description": "Próximamente: ejercicios en desarrollo.",
                 "order": 11
             }
         ]
@@ -76,31 +86,37 @@
             {
                 "code": "articles-places",
                 "title": "Frases + Artigos + Cidades + Países",
+                "description": "Próximamente: ejercicios en desarrollo.",
                 "order": 1
             },
             {
                 "code": "time",
                 "title": "Dar a hora",
+                "description": "Próximamente: ejercicios en desarrollo.",
                 "order": 2
             },
             {
                 "code": "directions",
                 "title": "Dar indicações",
+                "description": "Próximamente: ejercicios en desarrollo.",
                 "order": 3
             },
             {
                 "code": "shopping",
                 "title": "Compras e serviços",
+                "description": "Próximamente: ejercicios en desarrollo.",
                 "order": 4
             },
             {
                 "code": "conversations",
                 "title": "Conversas do dia a dia",
+                "description": "Próximamente: ejercicios en desarrollo.",
                 "order": 5
             },
             {
                 "code": "personal-care",
                 "title": "Cuidados pessoais",
+                "description": "Próximamente: ejercicios en desarrollo.",
                 "order": 6
             }
         ]
@@ -116,31 +132,37 @@
             {
                 "code": "u1",
                 "title": "Porque estudas português?",
+                "description": "Próximamente: ejercicios en desarrollo.",
                 "order": 1
             },
             {
                 "code": "u2",
                 "title": "Olha esta notícia",
+                "description": "Próximamente: ejercicios en desarrollo.",
                 "order": 2
             },
             {
                 "code": "u3",
                 "title": "Como era a tua escola?",
+                "description": "Próximamente: ejercicios en desarrollo.",
                 "order": 3
             },
             {
                 "code": "u4",
                 "title": "Não tínhamos redes...",
+                "description": "Próximamente: ejercicios en desarrollo.",
                 "order": 4
             },
             {
                 "code": "u5",
                 "title": "Eu já tinha visto",
+                "description": "Próximamente: ejercicios en desarrollo.",
                 "order": 5
             },
             {
                 "code": "u6",
                 "title": "Achas que estou em forma?",
+                "description": "Próximamente: ejercicios en desarrollo.",
                 "order": 6
             }
         ]
@@ -156,35 +178,41 @@
             {
                 "code": "present",
                 "title": "Le présent",
+                "description": "Próximamente: ejercicios en desarrollo.",
                 "order": 1
             },
             {
                 "code": "passe-compose",
                 "title": "Le passé composé",
+                "description": "Próximamente: ejercicios en desarrollo.",
                 "order": 2
             },
             {
                 "code": "imparfait",
                 "title": "L'imparfait",
+                "description": "Próximamente: ejercicios en desarrollo.",
                 "order": 3
             },
             {
                 "code": "future",
                 "title": "Le futur simple",
+                "description": "Próximamente: ejercicios en desarrollo.",
                 "order": 4
             },
             {
                 "code": "conditional",
                 "title": "Le conditionnel présent",
+                "description": "Próximamente: ejercicios en desarrollo.",
                 "order": 5
             },
             {
                 "code": "subjunctive",
                 "title": "Le subjonctif présent",
+                "description": "Próximamente: ejercicios en desarrollo.",
                 "order": 6
             }
         ]
-    }, 
+    },
     {
         "code": "pt-conjugation",
         "languageCode": "pt",
