@@ -27,7 +27,7 @@ const seedUsers = async () => {
         console.log("Admin user created successfully.");
 
         const regularUser = await User.create({
-            name: "Test User",
+            name: "Regular User",
             email: "user@example.com",
             password: "User@12345",
             role: "user"
