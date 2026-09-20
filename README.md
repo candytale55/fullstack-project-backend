@@ -82,23 +82,34 @@ El backend contiene además modelos y endpoints CRUD preparados para futuras fun
 
 ### Login / Register
 
-<!-- Añadir screenshot -->
+
+| Register | Login |
+|---|---|
+|![ Register  Screenshot](./docs/shots/scsh-01-register.png)|![ Login Screenshot ](./docs/shots/scsh-02-login.png)|
 
 ### Selección de idiomas y cursos
 
-<!-- Añadir screenshot -->
+| Idioma | Curso |
+|---|---|
+|![ Languages Screenshot](./docs/shots/scsh-03-languages.png)|![ Courses Screenshot](./docs/shots/scsh-04-courses.png)|
 
 ### Unidades
 
-<!-- Añadir screenshot -->
+| Curso | Unidades |
+|---|---|
+|![ Course Screenshot](./docs/shots/scsh-05-course.png)|![ Courses Screenshot](./docs/shots/scsh-06-units.png)|
+
 
 ### Ejercicio de conjugación
 
-<!-- Añadir screenshot -->
+| Idioma | Curso ||
+|---|---|-|
+|![ Start Exercise Screenshot](./docs/shots/scsh-07-1-exercise-start.png)|![ Answer Exercise Screenshot](./docs/shots/scsh-07-2-exercise-answer.png)| ![ End Exercise Screenshot ](./docs/shots/scsh-07-3-end.png)|
 
-### Resultado del ejercicio
 
-<!-- Añadir screenshot -->
+### Dashboard (mock)
+
+![ Mock Dashboard Screenshot ](./docs/shots/scsh-08-mock-dashboard.png)
 
 ---
 
@@ -143,13 +154,13 @@ fullstack-project-backend
 El frontend consume la API mediante la variable:
 
 ```env
-VITE_API_URL=
+VITE_API_URL=<variable>
 ```
 
 El backend permite el origen del frontend mediante:
 
 ```env
-FRONTEND_URL=
+FRONTEND_URL=<variable>
 ```
 
 Esto permite mantener ambos proyectos desacoplados y desplegarlos independientemente.
@@ -242,18 +253,55 @@ Las unidades se encuentran embebidas dentro de los documentos `Course`.
 
 ## Carga inicial de datos
 
-Los datos iniciales se cargan mediante seeds.
+Los datos iniciales de MongoDB se cargan mediante **seeds**, que permiten reconstruir de forma controlada la información necesaria para ejecutar el MVP.
 
-Existen seeds para:
+Para realizar la carga completa deben ejecutarse **dos seeds, en este orden**:
 
-* usuarios;
-* idiomas;
-* cursos;
-* conjugaciones portuguesas.
+```bash
+npm run seed:all
+npm run seed:ptverbs
+```
 
-La colección de conjugaciones se genera a partir de un **CSV**.
+Los scripts correspondientes están definidos en `package.json`:
 
-El proceso de importación:
+```json
+"seed:all": "tsx src/utils/seeds/master.seed.ts",
+"seed:ptverbs": "tsx src/utils/seeds/portugueseVerbConjugation.seed.ts"
+```
+
+### 1. Master seed
+
+```bash
+npm run seed:all
+```
+
+El `master.seed.ts` ejecuta en orden los seeds necesarios para crear los datos base y respetar las dependencias entre colecciones:
+
+```text
+Users
+  ↓
+Languages
+  ↓
+Courses
+```
+
+* **Users** → crea los usuarios iniciales de prueba, incluyendo usuario y administrador.
+* **Languages** → carga los idiomas disponibles.
+* **Courses** → crea los cursos y sus unidades embebidas, relacionándolos con los idiomas correspondientes.
+
+El orden es importante porque los cursos necesitan que los idiomas existan previamente para poder crear correctamente sus relaciones.
+
+### 2. Seed de conjugaciones portuguesas
+
+Después del master seed debe ejecutarse:
+
+```bash
+npm run seed:ptverbs
+```
+
+Este seed carga la colección `portugueseVerbConjugations`, utilizada por el ejercicio funcional de conjugación del MVP.
+
+Los datos se importan desde un archivo **CSV** mediante el siguiente proceso:
 
 ```text
 CSV
@@ -262,14 +310,29 @@ Node.js fs
  ↓
 csv-parse
  ↓
-validación
+validación de datos
  ↓
-resolución Course / Unit
+resolución de Course / Unit
  ↓
 MongoDB
 ```
 
-El seed valida los datos antes de reemplazar la información existente y evita duplicados.
+Este seed debe ejecutarse después de `seed:all` porque necesita que los cursos y sus unidades ya existan para localizar sus identificadores de MongoDB y crear correctamente las relaciones.
+
+Por tanto, la secuencia completa de carga es:
+
+```text
+npm run seed:all
+        ↓
+Users → Languages → Courses
+        ↓
+npm run seed:ptverbs
+        ↓
+Portuguese Verb Conjugations
+```
+
+Esta estructura permite reconstruir fácilmente los datos iniciales del MVP y mantener separados los datos generales de la aplicación del dataset específico utilizado por el ejercicio de conjugación.
+
 
 ---
 
@@ -334,7 +397,7 @@ cd fullstack-project-backend
 npm install
 ```
 
-Crear un archivo `.env` a partir de `.env.example`:
+Crear un archivo `.env` a partir de `.env.example` agregando los valores necesarios:
 
 ```env
 PORT=3000
@@ -368,7 +431,7 @@ npm install
 Crear `.env`:
 
 ```env
-VITE_API_URL=http://localhost:3000
+VITE_API_URL=<variable>
 ```
 
 Ejecutar:
