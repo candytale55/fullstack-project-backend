@@ -1,3 +1,5 @@
+/* Implements course CRUD and unit queries used by course routes and frontend services. */
+
 import type { Request, Response } from "express";
 
 import Course from "../models/Course.model";

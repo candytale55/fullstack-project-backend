@@ -1,4 +1,4 @@
-// TODO: PROVISIONAL - Revisar antes de cargar los datos.
+/* Defines vocabulary documents linked to courses or embedded course units. */
 
 import mongoose, { Schema, Types } from "mongoose";
 

@@ -1,4 +1,4 @@
-// TODO: PROVISIONAL - Revisar antes de cargar los datos.
+/* Defines exercise documents consumed by exercise.controller and learning pages. */
 
 import mongoose, {
     Schema,

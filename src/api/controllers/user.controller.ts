@@ -50,7 +50,8 @@ const createUser = async (
     try {
         const newUser = new User(req.body);
         await newUser.save();
-        return res.status(201).json(newUser);
+        const { password: _password, ...safeUser } = newUser.toObject();
+        return res.status(201).json(safeUser);
     } catch (error) {
         return res.status(400).json({ error: "Failed to create user" });
     }
@@ -66,19 +67,19 @@ type UpdateUserBody = {
 const updateUser = async (
     req: Request<{ id: string }, {}, UpdateUserBody>,
     res: Response
-) => { 
+) => {
     try {
         const { id } = req.params;
 
         const updateData: UpdateUserBody = {};
-        
+
         if (req.body.name !== undefined) {
             updateData.name = req.body.name;
         }
         if (req.body.email !== undefined) {
             updateData.email = req.body.email;
         }
-        
+
         if (Object.keys(updateData).length === 0) {
             return res.status(400).json({
                 error: "Cannot update fields provided for update"
@@ -90,7 +91,7 @@ const updateUser = async (
             updateData,
             { new: true, runValidators: true }
         ).select("-password");
-        
+
         if (!updatedUser) {
             return res.status(404).json({ error: "User not found" });
         }
@@ -110,7 +111,7 @@ const deleteUser = async (req: Request<{ id: string }>, res: Response) => {
         if (!user) {
             return res.status(404).json({ error: "User not found" });
         }
-        const deletedUser = await User.findByIdAndDelete(id);
+        await User.findByIdAndDelete(id);
         return res.status(200).json({ message: `User ${user.name} deleted successfully` });
     } catch (error) {
         return res.status(400).json({ error: "Failed to delete user" });

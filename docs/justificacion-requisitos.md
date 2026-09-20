@@ -1,191 +1,120 @@
 # Justificación de requisitos
 
-Este documento sirve como guía para registrar cómo se da cumplimiento a los requisitos definidos por la escuela para el proyecto FullStack.
+## Alcance del proyecto
 
-## Requisitos generales del proyecto
+El proyecto es un **MVP Full Stack de una plataforma de estudio de idiomas orientada al usuario estudiante**.
 
-### Proyecto FullStack con sentido y utilidad
+El MVP permite registrar e identificar usuarios, seleccionar un idioma y un curso, navegar por sus unidades y realizar actividades de estudio con contenido obtenido desde una base de datos MongoDB.
 
-El proyecto debe utilizar los conocimientos adquiridos durante el curso para desarrollar una aplicación FullStack que tenga un propósito definido y resuelva un problema o necesidad concreta.
+El proyecto está planteado para continuar creciendo. Por este motivo, tanto frontend como backend utilizan una arquitectura modular y el backend incluye modelos, controladores, rutas y endpoints que no son necesarios todavía para la interfaz actual, pero que servirán posteriormente para ampliar actividades, progreso y desarrollar un dashboard de administración.
 
-**Elementos evaluables:**
-
-* El proyecto debe tener un sentido lógico.
-* Debe resolver un problema o necesidad concreta.
-* Debe estar dirigido a un público objetivo definido.
-* Las decisiones funcionales y técnicas deben responder al propósito del proyecto.
-
-**Cumplimiento:** Parcial.
-
-El proyecto tiene un propósito definido: crear una aplicación para el aprendizaje de idiomas mediante cursos, unidades y ejercicios, permitiendo además consultar el progreso del usuario. La arquitectura funcional ya se ha diseñado alrededor de este objetivo.
-
-<!-- //TODO: Todavía debe ampliarse la documentación del público objetivo y de la necesidad concreta que pretende resolver antes de considerar completamente cerrado este requisito. -->
-
-**Evidencia:**
-
-* Arquitectura de contenido definida como `Language → Course → Unit → Exercise`.
-* Soporte para cursos estructurados por unidades y cursos que contienen ejercicios directamente.
-* `DashboardPage`, `LanguagesPage`, `CoursesPage`, `CoursePage`, `UnitsPage`, `ExercisesPage`, `ExercisePage` y `ProgressPage`.
-* `README.md` del frontend.
-* `notas_desarrollo.md`.
-* `notas/etapa-1-notas-desarrollo.md`.
+El diseño visual se mantiene deliberadamente sencillo para esta primera versión, priorizando funcionalidad, navegación, responsive y facilidad de modificación.
 
 ---
 
-### Tecnologías principales
+## Cumplimiento de requisitos
 
-El proyecto debe utilizar las tecnologías establecidas por la escuela:
+### 1. Proyecto Full Stack con sentido y utilidad
 
-* Node.js para el backend.
-* React para el frontend.
+**Cumplido.**
 
-Las librerías adicionales son opcionales y pueden seleccionarse según las necesidades del proyecto.
+La aplicación responde a una necesidad concreta: disponer de un entorno en el que un usuario pueda organizar y practicar contenido para el aprendizaje de idiomas.
 
-**Cumplimiento:** Cumplido.
+El público objetivo del MVP es el **estudiante**. El flujo principal implementado es:
 
-El proyecto utiliza las tecnologías principales indicadas. El backend está desarrollado con Node.js y Express utilizando TypeScript, mientras que el frontend utiliza React, TypeScript y Vite.
+`Usuario → Idioma → Curso → Unidad → Ejercicio`
 
-**Evidencia:**
+Actualmente se ha implementado como actividad funcional una práctica de conjugación de verbos portugueses alimentada con datos almacenados en MongoDB.
 
-* Repositorio independiente `fullstack-project-backend`.
-* Backend basado en Node.js + Express + TypeScript + Mongoose.
-* Repositorio independiente `fullstack-project-frontend`.
-* Frontend basado en React + TypeScript + Vite.
-* `package.json` de ambos proyectos.
-* `vite.config.ts` en el frontend.
-* `tsconfig.json` en el backend.
+La futura administración de cursos, vocabulario y ejercicios queda fuera del alcance de este MVP, aunque el backend ya está preparado para incorporarla.
 
 ---
 
-## Requisitos según el enunciado
+### 2. Tecnologías principales
 
-### 1. Variables en `style.css` de colores, spacings, etc.
+**Cumplido.**
 
-**Elementos evaluables:**
+Se utilizan las tecnologías requeridas:
 
-* Definición centralizada de valores reutilizables de estilos.
-* Variables para colores utilizados de forma recurrente.
-* Variables para espaciados.
-* Posibilidad de incluir otras variables reutilizables necesarias para mantener consistencia visual.
+* **Frontend:** React + TypeScript + Vite.
+* **Backend:** Node.js + Express + TypeScript.
+* **Base de datos:** MongoDB + Mongoose.
 
-**Cumplimiento:** Cumplido.
-
-Los valores reutilizables de estilos se encuentran centralizados mediante variables CSS. Se utiliza un archivo específico `variables.css` en lugar de concentrarlas directamente en `style.css`, manteniendo la misma finalidad de centralización requerida.
-
-Actualmente las variables incluyen colores, espaciados, dimensiones de layout y radios de borde. Los valores visuales son provisionales y podrán modificarse posteriormente sin necesidad de cambiar individualmente cada componente.
-
-**Evidencia:**
-
-* `src/styles/variables.css`.
-* Variables como:
-
-  * `--color-background`
-  * `--color-surface`
-  * `--color-text`
-  * `--color-text-muted`
-  * `--color-border`
-  * `--space-xs`
-  * `--space-sm`
-  * `--space-md`
-  * `--space-lg`
-  * `--space-xl`
-  * `--content-max-width`
-  * `--navbar-height`
-  * `--border-radius-sm`
-  * `--border-radius-md`
+Frontend y backend se desarrollan en **dos repositorios Git independientes** y se comunican mediante una API REST.
 
 ---
 
-### 2. Reutilización correcta de CSS y buena estructura de los mismos (en caso de utilizar CSS)
+### 3. Variables CSS para colores, spacings y valores reutilizables
 
-**Elementos evaluables:**
+**Cumplido.**
 
-* Evitar duplicación innecesaria de estilos.
-* Organización clara de los archivos CSS.
-* Separación adecuada entre estilos globales y estilos específicos de componentes.
-* Reutilización de valores y reglas comunes.
-* Estructura comprensible y mantenible.
+Los valores globales reutilizables están centralizados en:
 
-**Cumplimiento:** Parcial.
+`src/styles/variables.css`
 
-Se ha establecido una estructura clara basada en CSS Modules, estilos globales y variables CSS compartidas. Cada página o componente mantiene sus estilos locales separados, mientras que los valores comunes se centralizan.
+Incluyen colores, espaciados, dimensiones de layout y radios de borde. Los componentes consumen estas variables mediante CSS Modules.
 
-<!-- //TODO: Durante la construcción inicial todavía existe cierta repetición entre páginas y tarjetas similares. Esta duplicación se revisará conforme se identifiquen patrones reales de reutilización, evitando abstraer componentes prematuramente. -->
-
-**Evidencia:**
-
-* `src/styles/global.css`.
-* `src/styles/variables.css`.
-* Uso de archivos `*.module.css` asociados a páginas y componentes.
-* Ejemplos:
-
-  * `LoginPage.module.css`
-  * `RegisterPage.module.css`
-  * `DashboardPage.module.css`
-  * `NavBar.module.css`
-  * `Button.module.css`
-  * `Card.module.css`
-  * `Input.module.css`
+Esto permite modificar posteriormente la identidad visual sin rehacer individualmente todos los componentes.
 
 ---
 
-### 3. Mínimo deberá haber dos colecciones relacionadas aparte de la colección de los usuarios
+### 4. Reutilización y estructura de CSS
 
-**Elementos evaluables:**
+**Cumplido dentro del alcance del MVP.**
 
-* Existencia de una colección de usuarios.
-* Existencia de al menos dos colecciones adicionales.
-* Las colecciones adicionales deben estar relacionadas entre sí.
-* Las relaciones deben utilizar datos o identificadores que permitan vincular los documentos correspondientes.
-* Los modelos de las colecciones deben estar definidos en el backend antes de realizar la carga de datos.
+El frontend combina:
 
-**Cumplimiento:** Pendiente.
+* `global.css` para estilos globales.
+* `variables.css` para valores compartidos.
+* CSS Modules para páginas y componentes.
 
-Actualmente existe el modelo de usuario en el backend, pero todavía no se han implementado los modelos definitivos correspondientes a la estructura de contenido del proyecto.
+Los estilos permanecen próximos al componente al que pertenecen y se reutilizan variables globales para mantener consistencia.
 
-La arquitectura prevista contempla varias entidades relacionadas (`Language`, `Course`, `Unit`, `Exercise` y `Progress`), pero no se considerará cumplido este requisito hasta que las colecciones y sus relaciones existan realmente en MongoDB.
-
-**Evidencia actual:**
-
-* Modelo `User` implementado en el backend.
-* Arquitectura de datos prevista documentada como:
-
-```text
-Language
-└── Course
-    ├── Unit
-    │   └── Exercise
-    └── Exercise
-```
-
-* Implementación de los modelos adicionales pendiente.
+Al tratarse de un MVP, algunos módulos específicos conservan estilos propios cuando abstraerlos no aporta todavía una ventaja funcional.
 
 ---
 
-### 4. Buena arquitectura en React
+### 5. Mínimo dos colecciones relacionadas además de usuarios
 
-**Elementos evaluables:**
+**Cumplido.**
 
-* Estructura de carpetas y archivos clara.
-* Separación lógica de responsabilidades.
-* Código organizado de forma que pueda ser comprendido por una persona que no conozca previamente el proyecto.
-* Separación adecuada de componentes, lógica, tipos, servicios u otras responsabilidades cuando corresponda.
-* Arquitectura preparada para mantener y ampliar la aplicación.
+La base de datos contiene varias colecciones relacionadas, entre ellas:
 
-**Cumplimiento:** Cumplido.
+* `users`
+* `languages`
+* `courses`
+* `portugueseVerbConjugations`
+* `vocabulary`
+* `exercises`
+* `progresses`
 
-El frontend está dividido por responsabilidades, manteniendo separadas páginas, componentes, contexto, hooks, servicios, tipos, mocks y estilos. Las páginas se encargan principalmente de composición y navegación, mientras que las responsabilidades compartidas se mantienen en módulos independientes.
+Ejemplos de relaciones:
 
-La estructura también permite sustituir progresivamente los mocks por servicios reales sin necesidad de rehacer la arquitectura de páginas.
+* `Course → Language`
+* `PortugueseVerbConjugation → Course`
+* `PortugueseVerbConjugation → Unit`
+* `Vocabulary → Course`
+* `Exercise → Course`
+* `Exercise → VocabularyItem`
+* `Progress → User`
+* `Progress → Course`
+* `Progress → Exercise`
 
-**Evidencia:**
+Las unidades se almacenan como subdocumentos dentro de `Course`.
+
+La estructura supera el mínimo de colecciones relacionadas solicitado y permite ampliar posteriormente el contenido sin rediseñar la base de datos.
+
+---
+
+### 6. Buena arquitectura en React
+
+**Cumplido.**
+
+El frontend está organizado por responsabilidades:
 
 ```text
 src/
 ├── components/
-│   ├── auth/
-│   ├── layout/
-│   └── ui/
 ├── context/
 ├── hooks/
 ├── mocks/
@@ -197,252 +126,229 @@ src/
 └── main.tsx
 ```
 
-* `AuthContext.ts`.
-* `AuthProvider.tsx`.
-* `useAuth.ts`.
-* `ProtectedRoute.tsx`.
-* `AppLayout`.
-* `PageContainer`.
-* Tipos separados en `src/types/`.
-* Mocks separados en `src/mocks/`.
-* Capa `src/services/` preparada para comunicación con la API.
+Las páginas realizan principalmente composición y navegación; los servicios concentran las llamadas al backend; el estado de autenticación se gestiona mediante Context; y los tipos, estilos y componentes reutilizables se mantienen separados.
+
+Esta estructura permite añadir nuevas actividades y sustituir progresivamente módulos sin rehacer el resto de la aplicación.
 
 ---
 
-### 5. Buena UX/UI
+### 7. Buena UX/UI
 
-**Elementos evaluables:**
+**Cumplido dentro del alcance del MVP.**
 
-* La aplicación debe tener un funcionamiento y navegación coherentes.
-* La interfaz debe responder al propósito del proyecto.
-* El diseño debe estar adaptado al público objetivo definido.
-* Las decisiones de interfaz e interacción deben tener una justificación funcional.
-* La experiencia de usuario debe facilitar la realización de las tareas principales de la aplicación.
+La interfaz se ha diseñado para que el usuario pueda seguir de forma sencilla el flujo de estudio:
 
-**Cumplimiento:** Parcial.
+`Login/Register → Idiomas → Cursos → Unidades → Ejercicio`
 
-La navegación básica y los flujos principales ya están definidos y permiten recorrer de forma coherente la estructura de aprendizaje desde idioma hasta ejercicio. También existe navegación independiente hacia Dashboard y progreso.
+Se incluyen:
 
-El diseño visual actual es deliberadamente básico porque en esta etapa se ha priorizado construir un MVP funcional y fácil de modificar. La identidad visual definitiva, los ajustes detallados de responsive y otros elementos de UX/UI se revisarán durante la fase de cierre.
+* navegación consistente;
+* rutas protegidas;
+* estados de carga y error;
+* feedback de respuesta correcta/incorrecta;
+* pantalla inicial y final de ejercicio;
+* navegación de salida;
+* diseño responsive para desktop y móvil;
+* componentes y layout comunes.
 
-**Evidencia:**
-
-* Navegación principal mediante `NavBar`.
-* Flujo:
-
-```text
-Languages
-→ Courses
-→ Course
-→ Units / Exercises
-→ Exercise
-```
-
-* `DashboardPage`.
-* `ProgressPage`.
-* `NotFoundPage`.
-* Layout compartido mediante `AppLayout` y `PageContainer`.
-* CSS Modules con responsive básico mediante media queries.
+La estética es deliberadamente sencilla. El objetivo de esta fase es proporcionar una interfaz funcional, clara y fácilmente modificable antes de desarrollar una identidad visual más completa y un futuro dashboard administrativo.
 
 ---
 
-### 6. Mejores prácticas en cuanto a componentización y reutilización
+### 8. Componentización y reutilización
 
-**Elementos evaluables:**
+**Cumplido.**
 
-* Creación de componentes reutilizables cuando exista funcionalidad o estructura común.
-* Evitar duplicación innecesaria de componentes.
-* Separación adecuada de componentes según sus responsabilidades.
-* Uso de propiedades (`props`) para adaptar componentes reutilizables a diferentes contextos.
-* Componentes organizados de forma clara y mantenible.
-
-**Cumplimiento:** Parcial.
-
-Ya se han creado componentes UI reutilizables para estructuras comunes y se han separado los formularios de autenticación de sus páginas correspondientes. Los componentes utilizan props y tipos de React para poder adaptarse a diferentes situaciones.
-
-Los componentes específicos del dominio se extraerán únicamente cuando la repetición existente justifique su reutilización, evitando crear abstracciones innecesarias durante la fase inicial del MVP.
-
-**Evidencia:**
+Existen componentes reutilizables para responsabilidades comunes:
 
 * `Button`
 * `Input`
 * `Card`
 * `Alert`
 * `Loader`
-* `PageContainer`
 * `AppLayout`
+* `PageContainer`
 * `NavBar`
+* `ProtectedRoute`
 * `LoginForm`
 * `RegisterForm`
-* Uso de props tipadas, por ejemplo:
 
-  * variantes de `Button`;
-  * variantes de `Alert`;
-  * tamaños de `Loader`;
-  * atributos HTML reutilizados mediante tipos de React.
+Los componentes reciben props tipadas con TypeScript y las responsabilidades específicas de los ejercicios se encuentran separadas de las páginas.
+
+La práctica de conjugación también separa componente, utilidades y servicio de acceso a datos.
 
 ---
 
-### 7. Se genera la BBDD a partir del Excel de datos
+### 9. Generación de la base de datos a partir de datos CSV
 
-**Elementos evaluables:**
+**Cumplido.**
 
-* Creación inicial de un Excel con un mínimo de 100 datos.
-* Los datos deben corresponder a las colecciones necesarias para el proyecto.
-* El Excel debe poder descargarse o exportarse como CSV.
-* Uso de lectura/escritura de archivos de Node.js mediante `fs` para obtener los datos del archivo.
-* Creación de una o varias semillas para insertar los datos en la base de datos.
-* Los modelos correspondientes deben existir antes de ejecutar las semillas.
-* La información importada debe mantener correctamente las relaciones necesarias entre las colecciones.
+El contenido inicial se genera mediante seeds.
 
-**Cumplimiento:** Pendiente.
+La colección de conjugaciones portuguesas utiliza un archivo CSV con el dataset inicial requerido. El proceso:
 
-La estructura de datos definitiva del backend se encuentra todavía en desarrollo. Este requisito se realizará después de definir los modelos y relaciones correspondientes.
+1. lee el CSV mediante `fs`;
+2. lo interpreta mediante `csv-parse`;
+3. valida los campos;
+4. localiza los cursos y unidades correspondientes;
+5. transforma los códigos legibles en referencias de MongoDB;
+6. detecta duplicados;
+7. crea los documentos;
+8. los inserta mediante `insertMany`.
 
-**Evidencia:**
+Los modelos existen antes de ejecutar las semillas.
 
-* Pendiente de implementación.
-* Antes de realizar la carga deberán existir los modelos definitivos de las colecciones implicadas.
+También existen seeds independientes para usuarios, idiomas y cursos.
+
+**Nota para entrega:** el CSV final debe contener al menos los **100 registros exigidos por el enunciado**.
 
 ---
 
-### 8. Se utilizan Hooks avanzados en React para funcionalidades concretas y necesarias
+### 10. Uso de Hooks de React para funcionalidades necesarias
 
-**Elementos evaluables:**
+**Cumplido.**
 
-* Uso de Hooks de React para resolver funcionalidades reales de la aplicación.
-* Los Hooks utilizados deben responder a una necesidad concreta y no incluirse únicamente para cumplir el requisito.
-* El uso de Hooks debe contribuir a una correcta gestión del estado, efectos, contexto u otra lógica de React según las necesidades del proyecto.
+Los Hooks se utilizan para necesidades reales de la aplicación:
 
-**Cumplimiento:** Parcial.
-
-Los Hooks ya se utilizan para resolver necesidades reales de la aplicación. La autenticación utiliza estado y contexto de React, y se creó el hook personalizado `useAuth` para centralizar el acceso a dicha funcionalidad. Las páginas de contenido utilizan además los hooks de React Router para navegación y lectura de parámetros dinámicos.
-
-El uso de hooks continuará ampliándose cuando el frontend se conecte con el backend, especialmente para la carga y actualización de datos.
-
-**Evidencia:**
-
-* `useState` para estado de formularios y autenticación.
-* `useContext` dentro de `useAuth`.
-* Hook personalizado `useAuth`.
+* `useState` para estado de componentes, formularios y ejercicios.
+* `useEffect` para restauración de sesión y carga de datos desde la API.
+* `useContext` para autenticación.
+* hook personalizado `useAuth`.
 * `useNavigate` para navegación programática.
-* `useParams` para acceder a parámetros como `languageId`, `courseId`, `unitId` y `exerciseId`.
+* `useParams` para rutas dinámicas.
+
+El contexto de autenticación restaura la sesión utilizando el token almacenado y consulta `/api/v1/auth/me`.
 
 ---
 
-## Otros requisitos obligatorios indicados en la descripción
+### 11. Usuarios, autenticación y control de acceso
 
-### Colección de usuarios y control de acceso
+**Cumplido.**
 
-El backend debe incluir una colección de usuarios independientemente de la temática elegida.
+El sistema dispone de:
 
-**Elementos evaluables:**
+* colección `User`;
+* registro de usuarios;
+* login;
+* hash de contraseñas mediante `bcrypt`;
+* generación y validación de JWT;
+* restauración de sesión;
+* rutas protegidas;
+* roles `user` y `admin`;
+* middleware `isAuth`;
+* middleware `isAdmin`.
 
-* Existencia de una colección de usuarios.
-* Posibilidad de identificar si un usuario está autenticado.
-* Existencia de rutas cuyo acceso dependa de que el usuario esté autenticado.
-* Cuando el proyecto utilice roles, posibilidad de limitar determinadas rutas según el rol del usuario.
+En frontend, las páginas privadas utilizan `ProtectedRoute`.
 
-**Cumplimiento:** Parcial.
-
-El backend ya dispone del modelo de usuario. En el frontend existe además una primera implementación funcional del estado de autenticación y del control de rutas mediante Context y `ProtectedRoute`.
-
-La autenticación del frontend continúa utilizando un usuario mock, por lo que todavía debe integrarse con el sistema real del backend y con JWT antes de considerar completamente cumplido el requisito.
-
-**Evidencia:**
-
-Backend:
-
-* Modelo `User`.
-* Campo `role` preparado para diferenciar usuarios.
-* CRUD inicial de usuarios.
-
-Frontend:
-
-* `AuthContext.ts`.
-* `AuthProvider.tsx`.
-* `useAuth.ts`.
-* `ProtectedRoute.tsx`.
-* `LoginPage` y `LoginForm`.
-* `RegisterPage` y `RegisterForm`.
-* Redirección de usuarios no autenticados hacia `/login`.
-* `logout()` elimina el usuario actual y devuelve al usuario a `/login`.
+El MVP está dirigido al usuario estudiante. Las operaciones administrativas ya existentes en el backend forman parte de la arquitectura preparada para una futura interfaz de administración y no necesitan estar expuestas todavía desde el frontend.
 
 ---
 
-### README del proyecto
+### 12. API y arquitectura backend
 
-Se debe crear documentación que explique detalladamente el sentido del proyecto.
+**Cumplido.**
 
-**Elementos evaluables:**
+El backend está organizado mediante:
 
-* Explicación del propósito del proyecto.
-* Problema o necesidad que pretende resolver.
-* Público al que está dirigido.
-* Explicación suficiente para comprender el sentido general de la aplicación.
+```text
+models
+controllers
+routes
+middlewares
+utils
+seeds
+```
 
-**Cumplimiento:** Parcial.
+La API dispone de endpoints para autenticación, usuarios, idiomas, cursos, unidades, vocabulario, ejercicios, progreso y conjugaciones portuguesas.
 
-Existen README iniciales separados para frontend y backend y documentación adicional sobre el desarrollo. El README del frontend explica actualmente el objetivo general, responsabilidades y tecnologías utilizadas.
-
-Todavía debe ampliarse la documentación final para explicar de forma más detallada el problema que resuelve la aplicación y su público objetivo.
-
-**Evidencia:**
-
-* `README.md` del frontend.
-* `README.md` del backend.
-* `notas_desarrollo.md`.
-* Documentación por etapas de desarrollo.
+El frontend utiliza actualmente solo los endpoints necesarios para el MVP. Los endpoints CRUD adicionales permiten continuar desarrollando la aplicación sin tener que rehacer la arquitectura del backend.
 
 ---
 
-### Despliegue del backend y frontend
+### 13. README y documentación
 
-Tanto el backend como el frontend deben estar desplegados.
+**Cumplido.**
 
-**Elementos evaluables:**
+Los repositorios contienen README y documentación complementaria que explican:
 
-* Backend desplegado y accesible.
-* Frontend desplegado y accesible.
-* Los enlaces de despliegue deben poder localizarse a partir de los repositorios de GitHub.
+* objetivo del proyecto;
+* alcance del MVP;
+* tecnologías;
+* arquitectura;
+* instalación;
+* conexión frontend/backend;
+* variables de entorno;
+* despliegue;
+* estructura principal;
+* evolución futura.
 
-**Cumplimiento:** Pendiente.
-
-El frontend y el backend se encuentran todavía en desarrollo local y no se consideran desplegados como versión final.
-
-**Evidencia:**
-
-* Pendiente de despliegue.
-* Los enlaces se añadirán a los respectivos repositorios cuando se realice el despliegue.
+El README del frontend incluye además capturas de pantalla del MVP.
 
 ---
 
-## Elementos opcionales puntuables
+### 14. Despliegue frontend y backend
 
-Los siguientes elementos no son requisitos obligatorios, pero el enunciado indica expresamente que pueden valorarse positivamente.
+**Cumplido.**
 
-### Uso de librerías no vistas durante el curso
+Los dos repositorios se encuentran desplegados independientemente en Vercel y están conectados entre sí.
 
-Se valorará positivamente la utilización justificada de librerías que no hayan sido explicadas durante el curso.
+**Frontend**
 
-**Implementación:** Pendiente de determinar.
+`https://fullstack-project-frontend-nine.vercel.app/`
 
-Por ahora no se documenta ninguna librería como cumplimiento de este apartado hasta confirmar que se trata de una librería no vista durante el curso y que su uso está justificado funcionalmente.
+**Backend**
 
-**Evidencia:**
+`https://fullstack-project-backend-woad.vercel.app/`
 
-* Pendiente.
+El healthcheck del backend está disponible en su ruta raíz.
 
-### Cloudinary y subida de archivos desde el frontend
+La aplicación también puede ejecutarse completamente en modo local.
 
-El uso de Cloudinary es opcional y puntuable.
+Las variables privadas de entorno no se almacenan en Git. Para la evaluación se proporcionarán por separado en la plataforma de entrega, junto con los archivos `.env.example` que indican la estructura necesaria.
 
-Su implementación puede requerir investigar la subida de archivos desde el frontend mediante `FormData`.
+---
 
-**Implementación:** No implementado actualmente.
+## Alcance del MVP y evolución futura
 
-Cloudinary no forma parte por ahora del alcance implementado del proyecto final.
+El objetivo de esta entrega no es completar todas las funcionalidades posibles de una plataforma educativa, sino demostrar un **flujo Full Stack completo y funcional para el usuario estudiante**.
 
-**Evidencia:**
+La aplicación ya dispone de una arquitectura preparada para incorporar posteriormente:
 
-* Sin implementación actual.
+* nuevas actividades;
+* vocabulario adicional;
+* persistencia y visualización ampliada del progreso;
+* más idiomas y cursos;
+* gestión de contenido;
+* dashboard administrativo;
+* mejoras visuales.
+
+Por ello existen modelos, controllers, routes y endpoints que todavía no son consumidos por el frontend actual. No constituyen funcionalidades incompletas del MVP, sino infraestructura preparada para la evolución del proyecto.
+
+---
+
+## Funcionalidades opcionales
+
+Cloudinary y la subida de archivos no forman parte del alcance de este MVP.
+
+Su ausencia no afecta a los requisitos obligatorios del proyecto.
+
+---
+
+# Tabla sintetizada de evidencias
+
+| Requisito                | Estado   | Evidencia principal                                                                             |
+| ------------------------ | -------- | ----------------------------------------------------------------------------------------------- |
+| Proyecto Full Stack útil | Cumplido | Flujo Usuario → Idioma → Curso → Unidad → Ejercicio                                             |
+| React + Node.js          | Cumplido | Frontend React/Vite y API Node/Express                                                          |
+| Variables CSS            | Cumplido | `src/styles/variables.css`                                                                      |
+| CSS estructurado         | Cumplido | `global.css`, variables y `*.module.css`                                                        |
+| Colecciones relacionadas | Cumplido | `Language`, `Course`, `PortugueseVerbConjugation`, `Vocabulary`, `Exercise`, `Progress`, `User` |
+| Arquitectura React       | Cumplido | `pages`, `components`, `services`, `context`, `hooks`, `types`                                  |
+| UX/UI                    | Cumplido | navegación, feedback, responsive y estados de interfaz                                          |
+| Componentización         | Cumplido | UI components, layouts, auth forms y módulo de ejercicio                                        |
+| CSV + `fs` + seed        | Cumplido | `portugueseVerbConjugation.seed.ts` + CSV                                                       |
+| Hooks                    | Cumplido | `useState`, `useEffect`, `useContext`, `useAuth`, `useNavigate`, `useParams`                    |
+| Usuarios y acceso        | Cumplido | JWT, bcrypt, `isAuth`, `isAdmin`, `ProtectedRoute`                                              |
+| API REST                 | Cumplido | controllers + routes por dominio                                                                |
+| README                   | Cumplido | README de repositorios + screenshots                                                            |
+| Despliegue               | Cumplido | frontend y backend desplegados en Vercel                                                        |

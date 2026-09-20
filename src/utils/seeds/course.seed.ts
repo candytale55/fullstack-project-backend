@@ -40,7 +40,8 @@ const seedCourses = async () => {
         console.log("Courses collection cleared before reseeding")
 
         const filePath = path.resolve(
-            'src/utils/seeds/data/courses.json'
+            __dirname,
+            'data/courses.json'
         )
 
         const fileContent = fs.readFileSync(
@@ -50,8 +51,6 @@ const seedCourses = async () => {
 
         const courses: CourseSeed[] =
             JSON.parse(fileContent)
-
-        await Course.deleteMany({})
 
         for (const courseData of courses) {
             const language = await Language.findOne({

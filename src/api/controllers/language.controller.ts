@@ -1,3 +1,5 @@
+/* Implements language CRUD used by language routes and the frontend catalog. */
+
 import type { Request, Response } from 'express'
 
 import Language from '../models/Language.model'
@@ -7,18 +9,18 @@ import Language from '../models/Language.model'
 /* ------------------------------------- */
 
 const getAllLanguages = async (
-    _req: Request,
-    res: Response) => {
-    try {
-        const languages = await Language.find()
-        return res.status(200).json(languages)
-    } catch (error) {
-        return res.status(400).json({
-            error: "Failed to get all languages"
-        })
-    }
+  _req: Request,
+  res: Response) => {
+  try {
+    const languages = await Language.find()
+    return res.status(200).json(languages)
+  } catch (error) {
+    return res.status(400).json({
+      error: "Failed to get all languages"
+    })
+  }
 }
-    
+
 /* ========================================== */
 
 const getLanguage = async (
@@ -138,9 +140,9 @@ const deleteLanguage = async (
 
 
 export {
-    getAllLanguages,
-    getLanguage,
-    createLanguage,
-    updateLanguage,
-    deleteLanguage
+  getAllLanguages,
+  getLanguage,
+  createLanguage,
+  updateLanguage,
+  deleteLanguage
 }

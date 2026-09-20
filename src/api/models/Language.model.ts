@@ -1,3 +1,5 @@
+/* Defines language documents referenced by courses and loaded by language.controller. */
+
 import mongoose from "mongoose";
 
 // Defines the structure.
@@ -26,13 +28,13 @@ const languageSchema = new mongoose.Schema<ILanguage>({
         lowercase: true,
         unique: true
     }
-},{
+}, {
     timestamps: true
 });
 
 const Language = mongoose.model<ILanguage>(
     "Language",
-    languageSchema, 
+    languageSchema,
     "languages" // collection name in MongoDB
 );
 

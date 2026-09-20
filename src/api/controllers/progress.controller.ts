@@ -1,3 +1,5 @@
+/* Reads and updates learner progress records exposed through progress routes. */
+
 import type { Request, Response } from "express";
 
 import Progress from "../models/Progress.model";

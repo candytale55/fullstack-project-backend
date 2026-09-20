@@ -1,3 +1,5 @@
+/* Defines learner progress records read and updated by progress.controller. */
+
 import mongoose, {
     Schema,
     Types

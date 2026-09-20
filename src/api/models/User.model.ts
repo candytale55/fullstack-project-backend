@@ -1,3 +1,5 @@
+/* Defines persisted users and hashes passwords before auth.controller stores them. */
+
 import mongoose from "mongoose";
 import bcrypt from "bcrypt";
 
@@ -44,13 +46,6 @@ const userSchema = new mongoose.Schema<IUser>({
 
 // Hash password before saving.
 userSchema.pre("save", async function () {
-
-    // TODO: Remove debug logs before deploying to production.
-    console.log("[User pre-save] Hook executed");
-    console.log(
-        "[User pre-save] Password modified:",
-        this.isModified("password")
-    );
 
     if (!this.isModified("password")) {
         return;

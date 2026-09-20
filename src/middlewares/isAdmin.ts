@@ -1,3 +1,5 @@
+/* Restricts routes to the admin user attached by the preceding isAuth middleware. */
+
 import type {
     Request,
     Response,
@@ -14,8 +16,8 @@ const isAdmin = (
     res: Response,
     next: NextFunction
 ) => {
-    
-    
+
+
     // If there is no auth user, or they are not an admin,
     // access to the protected resource is denied.
     if (!req.user || req.user.role !== "admin") {

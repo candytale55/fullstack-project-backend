@@ -1,3 +1,5 @@
+/* Maps public and session endpoints to auth.controller and isAuth. */
+
 import { Router } from "express";
 
 import {

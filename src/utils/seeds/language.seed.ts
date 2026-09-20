@@ -26,7 +26,8 @@ const seedLanguages = async () => {
         await connectDB()
 
         const filePath = path.resolve(
-            'src/utils/seeds/data/languages.json'
+            __dirname,
+            'data/languages.json'
         )
 
         const fileContent = fs.readFileSync(

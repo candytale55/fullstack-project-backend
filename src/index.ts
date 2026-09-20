@@ -4,7 +4,6 @@ import dotenv from "dotenv";
 import express from "express";
 import cors from "cors";
 import { connectDB } from "./config/db";
-import User from "./api/models/User.model";
 
 
 /* ========================================== */
@@ -68,7 +67,7 @@ app.use(
 );
 
 // 404 handler - Must be after all other routes.
-app.use((_req, res) => { 
+app.use((_req, res) => {
     return res.status(404).json("Route not found");
 });
 

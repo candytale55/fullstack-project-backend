@@ -25,7 +25,6 @@ const seedUsers = async () => {
         });
 
         console.log("Admin user created successfully.");
-        console.log(adminUser);
 
         const regularUser = await User.create({
             name: "Test User",
@@ -35,7 +34,6 @@ const seedUsers = async () => {
         });
 
         console.log("Regular user created successfully.");
-        console.log(regularUser);
 
         process.exit(0);
     } catch (error) {
