@@ -95,7 +95,7 @@ El proyecto está planteado para continuar creciendo. Parte del backend ya conti
 - React Router
 - CSS Modules
 
-<p><a href="#indice">Volver al índice</a></p>
+
 
 <a id="tecnologias-backend"></a>
 ### Backend
@@ -110,15 +110,12 @@ El proyecto está planteado para continuar creciendo. Parte del backend ya conti
 - CORS
 - csv-parse
 
-<p><a href="#indice">Volver al índice</a></p>
-
 <a id="tecnologias-deployment"></a>
 ### Deployment
 
 - Vercel
 - MongoDB Atlas
 
-<p><a href="#indice">Volver al índice</a></p>
 
 <p><a href="#indice">Volver al índice</a></p>
 
@@ -199,7 +196,6 @@ src/
 
 La API separa modelos, controllers, routes, middlewares y utilidades para mantener responsabilidades claras.
 
-<p><a href="#indice">Volver al índice</a></p>
 
 <p><a href="#indice">Volver al índice</a></p>
 
@@ -315,8 +311,6 @@ npm run seed:ptverbs
        ↓
 Portuguese Verb Conjugations
 ```
-
-<p><a href="#indice">Volver al índice</a></p>
 
 <p><a href="#indice">Volver al índice</a></p>
 
