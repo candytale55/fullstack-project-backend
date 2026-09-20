@@ -2,7 +2,7 @@ import { Router } from "express";
 
 import {
     getPortugueseVerbConjugations
-} from "../controllers/PortugueseVerbConjugation.controller";
+} from '../controllers/PortugueseVerbConjugation';
 
 
 const router = Router();

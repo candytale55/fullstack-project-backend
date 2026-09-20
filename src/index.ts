@@ -17,6 +17,7 @@ import coursesRouter from "./api/routes/courses.routes";
 import vocabularyRouter from "./api/routes/vocabulary.routes";
 import exercisesRouter from "./api/routes/exercises.routes";
 import progressRouter from "./api/routes/progress.routes";
+import portugueseVerbConjugationRouter from "./api/routes/PortugueseVerbConjugation.routes";
 
 /* ========================================== */
 
@@ -59,6 +60,10 @@ app.use("/api/v1/courses", coursesRouter);
 app.use("/api/v1/vocabulary", vocabularyRouter);
 app.use("/api/v1/exercises", exercisesRouter);
 app.use("/api/v1/progress", progressRouter);
+app.use(
+    "/api/v1/portuguese-verb-conjugations",
+    portugueseVerbConjugationRouter
+);
 
 // 404 handler - Must be after all other routes.
 app.use((_req, res) => { 
