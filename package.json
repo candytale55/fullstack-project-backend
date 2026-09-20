@@ -9,10 +9,11 @@
     "build:local": "tsc",
     "start": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "seed:all": "tsx src/utils/seeds/master.seed.ts",
+    "seed:ptverbs": "tsx src/utils/seeds/portugueseVerbConjugation.seed.ts",
     "seed:users": "tsx src/utils/seeds/user.seed.ts",
     "seed:languages": "tsx src/utils/seeds/language.seed.ts",
-    "seed:courses": "tsx src/utils/seeds/course.seed.ts",
-    "seed:ptverbs": "tsx src/utils/seeds/portugueseVerbConjugation.seed.ts"
+    "seed:courses": "tsx src/utils/seeds/course.seed.ts"
   },
   "keywords": [],
   "author": "",
