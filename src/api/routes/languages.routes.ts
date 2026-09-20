@@ -1,3 +1,5 @@
+/* Maps language URLs to language.controller operations consumed by LanguagesPage. */
+
 import { Router } from 'express'
 
 import {

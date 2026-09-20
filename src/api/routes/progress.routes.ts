@@ -1,3 +1,5 @@
+/* Maps progress URLs to progress.controller operations for user activity tracking. */
+
 import { Router } from "express";
 
 import {

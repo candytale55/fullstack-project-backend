@@ -1,3 +1,5 @@
+/* Exposes conjugation queries consumed by the frontend Portuguese exercise service. */
+
 import { Router } from "express";
 
 import {

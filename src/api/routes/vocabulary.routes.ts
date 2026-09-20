@@ -1,4 +1,4 @@
-// TODO: PROVISIONAL - Revisar antes de cargar los datos.
+/* Maps vocabulary URLs to vocabulary.controller operations for course content. */
 
 import { Router } from "express";
 

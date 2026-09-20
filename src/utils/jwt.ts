@@ -1,3 +1,5 @@
+/* Centralizes JWT creation and validation for auth.controller and isAuth. */
+
 import jwt, { type JwtPayload } from "jsonwebtoken";
 
 interface AuthTokenPayload extends JwtPayload {

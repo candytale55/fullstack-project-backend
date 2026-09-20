@@ -1,3 +1,5 @@
+/* Validates conjugation filters and returns Portuguese verb data for the exercise service. */
+
 import type { Request, Response } from "express";
 import mongoose from "mongoose";
 
@@ -23,7 +25,7 @@ export const getPortugueseVerbConjugations =
         unitId?: string;
       } = {};
 
-      /* Validate and add course filter */
+      /* Validate optional query filters before using them in MongoDB. */
       if (typeof courseId === "string") {
 
         if (

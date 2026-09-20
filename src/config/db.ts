@@ -1,10 +1,10 @@
-// Configuración de la conexión a la base de datos MongoDB.
+/* Connects the API and seed scripts to MongoDB through the shared MONGO_URI setting. */
 
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 dotenv.config();
 
-export const connectDB = async () => { 
+export const connectDB = async () => {
     try {
         const mongoURI = process.env.MONGO_URI;
         if (!mongoURI) {
@@ -12,7 +12,7 @@ export const connectDB = async () => {
         }
         await mongoose.connect(mongoURI);
         console.log("Connected to the database successfully.");
-    
+
     } catch (error) {
         console.error("Failed to connect to the database.", error);
         process.exit(1);

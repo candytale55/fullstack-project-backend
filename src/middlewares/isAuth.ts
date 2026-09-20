@@ -1,3 +1,5 @@
+/* Verifies bearer tokens and attaches the authenticated user's safe data to req.user. */
+
 import type {
     Request,
     Response,
@@ -60,16 +62,10 @@ const isAuth = async (
             });
         }
 
-        console.log("Authorization header:", authorization); // TODO: Remove this debug log in production. 
-
-        console.log("Token:", token); // TODO: Remove this debug log in production. 
-        
         /* Validates the signature and expiration
          * and returns the decoded payload.
          */
         const { id } = verifyToken(token);
-
-        console.log("Decoded token ID:", id); // TODO: Remove this debug log in production. 
 
         /*
          * A valid JWT does not guarantee that the user still exists. The user may have been deleted after the token was issued, so we verify the user against the database.

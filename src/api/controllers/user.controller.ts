@@ -1,3 +1,5 @@
+/* Provides user CRUD operations consumed by the user routes and protected admin flows. */
+
 import type { Request, Response } from "express";
 import User from "../models/User.model";
 

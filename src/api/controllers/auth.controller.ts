@@ -1,3 +1,5 @@
+/* Implements authentication endpoints used by the frontend auth services and provider. */
+
 import type { Request, Response } from "express";
 import bcrypt from "bcrypt";
 

@@ -1,4 +1,4 @@
-// TODO: PROVISIONAL - Revisar antes de cargar los datos.
+/* Maps exercise URLs to exercise.controller operations used by the learning flow. */
 
 import { Router } from "express";
 

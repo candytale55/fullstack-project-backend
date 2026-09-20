@@ -1,3 +1,5 @@
+/* Creates the API server, connects shared routes, and starts the HTTP listener. */
+
 import dotenv from "dotenv";
 import express from "express";
 import cors from "cors";

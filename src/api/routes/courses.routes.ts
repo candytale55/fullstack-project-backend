@@ -1,3 +1,5 @@
+/* Maps course URLs to course.controller operations used by the frontend services. */
+
 import { Router } from "express";
 
 import {
