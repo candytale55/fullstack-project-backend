@@ -1,6 +1,7 @@
 /* Reads and updates learner progress records exposed through progress routes. */
 
 import type { Request, Response } from "express";
+import mongoose from "mongoose";
 import Progress from "../models/Progress.model";
 
 /* ------------------------------------- */
@@ -83,6 +84,15 @@ const saveStudySession = async (
             });
         }
 
+        if (
+            !mongoose.Types.ObjectId.isValid(
+                req.params.courseId
+            )
+        ) {
+            return res.status(400).json({
+                error: "Invalid course id"
+            });
+        }
         /*
          * Find the Progress document for this
          * user and course.
