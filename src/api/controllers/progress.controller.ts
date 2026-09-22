@@ -93,45 +93,35 @@ const saveStudySession = async (
                 error: "Invalid course id"
             });
         }
-        /*
-         * Find the Progress document for this
-         * user and course.
-         */
-        let progress = await Progress.findOne({
-            user: req.user._id,
-            course: req.params.courseId
-        });
+        const now = new Date();
+        const studyDay = now.toISOString().slice(0, 10);
 
-        /*
-         * If this is the user's first study session
-         * for this course, create the Progress document.
-         */
-        if (!progress) {
-
-            progress = new Progress({
+        // Atomically accumulates progress and adds the day only once.
+        const progress = await Progress.findOneAndUpdate(
+            {
                 user: req.user._id,
                 course: req.params.courseId
-            });
-        }
-
-        /*
-         * Update the accumulated progress.
-         */
-        progress.completedSessions += 1;
-
-        progress.questionsAnswered +=
-            questionsAnswered;
-
-        progress.correctAnswers +=
-            correctAnswers;
-
-        progress.lastStudiedAt =
-            new Date();
-
-        /*
-         * Save the changes through Mongoose.
-         */
-        await progress.save();
+            },
+            {
+                $inc: {
+                    completedSessions: 1,
+                    questionsAnswered,
+                    correctAnswers
+                },
+                $set: {
+                    lastStudiedAt: now
+                },
+                $addToSet: {
+                    studyDays: studyDay
+                }
+            },
+            {
+                new: true,
+                upsert: true,
+                runValidators: true,
+                setDefaultsOnInsert: true
+            }
+        );
 
         /*
          * Populate the course information
