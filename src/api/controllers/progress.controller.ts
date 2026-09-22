@@ -168,9 +168,18 @@ const getMyProgress = async (
                 .find({
                     user: req.user._id
                 })
+                .sort({
+                    lastStudiedAt: -1
+                })
                 .populate(
-                    "course",
-                    "title level"
+                    {
+                        path: "course",
+                        select: "title level structure language",
+                        populate: {
+                            path: "language",
+                            select: "name nativeName code"
+                        }
+                    }
                 );
 
         return res.status(200).json(
