@@ -43,19 +43,13 @@ app.use(cors({
 app.use(express.json());
 
 
-// Connect to the database
-connectDB();
-
-// Open http://localhost:3000 to test
+/* Register routes before waiting for the database connection. */
 app.get("/", (_req, res) => {
     res.json({ message: "Backend is running" });
 });
 
-/* ===========AUTH & USERS ROUTES============ */
 app.use("/api/v1/users", usersRouter);
 app.use("/api/v1/auth", authRouter);
-
-/* ======= COURSE AND LANGUAGE ROUTES========= */
 app.use("/api/v1/languages", languagesRouter);
 app.use("/api/v1/courses", coursesRouter);
 app.use("/api/v1/vocabulary", vocabularyRouter);
@@ -66,13 +60,21 @@ app.use(
     portugueseVerbConjugationRouter
 );
 
-// 404 handler - Must be after all other routes.
 app.use((_req, res) => {
     return res.status(404).json("Route not found");
 });
 
-// Start the server and listen on the specified port.
-app.listen(PORT, () => {
-    console.log(`✅ Servidor corriendo en http://localhost:${PORT}`);
+/* Start accepting requests only after MongoDB is ready. */
+const startServer = async () => {
+    await connectDB();
+
+    app.listen(PORT, () => {
+        console.log(`✅ Servidor corriendo en http://localhost:${PORT}`);
+    });
+};
+
+startServer().catch((error) => {
+    console.error("Failed to start the server:", error);
+    process.exit(1);
 });
 

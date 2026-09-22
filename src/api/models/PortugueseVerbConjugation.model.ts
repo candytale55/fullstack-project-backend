@@ -261,6 +261,12 @@ portugueseVerbConjugationSchema.index(
     }
 );
 
+// Supports the unit query used when opening a conjugation exercise.
+portugueseVerbConjugationSchema.index({
+    unitId: 1,
+    infinitive: 1
+});
+
 
 /* ------------------------------------- */
 /*              Model                    */
