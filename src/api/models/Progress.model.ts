@@ -7,13 +7,14 @@ import mongoose, {
 
 
 export interface IProgress {
-    user: Types.ObjectId;   
+    user: Types.ObjectId;
     course: Types.ObjectId;
     completedSessions: number;
     completedExercises: Types.ObjectId[];
     questionsAnswered: number;
     correctAnswers: number;
     lastStudiedAt?: Date;
+    studyDays: string[];
 }
 
 
@@ -48,6 +49,12 @@ const progressSchema = new Schema<IProgress>(
 
         lastStudiedAt: {
             type: Date
+        },
+
+        // Stores unique study dates as YYYY-MM-DD strings for future heat maps.
+        studyDays: {
+            type: [String],
+            default: []
         },
 
         completedExercises: [
