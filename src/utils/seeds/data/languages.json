@@ -13,5 +13,10 @@
         "name": "Francés",
         "nativeName": "Français",
         "code": "fr"
+    },
+    {
+        "name": "Alemán",
+        "nativeName": "Deutsch",
+        "code": "de"
     }
 ]
