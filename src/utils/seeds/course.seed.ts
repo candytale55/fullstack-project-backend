@@ -36,9 +36,6 @@ const seedCourses = async () => {
     try {
         await connectDB()
 
-        await Course.deleteMany({})
-        console.log("Courses collection cleared before reseeding")
-
         const filePath = path.resolve(
             __dirname,
             'data/courses.json'
@@ -68,10 +65,20 @@ const seedCourses = async () => {
                 ...course
             } = courseData
 
-            await Course.create({
-                ...course,
-                language: language._id,
-            })
+            await Course.updateOne(
+                {
+                    code: course.code
+                },
+                {
+                    $set: {
+                        ...course,
+                        language: language._id
+                    }
+                },
+                {
+                    upsert: true
+                }
+            );
         }
 
         console.log(
@@ -84,8 +91,10 @@ const seedCourses = async () => {
         )
     } finally {
         await mongoose.connection.close()
+        console.log(
+            "Database connection closed"
+        )
     }
 }
-
 
 seedCourses()

@@ -5,7 +5,6 @@
  * Courses will later reference these records through their language ObjectId.
  */
 
-import dotenv from "dotenv";
 import fs from 'node:fs'
 import path from 'node:path'
 import mongoose from 'mongoose'
@@ -38,14 +37,38 @@ const seedLanguages = async () => {
         const languages: LanguageSeed[] =
             JSON.parse(fileContent)
 
-        await Language.deleteMany({})
+        for (const language of languages) {
 
-        const createdLanguages =
-            await Language.insertMany(languages)
+            const existingLanguage = await Language.findOne({
+                code: language.code
+            })
+
+            if (existingLanguage) { 
+
+                existingLanguage.name = language.name
+                existingLanguage.nativeName = language.nativeName
+                await existingLanguage.save()
+                console.log(`Language ${language.code} already exists and was updated`)
+                continue    
+            }
+
+            await Language.updateOne(
+                {
+                    code: language.code
+                },
+                {
+                    $set: language
+                },
+                {
+                    upsert: true
+                }
+            );
+        }
 
         console.log(
-            `${createdLanguages.length} languages seeded`
-        )
+            `${languages.length} languages seeded`
+        );
+
     } catch (error) {
         console.error(
             'Error seeding languages:',
@@ -53,8 +76,10 @@ const seedLanguages = async () => {
         )
     } finally {
         await mongoose.connection.close()
+        console.log(
+            "Database connection closed"
+        )
     }
 }
-
 
 seedLanguages()

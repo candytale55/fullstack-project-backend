@@ -1,7 +1,7 @@
 /* Reads and updates learner progress records exposed through progress routes. */
 
 import type { Request, Response } from "express";
-
+import mongoose from "mongoose";
 import Progress from "../models/Progress.model";
 
 /* ------------------------------------- */
@@ -36,6 +36,164 @@ const getAllProgress = async (
         });
     }
 };
+
+
+/* ========================================== */
+/* Save completed study session              */
+/* ========================================== */
+
+type StudySessionBody = {
+    questionsAnswered: number;
+    correctAnswers: number;
+};
+
+
+const saveStudySession = async (
+    req: Request<
+        { courseId: string },
+        {},
+        StudySessionBody
+    >,
+    res: Response
+) => {
+    try {
+
+        // isAuth adds the authenticated user to req.user.
+        if (!req.user) {
+            return res.status(401).json({
+                error: "Unauthorized"
+            });
+        }
+
+        const {
+            questionsAnswered,
+            correctAnswers
+        } = req.body;
+
+
+        // Validate the results received from the exercise.
+        if (
+            !Number.isInteger(questionsAnswered) ||
+            !Number.isInteger(correctAnswers) ||
+            questionsAnswered < 1 ||
+            correctAnswers < 0 ||
+            correctAnswers > questionsAnswered
+        ) {
+            return res.status(400).json({
+                error: "Invalid session data"
+            });
+        }
+
+        if (
+            !mongoose.Types.ObjectId.isValid(
+                req.params.courseId
+            )
+        ) {
+            return res.status(400).json({
+                error: "Invalid course id"
+            });
+        }
+        const now = new Date();
+        const studyDay = now.toISOString().slice(0, 10);
+
+        // Atomically accumulates progress and adds the day only once.
+        const progress = await Progress.findOneAndUpdate(
+            {
+                user: req.user._id,
+                course: req.params.courseId
+            },
+            {
+                $inc: {
+                    completedSessions: 1,
+                    questionsAnswered,
+                    correctAnswers
+                },
+                $set: {
+                    lastStudiedAt: now
+                },
+                $addToSet: {
+                    studyDays: studyDay
+                }
+            },
+            {
+                new: true,
+                upsert: true,
+                runValidators: true,
+                setDefaultsOnInsert: true
+            }
+        );
+
+        /*
+         * Populate the course information
+         * before returning the response.
+         */
+        await progress.populate(
+            "course",
+            "title level"
+        );
+
+        return res.status(200).json(
+            progress
+        );
+
+    } catch (error) {
+
+        return res.status(400).json({
+            error: "Failed to save study session"
+        });
+    }
+};
+
+
+/* ========================================== */
+/* Get authenticated user's progress          */
+/* ========================================== */
+
+const getMyProgress = async (
+    req: Request,
+    res: Response
+) => {
+
+    try {
+        // Check if the user is authenticated.
+        // => isAuth middleware adds the user to the request object as req.user.
+        if (!req.user) {
+            return res.status(401).json({
+                error: "Unauthorized"
+            });
+        }
+
+        const progress =
+            await Progress
+                .find({
+                    user: req.user._id
+                })
+                .sort({
+                    lastStudiedAt: -1
+                })
+                .populate(
+                    {
+                        path: "course",
+                        select: "title level structure language",
+                        populate: {
+                            path: "language",
+                            select: "name nativeName code"
+                        }
+                    }
+                );
+
+        return res.status(200).json(
+            progress
+        );
+
+    } catch (error) {
+
+        return res.status(400).json({
+            error: "Failed to get user progress"
+        });
+    }
+};
+
 
 /* ========================================== */
 
@@ -248,5 +406,7 @@ export {
     createProgress,
     completeExercise,
     resetProgress,
-    deleteProgress
+    deleteProgress,
+    getMyProgress,
+    saveStudySession
 };
