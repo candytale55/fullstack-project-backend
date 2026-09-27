@@ -13,7 +13,8 @@
     "seed:ptverbs": "tsx src/utils/seeds/portugueseVerbConjugation.seed.ts",
     "seed:users": "tsx src/utils/seeds/user.seed.ts",
     "seed:languages": "tsx src/utils/seeds/language.seed.ts",
-    "seed:courses": "tsx src/utils/seeds/course.seed.ts"
+    "seed:courses": "tsx src/utils/seeds/course.seed.ts",
+    "seed:vocabulary": "tsx src/utils/seeds/vocabulary.seed.ts"
   },
   "keywords": [],
   "author": "",

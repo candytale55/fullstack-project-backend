@@ -70,7 +70,7 @@ El ejercicio de conjugación permite seleccionar el número de preguntas, respon
 
 ### Dashboard actual
 
-![Dashboard Screenshot](./docs/shots/scsh-08-mock-dashboard.png)
+![Dashboard Screenshot](./docs/shots/scsh-08-dashboard.png)
 
 ---
 
@@ -79,7 +79,7 @@ El ejercicio de conjugación permite seleccionar el número de preguntas, respon
 **Frontend:** React, TypeScript, Vite, React Router y CSS Modules.  
 **Backend:** Node.js, Express, TypeScript, MongoDB y Mongoose.
 
-Más detalles técnicos: [notas_desarrollo.md](./notas_desarrollo.md).
+Más detalles técnicos: [notas_desarrollo.md](./docs/notas_desarrollo.md).
 
 ---
 

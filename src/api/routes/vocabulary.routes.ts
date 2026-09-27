@@ -1,11 +1,10 @@
 /* Maps vocabulary URLs to vocabulary.controller operations for course content. */
 
 import { Router } from "express";
-
+import { isAuth } from "../../middlewares/isAuth";
+import { isAdmin } from "../../middlewares/isAdmin";    
 import {
     getAllVocabulary,
-    getVocabularyByCourse,
-    getVocabularyByUnit,
     getVocabularyItem,
     createVocabularyItem,
     updateVocabularyItem,
@@ -21,32 +20,28 @@ vocabularyRouter.get(
 );
 
 vocabularyRouter.get(
-    "/course/:courseId/unit/:unitId",
-    getVocabularyByUnit
-);
-
-vocabularyRouter.get(
-    "/course/:courseId",
-    getVocabularyByCourse
-);
-
-vocabularyRouter.get(
     "/:id",
     getVocabularyItem
 );
 
 vocabularyRouter.post(
     "/",
+    isAuth,
+    isAdmin,
     createVocabularyItem
 );
 
 vocabularyRouter.patch(
     "/:id",
+    isAuth,
+    isAdmin,
     updateVocabularyItem
 );
 
 vocabularyRouter.delete(
     "/:id",
+    isAuth,
+    isAdmin,
     deleteVocabularyItem
 );
 
