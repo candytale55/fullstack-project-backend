@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 import express from "express";
 import cors from "cors";
 import { connectDB } from "./config/db";
-
+import { connectCloudinary } from "./config/cloudinary";
 
 /* ========================================== */
 /*           Import Routes                    */
@@ -24,6 +24,7 @@ import portugueseVerbConjugationRouter from "./api/routes/PortugueseVerbConjugat
 
 // Loads .env variables into process.env.
 dotenv.config();
+connectCloudinary();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
