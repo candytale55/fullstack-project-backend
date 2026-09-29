@@ -355,6 +355,13 @@ const seedVocabulary = async () => {
       vocabularyItems.push(vocabularyData);
     }
 
+
+    // Delete all existing vocabulary items before seeding new ones.
+    
+/*     const deleteResult = await VocabularyItem.deleteMany({});
+    console.log(`Deleted ${deleteResult.deletedCount} existing vocabulary items`); */
+
+    
     // Upsert current records first, then remove codes no longer present in the TSV.
     await VocabularyItem.bulkWrite(
       vocabularyItems.map((item) => ({
