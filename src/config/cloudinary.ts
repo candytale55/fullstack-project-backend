@@ -9,14 +9,14 @@ export const connectCloudinary = () => {
     const apiSecret = process.env.CLOUDINARY_API_SECRET;
 
     if (!cloudName || !apiKey || !apiSecret) {
-        throw new Error("Faltan las credenciales de Cloudinary en .env");
+        throw new Error("Missing Cloudinary credentials in .env");
     }
 
     cloudinary.config({
         cloud_name: cloudName,
         api_key: apiKey,
         api_secret: apiSecret,
-        secure: true, // Asegura que las URLs generadas sean HTTPS
+        secure: true, // URLs will be HTTPS
     });
 
     return cloudinary;

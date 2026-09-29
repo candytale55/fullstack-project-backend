@@ -13,6 +13,7 @@ import VocabularyItem, {
 import { connectDB } from "../../config/db";
 import { connectCloudinary } from "../../config/cloudinary";
 
+// Describes the columns expected in each parsed TSV record.
 type VocabularySeedRow = {
   code: string;
   sourceRow: string;
@@ -34,11 +35,12 @@ type VocabularySeedRow = {
 /* Helpers                               */
 /* ------------------------------------- */
 
+// Trims a TSV value and turns missing values into an empty string.
 const cleanValue = (value?: string): string => {
   return value?.trim() ?? "";
 };
 
-// Converts space-separated tags or references into an array.
+// Splits whitespace-separated tags/references and removes duplicates.
 const parseList = (value?: string): string[] => {
   const cleanedValue = cleanValue(value);
 
@@ -49,11 +51,12 @@ const parseList = (value?: string): string[] => {
   return [...new Set(cleanedValue.split(/\s+/))];
 };
 
-// Stores only valid CEFR levels, including sublevels such as A2.1.
+// Keeps valid CEFR levels, including sublevels such as A2.1.
 const normalizeLevel = (value?: string): string | undefined => {
   const level = cleanValue(value);
 
   if (!level) {
+    // Combines TSV tags with derived tags based on the level and source category.
     return undefined;
   }
 
@@ -98,9 +101,10 @@ const buildTags = (
 /* Seed                                  */
 /* ------------------------------------- */
 
+// Validates the source data, resolves images, and replaces vocabulary records.
 const seedVocabulary = async () => {
   try {
-    // Both paths are relative to this seed file.
+    // Resolve the TSV and image directory relative to this seed file.
     const filePath = path.resolve(
       __dirname,
       "data/vocabulary.tsv"
@@ -108,7 +112,7 @@ const seedVocabulary = async () => {
 
     const imageDirectory = path.resolve(
       __dirname,
-      "data/images"
+      "../../assets/images"
     );
 
     const fileContent = fs.readFileSync(filePath, "utf-8");
@@ -125,11 +129,12 @@ const seedVocabulary = async () => {
     console.log(`${rows.length} vocabulary rows loaded`);
 
     /*
-     * First pass: validate all records and image files
-     * before uploading anything or writing to MongoDB.
+      * Validate every required field, duplicate code, and referenced image
+      * before connecting to external services or changing database records.
      */
     const codes = new Set<string>();
     const imageFilenames = new Set<string>();
+    const imagePaths = new Map<string, string>();
 
     for (const row of rows) {
       const code = cleanValue(row.code);
@@ -175,10 +180,18 @@ const seedVocabulary = async () => {
         imageDirectory,
         filename
       );
+      const underscoredImagePath = path.join(
+        imageDirectory,
+        `_${filename}`
+      );
+      const resolvedImagePath =
+        fs.existsSync(imagePath) && fs.statSync(imagePath).isFile()
+          ? imagePath
+          : underscoredImagePath;
 
       if (
-        !fs.existsSync(imagePath) ||
-        !fs.statSync(imagePath).isFile()
+        !fs.existsSync(resolvedImagePath) ||
+        !fs.statSync(resolvedImagePath).isFile()
       ) {
         throw new Error(
           `Image file not found: ${imagePath}`
@@ -186,18 +199,20 @@ const seedVocabulary = async () => {
       }
 
       imageFilenames.add(filename);
+      imagePaths.set(filename, resolvedImagePath);
     }
 
-    // Cloudinary is needed only if the TSV references images.
+    // Connect only after validation; configure Cloudinary only when images exist.
+    await connectDB();
+
+
     const cloudinary = imageFilenames.size > 0
       ? connectCloudinary()
       : null;
 
-    await connectDB();
-
     /*
-     * Reuse images saved by previous seed runs.
-     * One database query retrieves them all.
+     * Load saved Cloudinary metadata before replacing collection records,
+     * allowing unchanged image files to be reused without uploading again.
      */
     const existingImages = imageFilenames.size > 0
       ? await VocabularyItem.find({
@@ -216,6 +231,7 @@ const seedVocabulary = async () => {
         .select("image")
         .lean()
       : [];
+
 
     const imageCache = new Map<
       string,
@@ -236,10 +252,11 @@ const seedVocabulary = async () => {
     }
 
     let uploadedImages = 0;
+    const vocabularyItems: IVocabularyItem[] = [];
 
     /*
-     * Second pass: upload images that are still missing,
-     * then save each vocabulary item.
+     * Build the replacement dataset in memory. Upload missing images and
+     * reuse cached metadata so database records remain untouched on failure.
      */
     for (const row of rows) {
       const code = cleanValue(row.code);
@@ -279,10 +296,13 @@ const seedVocabulary = async () => {
             );
           }
 
-          const imagePath = path.join(
-            imageDirectory,
-            imageFilename
-          );
+          const imagePath = imagePaths.get(imageFilename);
+
+          if (!imagePath) {
+            throw new Error(
+              `Image path not found for: ${imageFilename}`
+            );
+          }
 
           const uploaded = await cloudinary.uploader.upload(
             imagePath,
@@ -332,12 +352,27 @@ const seedVocabulary = async () => {
         ...(image && { image }),
       };
 
-      await VocabularyItem.updateOne(
-        { code },
-        { $set: vocabularyData },
-        { upsert: true }
-      );
+      vocabularyItems.push(vocabularyData);
     }
+
+    // Upsert current records first, then remove codes no longer present in the TSV.
+    await VocabularyItem.bulkWrite(
+      vocabularyItems.map((item) => ({
+        replaceOne: {
+          filter: { code: item.code },
+          replacement: item,
+          upsert: true,
+        },
+      }))
+    );
+
+    const deleteResults = await VocabularyItem.deleteMany({
+      code: { $nin: vocabularyItems.map((item) => item.code) },
+    });
+
+    console.log(
+      `${deleteResults.deletedCount} obsolete vocabulary items deleted`
+    );
 
     console.log(
       `${rows.length} vocabulary items seeded; ` +
