@@ -10,13 +10,8 @@
         "code": "pt"
     },
     {
-        "name": "Francés",
-        "nativeName": "Français",
-        "code": "fr"
-    },
-    {
-        "name": "Alemán",
-        "nativeName": "Deutsch",
-        "code": "de"
+        "name": "Español",
+        "nativeName": "Español",
+        "code": "es"
     }
 ]

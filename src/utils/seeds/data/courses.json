@@ -4,76 +4,232 @@
         "languageCode": "en",
         "title": "English C1.1",
         "level": "C1",
-        "description": "Advanced English vocabulary and course material.",
+        "description": "Advanced English vocabulary, grammar, and course material based on English File C1.1 (4th Edition).",
         "structure": "units",
         "units": [
             {
                 "code": "01a",
-                "title": "Unit 01A",
-                "description": "Próximamente: ejercicios en desarrollo.",
+                "title": "Unit 01A: We are family",
+                "description": "Grammar: 'have' (lexical and grammatical uses). Vocabulary: Personality.",
                 "order": 1
             },
             {
                 "code": "01b",
-                "title": "Unit 01B",
-                "description": "Próximamente: ejercicios en desarrollo.",
+                "title": "Unit 01B: A job for life?",
+                "description": "Grammar: Discourse markers (1) - linkers. Vocabulary: Work.",
                 "order": 2
             },
             {
                 "code": "01ce",
-                "title": "Unit 01CE",
-                "description": "Próximamente: ejercicios en desarrollo.",
+                "title": "Colloquial English 1: Talking about... work and family",
+                "description": "Focus on listening and conversation skills regarding work and family businesses.",
                 "order": 3
             },
             {
-                "code": "02b",
-                "title": "Unit 02B",
-                "description": "Próximamente: ejercicios en desarrollo.",
+                "code": "02a",
+                "title": "Unit 02A: Do you remember...?",
+                "description": "Grammar: The past - habitual events and specific incidents. Vocabulary: Word building - abstract nouns.",
                 "order": 4
             },
             {
-                "code": "04ce",
-                "title": "Unit 04CE",
-                "description": "Próximamente: ejercicios en desarrollo.",
+                "code": "02b",
+                "title": "Unit 02B: On the tip of my tongue",
+                "description": "Grammar: Pronouns. Vocabulary: Lexical areas.",
                 "order": 5
             },
             {
-                "code": "06b",
-                "title": "Unit 06B",
-                "description": "Próximamente: ejercicios en desarrollo.",
+                "code": "02rc",
+                "title": "Revise and Check 1&2",
+                "description": "Revision of grammar, vocabulary, and skills from Files 1 and 2.",
                 "order": 6
             },
             {
-                "code": "07f",
-                "title": "Unit 07F",
-                "description": "Próximamente: ejercicios en desarrollo.",
+                "code": "03a",
+                "title": "Unit 03A: A love-hate relationship",
+                "description": "Grammar: 'get'. Vocabulary: Phrases with 'get'.",
                 "order": 7
             },
             {
-                "code": "08a",
-                "title": "Unit 08A",
-                "description": "Próximamente: ejercicios en desarrollo.",
+                "code": "03b",
+                "title": "Unit 03B: Dramatic licence",
+                "description": "Grammar: Discourse markers (2) - adverbs and adverbial expressions. Vocabulary: Conflict and warfare.",
                 "order": 8
             },
             {
-                "code": "09s",
-                "title": "Unit 09S",
-                "description": "Próximamente: ejercicios en desarrollo.",
+                "code": "03ce",
+                "title": "Colloquial English 2&3: Talking about... history",
+                "description": "Focus on listening and conversation skills regarding history and historical accuracy.",
                 "order": 9
             },
             {
-                "code": "10a",
-                "title": "Unit 10A",
-                "description": "Próximamente: ejercicios en desarrollo.",
+                "code": "04a",
+                "title": "Unit 04A: An open book",
+                "description": "Grammar: Adding emphasis (1) - inversion. Vocabulary: Describing books and films.",
                 "order": 10
             },
             {
-                "code": "10b",
-                "title": "Unit 10B",
-                "description": "Próximamente: ejercicios en desarrollo.",
+                "code": "04b",
+                "title": "Unit 04B: The sound of silence",
+                "description": "Grammar: Speculation and deduction. Vocabulary: Sounds and the human voice.",
                 "order": 11
+            },
+            {
+                "code": "04rc",
+                "title": "Revise and Check 3&4",
+                "description": "Revision of grammar, vocabulary, and skills from Files 3 and 4.",
+                "order": 12
+            },
+            {
+                "code": "05a",
+                "title": "Unit 05A: No time for anything",
+                "description": "Grammar: Distancing. Vocabulary: Expressions with time.",
+                "order": 13
+            },
+            {
+                "code": "05b",
+                "title": "Unit 05B: Not for profit?",
+                "description": "Grammar: Unreal uses of past tenses. Vocabulary: Money.",
+                "order": 14
+            },
+            {
+                "code": "05ce",
+                "title": "Colloquial English 4&5: Talking about... stress and relaxation",
+                "description": "Focus on listening and conversation skills regarding stress and lifestyle pace.",
+                "order": 15
+            },
+            {
+                "code": "06a",
+                "title": "Unit 06A: Help, I need somebody!",
+                "description": "Grammar: Verb + object + infinitive or gerund. Vocabulary: Compound adjectives.",
+                "order": 16
+            },
+            {
+                "code": "06b",
+                "title": "Unit 06B: Can't give it up",
+                "description": "Grammar: Conditional sentences. Vocabulary: Phones and technology, adjectives + prepositions.",
+                "order": 17
+            },
+            {
+                "code": "06rc",
+                "title": "Revise and Check 5&6",
+                "description": "Revision of grammar, vocabulary, and skills from Files 5 and 6.",
+                "order": 18
+            },
+            {
+                "code": "07a",
+                "title": "Unit 07A: As a matter of fact...",
+                "description": "Grammar: Permission, obligation, and necessity. Vocabulary: Word formation - prefixes.",
+                "order": 19
+            },
+            {
+                "code": "07b",
+                "title": "Unit 07B: A masterpiece?",
+                "description": "Grammar: Perception and sensation. Vocabulary: Art, colour idioms.",
+                "order": 20
+            },
+            {
+                "code": "07ce",
+                "title": "Colloquial English 6&7: Talking about... illustration",
+                "description": "Focus on listening and conversation skills regarding illustration and books.",
+                "order": 21
+            },
+            {
+                "code": "08a",
+                "title": "Unit 08A: The best medicine?",
+                "description": "Grammar: Advanced gerunds and infinitives. Vocabulary: Health and medicine, similes.",
+                "order": 22
+            },
+            {
+                "code": "08b",
+                "title": "Unit 08B: A 'must-see' attraction",
+                "description": "Grammar: Expressing future plans and arrangements. Vocabulary: Travel and tourism.",
+                "order": 23
+            },
+            {
+                "code": "08rc",
+                "title": "Revise and Check 7&8",
+                "description": "Revision of grammar, vocabulary, and skills from Files 7 and 8.",
+                "order": 24
+            },
+            {
+                "code": "09a",
+                "title": "Unit 09A: Pet hates",
+                "description": "Grammar: Ellipsis. Vocabulary: Animal matters.",
+                "order": 25
+            },
+            {
+                "code": "09b",
+                "title": "Unit 09B: How to cook, how to eat",
+                "description": "Grammar: Nouns - compound and possessive forms. Vocabulary: Preparing food.",
+                "order": 26
+            },
+            {
+                "code": "09ce",
+                "title": "Colloquial English 8&9: Talking about... insects and animals",
+                "description": "Focus on listening and conversation skills regarding nature and wildlife.",
+                "order": 27
+            },
+            {
+                "code": "10a",
+                "title": "Unit 10A: On your marks, set, go!",
+                "description": "Grammar: Relative clauses. Vocabulary: Word building - adjectives, nouns, and verbs.",
+                "order": 28
+            },
+            {
+                "code": "10b",
+                "title": "Unit 10B: No direction home",
+                "description": "Grammar: Adding emphasis (2) - cleft sentences. Vocabulary: Words that are often confused.",
+                "order": 29
+            },
+            {
+                "code": "10rc",
+                "title": "Revise and Check 9&10",
+                "description": "Revision of grammar, vocabulary, and skills from Files 9 and 10.",
+                "order": 30
             }
         ]
+    },
+    {
+        "code": "en-vocabulary",
+        "languageCode": "en",
+        "title": "English Vocabulary",
+        "level": "Mixed",
+        "description": "Vocabulary practice organized by topics.",
+        "structure": "units",
+        "units": [
+            {
+                "code": "food",
+                "title": "Food",
+                "order": 1
+            }
+        ]
+    },
+    {
+        "code": "en-crazy-difficult-vocabulary",
+        "languageCode": "en",
+        "title": "Crazy-Difficult Vocabulary Review",
+        "level": "Mixed",
+        "description": "Review of challenging English vocabulary.",
+        "structure": "exercises",
+        "units": []
+    },
+    {
+        "code": "es-vocabulario-super-loco",
+        "languageCode": "es",
+        "title": "Vocabulario Super Loco",
+        "level": "Mixed",
+        "description": "Práctica de vocabulario español.",
+        "structure": "exercises",
+        "units": []
+    },
+    {
+        "code": "pt-2026-b2-1",
+        "languageCode": "pt",
+        "title": "2026 B2.1 Curso de Português",
+        "level": "B2.1",
+        "description": "Curso de português B2.1 organizado por unidades.",
+        "structure": "units",
+        "units": []
     },
     {
         "code": "pt-daily",
@@ -122,94 +278,18 @@
         ]
     },
     {
-        "code": "pt-a2-2",
+        "code": "pt-vocabulary",
         "languageCode": "pt",
-        "title": "Português A2.2",
-        "level": "A2",
-        "description": "Portuguese A2.2 course with vocabulary organized by numbered units.",
-        "structure": "units",
-        "units": [
-            {
-                "code": "u1",
-                "title": "Porque estudas português?",
-                "description": "Próximamente: ejercicios en desarrollo.",
-                "order": 1
-            },
-            {
-                "code": "u2",
-                "title": "Olha esta notícia",
-                "description": "Próximamente: ejercicios en desarrollo.",
-                "order": 2
-            },
-            {
-                "code": "u3",
-                "title": "Como era a tua escola?",
-                "description": "Próximamente: ejercicios en desarrollo.",
-                "order": 3
-            },
-            {
-                "code": "u4",
-                "title": "Não tínhamos redes...",
-                "description": "Próximamente: ejercicios en desarrollo.",
-                "order": 4
-            },
-            {
-                "code": "u5",
-                "title": "Eu já tinha visto",
-                "description": "Próximamente: ejercicios en desarrollo.",
-                "order": 5
-            },
-            {
-                "code": "u6",
-                "title": "Achas que estou em forma?",
-                "description": "Próximamente: ejercicios en desarrollo.",
-                "order": 6
-            }
-        ]
-    },
-    {
-        "code": "fr-conjugation",
-        "languageCode": "fr",
-        "title": "Conjugaison française",
+        "title": "Vocabulário português",
         "level": "Mixed",
-        "description": "French verb conjugation practice organized by common tenses and moods.",
+        "description": "Prática de vocabulário português organizada por temas.",
         "structure": "units",
         "units": [
             {
-                "code": "present",
-                "title": "Le présent",
-                "description": "Próximamente: ejercicios en desarrollo.",
+                "code": "food",
+                "title": "Comida",
+                "description": "Frutas, legumes e outros alimentos.",
                 "order": 1
-            },
-            {
-                "code": "passe-compose",
-                "title": "Le passé composé",
-                "description": "Próximamente: ejercicios en desarrollo.",
-                "order": 2
-            },
-            {
-                "code": "imparfait",
-                "title": "L'imparfait",
-                "description": "Próximamente: ejercicios en desarrollo.",
-                "order": 3
-            },
-            {
-                "code": "future",
-                "title": "Le futur simple",
-                "description": "Próximamente: ejercicios en desarrollo.",
-                "order": 4
-            },
-            {
-                "code": "conditional",
-                "title": "Le conditionnel présent",
-                "description": "Próximamente: ejercicios en desarrollo.",
-                "order": 5
-            },
-            {
-                "code": "subjunctive",
-                "title": "Le subjonctif présent",
-                "description": "Próximamente: ejercicios en desarrollo.",
-                "order": 6
             }
         ]
     },
@@ -237,5 +317,14 @@
                 "order": 3
             }
         ]
+    },
+    {
+        "code": "en-2026-c1-reading-circles",
+        "languageCode": "en",
+        "title": "2026 C1 Speaking Practice - Reading Circles",
+        "level": "C1",
+        "description": "Speaking practice through reading circles and discussions about books.",
+        "structure": "units",
+        "units": []
     }
 ]
