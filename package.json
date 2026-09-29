@@ -14,7 +14,8 @@
     "seed:users": "tsx src/utils/seeds/user.seed.ts",
     "seed:languages": "tsx src/utils/seeds/language.seed.ts",
     "seed:courses": "tsx src/utils/seeds/course.seed.ts",
-    "seed:vocabulary": "tsx src/utils/seeds/vocabulary.seed.ts"
+    "seed:vocabulary": "tsx src/utils/seeds/vocabulary.seed.ts",
+    "seed:exercises": "tsx src/utils/seeds/exercise.seed.ts"
   },
   "keywords": [],
   "author": "",
