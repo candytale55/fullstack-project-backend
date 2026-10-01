@@ -1,0 +1,46 @@
+[
+    {
+        "courseCode": "en-vocabulary",
+        "unitCode": "food",
+        "title": "Food vocabulary",
+        "description": "Practice food-related vocabulary.",
+        "type": "vocabulary",
+        "order": 1,
+        "languageCode": "en",
+        "tag": "food"
+    },
+    {
+        "courseCode": "pt-vocabulary",
+        "unitCode": "food",
+        "title": "Vocabulário de comida",
+        "description": "Pratica vocabulário relacionado com comida.",
+        "type": "vocabulary",
+        "order": 1,
+        "languageCode": "pt",
+        "tag": "food"
+    },
+    {
+        "courseCode": "pt-conjugation",
+        "unitCode": "present",
+        "title": "Presente",
+        "description": "Pratica a conjugação no presente.",
+        "type": "conjugation",
+        "order": 1
+    },
+    {
+        "courseCode": "pt-conjugation",
+        "unitCode": "imperfect",
+        "title": "Imperfeito",
+        "description": "Pratica a conjugação no imperfeito.",
+        "type": "conjugation",
+        "order": 1
+    },
+    {
+        "courseCode": "pt-conjugation",
+        "unitCode": "imperative",
+        "title": "Imperativo",
+        "description": "Pratica a conjugação no imperativo.",
+        "type": "conjugation",
+        "order": 1
+    }
+]

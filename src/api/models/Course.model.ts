@@ -11,6 +11,7 @@ import mongoose, { Types, Schema } from 'mongoose'
 
 // Embedded unit structure used inside a course.
 export interface IUnit {
+    _id?: Types.ObjectId;
     code: string;
     title: string;
     description?: string;

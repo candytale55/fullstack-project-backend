@@ -10,6 +10,8 @@ import mongoose, {
 // Add / Change exercise types only here:
 
 export const EXERCISE_TYPES = [
+    "vocabulary",
+    "conjugation",
     "quiz",
     "multiple-choice",
     "fill-blank",

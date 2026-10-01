@@ -326,5 +326,107 @@
         "description": "Speaking practice through reading circles and discussions about books.",
         "structure": "units",
         "units": []
+    },
+    {
+        "code": "pt-b1",
+        "languageCode": "pt",
+        "title": "Português B1",
+        "level": "B1",
+        "description": "Emigração, ambiente, vida em Portugal, tecnologia e variedades do português em países lusófonos.",
+        "structure": "units",
+        "units": [
+            {
+                "code": "u1",
+                "title": "Unidade 1: Conhecer pessoas",
+                "description": "Identificação pessoal, tempos livres e descrição física e psicológica. Gramática: formação e plural de palavras compostas; revisão do imperativo.",
+                "order": 1
+            },
+            {
+                "code": "u2",
+                "title": "Unidade 2: Não acredito que não separes o lixo",
+                "description": "Separação do lixo, reciclagem e poluição. Gramática: presente do conjuntivo e infinitivo pessoal.",
+                "order": 2
+            },
+            {
+                "code": "u3",
+                "title": "Unidade 3: Há quanto tempo vives em Portugal?",
+                "description": "Emigração, imigração e migração em Portugal. Gramática: presente do conjuntivo.",
+                "order": 3
+            },
+            {
+                "code": "rev1",
+                "title": "Unidade de Revisão 1",
+                "order": 4
+            },
+            {
+                "code": "u4",
+                "title": "Unidade 4: Vamos para fora cá dentro?",
+                "description": "Portugal continental e ilhas, geografia e vida numa ilha. Gramática: verbos derivados de fazer, pedir, ter, ver e vir; verbos seguidos de preposição.",
+                "order": 5
+            },
+            {
+                "code": "u5",
+                "title": "Unidade 5: O que é que nos faz felizes?",
+                "description": "Felicidade, modos de vida e notícias de rádio. Gramática: futuro do conjuntivo e combinação com o presente do conjuntivo.",
+                "order": 6
+            },
+            {
+                "code": "u6",
+                "title": "Unidade 6: Vai uma bica e um pastel de nata?",
+                "description": "Costumes, tradições, produtos típicos e turismo. Gramática: formação de palavras por prefixação e sufixação.",
+                "order": 7
+            },
+            {
+                "code": "rev2",
+                "title": "Unidade de Revisão 2",
+                "order": 8
+            },
+            {
+                "code": "u7",
+                "title": "Unidade 7: E se comprássemos uma revista?",
+                "description": "Pessoas sem-abrigo, desemprego e trabalho voluntário. Gramática: imperfeito do conjuntivo e frases condicionais com o condicional ou o imperfeito do indicativo.",
+                "order": 9
+            },
+            {
+                "code": "u8",
+                "title": "Unidade 8: Manda-lhe uma SMS",
+                "description": "Jovens, novas tecnologias, SMS e televisão. Gramática: pretérito mais-que-perfeito composto do conjuntivo e frases condicionais.",
+                "order": 10
+            },
+            {
+                "code": "u9",
+                "title": "Unidade 9: A tua avó é estudante?",
+                "description": "Idosos ativos e envelhecimento da população. Gramática: discurso indireto, interrogativas indiretas e uso do indicativo e do conjuntivo.",
+                "order": 11
+            },
+            {
+                "code": "rev3",
+                "title": "Unidade de Revisão 3",
+                "order": 12
+            },
+            {
+                "code": "u10",
+                "title": "Unidade 10: Os jornais gratuitos foram uma boa ideia?",
+                "description": "Imprensa gratuita, mundo ideal e União Europeia. Gramática: conjugação pronominal no futuro do indicativo e no condicional.",
+                "order": 13
+            },
+            {
+                "code": "u11",
+                "title": "Unidade 11: Você já foi à Amazónia?",
+                "description": "Amazónia, São Paulo e português do Brasil. Fonética, acentuação e ortografia.",
+                "order": 14
+            },
+            {
+                "code": "u12",
+                "title": "Unidade 12: Não queres acompanhar-me ao Lubango e ao Namibe?",
+                "description": "Angola, Luanda, Lubango, Namibe e Timor-Leste. Formas, ortografia e partículas usadas no português de Angola.",
+                "order": 15
+            },
+            {
+                "code": "rev4",
+                "title": "Unidade de Revisão 4",
+                "order": 16
+            }
+        ]
     }
 ]

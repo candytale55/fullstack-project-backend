@@ -14,6 +14,7 @@ export interface IProgress {
     questionsAnswered: number;
     correctAnswers: number;
     lastStudiedAt?: Date;
+    lastStudiedUnitId?: Types.ObjectId;
     studyDays: string[];
 }
 
@@ -49,6 +50,10 @@ const progressSchema = new Schema<IProgress>(
 
         lastStudiedAt: {
             type: Date
+        },
+
+        lastStudiedUnitId: {
+            type: Schema.Types.ObjectId
         },
 
         // Stores unique study dates as YYYY-MM-DD strings for future heat maps.

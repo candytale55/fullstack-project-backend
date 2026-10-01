@@ -1,4 +1,4 @@
-/* Reads and updates learner progress records exposed through progress routes. */
+/* Handles progress routes and persists study days for the learner's time zone. */
 
 import type { Request, Response } from "express";
 import mongoose from "mongoose";
@@ -45,6 +45,22 @@ const getAllProgress = async (
 type StudySessionBody = {
     questionsAnswered: number;
     correctAnswers: number;
+    unitId?: string;
+    timeZone: string;
+};
+
+const formatStudyDay = (date: Date, timeZone: string): string => {
+    const parts = new Intl.DateTimeFormat("en-US", {
+        timeZone,
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit"
+    }).formatToParts(date);
+    const values = new Map(
+        parts.map((part) => [part.type, part.value])
+    );
+
+    return `${values.get("year")}-${values.get("month")}-${values.get("day")}`;
 };
 
 
@@ -67,7 +83,9 @@ const saveStudySession = async (
 
         const {
             questionsAnswered,
-            correctAnswers
+            correctAnswers,
+            unitId,
+            timeZone,
         } = req.body;
 
 
@@ -93,8 +111,33 @@ const saveStudySession = async (
                 error: "Invalid course id"
             });
         }
+
+        if (unitId && !mongoose.Types.ObjectId.isValid(unitId)) {
+            return res.status(400).json({
+                error: "Invalid unit id"
+            });
+        }
+
+        if (typeof timeZone !== "string") {
+            return res.status(400).json({
+                error: "Invalid time zone"
+            });
+        }
+
         const now = new Date();
-        const studyDay = now.toISOString().slice(0, 10);
+        let studyDay: string;
+
+        try {
+            studyDay = formatStudyDay(now, timeZone);
+        } catch (error) {
+            if (error instanceof RangeError) {
+                return res.status(400).json({
+                    error: "Invalid time zone"
+                });
+            }
+
+            throw error;
+        }
 
         // Atomically accumulates progress and adds the day only once.
         const progress = await Progress.findOneAndUpdate(
@@ -109,7 +152,10 @@ const saveStudySession = async (
                     correctAnswers
                 },
                 $set: {
-                    lastStudiedAt: now
+                    lastStudiedAt: now,
+                    ...(unitId && {
+                        lastStudiedUnitId: unitId
+                    })
                 },
                 $addToSet: {
                     studyDays: studyDay
