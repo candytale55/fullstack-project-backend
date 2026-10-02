@@ -138,7 +138,8 @@ const getUnitCode = (
 
     throw new Error(
         `No configured ${TARGET_COURSE_CODE} unit tag ` +
-        `in CSV row ${csvRowNumber}`
+        `in CSV row ${csvRowNumber}. Run npm run seed:courses ` +
+        `before importing conjugations.`
     );
 };
 
