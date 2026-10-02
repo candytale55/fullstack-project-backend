@@ -1,4 +1,4 @@
-/* Validates conjugation filters and returns Portuguese verb data for the exercise service. */
+/* Returns conjugations for exercise clients, optionally filtered by stored Anki tags. */
 
 import type { Request, Response } from "express";
 import mongoose from "mongoose";
@@ -23,6 +23,9 @@ export const getPortugueseVerbConjugations =
       const filter: {
         course?: string;
         unitId?: string;
+        tags?: {
+          $all: string[];
+        };
       } = {};
 
       /* Validate optional query filters before using them in MongoDB. */
@@ -53,6 +56,38 @@ export const getPortugueseVerbConjugations =
           });
         }
         filter.unitId = unitId;
+      }
+
+      const tagQuery = req.query.tags;
+      const tagValues = typeof tagQuery === "string"
+        ? [tagQuery]
+        : Array.isArray(tagQuery)
+          ? tagQuery
+          : tagQuery === undefined
+            ? []
+            : null;
+      const requestedTags: string[] = [];
+
+      if (tagValues === null) {
+        return res.status(400).json({
+          message: "Invalid tag filter"
+        });
+      }
+
+      for (const tag of tagValues) {
+        if (typeof tag !== "string" || !tag.trim()) {
+          return res.status(400).json({
+            message: "Invalid tag filter"
+          });
+        }
+
+        requestedTags.push(tag.trim());
+      }
+
+      if (requestedTags.length) {
+        filter.tags = {
+          $all: requestedTags
+        };
       }
 
 
