@@ -21,7 +21,7 @@
     },
     {
         "courseCode": "pt-conjugation",
-        "unitCode": "present",
+        "unitCode": "presente",
         "title": "Presente",
         "description": "Pratica a conjugação no presente.",
         "type": "conjugation",
@@ -29,18 +29,58 @@
     },
     {
         "courseCode": "pt-conjugation",
-        "unitCode": "imperfect",
-        "title": "Imperfeito",
-        "description": "Pratica a conjugação no imperfeito.",
-        "type": "conjugation",
-        "order": 1
-    },
-    {
-        "courseCode": "pt-conjugation",
-        "unitCode": "imperative",
+        "unitCode": "presente-imperativo",
         "title": "Imperativo",
         "description": "Pratica a conjugação no imperativo.",
         "type": "conjugation",
-        "order": 1
+        "order": 2
+    },
+    {
+        "courseCode": "pt-conjugation",
+        "unitCode": "preterito-perfeito-simples-pps",
+        "title": "Pretérito perfeito simples",
+        "description": "Pratica a conjugação no pretérito perfeito simples.",
+        "type": "conjugation",
+        "order": 3
+    },
+    {
+        "courseCode": "pt-conjugation",
+        "unitCode": "preterito-imperfeito",
+        "title": "Pretérito imperfeito",
+        "description": "Pratica a conjugação no pretérito imperfeito.",
+        "type": "conjugation",
+        "order": 4
+    },
+    {
+        "courseCode": "pt-conjugation",
+        "unitCode": "mais-que-perfeito",
+        "title": "Mais-que-perfeito",
+        "description": "Pratica a conjugação no mais-que-perfeito.",
+        "type": "conjugation",
+        "order": 5
+    },
+    {
+        "courseCode": "pt-conjugation",
+        "unitCode": "futuro-do-conjuntivo",
+        "title": "Futuro do conjuntivo",
+        "description": "Pratica a conjugação no futuro do conjuntivo.",
+        "type": "conjugation",
+        "order": 6
+    },
+    {
+        "courseCode": "pt-conjugation",
+        "unitCode": "infinitivo-flexionado",
+        "title": "Infinitivo flexionado",
+        "description": "Pratica a conjugação no infinitivo flexionado.",
+        "type": "conjugation",
+        "order": 7
+    },
+    {
+        "courseCode": "pt-conjugation",
+        "unitCode": "participio",
+        "title": "Particípio",
+        "description": "Pratica a conjugação no particípio.",
+        "type": "conjugation",
+        "order": 8
     }
 ]

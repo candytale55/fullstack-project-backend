@@ -1,673 +1,352 @@
-/*
- * src/utils/seeds/portugueseVerbConjugation.seed.ts
- *
- * Reads Portuguese verb conjugations from a CSV file
- * and inserts them into MongoDB.
- * The seed resolves those codes to their MongoDB ObjectIds
- * before creating the documents.
- */
+/* Loads Anki verb rows into PortugueseVerbConjugation using their course and unit tags. */
 
 import fs from "node:fs";
 import path from "node:path";
+import { createHash } from "node:crypto";
 import mongoose, { Types } from "mongoose";
 
 import { parse } from "csv-parse/sync";
 
 import Course from "../../api/models/Course.model";
-
 import PortugueseVerbConjugation, {
-  type IPortugueseVerbConjugation,
-  type IPortugueseVerbForms
+    type IPortugueseVerbConjugation,
+    type IPortugueseVerbForms
 } from "../../api/models/PortugueseVerbConjugation.model";
-
 import { connectDB } from "../../config/db";
 
 
-/* ------------------------------------- */
-/*           CSV Row Structure           */
-/* ------------------------------------- */
-
-/*
- * Represents one row from the CSV file.
- *
- * CSV values arrive as strings.
- * Optional fields may be empty.
- */
-type PortugueseVerbConjugationSeed = {
-  courseCode: string;
-  unitCode: string;
-
-  infinitive: string;
-  mood: string;
-  tense: string;
-
-  // Affirmative forms
-  eu?: string;
-  tu?: string;
-  eleElaVoce?: string;
-  nos?: string;
-  elesElasVoces?: string;
-
-  // IPA for affirmative forms
-  ipaEu?: string;
-  ipaTu?: string;
-  ipaEleElaVoce?: string;
-  ipaNos?: string;
-  ipaElesElasVoces?: string;
-
-  // Negative forms
-  negativeEu?: string;
-  negativeTu?: string;
-  negativeEleElaVoce?: string;
-  negativeNos?: string;
-  negativeElesElasVoces?: string;
-
-  // IPA for negative forms
-  negativeIpaEu?: string;
-  negativeIpaTu?: string;
-  negativeIpaEleElaVoce?: string;
-  negativeIpaNos?: string;
-  negativeIpaElesElasVoces?: string;
-
-  // Semantic tags
-  tags?: string;
-
-  // Grammar / course tags
-  curriculumTags?: string;
+const SOURCE_FILE = "data/pt-verb-conjugations-newest.csv";
+const TARGET_COURSE_CODE = "pt-conjugation";
+const TARGET_COURSE_TAG = `course-code::${TARGET_COURSE_CODE}`;
+const ANKI_COLUMN_COUNT = 25;
+const LEGACY_UNIT_CODES: Record<string, string> = {
+    present: "presente"
 };
 
+const cleanValue = (value?: string): string =>
+    value?.trim() ?? "";
 
-/* ------------------------------------- */
-/*              Helpers                  */
-/* ------------------------------------- */
-
-/*
- * Removes spaces before and after a value.
- *
- * Empty or undefined values become an empty string.
- */
-const cleanValue = (
-  value?: string
-): string => {
-  return value?.trim() ?? "";
-};
-
-
-/*
- * Converts Anki-style space-separated tags
- * into an array.
- *
- * Example:
- *
- * "ar reflexos irregular"
- *
- * becomes:
- *
- * ["ar", "reflexos", "irregular"]
- */
-const parseTags = (
-  value?: string
-): string[] => {
-
-  const cleanedValue = cleanValue(value);
-
-  if (!cleanedValue) {
-    return [];
-  }
-
-  return [
-    ...new Set(
-      cleanedValue.split(/\s+/)
-    )
-  ];
-};
-
-
-/*
- * Creates a Portuguese conjugation forms object.
- *
- * Empty values are not included.
- *
- * This is important because some conjugations
- * do not use all grammatical persons.
- *
- * Example:
- * the imperative does not have an "eu" form.
- */
-const buildForms = (
-  euValue?: string,
-  tuValue?: string,
-  eleElaVoceValue?: string,
-  nosValue?: string,
-  elesElasVocesValue?: string
-): IPortugueseVerbForms | undefined => {
-
-  const eu = cleanValue(euValue);
-  const tu = cleanValue(tuValue);
-  const eleElaVoce =
-    cleanValue(eleElaVoceValue);
-  const nos = cleanValue(nosValue);
-  const elesElasVoces =
-    cleanValue(elesElasVocesValue);
-
-
-  const forms: IPortugueseVerbForms = {
-    ...(eu && { eu }),
-    ...(tu && { tu }),
-    ...(eleElaVoce && { eleElaVoce }),
-    ...(nos && { nos }),
-    ...(elesElasVoces && {
-      elesElasVoces
-    })
-  };
-
-
-  /*
-   * If all values were empty,
-   * return undefined.
-   *
-   * This prevents storing empty objects
-   * such as:
-   *
-   * negativeForms: {}
-   */
-  return Object.keys(forms).length > 0
-    ? forms
-    : undefined;
-};
-
-
-/* ------------------------------------- */
-/*              Seed                     */
-/* ------------------------------------- */
-
-const seedPortugueseVerbConjugations =
-  async () => {
-
-    try {
-
-      /* --------------------------------- */
-      /* 1. Connect to MongoDB             */
-      /* --------------------------------- */
-
-      await connectDB();
-
-
-      /* --------------------------------- */
-      /* 2. Locate CSV file                */
-      /* --------------------------------- */
-
-      const filePath = path.resolve(
-        __dirname,
-        "data/pt-verb-conjugations.csv"
-      );
-
-
-      /* --------------------------------- */
-      /* 3. Read CSV using Node.js fs      */
-      /* --------------------------------- */
-
-      const fileContent = fs.readFileSync(
-        filePath,
-        "utf-8"
-      );
-
-
-      /* --------------------------------- */
-      /* 4. Parse CSV                      */
-      /* --------------------------------- */
-
-      /*
-       * columns: true
-       * Uses the first row as column names.
-       *
-       * skip_empty_lines: true
-       * Ignores empty CSV rows.
-       *
-       * trim: true
-       * Removes extra whitespace.
-       *
-       * bom: true
-       * Handles the UTF-8 BOM that Excel
-       * may add when exporting CSV files.
-       */
-      const rows = parse(
-        fileContent,
-        {
-          columns: true,
-          skip_empty_lines: true,
-          trim: true,
-          bom: true
-        }
-      ) as PortugueseVerbConjugationSeed[];
-
-
-      if (rows.length === 0) {
-        throw new Error(
-          "Portuguese verb CSV contains no data"
-        );
-      }
-
-
-      console.log(
-        `${rows.length} Portuguese verb rows loaded from CSV`
-      );
-
-
-      /* --------------------------------- */
-      /* 5. Get Course documents          */
-      /* --------------------------------- */
-
-      /*
-       * Extract unique course codes from
-       * the CSV.
-       */
-      const courseCodes = [
-        ...new Set(
-          rows
-            .map((row) =>
-              cleanValue(
-                row.courseCode
-              ).toLowerCase()
-            )
+const parseTags = (value?: string): string[] =>
+    [...new Set(
+        cleanValue(value)
+            .split(/\s+/)
             .filter(Boolean)
+    )].sort();
+
+const buildForms = (
+    euValue?: string,
+    tuValue?: string,
+    eleElaVoceValue?: string,
+    nosValue?: string,
+    elesElasVocesValue?: string
+): IPortugueseVerbForms | undefined => {
+    const eu = cleanValue(euValue);
+    const tu = cleanValue(tuValue);
+    const eleElaVoce = cleanValue(eleElaVoceValue);
+    const nos = cleanValue(nosValue);
+    const elesElasVoces = cleanValue(elesElasVocesValue);
+    const forms: IPortugueseVerbForms = {
+        ...(eu && { eu }),
+        ...(tu && { tu }),
+        ...(eleElaVoce && { eleElaVoce }),
+        ...(nos && { nos }),
+        ...(elesElasVoces && { elesElasVoces })
+    };
+
+    return Object.keys(forms).length > 0
+        ? forms
+        : undefined;
+};
+
+const getTagValues = (
+    tags: readonly string[],
+    prefix: string
+): string[] => {
+    const tagPrefix = `${prefix}::`;
+
+    return [...new Set(
+        tags
+            .filter((tag) => tag.startsWith(tagPrefix))
+            .map((tag) => tag.slice(tagPrefix.length))
+            .filter((value) => value && !value.includes("::"))
+    )].sort();
+};
+
+const getRequiredTagValue = (
+    tags: readonly string[],
+    prefixes: readonly string[],
+    label: string,
+    csvRowNumber: number
+): string => {
+    for (const prefix of prefixes) {
+        const values = getTagValues(tags, prefix);
+
+        if (values.length === 1) {
+            return values[0] as string;
+        }
+
+        if (values.length > 1) {
+            throw new Error(
+                `Multiple ${label} tags in CSV row ${csvRowNumber}`
+            );
+        }
+    }
+
+    throw new Error(
+        `Missing ${label} tag in CSV row ${csvRowNumber}`
+    );
+};
+
+const getUnitCode = (
+    tags: readonly string[],
+    course: {
+        units: Array<{ code: string }>;
+    },
+    csvRowNumber: number
+): string => {
+    const tagValues = [
+        ...getTagValues(
+            tags,
+            `verbs::unit-code::${TARGET_COURSE_CODE}`
+        ),
+        ...getTagValues(
+            tags,
+            `unit-code::${TARGET_COURSE_CODE}`
         )
-      ];
+    ];
+    const matchingUnitCodes = [...new Set(
+        tagValues.map(
+            (unitCode) =>
+                LEGACY_UNIT_CODES[unitCode] ?? unitCode
+        )
+    )]
+        .filter((unitCode) =>
+            course.units.some(
+                (unit) => unit.code === unitCode
+            )
+        );
 
+    if (matchingUnitCodes.length === 1) {
+        return matchingUnitCodes[0] as string;
+    }
 
-      /*
-       * Find the corresponding courses
-       * in MongoDB.
-       */
-      const courses = await Course.find({
-        code: {
-          $in: courseCodes
-        }
-      });
+    if (matchingUnitCodes.length > 1) {
+        throw new Error(
+            `Multiple configured unit tags in CSV row ${csvRowNumber}`
+        );
+    }
 
+    throw new Error(
+        `No configured ${TARGET_COURSE_CODE} unit tag ` +
+        `in CSV row ${csvRowNumber}`
+    );
+};
 
-      /*
-       * Creates a map such as:
-       *
-       * "pt-conjugation" -> Course document
-       *
-       * This avoids querying MongoDB again
-       * for every CSV row.
-       */
-      const coursesByCode = new Map(
-        courses.map((course) => [
-          course.code,
-          course
-        ])
-      );
+const createSourceKey = (row: readonly string[]): string =>
+    createHash("sha256")
+        .update(row.join("\u001F"))
+        .digest("hex");
 
+const getCurriculumTags = (
+    tags: readonly string[]
+): string[] => [
+    ...new Set(
+        tags.flatMap((tag) => {
+            const [group, facet, language, value, ...rest] =
+                tag.split("::");
 
-      /* --------------------------------- */
-      /* 6. Transform CSV rows             */
-      /* --------------------------------- */
+            if (
+                group !== "verbs" ||
+                language !== "pt" ||
+                rest.length > 0 ||
+                !facet ||
+                !value ||
+                !["ending", "family", "flag"].includes(facet)
+            ) {
+                return [];
+            }
 
-      const conjugations:
-        IPortugueseVerbConjugation[] = [];
+            return [`${facet}-${value}`];
+        })
+    )
+].sort();
 
+const seedPortugueseVerbConjugations = async () => {
+    try {
+        await connectDB();
 
-      /*
-       * Used to detect duplicated
-       * conjugations inside the CSV.
-       */
-      const seen =
-        new Set<string>();
+        const filePath = path.resolve(
+            __dirname,
+            SOURCE_FILE
+        );
+        const fileContent = fs.readFileSync(
+            filePath,
+            "utf-8"
+        );
+        const rows = parse(fileContent, {
+            from_line: 4,
+            skip_empty_lines: true,
+            trim: true,
+            bom: true
+        }) as string[][];
+        const targetRows = rows.filter((row) =>
+            parseTags(row[24]).includes(TARGET_COURSE_TAG)
+        );
 
-
-      for (
-        let index = 0;
-        index < rows.length;
-        index++
-      ) {
-
-        const row = rows[index];
-
-        if (!row) {
-          continue;
-        }
-
-
-        /*
-         * +2 because:
-         *
-         * index begins at 0
-         * CSV row 1 contains headers
-         */
-        const csvRowNumber =
-          index + 2;
-
-
-        /* ------------------------------- */
-        /* Required fields                 */
-        /* ------------------------------- */
-
-        const courseCode =
-          cleanValue(
-            row.courseCode
-          ).toLowerCase();
-
-        const unitCode =
-          cleanValue(
-            row.unitCode
-          ).toLowerCase();
-
-        const infinitive =
-          cleanValue(
-            row.infinitive
-          ).toLowerCase();
-
-        const mood =
-          cleanValue(
-            row.mood
-          ).toLowerCase();
-
-        const tense =
-          cleanValue(
-            row.tense
-          ).toLowerCase();
-
-
-        if (
-          !courseCode ||
-          !unitCode ||
-          !infinitive ||
-          !mood ||
-          !tense
-        ) {
-
-          throw new Error(
-            `Missing required data in CSV row ${csvRowNumber}`
-          );
+        if (targetRows.length === 0) {
+            throw new Error(
+                `No rows tagged ${TARGET_COURSE_TAG}`
+            );
         }
 
-
-        /* ------------------------------- */
-        /* Resolve Course                  */
-        /* ------------------------------- */
-
-        const course =
-          coursesByCode.get(
-            courseCode
-          );
-
+        const course = await Course.findOne({
+            code: TARGET_COURSE_CODE
+        });
 
         if (!course) {
-
-          throw new Error(
-            `Course "${courseCode}" not found ` +
-            `(CSV row ${csvRowNumber})`
-          );
+            throw new Error(
+                `Course "${TARGET_COURSE_CODE}" not found`
+            );
         }
 
+        const conjugations: IPortugueseVerbConjugation[] = [];
+        const seenSourceKeys = new Set<string>();
 
-        /* ------------------------------- */
-        /* Resolve embedded Unit           */
-        /* ------------------------------- */
+        for (const [index, row] of rows.entries()) {
+            const csvRowNumber = index + 4;
+            const tags = parseTags(row[24]);
 
-        /*
-         * Units are embedded inside Course,
-         * so we search inside course.units.
-         */
-        const unit =
-          course.units.find(
-            (courseUnit) =>
-              courseUnit.code ===
-              unitCode
-          );
+            if (!tags.includes(TARGET_COURSE_TAG)) {
+                continue;
+            }
 
+            if (row.length !== ANKI_COLUMN_COUNT) {
+                throw new Error(
+                    `Expected ${ANKI_COLUMN_COUNT} columns in ` +
+                    `CSV row ${csvRowNumber}, found ${row.length}`
+                );
+            }
 
-        if (!unit) {
+            const unitCode = getUnitCode(
+                tags,
+                course,
+                csvRowNumber
+            );
+            const unit = course.units.find(
+                (courseUnit) =>
+                    courseUnit.code === unitCode
+            );
 
-          throw new Error(
-            `Unit "${unitCode}" not found ` +
-            `in course "${courseCode}" ` +
-            `(CSV row ${csvRowNumber})`
-          );
+            if (!unit?._id) {
+                throw new Error(
+                    `Unit "${unitCode}" not found in course ` +
+                    `"${TARGET_COURSE_CODE}" ` +
+                    `(CSV row ${csvRowNumber})`
+                );
+            }
+
+            const infinitive = cleanValue(row[1])
+                .toLocaleLowerCase("pt-PT");
+            const mood = getRequiredTagValue(
+                tags,
+                ["verbs::mood::pt", "mood::pt"],
+                "mood",
+                csvRowNumber
+            );
+            const tense = getRequiredTagValue(
+                tags,
+                ["verbs::tense::pt", "tense::pt"],
+                "tense",
+                csvRowNumber
+            );
+            const forms = buildForms(
+                row[3],
+                row[4],
+                row[5],
+                row[6],
+                row[7]
+            );
+
+            if (!infinitive || !forms) {
+                throw new Error(
+                    `Missing infinitive or forms in CSV row ${csvRowNumber}`
+                );
+            }
+
+            const sourceKey = createSourceKey(row);
+
+            if (seenSourceKeys.has(sourceKey)) {
+                throw new Error(
+                    `Duplicate Anki row in CSV row ${csvRowNumber}`
+                );
+            }
+
+            seenSourceKeys.add(sourceKey);
+
+            const pronunciation = buildForms(
+                row[13],
+                row[14],
+                row[15],
+                row[16],
+                row[17]
+            );
+            const negativeForms = buildForms(
+                row[8],
+                row[9],
+                row[10],
+                row[11],
+                row[12]
+            );
+            const negativePronunciation = buildForms(
+                row[18],
+                row[19],
+                row[20],
+                row[21],
+                row[22]
+            );
+
+            conjugations.push({
+                course: course._id as Types.ObjectId,
+                unitId: unit._id as Types.ObjectId,
+                sourceKey,
+                infinitive,
+                mood,
+                tense,
+                forms,
+                ...(pronunciation && { pronunciation }),
+                ...(negativeForms && { negativeForms }),
+                ...(negativePronunciation && {
+                    negativePronunciation
+                }),
+                tags,
+                curriculumTags: getCurriculumTags(tags)
+            });
         }
 
+        // Replaces the old infinitive/mood/tense uniqueness index before import.
+        await PortugueseVerbConjugation.syncIndexes();
+        await PortugueseVerbConjugation.deleteMany({
+            course: course._id
+        });
+        const createdConjugations =
+            await PortugueseVerbConjugation.insertMany(conjugations);
 
-        /*
-         * The embedded unit has its own _id.
-         */
-        const unitId = (
-          unit as typeof unit & {
-            _id: Types.ObjectId;
-          }
-        )._id;
-
-
-        /* ------------------------------- */
-        /* Affirmative forms               */
-        /* ------------------------------- */
-
-        const forms = buildForms(
-          row.eu,
-          row.tu,
-          row.eleElaVoce,
-          row.nos,
-          row.elesElasVoces
+        console.log(
+            `${createdConjugations.length} Portuguese conjugations ` +
+            `seeded for ${TARGET_COURSE_CODE}; ` +
+            `${rows.length - targetRows.length} rows for other ` +
+            `courses were left out`
         );
-
-
-        /*
-         * Every conjugation must contain
-         * at least one verbal form.
-         */
-        if (!forms) {
-
-          throw new Error(
-            `No conjugation forms found for ` +
-            `"${infinitive}" ` +
-            `(CSV row ${csvRowNumber})`
-          );
-        }
-
-
-        /* ------------------------------- */
-        /* Affirmative IPA                 */
-        /* ------------------------------- */
-
-        const pronunciation =
-          buildForms(
-            row.ipaEu,
-            row.ipaTu,
-            row.ipaEleElaVoce,
-            row.ipaNos,
-            row.ipaElesElasVoces
-          );
-
-
-        /* ------------------------------- */
-        /* Negative forms                  */
-        /* ------------------------------- */
-
-        const negativeForms =
-          buildForms(
-            row.negativeEu,
-            row.negativeTu,
-            row.negativeEleElaVoce,
-            row.negativeNos,
-            row.negativeElesElasVoces
-          );
-
-
-        /* ------------------------------- */
-        /* Negative IPA                    */
-        /* ------------------------------- */
-
-        const negativePronunciation =
-          buildForms(
-            row.negativeIpaEu,
-            row.negativeIpaTu,
-            row.negativeIpaEleElaVoce,
-            row.negativeIpaNos,
-            row.negativeIpaElesElasVoces
-          );
-
-
-        /* ------------------------------- */
-        /* Duplicate validation            */
-        /* ------------------------------- */
-
-        /*
-         * Must match the unique index
-         * defined in the model:
-         *
-         * course + infinitive + mood + tense
-         */
-        const uniqueKey = [
-          courseCode,
-          infinitive,
-          mood,
-          tense
-        ].join("::");
-
-
-        if (seen.has(uniqueKey)) {
-
-          throw new Error(
-            `Duplicate conjugation ` +
-            `"${uniqueKey}" ` +
-            `(CSV row ${csvRowNumber})`
-          );
-        }
-
-
-        seen.add(uniqueKey);
-
-
-        /* ------------------------------- */
-        /* Build MongoDB document          */
-        /* ------------------------------- */
-
-        conjugations.push({
-
-          course:
-            course._id as Types.ObjectId,
-
-          unitId,
-
-          infinitive,
-          mood,
-          tense,
-
-          forms,
-
-
-          /*
-           * These properties are added
-           * only when data exists.
-           */
-          ...(pronunciation && {
-            pronunciation
-          }),
-
-          ...(negativeForms && {
-            negativeForms
-          }),
-
-          ...(negativePronunciation && {
-            negativePronunciation
-          }),
-
-
-          tags:
-            parseTags(
-              row.tags
-            ),
-
-          curriculumTags:
-            parseTags(
-              row.curriculumTags
-            )
-        });
-      }
-
-
-      /* --------------------------------- */
-      /* 7. Get affected Course IDs        */
-      /* --------------------------------- */
-
-      const courseIds = [
-        ...new Map(
-          conjugations.map(
-            (conjugation) => [
-              conjugation.course.toString(),
-              conjugation.course
-            ]
-          )
-        ).values()
-      ];
-
-
-      /* --------------------------------- */
-      /* 8. Remove previous seed data      */
-      /* --------------------------------- */
-
-      /*
-       * This happens only AFTER all CSV
-       * rows have passed validation.
-       *
-       * Only conjugations belonging to the
-       * affected courses are removed.
-       */
-      await PortugueseVerbConjugation
-        .deleteMany({
-          course: {
-            $in: courseIds
-          }
-        });
-
-
-      console.log(
-        "Previous Portuguese verb conjugations cleared"
-      );
-
-
-      /* --------------------------------- */
-      /* 9. Insert new conjugations        */
-      /* --------------------------------- */
-
-      const createdConjugations =
-        await PortugueseVerbConjugation
-          .insertMany(
-            conjugations
-          );
-
-
-      console.log(
-        `${createdConjugations.length} ` +
-        `Portuguese verb conjugations seeded`
-      );
-
-
     } catch (error) {
-
-      console.error(
-        "Error seeding Portuguese verb conjugations:",
-        error
-      );
-
-      process.exitCode = 1;
-
-
+        console.error(
+            "Error seeding Portuguese verb conjugations:",
+            error
+        );
+        process.exitCode = 1;
     } finally {
-
-      /* --------------------------------- */
-      /* 10. Close database connection     */
-      /* --------------------------------- */
-
-      await mongoose.connection.close();
-
-      console.log(
-        "Database connection closed"
-      );
+        await mongoose.connection.close();
+        console.log("Database connection closed");
     }
-  };
-
+};
 
 seedPortugueseVerbConjugations();

@@ -302,19 +302,44 @@
         "structure": "units",
         "units": [
             {
-                "code": "present",
+                "code": "presente",
                 "title": "Presente",
                 "order": 1
             },
             {
-                "code": "imperfect",
-                "title": "Imperfeito",
+                "code": "presente-imperativo",
+                "title": "Imperativo",
                 "order": 2
             },
             {
-                "code": "imperative",
-                "title": "Imperativo",
+                "code": "preterito-perfeito-simples-pps",
+                "title": "Pretérito perfeito simples",
                 "order": 3
+            },
+            {
+                "code": "preterito-imperfeito",
+                "title": "Pretérito imperfeito",
+                "order": 4
+            },
+            {
+                "code": "mais-que-perfeito",
+                "title": "Mais-que-perfeito",
+                "order": 5
+            },
+            {
+                "code": "futuro-do-conjuntivo",
+                "title": "Futuro do conjuntivo",
+                "order": 6
+            },
+            {
+                "code": "infinitivo-flexionado",
+                "title": "Infinitivo flexionado",
+                "order": 7
+            },
+            {
+                "code": "participio",
+                "title": "Particípio",
+                "order": 8
             }
         ]
     },

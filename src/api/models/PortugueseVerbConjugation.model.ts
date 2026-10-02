@@ -5,8 +5,7 @@
  * Each document represents one verb or verbal expression
  * in one mood and tense.
  *
- * Conjugations are imported from CSV files and linked to a Course.
- * They may optionally belong to an embedded Course unit.
+ * Anki tags select the Course and its embedded unit during seeding.
  */
 
 import mongoose, { Schema, Types } from "mongoose";
@@ -80,6 +79,7 @@ const portugueseVerbFormsSchema =
 export interface IPortugueseVerbConjugation {
     course: Types.ObjectId;
     unitId?: Types.ObjectId;
+    sourceKey: string;
 
     infinitive: string;
 
@@ -122,6 +122,13 @@ const portugueseVerbConjugationSchema =
              */
             unitId: {
                 type: Schema.Types.ObjectId
+            },
+
+            /* Identifies the complete source row so valid form variants coexist. */
+            sourceKey: {
+                type: String,
+                required: true,
+                trim: true
             },
 
 
@@ -209,27 +216,14 @@ const portugueseVerbConjugationSchema =
             },
 
 
-            /*
-             * Semantic tags.
-             *
-             * Example:
-             * health
-             */
+            /* Stores every normalized Anki tag for future exact-tag searches. */
             tags: {
                 type: [String],
                 default: []
             },
 
 
-            /*
-             * Grammar and curriculum classification.
-             *
-             * Examples:
-             * ar
-             * reflexos
-             * irregular
-             * derivados
-             */
+            /* Keeps the legacy grammar-tag view derived from the full tag set. */
             curriculumTags: {
                 type: [String],
                 default: []
@@ -242,19 +236,13 @@ const portugueseVerbConjugationSchema =
 
 
 /*
- * Prevents importing the same conjugation
- * more than once inside the same course.
- *
- * The complete infinitive/expression is used here,
- * so "gostar" and "gostar de" are treated as
- * different entries.
+ * Prevents importing an identical Anki row more than once for a course.
+ * Form variants sharing an infinitive, mood, and tense remain distinct.
  */
 portugueseVerbConjugationSchema.index(
     {
         course: 1,
-        infinitive: 1,
-        mood: 1,
-        tense: 1
+        sourceKey: 1
     },
     {
         unique: true
@@ -265,6 +253,11 @@ portugueseVerbConjugationSchema.index(
 portugueseVerbConjugationSchema.index({
     unitId: 1,
     infinitive: 1
+});
+
+// Supports exact tag combinations requested by future practice selectors.
+portugueseVerbConjugationSchema.index({
+    tags: 1
 });
 
 
