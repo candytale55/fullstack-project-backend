@@ -7,7 +7,8 @@ import mongoose, {
 
 
 /* --------- Exercise Types --------- */
-// Add / Change exercise types only here:
+// This tuple is the single source of truth for both TypeScript and Mongoose:
+// the derived union protects application code, and the enum rejects invalid data.
 
 export const EXERCISE_TYPES = [
     "vocabulary",
@@ -23,6 +24,7 @@ export type ExerciseType = (typeof EXERCISE_TYPES)[number];
 /* ----------------------------------- */
 
 export interface IExercise {
+    // `unitId` references an embedded IUnit _id, not a separate MongoDB collection.
     course: Types.ObjectId;
     unitId?: Types.ObjectId;
 
@@ -36,6 +38,8 @@ export interface IExercise {
 }
 
 
+// Defines the persisted validation rules. Controller request types improve developer
+// tooling, but this schema is the final validation boundary for database writes.
 const exerciseSchema = new Schema<IExercise>(
     {
         course: {
@@ -71,6 +75,8 @@ const exerciseSchema = new Schema<IExercise>(
             min: 1
         },
 
+        // An exercise can reference several vocabulary records; populate() resolves
+        // these ids when a learning screen needs the complete words.
         vocabularyItems: [
             {
                 type: Schema.Types.ObjectId,

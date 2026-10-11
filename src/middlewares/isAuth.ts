@@ -35,11 +35,13 @@ const isAuth = async (
     next: NextFunction
 ) => {
     try {
+        // Node lowercases header names, and Express exposes the optional value here.
+        // Only the Bearer scheme is accepted because verifyToken expects a JWT.
         const authorization = req.headers.authorization;
 
         if (
             !authorization ||
-            !authorization.startsWith("Bearer ") // TODO: Maybe replace with a more flexible scheme like [, token] from the lesson (Backend -> 2 Api Rest  -> 4. Proteccion de Rutas).
+            !authorization.startsWith("Bearer ")
         ) {
             return res.status(401).json({
                 message: "Unauthorized"
@@ -68,7 +70,8 @@ const isAuth = async (
         const { id } = verifyToken(token);
 
         /*
-         * A valid JWT does not guarantee that the user still exists. The user may have been deleted after the token was issued, so we verify the user against the database.
+         * A valid signature alone is insufficient: the account could have been
+         * deleted, or its role could have changed, since the JWT was issued.
          */
         const user = await User.findById(id);
 

@@ -23,6 +23,9 @@ const userSchema = new mongoose.Schema<IUser>({
         type: String,
         required: true,
         trim: true,
+        // Keep stored email values compatible with the normalized lookup used by
+        // login and registration, including accounts created by an administrator.
+        lowercase: true,
         unique: true
     },
     password: {
@@ -44,7 +47,8 @@ const userSchema = new mongoose.Schema<IUser>({
     timestamps: true
 });
 
-// Hash password before saving.
+// Hash only newly assigned passwords. Updating a user's name or email must preserve
+// the existing hash, while assigning a password must never save its plain-text form.
 userSchema.pre("save", async function () {
 
     if (!this.isModified("password")) {

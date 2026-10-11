@@ -12,6 +12,7 @@ const getAllLanguages = async (
   _req: Request,
   res: Response) => {
   try {
+    // Return the catalog as an array. An empty catalog is a successful response.
     const languages = await Language.find()
     return res.status(200).json(languages)
   } catch (error) {
@@ -28,6 +29,8 @@ const getLanguage = async (
   res: Response
 ) => {
   try {
+    // findById accepts the route parameter and returns null when no language exists.
+    // Invalid ObjectId strings throw a cast error and are handled by the catch block.
     const language = await Language.findById(
       req.params.id
     );
@@ -60,6 +63,7 @@ const createLanguage = async (
   res: Response
 ) => {
   try {
+    // Schema constraints normalize `code` to lowercase and enforce unique names/codes.
     const language = await Language.create(req.body);
 
     return res.status(201).json(language);
@@ -88,6 +92,8 @@ const updateLanguage = async (
       req.params.id,
       req.body,
       {
+        // Mongoose update queries need these options to validate the changed fields
+        // and to return the value after the update rather than the previous value.
         new: true,
         runValidators: true
       }

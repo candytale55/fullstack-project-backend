@@ -21,6 +21,8 @@ import {
 } from "../controllers/progress.controller";
 
 
+// Mounted at /api/v1/progress. Middleware is attached per route so public and
+// authenticated progress operations can coexist explicitly.
 const progressRouter = Router();
 
 
@@ -28,8 +30,7 @@ const progressRouter = Router();
 /* Current authenticated user progress   */
 /* ------------------------------------- */
 
-// Debe ir siempre antes de GET + "/:id" 
-// para evitar que la ruta "/me" sea interpretada como un ":id"
+// This must precede GET "/:id"; otherwise Express would interpret "me" as an id.
 progressRouter.get(
     "/me",
     isAuth,
@@ -37,6 +38,8 @@ progressRouter.get(
 );
 
 
+// Records one finished study session for the caller. isAuth prevents a client from
+// choosing another learner's identity in the request body.
 progressRouter.patch(
     "/me/course/:courseId/session",
     isAuth,

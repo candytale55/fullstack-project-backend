@@ -70,6 +70,7 @@ const normalizeLevel = (value?: string): string | undefined => {
   return level.toUpperCase();
 };
 
+// Builds the final set of tags for a vocabulary item based on its raw tags and level.
 const buildTags = (
   tagsValue?: string,
   levelValue?: string
@@ -105,40 +106,50 @@ const buildTags = (
 const seedVocabulary = async () => {
   try {
     // Resolve the TSV and image directory relative to this seed file.
-    const filePath = path.resolve(
-      __dirname,
-      "data/vocabulary.tsv"
-    );
+    const filePath = path.resolve(__dirname, "data/vocabulary.tsv");
 
-    const imageDirectory = path.resolve(
-      __dirname,
-      "../../assets/images"
-    );
+    // Resolve the image directory relative to this seed file.
+    const imageDirectory = path.resolve(__dirname, "../../assets/images");
 
+    // Reads the content of the TSV file into memory before processing it.
     const fileContent = fs.readFileSync(filePath, "utf-8");
 
+    // Parses the TSV content into an array of rows.
+    // Discards empty lines and processes the UTF-8 BOM.
     const rows = parse(fileContent, {
       columns: true,
-      delimiter: "\t",
-      skip_empty_lines: true,
-      trim: true,
-      bom: true,
-      quote: false,
+      delimiter: "\t", // Configures the parser to use tab
+      skip_empty_lines: true,  // Discards empty lines
+      trim: true,     // Trims whitespace from each field
+      bom: true,      // Processes the UTF-8 BOM if present
+      quote: false,   // Disables quote parsing //TODO ???
     }) as VocabularySeedRow[];
 
     console.log(`${rows.length} vocabulary rows loaded`);
 
     /*
-      * Validate every required field, duplicate code, and referenced image
-      * before connecting to external services or changing database records.
+      * Before connecting to external services or changing database records
+      * three structures are used: codes, imageFilenames, and imagePaths.
+      * This ensures that any issues are caught early and prevents
+      * potential errors when interacting with external services or the 
+      * database. (Fail-Fast pattern)
      */
+
+    // Almacena los códigos de vocabulario ya procesados para detectar duplicados. //TODO ??
     const codes = new Set<string>();
+
+    // Registra nombres de archivos de imagen únicos ya validados. Si varios términos reutilizan la misma imagen, se valida y añade una sola vez.
     const imageFilenames = new Set<string>();
+    
+    // Mapea el nombre de la imagen(clave) con su ruta absoluta resuelta en disco(valor).
     const imagePaths = new Map<string, string>();
 
     for (const row of rows) {
+
+      // para asegurar que no haya valores nulos o cadenas compuestas solo por espacios
       const code = cleanValue(row.code);
 
+      // Comprueba que los 4 campos estructurales esenciales existan. Si falta alguno, lanza una excepción que aborta el script indicando la fila problemática
       if (
         !code ||
         !cleanValue(row.languageCode) ||
@@ -150,6 +161,7 @@ const seedVocabulary = async () => {
         );
       }
 
+      // Comprueba si el código de vocabulario ya ha sido procesado para evitar duplicados. Si se encuentra un duplicado, lanza una excepción.
       if (codes.has(code)) {
         throw new Error(
           `Duplicate vocabulary code: ${code}`
@@ -158,13 +170,17 @@ const seedVocabulary = async () => {
 
       codes.add(code);
 
+      // Si la fila no especifica imagen o el archivo ya fue procesado y validado anteriormente, pasa a la siguiente fila mediante continue
       const filename = cleanValue(row.mediaReferences);
 
       if (!filename || imageFilenames.has(filename)) {
         continue;
       }
 
-      // The TSV must contain a filename, not a directory path.
+      // Previene navegación de directorios (Path Traversal)
+      // Exige que el valor sea exclusivamente un nombre de archivo plano
+      // (por ejemplo, sun.png o gato.jpg). Si contiene barras diagonales (estándar Unix/Linux/macOS) o invertidas (estándar Windows), se rechaza de inmediato.
+      // Evita que se pasen alias de sistema que representen el directorio actual (.) o el directorio padre (..).
       if (
         filename.includes("/") ||
         filename.includes("\\") ||
@@ -176,19 +192,22 @@ const seedVocabulary = async () => {
         );
       }
 
-      const imagePath = path.join(
-        imageDirectory,
-        filename
-      );
-      const underscoredImagePath = path.join(
-        imageDirectory,
-        `_${filename}`
-      );
+
+      // Concatena el directorio base(imageDirectory) con el nombre del archivo de forma segura y adaptada al separador del sistema operativo en ejecución.
+      const imagePath = path.join(imageDirectory, filename);
+
+
+      // Convención de nomenclatura heredada
+      // Genera la ruta alternativa con un guion bajo prefijado al nombre del archivo, útil para casos donde la imagen original no existe.
+      const underscoredImagePath = path.join(imageDirectory, `_${filename}`);
+
+      // Si la comprobación original se cumple, asigna imagePath a resolvedImagePath; de lo contrario, asume como candidato el nombre con guion bajo (underscoredImagePath)
       const resolvedImagePath =
         fs.existsSync(imagePath) && fs.statSync(imagePath).isFile()
           ? imagePath
           : underscoredImagePath;
 
+      // Verifica la existencia del archivo de imagen resuelto; si no existe, lanza una excepción.
       if (
         !fs.existsSync(resolvedImagePath) ||
         !fs.statSync(resolvedImagePath).isFile()
@@ -198,14 +217,19 @@ const seedVocabulary = async () => {
         );
       }
 
+      // Agrega el nombre del archivo a un Set<string>. En las siguientes iteraciones del bucle, la condición if (imageFilenames.has(filename)) continue; saltará este archivo, evitando comprobar el disco varias veces para imágenes compartidas entre múltiples palabras de vocabulario
       imageFilenames.add(filename);
       imagePaths.set(filename, resolvedImagePath);
     }
 
-    // Connect only after validation; configure Cloudinary only when images exist.
+    // At this point, all image filenames have been validated and their paths resolved.
+    /* Al validar la presencia de todos los archivos locales en memoria antes de invocar connectDB() o llamar a Cloudinary, garantiza que el script no deje la base de datos a medio sincronizar ni gaste cuota en la API si faltaba alguna imagen. */
+
+    // Connect only after validation
     await connectDB();
 
 
+    // Connect to Cloudinary only if there are images to upload.
     const cloudinary = imageFilenames.size > 0
       ? connectCloudinary()
       : null;
@@ -304,6 +328,10 @@ const seedVocabulary = async () => {
             );
           }
 
+
+
+
+          
           const uploaded = await cloudinary.uploader.upload(
             imagePath,
             {
@@ -373,13 +401,9 @@ const seedVocabulary = async () => {
       }))
     );
 
-    const deleteResults = await VocabularyItem.deleteMany({
+    await VocabularyItem.deleteMany({
       code: { $nin: vocabularyItems.map((item) => item.code) },
     });
-
-    console.log(
-      `${deleteResults.deletedCount} obsolete vocabulary items deleted`
-    );
 
     console.log(
       `${rows.length} vocabulary items seeded; ` +

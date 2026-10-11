@@ -18,6 +18,8 @@ export const getPortugueseVerbConjugations =
   ) => {
 
     try {
+      // Query filters are optional. Starting with an empty object lets the endpoint
+      // return all imported conjugations when the caller supplies none.
       const { courseId, unitId } = req.query;
       
       const filter: {
@@ -29,6 +31,8 @@ export const getPortugueseVerbConjugations =
       } = {};
 
       /* Validate optional query filters before using them in MongoDB. */
+      // Check ObjectId syntax before querying. It produces a clear client error
+      // instead of relying on Mongoose to throw a cast exception.
       if (typeof courseId === "string") {
 
         if (
@@ -58,6 +62,8 @@ export const getPortugueseVerbConjugations =
         filter.unitId = unitId;
       }
 
+      // Express represents `?tags=a&tags=b` as an array and a single `?tags=a`
+      // as a string. Normalize both forms to one list before validation.
       const tagQuery = req.query.tags;
       const tagValues = typeof tagQuery === "string"
         ? [tagQuery]
@@ -85,12 +91,15 @@ export const getPortugueseVerbConjugations =
       }
 
       if (requestedTags.length) {
+        // `$all` requires every requested tag, which is the expected intersection
+        // behavior for selectors such as mood plus tense.
         filter.tags = {
           $all: requestedTags
         };
       }
 
 
+      // Sort at the database boundary so exercise clients receive a stable order.
       const conjugations =
         await PortugueseVerbConjugation
           .find(filter)

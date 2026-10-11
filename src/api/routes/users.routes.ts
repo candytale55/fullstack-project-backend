@@ -12,6 +12,8 @@ import {
 } from '../controllers/user.controller';
 
 
+// Every user-management endpoint requires both middleware layers. isAuth creates
+// req.user, then isAdmin checks its role before the controller can access data.
 const usersRouter = Router();
 
 usersRouter.get('/', isAuth, isAdmin, getAllUsers);

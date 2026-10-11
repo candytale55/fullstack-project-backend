@@ -13,6 +13,8 @@ const getAllCourses = async (
     res: Response
 ) => {
     try {
+        // Populate replaces the language ObjectId with the small language view
+        // needed by catalog clients, without returning unrelated language fields.
         const courses = await Course
             .find()
             .populate(
@@ -37,6 +39,8 @@ const getCoursesByLanguage = async (
     res: Response
 ) => {
     try {
+        // This is a collection query: an unknown language id correctly produces
+        // an empty array rather than a "course not found" response.
         const courses = await Course
             .find({
                 language: req.params.languageId
@@ -110,6 +114,9 @@ const getCourseUnits = async (
             });
         }
 
+        // Units are embedded in the course and may not be stored in display order.
+        // Copy before sorting so this read-only endpoint does not mutate the Mongoose
+        // document in memory.
         const units = [...course.units].sort(
             (a, b) => a.order - b.order
         );
@@ -133,6 +140,7 @@ type CreateCourseBody = {
     description?: string;
     structure: "units" | "exercises";
     units?: {
+        code: string;
         title: string;
         description?: string;
         order: number;
@@ -144,6 +152,9 @@ const createCourse = async (
     res: Response
 ) => {
     try {
+        // Courses that deliver standalone exercises must not retain unit metadata.
+        // The schema accepts an empty units array, but this controller enforces the
+        // business rule before attempting the insert.
         if (
             req.body.structure === "exercises" &&
             req.body.units &&
@@ -154,6 +165,8 @@ const createCourse = async (
             });
         }
 
+        // Model validation checks required fields, ObjectIds, and enum values before
+        // this document is written.
         const course = await Course.create(req.body);
 
         return res.status(201).json(course);
@@ -174,6 +187,9 @@ const updateCourse = async (
     res: Response
 ) => {
     try {
+        // Validate the payload-level conflict before applying the partial update.
+        // Changing an existing unit course into an exercise course without supplying
+        // `units` remains a separate domain decision and is not inferred here.
         if (
             req.body.structure === "exercises" &&
             req.body.units &&
@@ -188,6 +204,8 @@ const updateCourse = async (
             req.params.id,
             req.body,
             {
+                // Return the persisted version and run schema validation for PATCH,
+                // because Mongoose does not do either by default for update queries.
                 new: true,
                 runValidators: true
             }

@@ -12,6 +12,8 @@ import {
 } from "../controllers/vocabulary.controller";
 
 
+// Read endpoints are public learning content; write endpoints below require an
+// authenticated administrator because they change the shared vocabulary catalog.
 const vocabularyRouter = Router();
 
 vocabularyRouter.get(
@@ -24,6 +26,7 @@ vocabularyRouter.get(
     getVocabularyItem
 );
 
+// Middleware order matters: isAdmin relies on the req.user object attached by isAuth.
 vocabularyRouter.post(
     "/",
     isAuth,

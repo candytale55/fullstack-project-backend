@@ -5,12 +5,16 @@ import mongoose, { Schema } from "mongoose";
 
 
 export interface IVocabularyImage {
+  // `filename` refers to the local source asset used by the seed. URL and publicId
+  // are added after the asset has been uploaded to Cloudinary.
   filename: string;
   url?: string;
   publicId?: string; // Cloudinary public ID for the image
 }
 
 export interface IVocabularyItem {
+  // `code` is the stable source-data key; languageCode groups vocabulary without a
+  // Course reference because imported vocabulary can be shared across courses.
   code: string;
   languageCode: string;
 
@@ -33,6 +37,8 @@ export interface IVocabularyItem {
 
 /* ------------------------------- */
 
+// Images are embedded value objects rather than their own collection, so they do
+// not need independent _id values.
 const vocabularyImageSchema =
   new Schema<IVocabularyImage>(
     {
@@ -55,6 +61,8 @@ const vocabularyImageSchema =
     }
   );
 
+// The seed and administrative API both rely on this schema to normalize text and
+// enforce the required code, language, term, and definition fields.
 const vocabularySchema =
   new Schema<IVocabularyItem>(
     {

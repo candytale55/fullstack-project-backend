@@ -49,6 +49,8 @@ type StudySessionBody = {
     timeZone: string;
 };
 
+// Converts an instant into the learner's local calendar date. Storing a date-only
+// value prevents a late-night session from being counted on the server's time zone.
 const formatStudyDay = (date: Date, timeZone: string): string => {
     const parts = new Intl.DateTimeFormat("en-US", {
         timeZone,
@@ -112,7 +114,14 @@ const saveStudySession = async (
             });
         }
 
-        if (unitId && !mongoose.Types.ObjectId.isValid(unitId)) {
+        // `unitId` is optional, but if sent it must be a non-empty embedded Unit id.
+        // Checking the runtime type avoids accepting malformed JSON values.
+        if (
+            unitId !== undefined &&
+            (typeof unitId !== "string" ||
+                !unitId ||
+                !mongoose.Types.ObjectId.isValid(unitId))
+        ) {
             return res.status(400).json({
                 error: "Invalid unit id"
             });
@@ -139,7 +148,10 @@ const saveStudySession = async (
             throw error;
         }
 
-        // Atomically accumulates progress and adds the day only once.
+        // This single atomic update prevents concurrent sessions from losing counter
+        // increments. `$addToSet` also makes the calendar-day list idempotent.
+        // `$addToSet` makes a repeated completion request harmless instead of adding
+        // the same exercise id to completedExercises more than once.
         const progress = await Progress.findOneAndUpdate(
             {
                 user: req.user._id,

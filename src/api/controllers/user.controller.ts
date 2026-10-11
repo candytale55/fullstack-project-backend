@@ -11,6 +11,8 @@ import User from "../models/User.model";
 
 const getAllUsers = async (_req: Request, res: Response) => {
     try {
+        // Explicitly exclude the credential hash even though it is unreadable; an
+        // administrative listing should never serialize authentication material.
         const users = await User.find().select("-password");
         return res.status(200).json(users);
     } catch (error) {
@@ -48,6 +50,8 @@ const createUser = async (
     req: Request<{}, {}, CreateUserBody>, //req.body must comply with CreateUserBody.
     res: Response) => {
     try {
+        // Saving (rather than a direct update query) triggers the model's password
+        // hashing hook before the new account is persisted.
         const newUser = new User(req.body);
         await newUser.save();
         const { password: _password, ...safeUser } = newUser.toObject();
@@ -71,6 +75,8 @@ const updateUser = async (
     try {
         const { id } = req.params;
 
+        // Build an allow-list from the body. This prevents this endpoint from
+        // changing password, role, or password-reset fields by accident.
         const updateData: UpdateUserBody = {};
 
         if (req.body.name !== undefined) {
@@ -82,7 +88,7 @@ const updateUser = async (
 
         if (Object.keys(updateData).length === 0) {
             return res.status(400).json({
-                error: "Cannot update fields provided for update"
+                error: "No updatable fields were provided"
             });
         }
 
@@ -107,6 +113,8 @@ const updateUser = async (
 const deleteUser = async (req: Request<{ id: string }>, res: Response) => {
     try {
         const { id } = req.params;
+        // Read first so the response can distinguish a missing id from a successful
+        // deletion and include the deleted user's display name.
         const user = await User.findById(id);
         if (!user) {
             return res.status(404).json({ error: "User not found" });

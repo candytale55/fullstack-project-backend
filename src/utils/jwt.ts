@@ -3,6 +3,8 @@
 import jwt, { type JwtPayload } from "jsonwebtoken";
 
 interface AuthTokenPayload extends JwtPayload {
+    // Controllers deliberately sign only this identifier. User details are fetched
+    // from MongoDB by isAuth instead of becoming stale token claims.
     id: string;
 }
 
@@ -35,6 +37,7 @@ const generateToken = (id: string): string => {
  * Verifies a JWT and returns its decoded payload.
  */
 const verifyToken = (token: string): AuthTokenPayload => {
+    // jwt.verify checks the signature and the expiry declared by generateToken.
     const decoded = jwt.verify(
         token,
         getJwtSecret()
@@ -47,6 +50,7 @@ const verifyToken = (token: string): AuthTokenPayload => {
         throw new Error("Invalid token payload");
     }
 
+    // Runtime checks above establish the narrower payload shape TypeScript needs.
     return decoded as AuthTokenPayload;
 };
 

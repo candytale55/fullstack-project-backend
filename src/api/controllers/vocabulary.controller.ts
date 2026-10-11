@@ -14,7 +14,7 @@ type VocabularyQuery = {
   language?: string;
   level?: string;
   tag?: string;
-  hasImage?: boolean;
+  hasImage?: string;
 };
 
 /* ------------------------------------- */
@@ -29,6 +29,8 @@ const getAllVocabulary = async (
 ) => {
   try {
    
+    // Build one MongoDB query from the optional filters. Omitting a property means
+    // "do not filter by it", while supplied filters are combined with AND.
     const filter: QueryFilter<IVocabularyItem> = {};
     
     const {
@@ -47,14 +49,17 @@ const getAllVocabulary = async (
     if (tag) {
       filter.tags = tag.trim();
     }
-    if (hasImage !== undefined && hasImage === true) {
+    // Express query strings are always strings at runtime, so `?hasImage=true`
+    // must be compared with "true", not the boolean literal true.
+    if (hasImage === "true") {
       filter['image.filename'] = { $exists: true, $ne: "" };
     }
 
     const vocabulary =
       await VocabularyItem
         .find(filter)
-        .sort({ term: 1 }); /* Sort vocabulary items alphabetically by term */
+        // Sort on the database so clients receive a stable alphabetical list.
+        .sort({ term: 1 });
 
     return res.status(200).json(vocabulary);
 
