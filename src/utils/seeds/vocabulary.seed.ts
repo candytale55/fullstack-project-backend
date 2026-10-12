@@ -2,6 +2,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
+import { createHash } from "node:crypto";
 import mongoose from "mongoose";
 import { parse } from "csv-parse/sync";
 
@@ -55,6 +56,71 @@ const normalizeIpaValue = (value?: string): string => {
   }
 
   return cleanedValue;
+};
+
+// Uses a filename-derived ID instead of Cloudinary's generated ID. The same source
+// image therefore always maps to the same remote asset, even if its vocabulary
+// document has been deleted and recreated.
+const createVocabularyImagePublicId = (
+  filename: string
+): string => {
+  const imageKey = createHash("sha256")
+    .update(filename)
+    .digest("hex");
+
+  return `vocabulary/${imageKey}`;
+};
+
+// Narrows the Cloudinary Admin API's error response without hiding unexpected
+// authentication, network, or service errors from the seed.
+const isCloudinaryNotFoundError = (
+  error: unknown
+): boolean => {
+  if (typeof error !== "object" || error === null) {
+    return false;
+  }
+
+  // Cloudinary may expose its HTTP status at the top level or in the nested
+  // `error` object, depending on the Admin API response and SDK version.
+  if ("http_code" in error && error.http_code === 404) {
+    return true;
+  }
+
+  return (
+    "error" in error &&
+    typeof error.error === "object" &&
+    error.error !== null &&
+    "http_code" in error.error &&
+    error.error.http_code === 404
+  );
+};
+
+// Looks up the stable asset ID before uploading. This handles a previously uploaded
+// image that has no current vocabulary database record, such as after a DB reset.
+const findCloudinaryImage = async (
+  cloudinary: ReturnType<typeof connectCloudinary>,
+  filename: string
+): Promise<IVocabularyImage | undefined> => {
+  try {
+    const resource = await cloudinary.api.resource(
+      createVocabularyImagePublicId(filename),
+      {
+        resource_type: "image",
+      }
+    );
+
+    return {
+      filename,
+      url: resource.secure_url,
+      publicId: resource.public_id,
+    };
+  } catch (error) {
+    if (isCloudinaryNotFoundError(error)) {
+      return undefined;
+    }
+
+    throw error;
+  }
 };
 
 // Splits whitespace-separated tags/references and removes duplicates.
@@ -329,6 +395,8 @@ const seedVocabulary = async () => {
 
       let image: IVocabularyImage | undefined;
 
+      // Rows with no media reference are valid vocabulary entries. They do not
+      // contact Cloudinary and are stored without the optional `image` subdocument.
       if (imageFilename) {
         image = imageCache.get(imageFilename);
 
@@ -339,35 +407,57 @@ const seedVocabulary = async () => {
             );
           }
 
-          const imagePath = imagePaths.get(imageFilename);
-
-          if (!imagePath) {
-            throw new Error(
-              `Image path not found for: ${imageFilename}`
-            );
-          }
-
-
-
-
-          
-          const uploaded = await cloudinary.uploader.upload(
-            imagePath,
-            {
-              folder: "vocabulary",
-              resource_type: "image",
-            }
+          /*
+           * First reuse the deterministic Cloudinary asset when a prior upload
+           * exists but its database metadata is unavailable. This prevents a
+           * database reset from creating another remote image.
+           */
+          image = await findCloudinaryImage(
+            cloudinary,
+            imageFilename
           );
 
-          image = {
-            filename: imageFilename,
-            url: uploaded.secure_url,
-            publicId: uploaded.public_id,
-          };
+          if (image) {
+            imageCache.set(imageFilename, image);
+          } else {
+            const imagePath = imagePaths.get(imageFilename);
 
-          // Another row with this filename reuses the result.
-          imageCache.set(imageFilename, image);
-          uploadedImages++;
+            if (!imagePath) {
+              throw new Error(
+                `Image path not found for: ${imageFilename}`
+              );
+            }
+
+
+
+
+            
+            const uploaded = await cloudinary.uploader.upload(
+              imagePath,
+              {
+                folder: "vocabulary",
+                // This stable ID is also the identifier future CRUD operations can
+                // use to explicitly overwrite or delete this exact Cloudinary asset.
+                public_id: createVocabularyImagePublicId(
+                  imageFilename
+                ).replace("vocabulary/", ""),
+                unique_filename: false,
+                // A seed creates a missing asset; it never silently replaces media.
+                overwrite: false,
+                resource_type: "image",
+              }
+            );
+
+            image = {
+              filename: imageFilename,
+              url: uploaded.secure_url,
+              publicId: uploaded.public_id,
+            };
+
+            // Another row with this filename reuses the result.
+            imageCache.set(imageFilename, image);
+            uploadedImages++;
+          }
         }
       }
 
