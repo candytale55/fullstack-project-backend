@@ -238,6 +238,11 @@ const portugueseVerbConjugationSchema =
 /*
  * Prevents importing an identical Anki row more than once for a course.
  * Form variants sharing an infinitive, mood, and tense remain distinct.
+ *
+ * The partial filter excludes legacy documents created before `sourceKey` existed.
+ * Mongoose builds model indexes as soon as it connects, before the seed can remove
+ * that old data; excluding null/missing keys lets the current index be created and
+ * still enforces uniqueness for every current seed record.
  */
 portugueseVerbConjugationSchema.index(
     {
@@ -245,7 +250,12 @@ portugueseVerbConjugationSchema.index(
         sourceKey: 1
     },
     {
-        unique: true
+        unique: true,
+        partialFilterExpression: {
+            sourceKey: {
+                $type: "string"
+            }
+        }
     }
 );
 

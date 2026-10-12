@@ -40,6 +40,23 @@ const cleanValue = (value?: string): string => {
   return value?.trim() ?? "";
 };
 
+// Removes one enclosing IPA delimiter pair because the frontend renders its own
+// slashes. Values without a complete outer pair, including IPA symbols within the
+// transcription, are preserved exactly after whitespace is trimmed.
+const normalizeIpaValue = (value?: string): string => {
+  const cleanedValue = cleanValue(value);
+
+  if (
+    cleanedValue.startsWith("/") &&
+    cleanedValue.endsWith("/") &&
+    cleanedValue.length >= 2
+  ) {
+    return cleanedValue.slice(1, -1).trim();
+  }
+
+  return cleanedValue;
+};
+
 // Splits whitespace-separated tags/references and removes duplicates.
 const parseList = (value?: string): string[] => {
   const cleanedValue = cleanValue(value);
@@ -135,7 +152,7 @@ const seedVocabulary = async () => {
       * database. (Fail-Fast pattern)
      */
 
-    // Almacena los códigos de vocabulario ya procesados para detectar duplicados. //TODO ??
+    // Almacena los códigos de vocabulario ya procesados para detectar duplicados.
     const codes = new Set<string>();
 
     // Registra nombres de archivos de imagen únicos ya validados. Si varios términos reutilizan la misma imagen, se valida y añade una sola vez.
@@ -296,11 +313,13 @@ const seedVocabulary = async () => {
       const partOfSpeech = cleanValue(row.partOfSpeech);
       const example = cleanValue(row.example);
       const clozeExample = cleanValue(row.clozeExample);
-      const pronunciation = cleanValue(
+      // Source data may contain /IPA/ notation, but the database stores only the
+      // transcription because the frontend supplies the presentation slashes.
+      const pronunciation = normalizeIpaValue(
         row.pronunciation
       );
 
-      const pronunciationSecondary = cleanValue(
+      const pronunciationSecondary = normalizeIpaValue(
         row.pronunciationSecondary
       );
 
@@ -385,12 +404,15 @@ const seedVocabulary = async () => {
 
 
     // Delete all existing vocabulary items before seeding new ones.
-    
+
 /*     const deleteResult = await VocabularyItem.deleteMany({});
     console.log(`Deleted ${deleteResult.deletedCount} existing vocabulary items`); */
 
-    
+
     // Upsert current records first, then remove codes no longer present in the TSV.
+    /* En lugar de hacer un deleteMany({}) previo (que rompería los _id de MongoDB referenciados por ejercicios u otras colecciones), realiza una operación masiva.
+    Si un documento con ese code ya existe, lo reemplaza por completo con los nuevos datos. Si no existe, lo inserta de forma atómica.
+    */
     await VocabularyItem.bulkWrite(
       vocabularyItems.map((item) => ({
         replaceOne: {

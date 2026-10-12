@@ -26,6 +26,22 @@ const LEGACY_UNIT_CODES: Record<string, string> = {
 const cleanValue = (value?: string): string =>
     value?.trim() ?? "";
 
+// The UI owns IPA slash formatting. Strip one complete outer `/.../` pair from
+// source values while preserving the symbols and any inner punctuation verbatim.
+const normalizeIpaValue = (value?: string): string => {
+    const cleanedValue = cleanValue(value);
+
+    if (
+        cleanedValue.startsWith("/") &&
+        cleanedValue.endsWith("/") &&
+        cleanedValue.length >= 2
+    ) {
+        return cleanedValue.slice(1, -1).trim();
+    }
+
+    return cleanedValue;
+};
+
 const parseTags = (value?: string): string[] =>
     [...new Set(
         cleanValue(value)
@@ -57,6 +73,23 @@ const buildForms = (
         ? forms
         : undefined;
 };
+
+// Applies IPA-only normalization to each grammatical-person value. Written forms
+// continue to use buildForms above, so a slash in non-IPA source data is untouched.
+const buildPronunciationForms = (
+    euValue?: string,
+    tuValue?: string,
+    eleElaVoceValue?: string,
+    nosValue?: string,
+    elesElasVocesValue?: string
+): IPortugueseVerbForms | undefined =>
+    buildForms(
+        normalizeIpaValue(euValue),
+        normalizeIpaValue(tuValue),
+        normalizeIpaValue(eleElaVoceValue),
+        normalizeIpaValue(nosValue),
+        normalizeIpaValue(elesElasVocesValue)
+    );
 
 const getTagValues = (
     tags: readonly string[],
@@ -284,7 +317,9 @@ const seedPortugueseVerbConjugations = async () => {
 
             seenSourceKeys.add(sourceKey);
 
-            const pronunciation = buildForms(
+            // IPA fields are normalized independently from the written forms so the
+            // client does not display duplicated slash delimiters.
+            const pronunciation = buildPronunciationForms(
                 row[13],
                 row[14],
                 row[15],
@@ -298,7 +333,7 @@ const seedPortugueseVerbConjugations = async () => {
                 row[11],
                 row[12]
             );
-            const negativePronunciation = buildForms(
+            const negativePronunciation = buildPronunciationForms(
                 row[18],
                 row[19],
                 row[20],
@@ -324,11 +359,23 @@ const seedPortugueseVerbConjugations = async () => {
             });
         }
 
-        // Replaces the old infinitive/mood/tense uniqueness index before import.
-        await PortugueseVerbConjugation.syncIndexes();
+        /*
+         * Remove the previous target-course dataset before synchronizing indexes.
+         * Older imports predate `sourceKey`, so they contain several documents with
+         * `{ course, sourceKey: null }`. MongoDB cannot create the unique
+         * `(course, sourceKey)` index until those legacy duplicates are gone.
+         *
+         * This happens only after the CSV has been completely parsed and validated,
+         * preventing malformed source data from clearing an otherwise valid dataset.
+         */
         await PortugueseVerbConjugation.deleteMany({
             course: course._id
         });
+
+        // Create the current model indexes on the cleaned target-course dataset.
+        // The source key keeps each imported Anki row unique for this course.
+        await PortugueseVerbConjugation.syncIndexes();
+
         const createdConjugations =
             await PortugueseVerbConjugation.insertMany(conjugations);
 
