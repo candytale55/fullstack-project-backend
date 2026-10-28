@@ -16,7 +16,9 @@ export const EXERCISE_TYPES = [
     "quiz",
     "multiple-choice",
     "fill-blank",
-    "matching"
+    "matching",
+    "crossword",
+    "word-search"
 ] as const;
 
 export type ExerciseType = (typeof EXERCISE_TYPES)[number];
