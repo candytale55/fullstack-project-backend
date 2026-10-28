@@ -2,6 +2,8 @@
 
 import mongoose from "mongoose";
 import dotenv from "dotenv";
+
+// Seed commands can establish a connection without going through index.ts.
 dotenv.config();
 
 export const connectDB = async () => {
@@ -10,6 +12,8 @@ export const connectDB = async () => {
         if (!mongoURI) {
             throw new Error("MONGO_URI is not defined in the environment variables.");
         }
+        // Mongoose shares one process-wide connection. Repeated calls reuse it,
+        // allowing both the server and standalone seeds to use this helper.
         await mongoose.connect(mongoURI);
         console.log("Connected to the database successfully.");
 
@@ -18,5 +22,4 @@ export const connectDB = async () => {
         throw error;
     }
 }
-
 

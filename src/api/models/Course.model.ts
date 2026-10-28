@@ -9,8 +9,10 @@
 import mongoose, { Types, Schema } from 'mongoose'
 
 
-// Embedded unit structure used inside a course.
+// Units are subdocuments: their ObjectIds are generated inside the parent course
+// and are later referenced by exercises and progress as `unitId`.
 export interface IUnit {
+    _id?: Types.ObjectId;
     code: string;
     title: string;
     description?: string;
@@ -18,7 +20,8 @@ export interface IUnit {
 }
 
 
-// Course structure stored in the courses collection.
+// Course documents either organize content as embedded units or as a flat list of
+// exercises. The controller enforces the relationship between structure and units.
 export interface ICourse {
     code: string;
     language: Types.ObjectId;
@@ -33,6 +36,7 @@ export interface ICourse {
 }
 
 
+// `_id` remains enabled for each unit so an exercise can point to a stable unit.
 const unitSchema = new Schema<IUnit>(
     {
         code: {
@@ -115,6 +119,8 @@ const courseSchema = new Schema<ICourse>(
 );
 
 
+// Prevent duplicate course titles within one language while still allowing the same
+// title for courses in different languages.
 courseSchema.index(
     {
         language: 1,

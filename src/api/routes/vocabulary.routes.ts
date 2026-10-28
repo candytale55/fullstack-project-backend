@@ -1,11 +1,10 @@
 /* Maps vocabulary URLs to vocabulary.controller operations for course content. */
 
 import { Router } from "express";
-
+import { isAuth } from "../../middlewares/isAuth";
+import { isAdmin } from "../../middlewares/isAdmin";    
 import {
     getAllVocabulary,
-    getVocabularyByCourse,
-    getVocabularyByUnit,
     getVocabularyItem,
     createVocabularyItem,
     updateVocabularyItem,
@@ -13,6 +12,8 @@ import {
 } from "../controllers/vocabulary.controller";
 
 
+// Read endpoints are public learning content; write endpoints below require an
+// authenticated administrator because they change the shared vocabulary catalog.
 const vocabularyRouter = Router();
 
 vocabularyRouter.get(
@@ -21,32 +22,29 @@ vocabularyRouter.get(
 );
 
 vocabularyRouter.get(
-    "/course/:courseId/unit/:unitId",
-    getVocabularyByUnit
-);
-
-vocabularyRouter.get(
-    "/course/:courseId",
-    getVocabularyByCourse
-);
-
-vocabularyRouter.get(
     "/:id",
     getVocabularyItem
 );
 
+// Middleware order matters: isAdmin relies on the req.user object attached by isAuth.
 vocabularyRouter.post(
     "/",
+    isAuth,
+    isAdmin,
     createVocabularyItem
 );
 
 vocabularyRouter.patch(
     "/:id",
+    isAuth,
+    isAdmin,
     updateVocabularyItem
 );
 
 vocabularyRouter.delete(
     "/:id",
+    isAuth,
+    isAdmin,
     deleteVocabularyItem
 );
 

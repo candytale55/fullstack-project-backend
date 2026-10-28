@@ -7,6 +7,7 @@ import mongoose, {
 
 
 export interface IProgress {
+    // One record aggregates all progress belonging to this user/course pair.
     user: Types.ObjectId;
     course: Types.ObjectId;
     completedSessions: number;
@@ -14,10 +15,13 @@ export interface IProgress {
     questionsAnswered: number;
     correctAnswers: number;
     lastStudiedAt?: Date;
+    lastStudiedUnitId?: Types.ObjectId;
     studyDays: string[];
 }
 
 
+// Counters, completed exercise ids, and calendar dates live together so a session
+// update can change them atomically in progress.controller.
 const progressSchema = new Schema<IProgress>(
     {
         user: {
@@ -32,6 +36,8 @@ const progressSchema = new Schema<IProgress>(
             required: true
         },
 
+        // These counters are incremented with MongoDB's `$inc`, not calculated from
+        // the exercise history, so their defaults must always be numeric.
         completedSessions: {
             type: Number,
             default: 0
@@ -49,6 +55,10 @@ const progressSchema = new Schema<IProgress>(
 
         lastStudiedAt: {
             type: Date
+        },
+
+        lastStudiedUnitId: {
+            type: Schema.Types.ObjectId
         },
 
         // Stores unique study dates as YYYY-MM-DD strings for future heat maps.

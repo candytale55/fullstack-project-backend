@@ -57,11 +57,22 @@ try {
         'seed:courses'
     )
 
+    // 4. Vocabulary content
+    runSeed(
+        "Vocabulary",
+        "seed:vocabulary"
+    );
 
-    // 4. Depends on Courses and Units
+    // 5. Exercises reference courses, units, and vocabulary records
+    runSeed(
+        "Exercises",
+        "seed:exercises"
+    )
+
+    // 6. Depends on Courses and Units
     runSeed(
         'Portuguese Verb Conjugations',
-        'seed:portuguese-verbs'
+        'seed:ptverbs'
     )
 
 

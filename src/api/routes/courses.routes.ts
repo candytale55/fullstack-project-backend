@@ -13,10 +13,14 @@ import {
 } from "../controllers/course.controller";
 
 
+// Mounted at /api/v1/courses. Specific multi-segment routes are declared before
+// "/:id" so Express does not treat words such as "language" as an id parameter.
 const coursesRouter = Router();
 
 coursesRouter.get("/", getAllCourses);
 
+// Retrieves only the embedded units; it avoids sending the full course document
+// when a unit-navigation view does not need its other metadata.
 coursesRouter.get(
     "/language/:languageId",
     getCoursesByLanguage

@@ -13,8 +13,12 @@ import {
 } from "../controllers/exercise.controller";
 
 
+// Mounted at /api/v1/exercises. More-specific course paths precede "/:id" to keep
+// route matching deterministic.
 const exercisesRouter = Router();
 
+// A unit route must come before the broader course route because both share the
+// same initial "/course/:courseId" segment.
 exercisesRouter.get(
     "/",
     getAllExercises

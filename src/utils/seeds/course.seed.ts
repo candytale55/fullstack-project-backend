@@ -36,16 +36,19 @@ const seedCourses = async () => {
     try {
         await connectDB()
 
+        /* Load courses from JSON and upsert into MongoDB */
         const filePath = path.resolve(
             __dirname,
             'data/courses.json'
         )
 
+        /* Read the JSON file containing course data */
         const fileContent = fs.readFileSync(
             filePath,
             'utf-8'
         )
 
+        /* Parse the JSON content into an array of course seeds */
         const courses: CourseSeed[] =
             JSON.parse(fileContent)
 

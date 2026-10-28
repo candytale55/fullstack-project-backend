@@ -10,6 +10,8 @@ import {
     deleteLanguage
 } from '../controllers/language.controller'
 
+// Mounted at /api/v1/languages. Route parameters are passed to the controller as
+// req.params.id; the controller owns database lookup and error responses.
 const languagesRouter = Router()
 
 languagesRouter.get('/', getAllLanguages)

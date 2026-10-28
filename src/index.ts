@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 import express from "express";
 import cors from "cors";
 import { connectDB } from "./config/db";
-
+import { connectCloudinary } from "./config/cloudinary";
 
 /* ========================================== */
 /*           Import Routes                    */
@@ -22,8 +22,10 @@ import portugueseVerbConjugationRouter from "./api/routes/PortugueseVerbConjugat
 
 /* ========================================== */
 
-// Loads .env variables into process.env.
+// Load configuration before constructing any service that reads process.env.
+// cloudinary.ts also loads dotenv so seed scripts can use it independently.
 dotenv.config();
+connectCloudinary();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -33,7 +35,8 @@ const allowedOrigins = [
     "http://localhost:5173",
 ].filter((origin): origin is string => Boolean(origin))
 
-// Enable CORS for all routes
+// Send CORS headers only to the configured frontend and the local Vite server.
+// Browsers enforce this restriction; non-browser clients are unaffected by CORS.
 app.use(cors({
     origin: allowedOrigins,
 }));
@@ -43,11 +46,15 @@ app.use(cors({
 app.use(express.json());
 
 
-/* Register routes before waiting for the database connection. */
+// This unauthenticated health endpoint is useful to verify that the HTTP process is
+// alive independently of any resource-specific route.
 app.get("/", (_req, res) => {
     res.json({ message: "Backend is running" });
 });
 
+// Mount routers under versioned prefixes. Paths declared inside each router are
+// relative to these prefixes, for example authRouter's "/login" becomes
+// POST /api/v1/auth/login.
 app.use("/api/v1/users", usersRouter);
 app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/languages", languagesRouter);
@@ -60,12 +67,15 @@ app.use(
     portugueseVerbConjugationRouter
 );
 
+// This must stay after every router so it only handles requests that no route owns.
 app.use((_req, res) => {
     return res.status(404).json("Route not found");
 });
 
 /* Start accepting requests only after MongoDB is ready. */
 const startServer = async () => {
+    // Do not accept requests before the shared Mongoose connection is established;
+    // controllers depend on it for every database operation.
     await connectDB();
 
     app.listen(PORT, () => {
@@ -77,4 +87,3 @@ startServer().catch((error) => {
     console.error("Failed to start the server:", error);
     process.exit(1);
 });
-

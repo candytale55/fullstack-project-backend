@@ -13,8 +13,9 @@ import { generateToken } from "../../utils/jwt";
 /* ------------------------------------------------ */
 
 
-// Helper function to extract error messages from exceptions.
-// con strict: true, TypeScript considera el error de catch como unknown, por lo que necesitamos esta función para extraer el mensaje de error.
+// Converts an unknown value thrown by a library into a safe, displayable message.
+// With `strict` enabled, catch values are `unknown`, so their properties cannot
+// be read until their type has been checked.
 const getErrorMessage = (error: unknown): string => {
     return error instanceof Error
         ? error.message
@@ -28,7 +29,7 @@ type RegisterBody = {
     name: string;
     email: string;
     password: string;
-}; // No role, as users cannot set their role during registration.
+}; // `role` is intentionally omitted: public registration always creates a learner.
 
 
 const register = async (
@@ -52,7 +53,8 @@ const register = async (
             });
         }
 
-        // Check if the user already exists.
+        // Query with the normalized value so case and surrounding whitespace
+        // cannot be used to create logically duplicate accounts.
         const userDuplicated = await User.findOne({
             email: normalizedEmail
         });
@@ -63,6 +65,8 @@ const register = async (
             });
         }
 
+        // The User model's pre-save hook hashes this plain-text password before
+        // MongoDB receives it. Never hash it here as well.
         const newUser = new User({
             name,
             email: normalizedEmail,
@@ -106,8 +110,23 @@ const login = async (
     try {
         const { email, password } = req.body;
 
+        // Validate before calling String methods or bcrypt. Request-body TypeScript
+        // types describe well-formed clients; they do not validate runtime input.
+        if (
+            typeof email !== "string" ||
+            typeof password !== "string" ||
+            !email.trim() ||
+            !password
+        ) {
+            return res.status(400).json({
+                message: "Invalid email or password"
+            });
+        }
+
         const normalizedEmail = email.trim().toLowerCase();
 
+        // Keep the same response for an absent account and an incorrect password
+        // so callers cannot determine which email addresses are registered.
         const user = await User.findOne({
             email: normalizedEmail
         });
@@ -118,7 +137,8 @@ const login = async (
             });
         }
 
-        // Check if the provided password matches the stored password hash.
+        // bcrypt compares the submitted plain-text password against the one-way
+        // hash stored by the User model; the original password cannot be recovered.
         const passwordMatches = await bcrypt.compare(
             password,
             user.password
@@ -130,7 +150,8 @@ const login = async (
             });
         }
 
-        // Generate a JWT for the authenticated user.   
+        // The token contains only the stable database id. isAuth reloads the user
+        // on later requests, so role changes and deleted accounts take effect.
         const token = generateToken(
             user._id.toString()
         );
@@ -156,7 +177,8 @@ const login = async (
 
 
 /* ---------------- Get Current User -------------------- */
-// Para comprobar el JWT y restaurar la sesión autenticada en el frontend.
+// isAuth has already verified the token and attached a password-free user object.
+// The frontend uses this endpoint to restore an existing session after refresh.
 
 const getCurrentUser = async (
     req: Request,

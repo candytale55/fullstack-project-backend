@@ -36,7 +36,7 @@ const seedUsers = async () => {
 
         const fileContent = fs.readFileSync(
             filePath,
-            "utf-8"
+            "utf-8" 
         );
 
 

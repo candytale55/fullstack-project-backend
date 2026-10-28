@@ -1,5 +1,5 @@
-// TODO: PROVISIONAL - Revisar antes de cargar los datos.
-
+/* Reads and maintains exercises. Exercise content is validated by Exercise.model,
+ * while this layer translates HTTP parameters and database outcomes into responses. */
 import type { Request, Response } from "express";
 
 import Exercise from "../models/Exercise.model";
@@ -14,6 +14,8 @@ const getAllExercises = async (
     res: Response
 ) => {
     try {
+        // Populate expands referenced vocabulary only for this complete collection
+        // endpoint, avoiding an additional client request per exercise.
         const exercises = await Exercise
             .find()
             .populate(
@@ -39,10 +41,13 @@ const getExercisesByCourse = async (
         const exercises = await Exercise
             .find({
                 course: req.params.courseId,
+                // Exercises without a unit belong directly to courses whose
+                // `structure` is "exercises".
                 unitId: {
                     $exists: false
                 }
             })
+            // Persisted order is the curriculum order, not creation order.
             .sort({
                 order: 1
             });
@@ -91,6 +96,7 @@ const getExercise = async (
     res: Response
 ) => {
     try {
+        // The detail response needs full vocabulary records to render an activity.
         const exercise = await Exercise
             .findById(req.params.id)
             .populate("vocabularyItems");
@@ -117,6 +123,8 @@ const createExercise = async (
     res: Response
 ) => {
     try {
+        // Mongoose validates required course, type, order, and ObjectId fields before
+        // committing the new exercise.
         const exercise = await Exercise.create(
             req.body
         );
@@ -142,6 +150,8 @@ const updateExercise = async (
                 req.params.id,
                 req.body,
                 {
+                    // PATCH returns the updated document and must opt into schema
+                    // validators because findByIdAndUpdate skips them by default.
                     new: true,
                     runValidators: true
                 }
@@ -169,6 +179,8 @@ const deleteExercise = async (
     res: Response
 ) => {
     try {
+        // A null result means that the syntactically valid id did not identify a
+        // document; this is distinct from invalid-id cast errors caught below.
         const exercise =
             await Exercise.findByIdAndDelete(
                 req.params.id
