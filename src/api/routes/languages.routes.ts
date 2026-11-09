@@ -1,6 +1,8 @@
 /* Maps language URLs to language.controller operations consumed by LanguagesPage. */
 
 import { Router } from 'express'
+import { isAuth } from '../../middlewares/isAuth'
+import { isAdmin } from '../../middlewares/isAdmin'
 
 import {
     getAllLanguages,
@@ -16,8 +18,23 @@ const languagesRouter = Router()
 
 languagesRouter.get('/', getAllLanguages)
 languagesRouter.get('/:id', getLanguage)
-languagesRouter.post('/', createLanguage)
-languagesRouter.put('/:id', updateLanguage)
-languagesRouter.delete('/:id', deleteLanguage)
+languagesRouter.post(
+    '/',
+    isAuth,
+    isAdmin,
+    createLanguage
+)
+languagesRouter.put(
+    '/:id',
+    isAuth,
+    isAdmin,
+    updateLanguage
+)
+languagesRouter.delete(
+    '/:id',
+    isAuth,
+    isAdmin,
+    deleteLanguage
+)
 
 export default languagesRouter

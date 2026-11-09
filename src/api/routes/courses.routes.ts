@@ -1,6 +1,8 @@
 /* Maps course URLs to course.controller operations used by the frontend services. */
 
 import { Router } from "express";
+import { isAuth } from "../../middlewares/isAuth";
+import { isAdmin } from "../../middlewares/isAdmin";
 
 import {
     getAllCourses,
@@ -33,10 +35,25 @@ coursesRouter.get(
 
 coursesRouter.get("/:id", getCourse);
 
-coursesRouter.post("/", createCourse);
+coursesRouter.post(
+    "/",
+    isAuth,
+    isAdmin,
+    createCourse
+);
 
-coursesRouter.patch("/:id", updateCourse);
+coursesRouter.patch(
+    "/:id",
+    isAuth,
+    isAdmin,
+    updateCourse
+);
 
-coursesRouter.delete("/:id", deleteCourse);
+coursesRouter.delete(
+    "/:id",
+    isAuth,
+    isAdmin,
+    deleteCourse
+);
 
 export default coursesRouter;

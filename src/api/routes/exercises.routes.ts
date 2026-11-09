@@ -1,6 +1,8 @@
 /* Maps exercise URLs to exercise.controller operations used by the learning flow. */
 
 import { Router } from "express";
+import { isAuth } from "../../middlewares/isAuth";
+import { isAdmin } from "../../middlewares/isAdmin";
 
 import {
     getAllExercises,
@@ -41,16 +43,22 @@ exercisesRouter.get(
 
 exercisesRouter.post(
     "/",
+    isAuth,
+    isAdmin,
     createExercise
 );
 
 exercisesRouter.patch(
     "/:id",
+    isAuth,
+    isAdmin,
     updateExercise
 );
 
 exercisesRouter.delete(
     "/:id",
+    isAuth,
+    isAdmin,
     deleteExercise
 );
 
