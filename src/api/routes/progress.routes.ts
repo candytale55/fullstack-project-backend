@@ -7,6 +7,8 @@ import { Router } from "express";
 
 import { isAuth }
     from "../../middlewares/isAuth";
+import { isAdmin }
+    from "../../middlewares/isAdmin";
 
 import {
     getAllProgress,
@@ -53,42 +55,56 @@ progressRouter.patch(
 
 progressRouter.get(
     "/",
+    isAuth,
+    isAdmin,
     getAllProgress
 );
 
 
 progressRouter.get(
     "/user/:userId/course/:courseId",
+    isAuth,
+    isAdmin,
     getUserCourseProgress
 );
 
 
 progressRouter.get(
     "/:id",
+    isAuth,
+    isAdmin,
     getProgress
 );
 
 
 progressRouter.post(
     "/",
+    isAuth,
+    isAdmin,
     createProgress
 );
 
 
 progressRouter.patch(
     "/user/:userId/course/:courseId/exercises/:exerciseId/complete",
+    isAuth,
+    isAdmin,
     completeExercise
 );
 
 
 progressRouter.patch(
     "/:id/reset",
+    isAuth,
+    isAdmin,
     resetProgress
 );
 
 
 progressRouter.delete(
     "/:id",
+    isAuth,
+    isAdmin,
     deleteProgress
 );
 
