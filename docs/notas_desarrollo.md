@@ -31,6 +31,7 @@ Este documento reúne los detalles técnicos y decisiones de implementación que
 - [README](../README.md)
 - [Notas de desarrollo](./notas_desarrollo.md)
 - [Justificación de requisitos](./justificacion-requisitos.md)
+- [Correcciones tras el feedback](./fix_feedback.md)
 
 La documentación es la misma tanto en los repositorios del Frontend como del Backend.
 
@@ -77,7 +78,7 @@ Exercise
 
 La actividad funcional principal es una práctica de **conjugación de verbos portugueses** que obtiene su contenido desde MongoDB.
 
-El proyecto está planteado para continuar creciendo. Parte del backend ya contiene modelos, controllers, routes y endpoints que todavía no son consumidos por el frontend actual, pero que servirán para ampliar actividades, progreso y administración de contenido.
+El proyecto está planteado para continuar creciendo. Parte del backend ya contiene modelos, controllers, routes y endpoints que todavía no son consumidos por el frontend actual, pero que servirán para ampliar actividades y administración de contenido.
 
 <p><a href="#indice">Volver al índice</a></p>
 
@@ -345,6 +346,8 @@ para comprobar el token y restaurar la sesión.
 
 El backend también dispone de middleware `isAuth` y `isAdmin`. La interfaz administrativa queda fuera del alcance del MVP actual.
 
+Las rutas de escritura de idiomas, cursos, ejercicios y vocabulario requieren un usuario autenticado con rol `admin`. Las rutas de progreso del estudiante se resuelven desde `/api/v1/progress/me` con `isAuth`; las rutas heredadas de gestión global de progreso requieren además `isAdmin`.
+
 Probé el funcionamiento de la autenticación con pruebas de Insomnia, que se encuentran en la carpeta del mismo nombre como [Insomnia_User_CRUD](../insomnia/Insomnia_User_CRUD) (Backend)
 
 <p><a href="#indice">Volver al índice</a></p>
@@ -369,7 +372,7 @@ Recursos principales:
 
 El frontend consume actualmente los endpoints necesarios para autenticación, navegación de idiomas/cursos/unidades y la actividad de conjugación.
 
-Otros endpoints CRUD permanecen preparados para futuras fases, especialmente administración de contenido y progreso.
+Los endpoints CRUD de contenido y las rutas globales de progreso quedan reservados para una futura administración y están protegidos por autorización de administrador.
 
 <p><a href="#indice">Volver al índice</a></p>
 
@@ -410,11 +413,9 @@ Las decisiones sobre la arquitectura, estructura del proyecto, implementación y
 <a id="dashboard-progreso"></a>
 ## Dashboard y progreso
 
-Las páginas de dashboard y progreso forman parte de la estructura del frontend. En la versión actual mostrada en los screenshots, el dashboard utiliza todavía datos de demostración.
+Las páginas de dashboard y progreso consumen el progreso persistente del usuario autenticado mediante `GET /api/v1/progress/me`. Al finalizar una sesión de conjugación, el frontend registra sus resultados mediante `PATCH /api/v1/progress/me/course/:courseId/session`.
 
-La arquitectura backend ya incluye una colección `Progress`, pensada para evolucionar hacia seguimiento persistente del usuario y métricas de estudio.
-
-Existe una carpeta [mocks](https://github.com/candytale55/fullstack-project-frontend/tree/main/src/mocks) en el frontend, que es donde se guardan todos los mocks iniciales que se usaron mientras construía el frontend con React, antes de ligar al backend. Actualmente solo dashboardMock.ts se está usando. 
+El frontend conserva una carpeta [mocks](https://github.com/candytale55/fullstack-project-frontend/tree/main/src/mocks) para los listados de ejercicios genéricos que todavía no están conectados a una actividad interactiva.
 
 <p><a href="#indice">Volver al índice</a></p>
 

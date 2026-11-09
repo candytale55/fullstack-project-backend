@@ -4,12 +4,13 @@ Aplicación Full Stack desarrollada como proyecto final de **ThePower**.
 
 El proyecto es un **MVP de una plataforma de estudio de idiomas orientada al usuario estudiante**. Permite registrarse e iniciar sesión, seleccionar un idioma y un curso, navegar por sus unidades y realizar actividades de estudio con contenido almacenado en MongoDB.
 
-Actualmente incluye una actividad funcional de **conjugación de verbos portugueses**. La arquitectura está preparada para seguir incorporando contenido, ejercicios, progreso y un futuro dashboard de administración.
+Actualmente incluye una actividad funcional de **conjugación de verbos portugueses** y seguimiento persistente del progreso del estudiante. La arquitectura está preparada para seguir incorporando contenido, tipos de ejercicio y un futuro dashboard de administración.
 
 > Documentación: 
 > - [README](./README.md)
 > - [Notas de desarrollo](./docs/notas_desarrollo.md)
 > - [Justificación de requisitos](./docs/justificacion-requisitos.md)
+> - [Correcciones tras el feedback](./docs/fix_feedback.md)
 
 ---
 
