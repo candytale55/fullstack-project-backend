@@ -3,6 +3,8 @@
 import type { Request, Response } from 'express'
 
 import Language from '../models/Language.model'
+import Course from '../models/Course.model'
+import Exercise from '../models/Exercise.model'
 
 /* ------------------------------------- */
 /*           Language Controllers        */
@@ -12,8 +14,22 @@ const getAllLanguages = async (
   _req: Request,
   res: Response) => {
   try {
+      const courseIdsWithExercises = await Exercise.distinct('course')
+      const languageIdsWithExercises = await Course.distinct(
+        'language',
+        {
+          _id: {
+            $in: courseIdsWithExercises
+          }
+        }
+      )
+
     // Return the catalog as an array. An empty catalog is a successful response.
-    const languages = await Language.find()
+      const languages = await Language.find({
+        _id: {
+          $in: languageIdsWithExercises
+        }
+      })
     return res.status(200).json(languages)
   } catch (error) {
     return res.status(400).json({

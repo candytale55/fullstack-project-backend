@@ -3,6 +3,7 @@
 import type { Request, Response } from "express";
 
 import Course from "../models/Course.model";
+import Exercise from "../models/Exercise.model";
 
 /* ------------------------------------- */
 /*           Course Controllers          */
@@ -13,10 +14,16 @@ const getAllCourses = async (
     res: Response
 ) => {
     try {
+        const courseIdsWithExercises = await Exercise.distinct("course");
+
         // Populate replaces the language ObjectId with the small language view
         // needed by catalog clients, without returning unrelated language fields.
         const courses = await Course
-            .find()
+            .find({
+                _id: {
+                    $in: courseIdsWithExercises
+                }
+            })
             .populate(
                 "language",
                 "name nativeName code"
@@ -39,11 +46,16 @@ const getCoursesByLanguage = async (
     res: Response
 ) => {
     try {
+        const courseIdsWithExercises = await Exercise.distinct("course");
+
         // This is a collection query: an unknown language id correctly produces
         // an empty array rather than a "course not found" response.
         const courses = await Course
             .find({
-                language: req.params.languageId
+                language: req.params.languageId,
+                _id: {
+                    $in: courseIdsWithExercises
+                }
             })
             .populate(
                 "language",
