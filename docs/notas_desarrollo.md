@@ -195,7 +195,7 @@ src/
 └── index.ts
 ```
 
-La API separa modelos, controllers, routes, middlewares y utilidades para mantener responsabilidades claras.
+La API separa modelos, controllers, routes, middlewares y utilidades para mantener responsabilidades claras. `src/app.ts` configura Express sin abrir un listener; `src/index.ts` inicia el servidor local y `api/index.ts` adapta la aplicación a Vercel.
 
 
 <p><a href="#indice">Volver al índice</a></p>
@@ -227,6 +227,9 @@ Language
  Course
    ↑
 PortugueseVerbConjugation
+
+Exercise → Course
+        → Unit (opcional)
 
 User → Progress → Course
                → Exercise
@@ -370,7 +373,7 @@ Recursos principales:
 /api/v1/portuguese-verb-conjugations
 ```
 
-El frontend consume actualmente los endpoints necesarios para autenticación, navegación de idiomas/cursos/unidades y la actividad de conjugación.
+El frontend consume actualmente los endpoints necesarios para autenticación, navegación de idiomas/cursos/unidades y la actividad de conjugación. Los catálogos de idiomas y cursos se filtran en la API con las relaciones de `Exercise`; las unidades se devuelven únicamente cuando tienen ejercicios asociados.
 
 Los endpoints CRUD de contenido y las rutas globales de progreso quedan reservados para una futura administración y están protegidos por autorización de administrador.
 
@@ -413,9 +416,9 @@ Las decisiones sobre la arquitectura, estructura del proyecto, implementación y
 <a id="dashboard-progreso"></a>
 ## Dashboard y progreso
 
-Las páginas de dashboard y progreso consumen el progreso persistente del usuario autenticado mediante `GET /api/v1/progress/me`. Al finalizar una sesión de conjugación, el frontend registra sus resultados mediante `PATCH /api/v1/progress/me/course/:courseId/session`.
+Las páginas de dashboard y progreso consumen el progreso persistente del usuario autenticado mediante `GET /api/v1/progress/me`. Al finalizar una sesión de conjugación, el frontend registra sus resultados y la zona horaria del navegador mediante `PATCH /api/v1/progress/me/course/:courseId/session`; el backend guarda el día de estudio para el mapa de actividad.
 
-El frontend conserva una carpeta [mocks](https://github.com/candytale55/fullstack-project-frontend/tree/main/src/mocks) para los listados de ejercicios genéricos que todavía no están conectados a una actividad interactiva.
+Los listados de ejercicios consultan `GET /api/v1/exercises/course/:courseId` o `GET /api/v1/exercises/course/:courseId/unit/:unitId`, en lugar de datos mock.
 
 <p><a href="#indice">Volver al índice</a></p>
 

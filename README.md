@@ -4,7 +4,7 @@ Aplicación Full Stack desarrollada como proyecto final de **ThePower**.
 
 El proyecto es un **MVP de una plataforma de estudio de idiomas orientada al usuario estudiante**. Permite registrarse e iniciar sesión, seleccionar un idioma y un curso, navegar por sus unidades y realizar actividades de estudio con contenido almacenado en MongoDB.
 
-Actualmente incluye una actividad funcional de **conjugación de verbos portugueses** y seguimiento persistente del progreso del estudiante. La arquitectura está preparada para seguir incorporando contenido, tipos de ejercicio y un futuro dashboard de administración.
+Actualmente incluye una actividad funcional de **conjugación de verbos portugueses** y seguimiento persistente del progreso del estudiante. Los catálogos muestran únicamente idiomas, cursos y unidades que tienen ejercicios asociados; el contenido preparado sin ejercicios permanece oculto hasta estar disponible.
 
 > Documentación: 
 > - [README](./README.md)
@@ -39,7 +39,7 @@ Register / Login
    Exercise
 ```
 
-El ejercicio de conjugación permite seleccionar el número de preguntas, responder, recibir feedback inmediato y repetir o finalizar la sesión.
+El ejercicio de conjugación permite seleccionar el número de preguntas, responder, recibir feedback inmediato y repetir o finalizar la sesión. Al finalizar, guarda la actividad con la zona horaria del navegador para actualizar el progreso y el mapa de actividad.
 
 ---
 

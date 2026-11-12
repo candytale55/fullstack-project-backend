@@ -126,10 +126,23 @@ const getCourseUnits = async (
             });
         }
 
+        const unitIdsWithExercises = new Set(
+            (
+                await Exercise.distinct("unitId", {
+                    course: course._id,
+                    unitId: {
+                        $exists: true
+                    }
+                })
+            ).map((unitId) => unitId.toString())
+        );
+
         // Units are embedded in the course and may not be stored in display order.
-        // Copy before sorting so this read-only endpoint does not mutate the Mongoose
-        // document in memory.
-        const units = [...course.units].sort(
+        // Only return units with exercises, so prepared-but-empty units remain hidden.
+        const units = course.units.filter(
+            (unit) => unit._id !== undefined &&
+                unitIdsWithExercises.has(unit._id.toString())
+        ).sort(
             (a, b) => a.order - b.order
         );
 
