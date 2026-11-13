@@ -18,7 +18,7 @@ Actualmente incluye una actividad funcional de **conjugación de verbos portugue
 
 | | Frontend | Backend |
 |---|---|---|
-| **Vercel** | [Aplicación](https://fullstack-project-frontend-nine.vercel.app/) | [Vercel API / Healthcheck](https://fullstack-project-backend-woad.vercel.app/) |
+| **Vercel** | [Aplicación](fullstack-project-frontend-2xdaqf2sz-candytale55s-projects.vercel.app) | [Vercel API / Healthcheck](fullstack-project-backend-lyqx3b3u6-candytale55s-projects.vercel.app) |
 | **GitHub** | [fullstack-project-frontend](https://github.com/candytale55/fullstack-project-frontend) | [fullstack-project-backend](https://github.com/candytale55/fullstack-project-backend) |
 
 El frontend y el backend están desplegados de forma independiente en **Vercel** y se comunican mediante una API REST. También funciona en local.
